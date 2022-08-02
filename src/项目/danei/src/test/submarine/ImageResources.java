@@ -18,7 +18,7 @@ public class ImageResources {
     public static ImageIcon torpedo; //用于鱼雷图片的静态变量
     public static ImageIcon torpesubm; //用于鱼雷潜艇图片的静态变量
 
-    static{ //静态代码块,用于为上面静态变量赋值具体的图片(路径)
+    static { //静态代码块,用于为上面静态变量赋值具体的图片(路径)
         battleship = new ImageIcon("img/battleship.png");
         bomb = new ImageIcon("img/bomb.png");
         gameover = new ImageIcon("img/gameover.png");

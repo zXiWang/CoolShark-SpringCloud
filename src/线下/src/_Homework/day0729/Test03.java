@@ -18,14 +18,14 @@ public class Test03 {
         FileInputStream fis;
         ObjectInputStream ois;
         File[] files = file.listFiles(f -> f.getName().endsWith(".obj"));
-        if (files != null){
+        if (files != null) {
             for (File f : files) {
                 fis = new FileInputStream(f);
                 ois = new ObjectInputStream(fis);
                 System.out.println(ois.readObject().toString());
                 ois.close();
             }
-        }else {
+        } else {
             System.out.println("No files");
         }
 

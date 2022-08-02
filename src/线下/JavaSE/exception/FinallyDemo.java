@@ -18,7 +18,7 @@ public class FinallyDemo {
             return;
         } catch (Exception e) {
             System.out.println("出错了");
-        }finally {
+        } finally {
             System.out.println("finally中的代码执行了");
         }
         System.out.println("程序结束了");

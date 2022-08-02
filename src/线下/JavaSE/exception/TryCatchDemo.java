@@ -1,4 +1,5 @@
 package exception;
+
 /*
     JAVA 异常处理机制
     JAVA中所有的异常的顶级超类为:Throwable
@@ -34,11 +35,11 @@ public class TryCatchDemo {
 //        }catch(StringIndexOutOfBoundsException e){
 //            System.out.println("出现了字符串下标越界，并解决了");
 //        }
-        //当try语句块中几个异常有相同的处理方式时，我们可以合并到一个catch解决
-        }catch(NullPointerException|StringIndexOutOfBoundsException e){
+            //当try语句块中几个异常有相同的处理方式时，我们可以合并到一个catch解决
+        } catch (NullPointerException | StringIndexOutOfBoundsException e) {
             System.out.println("出现空指针或字符串下标越界并解决了。");
-        //当一类异常都使用相同解决方式时，我们可以采取捕获这一类异常的统一的超类
-        }catch(Exception e){
+            //当一类异常都使用相同解决方式时，我们可以采取捕获这一类异常的统一的超类
+        } catch (Exception e) {
             System.out.println("通用解决办法");
         }
 

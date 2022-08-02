@@ -7,8 +7,8 @@ import javax.swing.*;
  */
 public class Torpedo extends SeaObject {
 
-    Torpedo(int x,int y) {
-        super(x,y,5,18,2);
+    Torpedo(int x, int y) {
+        super(x, y, 5, 18, 2);
     }
 
     @Override

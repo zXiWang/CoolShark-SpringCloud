@@ -7,8 +7,8 @@ import javax.swing.*;
  */
 public class Mine extends SeaObject {
 
-    Mine(int x,int y) { //通过外部获取对象的x坐标和y坐标
-        super(x,y,11,11,2);
+    Mine(int x, int y) { //通过外部获取对象的x坐标和y坐标
+        super(x, y, 11, 11, 2);
     }
 
     @Override
@@ -23,6 +23,7 @@ public class Mine extends SeaObject {
         }
         return null; //如果执行到这一步代码,则意味着当前对象为死亡状态
     }
+
     /**
      * 检测水雷是否越界
      * 如果越界则返回true,没有越界则返回false

@@ -8,7 +8,7 @@ import javax.swing.*;
 public class MineSubmarine extends SeaObject implements EnemyLife {
 
     MineSubmarine() {
-        super(63,19);
+        super(63, 19);
     }
 
     @Override

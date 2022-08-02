@@ -41,12 +41,13 @@ public class Battleship extends SeaObject {
     }
 
     public void moveUp() {
-        y-=Math.abs(speed);
+        y -= Math.abs(speed);
     }
 
     public void moveDown() {
-        y+=Math.abs(speed);
+        y += Math.abs(speed);
     }
+
     public int getLife() {
         return life;
     }

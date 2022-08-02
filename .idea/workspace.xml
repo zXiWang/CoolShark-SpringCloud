@@ -6,9 +6,29 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="第一次提交">
+    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="第二次提交">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/达内.iml" beforeDir="false" afterPath="$PROJECT_DIR$/达内.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/项目/danei/src/test/submarine/Battleship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/项目/danei/src/test/submarine/Battleship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/项目/danei/src/test/submarine/Bomb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/项目/danei/src/test/submarine/Bomb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/项目/danei/src/test/submarine/EnemyLife.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/项目/danei/src/test/submarine/EnemyLife.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/项目/danei/src/test/submarine/EnemyScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/项目/danei/src/test/submarine/EnemyScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/项目/danei/src/test/submarine/GameWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/项目/danei/src/test/submarine/GameWorld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/项目/danei/src/test/submarine/ImageResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/项目/danei/src/test/submarine/ImageResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/项目/danei/src/test/submarine/Mine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/项目/danei/src/test/submarine/Mine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/项目/danei/src/test/submarine/MineSubmarine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/项目/danei/src/test/submarine/MineSubmarine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/项目/danei/src/test/submarine/ObserveSubmarine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/项目/danei/src/test/submarine/ObserveSubmarine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/项目/danei/src/test/submarine/SeaObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/项目/danei/src/test/submarine/SeaObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/项目/danei/src/test/submarine/Torpedo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/项目/danei/src/test/submarine/Torpedo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/项目/danei/src/test/submarine/TorpedoSubmarine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/项目/danei/src/test/submarine/TorpedoSubmarine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/项目/submarine/src/cn/tedu/submarine/Battleship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/项目/submarine/src/cn/tedu/submarine/Battleship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/项目/submarine/src/cn/tedu/submarine/Bomb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/项目/submarine/src/cn/tedu/submarine/Bomb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/项目/submarine/src/cn/tedu/submarine/SeaObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/项目/submarine/src/cn/tedu/submarine/SeaObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/课外/作业/8.1/Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/课外/作业/8.1/Test01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/课外/作业/8.1/Test02.java" beforeDir="false" afterPath="$PROJECT_DIR$/课外/作业/8.1/Test02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/课外/作业/8.1/Test03.java" beforeDir="false" afterPath="$PROJECT_DIR$/课外/作业/8.1/Test03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/课外/作业/8.1/Test04.java" beforeDir="false" afterPath="$PROJECT_DIR$/课外/作业/8.1/Test04.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +66,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
     <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -71,7 +92,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/线下/src" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/线下" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
@@ -187,13 +208,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -257,7 +280,8 @@
       <workItem from="1659358246143" duration="1596000" />
       <workItem from="1659399984088" duration="22994000" />
       <workItem from="1659439806464" duration="1294000" />
-      <workItem from="1659441157612" duration="1385000" />
+      <workItem from="1659441157612" duration="2213000" />
+      <workItem from="1659454095014" duration="211000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1659442033948</created>
@@ -273,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659442165905</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="第二次提交">
+      <created>1659442570518</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659442570518</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,11 +326,12 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/src/线下/JavaSE/jsd2206-se-teacher" />
       <path value="$PROJECT_DIR$/src/线下/JavaSE/teacher" />
-      <path value="$PROJECT_DIR$/src/线下/jsd2206-se-teacher" />
       <path value="$PROJECT_DIR$/.." />
+      <path value="$PROJECT_DIR$/src/线下" />
     </ignored-roots>
     <MESSAGE value="第一次提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="第一次提交" />
+    <MESSAGE value="第二次提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="第二次提交" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

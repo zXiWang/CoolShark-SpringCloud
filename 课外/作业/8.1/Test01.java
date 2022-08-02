@@ -6,15 +6,14 @@ import java.nio.charset.StandardCharsets;
 
 /**
  * 改正下面程序的错误
- * 
+ * <p>
  * 向文件testpw.txt中以UTF-8编码写入一行字符串：
  * 你好!我喜欢java!
- * 
+ * <p>
  * 单词记一记:
  * print 打印
- * 
- * @author Xiloer
  *
+ * @author Xiloer
  */
 public class Test01 {
     public static void main(String[] args) {
@@ -25,7 +24,7 @@ public class Test01 {
             PrintWriter pw = new PrintWriter(bw);
             pw.println("你好!我喜欢java!");
             pw.close();
-        }catch(Exception e) {
+        } catch (Exception e) {
             System.out.println("出错了!");
         }
         System.out.println("写出完毕!");

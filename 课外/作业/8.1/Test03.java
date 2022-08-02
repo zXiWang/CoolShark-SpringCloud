@@ -1,18 +1,17 @@
 import java.io.*;
+
 /**
  * 扫描指定目录中的所有.java文件，并将内容全部输出到控制台
- * 
+ * <p>
  * 例如将当前项目目录下src/io目录中的所有java文件内容输出
  * 到控制台
- * 
+ * <p>
  * 1:先要定位./src/io目录(哪个API用来描述目录?)
  * 2:获取该目录下的所有.java文件
  * 3:遍历每一个java文件，然后按行读取里面的每一行字符串
- *   并输出控制台
- * 
- * 
- * @author Xiloer
+ * 并输出控制台
  *
+ * @author Xiloer
  */
 public class Test03 {
     public static void main(String[] args) throws IOException {
@@ -21,8 +20,8 @@ public class Test03 {
         BufferedReader br = null;
         String line;
         for (File file : files) {
-            br=new BufferedReader(new InputStreamReader(new FileInputStream(file)));
-            while((line = br.readLine())!=null) {
+            br = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
+            while ((line = br.readLine()) != null) {
                 System.out.println(line);
             }
         }

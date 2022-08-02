@@ -7,17 +7,18 @@ import java.awt.event.KeyEvent;
 import java.util.Arrays;
 import java.util.TimerTask; //任务模板
 import java.util.Timer; //定时器模板
+
 /**
  * 游戏运行测试类
- *
+ * <p>
  * 1.为什么要讲各类的变量声明在main方法外部?
- *   在main方法中声明的变量,作用域只在main中,但是后期当前类中其他位置也需要使用,
- *   所以应该将这些变量设计为成员变量
+ * 在main方法中声明的变量,作用域只在main中,但是后期当前类中其他位置也需要使用,
+ * 所以应该将这些变量设计为成员变量
  * 2.为什么要单独创建action方法来创建对象?
- *   因为main方法使用static关键字修饰的静态方法,静态方法无法直接访问类成员
+ * 因为main方法使用static关键字修饰的静态方法,静态方法无法直接访问类成员
  * 3.为什么要创建GameWorld类,再调用action方法?
- *   因为main方法使用static关键字修饰的静态方法,静态方法无法直接访问类成员,所以
- *   通过创建类对象的形式,通过对象来调用(.)action方法
+ * 因为main方法使用static关键字修饰的静态方法,静态方法无法直接访问类成员,所以
+ * 通过创建类对象的形式,通过对象来调用(.)action方法
  */
 public class GameWorld extends JPanel {
     public static final int WIDTH = 641; //背景宽
@@ -27,6 +28,19 @@ public class GameWorld extends JPanel {
     Bomb[] bombs = {}; //{}相当于为当前数组创建数组对象,并没有开辟空间,避免空指针
     SeaObject[] submarines = {}; //代表三种潜艇(水雷潜艇,鱼雷潜艇,侦查潜艇)
     SeaObject[] thunder = {}; //代表两种雷(水雷和鱼雷)
+    int score = 0;
+    /**
+     * 潜艇入场的方法:内部主要是实现的逻辑就是将产生的潜艇对象封装到submarines数组中
+     */
+    private int submarineEnterIndex = 0; //变量声明的原因控制潜艇的产生速度
+    //雷入场的方法   控制雷产生的速度,每1000毫秒执行一次
+    private int thunderEnterIndex = 0; //通过此变量控制雷产生的速度
+
+    public static void main(String[] args) {
+        GameWorld gw = new GameWorld();
+        gw.paintWorld();
+        gw.action();
+    }
 
     /**
      * 生成潜艇的方法
@@ -36,19 +50,15 @@ public class GameWorld extends JPanel {
         //产生0~20之间的随机数
         int type = (int) (Math.random() * 20);
         //当产生的数据小于10,返回侦查潜艇
-        if(type < 10) {
+        if (type < 10) {
             return new ObserveSubmarine();
-        }else if (type < 15) {//当产生的数据小于15,返回鱼雷潜艇
+        } else if (type < 15) {//当产生的数据小于15,返回鱼雷潜艇
             return new TorpedoSubmarine();
-        }else {//否则,返回水雷潜艇
+        } else {//否则,返回水雷潜艇
             return new MineSubmarine();
         }
     }
 
-    /**
-     * 潜艇入场的方法:内部主要是实现的逻辑就是将产生的潜艇对象封装到submarines数组中
-     */
-    private int submarineEnterIndex = 0; //变量声明的原因控制潜艇的产生速度
     public void submarineEnterAction() { //该方法放到run()中调用
         /**
          * 1.调用生成潜艇的方法,返回一个对象
@@ -59,12 +69,10 @@ public class GameWorld extends JPanel {
         if (submarineEnterIndex % 40 == 0) { //每400毫秒执行一次
             SeaObject s = createSubmarine();
             submarines = Arrays.copyOf(submarines, submarines.length + 1);
-            submarines[submarines.length-1] = s;
+            submarines[submarines.length - 1] = s;
         }
     }
 
-    //雷入场的方法   控制雷产生的速度,每1000毫秒执行一次
-    private int thunderEnterIndex = 0; //通过此变量控制雷产生的速度
     public void thunderEnterAction() {
         /**
          * 1.for循环遍历submarines数组,调用数组中每个对象的shootThunder方法
@@ -78,13 +86,12 @@ public class GameWorld extends JPanel {
             for (int i = 0; i < submarines.length; i++) {
                 SeaObject t = submarines[i].shootThunder();
                 if (t != null) {
-                    thunder = Arrays.copyOf(thunder,thunder.length + 1);
+                    thunder = Arrays.copyOf(thunder, thunder.length + 1);
                     thunder[thunder.length - 1] = t;
                 }
             }
         }
     }
-
 
     public void stepAction() { //放入run方法中执行
         for (int i = 0; i < submarines.length; i++) {
@@ -108,7 +115,7 @@ public class GameWorld extends JPanel {
          * 3.将对象放入到深水炸弹数组的最后一个位置
          */
         Bomb b = ship.shootBomb();
-        bombs = Arrays.copyOf(bombs,bombs.length + 1);
+        bombs = Arrays.copyOf(bombs, bombs.length + 1);
         bombs[bombs.length - 1] = b;
     }
 
@@ -121,26 +128,25 @@ public class GameWorld extends JPanel {
             if (submarines[i].isOutOfBounds()) { //越界了
                 //将越界潜艇替换为最后一个元素
                 submarines[i] = submarines[submarines.length - 1];
-                submarines = Arrays.copyOf(submarines,submarines.length-1); //缩容
+                submarines = Arrays.copyOf(submarines, submarines.length - 1); //缩容
             }
         }
         for (int i = 0; i < thunder.length; i++) { //遍历所有的潜艇
             if (thunder[i].isOutOfBounds()) { //越界了
                 //将越界潜艇替换为最后一个元素
                 thunder[i] = thunder[thunder.length - 1];
-                thunder = Arrays.copyOf(thunder,thunder.length-1); //缩容
+                thunder = Arrays.copyOf(thunder, thunder.length - 1); //缩容
             }
         }
         for (int i = 0; i < bombs.length; i++) { //遍历所有的潜艇
             if (bombs[i].isOutOfBounds()) { //越界了
                 //将越界潜艇替换为最后一个元素
                 bombs[i] = bombs[bombs.length - 1];
-                bombs = Arrays.copyOf(bombs,bombs.length-1); //缩容
+                bombs = Arrays.copyOf(bombs, bombs.length - 1); //缩容
             }
         }
     }
 
-    int score=0;
     public void bombBangAction() {
         for (int i = 0; i < bombs.length; i++) {
             Bomb b = bombs[i];
@@ -149,13 +155,13 @@ public class GameWorld extends JPanel {
                 if (b.isLive() && s.isLive() && s.isHit(b)) {
                     b.goDead();
                     s.goDead();
-                    if(s instanceof EnemyScore){
-                        EnemyScore es=(EnemyScore) s;
-                        score+=es.getScore();
+                    if (s instanceof EnemyScore) {
+                        EnemyScore es = (EnemyScore) s;
+                        score += es.getScore();
                     }
-                    if(s instanceof EnemyLife){
-                        EnemyLife el=(EnemyLife) s;
-                        int num=el.getLife();
+                    if (s instanceof EnemyLife) {
+                        EnemyLife el = (EnemyLife) s;
+                        int num = el.getLife();
                         ship.addLift(num);
                     }
 
@@ -173,7 +179,7 @@ public class GameWorld extends JPanel {
                 }
                 if (e.getKeyCode() == KeyEvent.VK_A) { //判断用户按下的按键是否是←键
                     ship.moveLeft(); //调用左移方法
-                }else if (e.getKeyCode() == KeyEvent.VK_D) { //判断用户按下的按键是否是→键
+                } else if (e.getKeyCode() == KeyEvent.VK_D) { //判断用户按下的按键是否是→键
                     ship.moveRight(); //调用右移方法
                 }
             }
@@ -197,7 +203,7 @@ public class GameWorld extends JPanel {
                 repaint(); //系统提供的刷新绘制的方法
             }
         };
-        timer.schedule(task,3000,10);
+        timer.schedule(task, 3000, 10);
     }
 
     /**
@@ -208,7 +214,7 @@ public class GameWorld extends JPanel {
         setFocusable(true); //可聚焦的
         frame.add(this); //把面板添加到窗口中
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //关闭窗口结束程序
-        frame.setSize(WIDTH+16,HEIGHT+39); //窗口尺寸
+        frame.setSize(WIDTH + 16, HEIGHT + 39); //窗口尺寸
         frame.setLocationRelativeTo(null); //窗口居中呈现
         frame.setVisible(true); //可视化
     }
@@ -221,7 +227,7 @@ public class GameWorld extends JPanel {
         //ImageIcon s = ship.getImage();
         //2.绘制的坐标
         //s.paintIcon(null,g,ship.x,ship.y);
-        ImageResources.sea.paintIcon(null,g,0,0); //背景图片
+        ImageResources.sea.paintIcon(null, g, 0, 0); //背景图片
         ship.paintImage(g);
 
         for (Bomb bomb : bombs) {
@@ -241,14 +247,8 @@ public class GameWorld extends JPanel {
             t.paintIcon(null,g,thunder[i].x,thunder[i].y);*/
             seaObject.paintImage(g);
         }
-        g.setFont(new Font("",Font.BOLD,20));
-        g.drawString("分数:"+score,200,50);
-        g.drawString("生命:"+ship.getLife(),400,50);
-    }
-
-    public static void main(String[] args) {
-        GameWorld gw = new GameWorld();
-        gw.paintWorld();
-        gw.action();
+        g.setFont(new Font("", Font.BOLD, 20));
+        g.drawString("分数:" + score, 200, 50);
+        g.drawString("生命:" + ship.getLife(), 400, 50);
     }
 }

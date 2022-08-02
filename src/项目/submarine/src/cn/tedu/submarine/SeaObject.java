@@ -91,7 +91,7 @@ public abstract class SeaObject implements Serializable {
     }
 
     public boolean isOutOfBounds() {
-        return this.x >= World.WIDTH + this.width || this.x <= -this.width || this.y >= World.HEIGHT||this.y<=0; //潜艇的x>=窗口的宽,即越界了
+        return this.x >= World.WIDTH + this.width || this.x <= -this.width || this.y >= World.HEIGHT || this.y <= 0; //潜艇的x>=窗口的宽,即越界了
     }
 
 

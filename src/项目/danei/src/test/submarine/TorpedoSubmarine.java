@@ -8,7 +8,7 @@ import javax.swing.*;
 public class TorpedoSubmarine extends SeaObject implements EnemyScore {
 
     TorpedoSubmarine() {
-        super(64,20);
+        super(64, 20);
     }
 
     @Override

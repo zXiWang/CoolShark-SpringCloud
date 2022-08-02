@@ -10,7 +10,7 @@ public class Battleship extends SeaObject {
 
     //添加构造方法 ---> 有参还是无参?数据能不能写死?!
     Battleship() {
-        super(270,124,66,26,20);
+        super(270, 124, 66, 26, 20);
         life = 5;
     }
 
@@ -22,6 +22,7 @@ public class Battleship extends SeaObject {
     public void moveLeft() { //向左移动
         this.x -= speed;
     }
+
     public void moveRight() { //向右移动
         this.x += speed;
     }
@@ -35,13 +36,14 @@ public class Battleship extends SeaObject {
      * 生成深水炸弹对象的方法
      */
     public Bomb shootBomb() {
-        return new Bomb(this.x,this.y); //返回深水炸弹对象,坐标则是当前战舰对象的坐标
+        return new Bomb(this.x, this.y); //返回深水炸弹对象,坐标则是当前战舰对象的坐标
     }
 
-    public void addLift(int num){
-        life+=num;
+    public void addLift(int num) {
+        life += num;
     }
-    public int getLife(){
+
+    public int getLife() {
         return life;
     }
 }

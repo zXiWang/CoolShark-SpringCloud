@@ -7,8 +7,9 @@ import javax.swing.*;
  */
 public class Bomb extends SeaObject {
     Bomb(int x, int y) {
-        super(x, y,9,12,3);
+        super(x, y, 9, 12, 3);
     }
+
     @Override
     void step() {
         y += speed;
@@ -22,6 +23,7 @@ public class Bomb extends SeaObject {
         return null; //如果执行到这一步代码,则意味着当前对象为死亡状态
         //return this.isLive() ? ImageResources.bomb : null;
     }
+
     /**
      * 检测炸弹是否越界
      * 如果越界则返回true,没有越界则返回false

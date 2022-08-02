@@ -1,18 +1,17 @@
 package exception;
 
 import java.awt.*;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.sql.SQLException;
 
 /**
  * 子类重写超类含有throws声明异常抛出的方法时,对throws的重写规则
  */
 public class ThrowsDemo {
-    public void dosome()throws IOException, AWTException {}
+    public void dosome() throws IOException, AWTException {
+    }
 }
 
-class SubClass extends ThrowsDemo{
+class SubClass extends ThrowsDemo {
 //    public void dosome()throws IOException, AWTException {}
     //重写时可以不再抛出任何异常
 //    public void dosome(){}

@@ -15,9 +15,9 @@ public class FinallyDemo2 {
             fos.write(1);
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
-                if(fos!=null) {
+                if (fos != null) {
                     fos.close();
                 }
             } catch (IOException e) {

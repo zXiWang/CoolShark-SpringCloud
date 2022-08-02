@@ -10,6 +10,7 @@ import java.nio.charset.StandardCharsets;
 
 public class Server {
     private ServerSocket serverSocket;
+
     public Server() {
         try {
             System.out.println("正在启动服务端......");
@@ -19,25 +20,26 @@ public class Server {
             e.printStackTrace();
         }
     }
-    public void start(){
-        try {
-            System.out.println("等待客户端连接......");
-            Socket socket=serverSocket.accept();
-
-            System.out.println("一个客户端连接了!");
-            InputStream is=socket.getInputStream();
-            BufferedReader br=new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
-            String line;
-            while((line=br.readLine()) != null) {
-                System.out.println("客户端说:"+line);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
     public static void main(String[] args) {
         Server socket = new Server();
         socket.start();
+    }
+
+    public void start() {
+        try {
+            System.out.println("等待客户端连接......");
+            Socket socket = serverSocket.accept();
+
+            System.out.println("一个客户端连接了!");
+            InputStream is = socket.getInputStream();
+            BufferedReader br = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
+            String line;
+            while ((line = br.readLine()) != null) {
+                System.out.println("客户端说:" + line);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

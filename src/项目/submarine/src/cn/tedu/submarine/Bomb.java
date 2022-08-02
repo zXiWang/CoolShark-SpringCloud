@@ -9,7 +9,7 @@ public class Bomb extends SeaObject {
 
     Bomb(int x, int y) {
         super(x, y, 9, 12, 3);
-        if(y>=300)speed=-speed;
+        if (y >= 300) speed = -speed;
     }
 
     @Override

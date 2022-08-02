@@ -34,17 +34,8 @@ public abstract class SeaObject {
         this.width = width;
         this.height = height;
         x = -width; //固定的x值,在屏幕左侧外边框
-        y = (int)(Math.random()*(GameWorld.HEIGHT - height - 150) + 150); //随机产生y
-        speed = (int)(Math.random()*(3 - 1) + 1); //取值1-2
-    }
-
-    //判断当前调用此方法的对象是否是死亡状态
-    public boolean isDead() {
-        return this.currentState == DEAD; //如果返回true,则表示死亡
-    }
-    //判断当前调用此方法的对象是否是活着状态
-    public boolean isLive() {
-        return this.currentState == LIVE; //如果返回true,则表示活着
+        y = (int) (Math.random() * (GameWorld.HEIGHT - height - 150) + 150); //随机产生y
+        speed = (int) (Math.random() * (3 - 1) + 1); //取值1-2
     }
 
     /**
@@ -53,7 +44,7 @@ public abstract class SeaObject {
      * 可以将赋值的冗余过程提取到父类的构造方法中
      * 参数的数据无法确定,做成形参即可
      */
-    SeaObject(int x,int y,int width,int height,int speed) {
+    SeaObject(int x, int y, int width, int height, int speed) {
         this.x = x;
         this.y = y;
         this.width = width;
@@ -61,6 +52,15 @@ public abstract class SeaObject {
         this.speed = speed;
     }
 
+    //判断当前调用此方法的对象是否是死亡状态
+    public boolean isDead() {
+        return this.currentState == DEAD; //如果返回true,则表示死亡
+    }
+
+    //判断当前调用此方法的对象是否是活着状态
+    public boolean isLive() {
+        return this.currentState == LIVE; //如果返回true,则表示活着
+    }
 
     //共有的方法
     abstract void step(); //为了向上造型
@@ -82,7 +82,7 @@ public abstract class SeaObject {
         if (this.getImage() != null) { //判断当前对象获取的图片不能为空
             ImageIcon s = this.getImage(); //获取当前对象的图片
             //2.绘制的坐标
-            s.paintIcon(null,g,this.x,this.y); //绘制当前对象的图片
+            s.paintIcon(null, g, this.x, this.y); //绘制当前对象的图片
         }
     }
 
@@ -95,10 +95,10 @@ public abstract class SeaObject {
         int y = this.y - 5; //雷y
 
         //instanceof 关键字 : 判断当前对象的真实类型
-        if(this instanceof MineSubmarine) { //判断当前对象是否是水雷潜艇对象
-            return new Mine(x,y);
-        }else if (this instanceof TorpedoSubmarine) { //判断当前对象是否是鱼雷潜艇对象
-            return new Torpedo(x,y);
+        if (this instanceof MineSubmarine) { //判断当前对象是否是水雷潜艇对象
+            return new Mine(x, y);
+        } else if (this instanceof TorpedoSubmarine) { //判断当前对象是否是鱼雷潜艇对象
+            return new Torpedo(x, y);
         }
         return null; //如果代码执行到这一步,说明当前对象为侦查潜艇对象
     }
@@ -115,7 +115,8 @@ public abstract class SeaObject {
     /**
      * 检测碰撞 需要this和other两个对象完成
      * this是其中一个对象,other是另一个对象
-     * @return 如果碰上了则返回true,否则返回false
+     *
+     * @return 如果碰上了则返回true, 否则返回false
      */
     public boolean isHit(SeaObject other) {
         //假设:this为潜艇,other为炸弹
@@ -129,8 +130,8 @@ public abstract class SeaObject {
         return x >= x1 && x <= x2 && y >= y1 && y <= y2;
     }
 
-    public void goDead(){
-        this.currentState=DEAD;
+    public void goDead() {
+        this.currentState = DEAD;
     }
 }
 

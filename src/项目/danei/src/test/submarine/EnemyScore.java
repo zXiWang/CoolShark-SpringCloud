@@ -6,6 +6,7 @@ package 项目.danei.src.test.submarine;
 public interface EnemyScore {
     /**
      * 得分方法
+     *
      * @return 分数
      */
     public int getScore();

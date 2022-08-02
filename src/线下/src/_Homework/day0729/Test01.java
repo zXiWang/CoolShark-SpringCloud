@@ -11,10 +11,10 @@ import java.io.*;
  */
 public class Test01 {
     public static void main(String[] args) throws IOException {
-    	File testFile = new File("test.txt");
-    	if(!testFile.exists()) {
+        File testFile = new File("test.txt");
+        if (!testFile.exists()) {
             testFile.createNewFile();
-		}
+        }
         try {
             FileInputStream fis = new FileInputStream("test.txt");
             BufferedInputStream bis = new BufferedInputStream(fis);
