@@ -17,11 +17,11 @@
       <excludeFolder url="file://$MODULE_DIR$/src/线下/JavaSE/jsd2206-se-teacher" />
       <excludeFolder url="file://$MODULE_DIR$/src/线下/src" />
       <excludeFolder url="file://$MODULE_DIR$/src/线下/src/binary" />
-      <excludeFolder url="file://$MODULE_DIR$/src/线下/jsd2206-se-teacher" />
       <excludeFolder url="file://$MODULE_DIR$/out/artifacts" />
       <excludeFolder url="file://$MODULE_DIR$/out/production" />
       <excludeFolder url="file://$MODULE_DIR$/src/项目/submarine" />
       <excludeFolder url="file://$MODULE_DIR$/src/项目/shoot" />
+      <excludeFolder url="file://$MODULE_DIR$/src/线下/jsd2206-se-teacher" />
     </content>
     <content url="file://$MODULE_DIR$/out" />
     <content url="file://$MODULE_DIR$/out/artifacts" />
