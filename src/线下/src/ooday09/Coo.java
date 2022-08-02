@@ -1,0 +1,1 @@
+class Coo extends Aoo{ }

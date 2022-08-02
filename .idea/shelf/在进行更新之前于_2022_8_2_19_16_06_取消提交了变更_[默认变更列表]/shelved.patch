@@ -1,0 +1,66 @@
+Index: src/线下/JavaSE/jsd2206-se-teacher/src/homework/day04/note.txt
+===================================================================
+diff --git a/src/线下/JavaSE/jsd2206-se-teacher/src/homework/day04/note.txt b/src/线下/JavaSE/jsd2206-se-teacher/src/homework/day04/note.txt
+deleted file mode 100644
+--- a/src/线下/JavaSE/jsd2206-se-teacher/src/homework/day04/note.txt	(revision 7c61fd655c39b460388e34c5d1ccaa2786995711)
++++ /dev/null	(revision 7c61fd655c39b460388e34c5d1ccaa2786995711)
+@@ -1,12 +0,0 @@
+-��JAVA���Գ�����ǰ����ͳ���쳣����ʽ����÷���ֵ����ʶ����
+-���ֵ��쳣��������ַ�ʽ��ȻΪ����Ա����Ϥ����ȴ�ж��������
+-
+-���ȣ�һ��API���Է�������ķ���ֵ������Щ����ֵ�������ܽ�
+-�͸÷���ֵ�Ƿ����һ���쳣��������˺͸��쳣�ľ����������Ҫ
+-����API�ĳ����Լ��жϲ����ͷ���ֵ�ĺ��塣
+-
+-��Σ���û��һ�ֻ�������֤�쳣���һ����õ��������ó����
+-�Լ򵥵ĺ��Ը÷���ֵ����Ҫ����API�ĳ���Ա��סȥ��ⷵ��ֵ��
+-�����쳣��������ַ�ʽ���ó���������߳��������ǵ�����IO
+-���������׳����쳣����Ĵ���ʱ������ĺܴ󲿷����ڴ����쳣��
+-����switch��֧���������Ŀɶ��Ա�úܲ
+Index: src/线下/JavaSE/jsd2206-se-teacher/src/homework/day03/Test01.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package homework.day03;\r\n\r\n/**\r\n * 改正下面程序的错误\r\n * \r\n * 程序实现需求:使用缓冲流完成文件的复制操作\r\n * @author Xiloer\r\n *\r\n */\r\npublic class Test01 {\r\n\tpublic static void main(String[] args){\r\n//\t\ttry(\r\n//\t\t\tFileInputStream fis = new FileInputStream(\"test.txt\");\r\n//\t\t\tBufferedInputStream bis = new BuffereddInputStream(fis);\r\n//\r\n//\t\t\tFileOutputStream fos = new FileOutputStream(\"test_cp.txt\");\r\n//\t\t\tBufferedInputStream bos = new BufferedOutputStream(fos);\r\n//\t\t) {\r\n//\t\t\tint d = 0;\r\n//\t\t\tif ((d = bis.read()) == -1) {\r\n//\t\t\t\tbos.wirte(d);\r\n//\t\t\t}\r\n//\t\t\tSystem.out.println(\"复制完毕!\");\r\n//\t\t}catch(IOException e){\r\n//\t\t\te.printStackTrace();\r\n//\t\t}\r\n\t}\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/线下/JavaSE/jsd2206-se-teacher/src/homework/day03/Test01.java b/src/线下/JavaSE/jsd2206-se-teacher/src/homework/day03/Test01.java
+--- a/src/线下/JavaSE/jsd2206-se-teacher/src/homework/day03/Test01.java	(revision 7c61fd655c39b460388e34c5d1ccaa2786995711)
++++ b/src/线下/JavaSE/jsd2206-se-teacher/src/homework/day03/Test01.java	(date 1659432289345)
+@@ -9,20 +9,21 @@
+  */
+ public class Test01 {
+ 	public static void main(String[] args){
+-//		try(
+-//			FileInputStream fis = new FileInputStream("test.txt");
+-//			BufferedInputStream bis = new BuffereddInputStream(fis);
+-//
+-//			FileOutputStream fos = new FileOutputStream("test_cp.txt");
+-//			BufferedInputStream bos = new BufferedOutputStream(fos);
+-//		) {
+-//			int d = 0;
+-//			if ((d = bis.read()) == -1) {
+-//				bos.wirte(d);
+-//			}
+-//			System.out.println("复制完毕!");
+-//		}catch(IOException e){
+-//			e.printStackTrace();
+-//		}
++	try(
++		FileInputStream fis = new FileInputStream("test.txt");
++		BufferedInputStream bis = new BuffereddInputStream(fis);
++
++		FileOutputStream fos = new FileOutputStream("test_cp.txt");
++		BufferedInputStream bos = new BufferedOutputStream(fos);
++	) {
++		int d = 0;
++		if ((d = bis.read()) != -1) {
++			bos.wirte(d);
++		}
++		System.out.println("复制完毕!");
++	bos.close();
++	}catch(IOException e){
++		e.printStackTrace();
++	}
+ 	}
+ }
