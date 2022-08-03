@@ -6,129 +6,24 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="第二次提交">
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/JSD2206_SE.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/bos.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/demo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/fos.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/fos.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/image_cp.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/img/battleship.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/img/bomb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/img/gameover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/img/mine.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/img/minesubm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/img/obsersubm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/img/sea.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/img/torpesubm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/osw.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/out/production/JSD2206_SE/file/CreateNewFileDemo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/out/production/JSD2206_SE/file/DeleteDirDemo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/out/production/JSD2206_SE/file/DeleteFileDemo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/out/production/JSD2206_SE/file/FileDemo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/out/production/JSD2206_SE/file/ListFilesDemo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/out/production/JSD2206_SE/file/ListFilesDemo2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/out/production/JSD2206_SE/file/MkDirDemo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/out/production/JSD2206_SE/file/Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/person.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/pw.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/pw2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/exception/AutoCloseableDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/exception/ExceptionApiDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/exception/FinallyDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/exception/FinallyDemo2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/exception/FinallyDemo3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/exception/IllegalAgeException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/exception/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/exception/ThrowDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/exception/ThrowsDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/exception/TryCatchDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/file/CreateNewFileDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/file/DeleteDirDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/file/DeleteFileDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/file/FileDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/file/ListFilesDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/file/ListFilesDemo2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/file/MkDirDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/file/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/file/Test2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/homework/day01/Test01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/homework/day01/Test02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/homework/day03/Test01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/homework/day03/Test02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/homework/day03/Test03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/homework/day03/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/homework/day04/Test01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/homework/day04/Test02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/homework/day04/Test03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/homework/day04/Test04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/homework/day04/note.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/io/BOSDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/io/BRDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/io/CopyDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/io/CopyDemo2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/io/CopyDemo3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/io/CurrentTimeDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/io/FISDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/io/FOSDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/io/IO总结.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/io/ISRDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/io/OISDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/io/OOSDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/io/OSWDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/io/PW.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/io/PWDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/io/PWDemo2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/io/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/io/ReadStringDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/io/WriteStringDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/io/转换流.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/lambda/LambdaDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/lambda/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/socket/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/socket/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/submarine/Battleship.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/submarine/Bomb.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/submarine/EnemyLife.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/submarine/EnemyScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/submarine/GameInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/submarine/Images.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/submarine/Mine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/submarine/MineSubmarine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/submarine/ObserveSubmarine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/submarine/SeaObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/submarine/TorpedoSubmarine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/submarine/World.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/笔记/API基础第三天英语单词.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/笔记/API基础第二天英语单词.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/笔记/API基础第五天英语单词.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/笔记/API基础第六天英语单词.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/笔记/API基础第四天英语单词.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/笔记/IO总结.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/笔记/day01.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/笔记/day01.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/笔记/day02.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/笔记/day02.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/笔记/day03.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/笔记/day03.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/笔记/day04.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/笔记/day04.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/笔记/day05.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/笔记/day05.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/笔记/image-20210427164418295.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/笔记/image-20210528141614174.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/笔记/image-20210528162433406.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/笔记/image-20220207175957369.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/笔记/image-20220209173620702.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/笔记/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/笔记/异常的分类.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/笔记/缓冲字符输出流.png" afterDir="false" />
+    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="1.3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/达内/Test01.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/Test01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/达内/Test02.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/Test02.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/达内/Test03.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/Test03.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/达内/Test04.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/Test04.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/达内/cn/tedu/submarine/Battleship.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/cn/tedu/submarine/Battleship.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/达内/day0729/Test02.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/day0729/Test02.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/达内/day0729/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/day0729/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/达内/exception/AutoCloseableDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/exception/AutoCloseableDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/达内/exception/FinallyDemo3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/exception/FinallyDemo3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/达内/exception/SubClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/exception/SubClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/达内/exception/ThrowsDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/exception/ThrowsDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/达内/exception/TryCatchDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/exception/TryCatchDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/达内/io/BRDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/io/BRDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/达内/socket/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/socket/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/达内/socket/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/socket/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/达内.iml" beforeDir="false" afterPath="$PROJECT_DIR$/达内.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +60,7 @@
         <entry key="$PROJECT_DIR$/src/线下/jsd2206-se-teacher" value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/线下/jsd2206-se-teacher" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
   </component>
@@ -203,11 +98,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\XiWang\Desktop\待\达内\src\线下" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\src\线下\JavaSE\exception" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\src\线下\JavaSE" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\src\线下\JavaSE\jsd2206-se-teacher\src\homework\day04" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\课外\作业\8.1" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\src\线下\src\_Homework" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\XiWang\Desktop\待\达内\课外\作业\8.1" />
@@ -229,7 +124,20 @@
       <recent name="项目.danei.src.first.submarine" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Client">
+  <component name="RunManager" selected="应用程序.BOSDemo">
+    <configuration name="BOSDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.BOSDemo" />
+      <module name="达内" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="socket.Client" />
       <module name="达内" />
@@ -245,19 +153,6 @@
     </configuration>
     <configuration name="ExceptionApiDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="exception.ExceptionApiDemo" />
-      <module name="达内" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="exception.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FinallyDemo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exception.FinallyDemo3" />
       <module name="达内" />
       <extension name="coverage">
         <pattern>
@@ -309,15 +204,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -325,18 +218,18 @@
     <list>
       <item itemvalue="应用程序.World" />
       <item itemvalue="应用程序.ExceptionApiDemo" />
-      <item itemvalue="应用程序.FinallyDemo3" />
       <item itemvalue="应用程序.ThrowDemo" />
       <item itemvalue="应用程序.Server" />
       <item itemvalue="应用程序.Client" />
+      <item itemvalue="应用程序.BOSDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.BOSDemo" />
         <item itemvalue="应用程序.Client" />
         <item itemvalue="应用程序.Server" />
         <item itemvalue="应用程序.ThrowDemo" />
         <item itemvalue="应用程序.ExceptionApiDemo" />
-        <item itemvalue="应用程序.FinallyDemo3" />
       </list>
     </recent_temporary>
   </component>
@@ -382,7 +275,8 @@
       <workItem from="1659399984088" duration="22994000" />
       <workItem from="1659439806464" duration="1294000" />
       <workItem from="1659441157612" duration="2213000" />
-      <workItem from="1659454095014" duration="859000" />
+      <workItem from="1659454095014" duration="990000" />
+      <workItem from="1659485838140" duration="1799000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1659442033948</created>
@@ -412,7 +306,21 @@
       <option name="project" value="LOCAL" />
       <updated>1659454443505</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1.3">
+      <created>1659455003549</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1659455003549</updated>
+    </task>
+    <task id="LOCAL-00006" summary="1.3">
+      <created>1659455021149</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1659455021149</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,7 +347,8 @@
     </ignored-roots>
     <MESSAGE value="第一次提交" />
     <MESSAGE value="第二次提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="第二次提交" />
+    <MESSAGE value="1.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.3" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
