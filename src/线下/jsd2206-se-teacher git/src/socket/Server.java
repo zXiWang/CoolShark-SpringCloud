@@ -39,15 +39,10 @@ public class Server {
                 System.out.println("等待客户端连接...");
                 Socket socket = serverSocket.accept();//阻塞方法
                 System.out.println("一个客户端连接了!");
-                //通过刚接受连接的socket,获取输入流来读取该客户端发送过来的消息
-                InputStream in = socket.getInputStream();
-                InputStreamReader isr = new InputStreamReader(in, StandardCharsets.UTF_8);
-                BufferedReader br = new BufferedReader(isr);
-
-                String line;
-                while((line = br.readLine())!=null) {
-                    System.out.println("客户端说:" + line);
-                }
+                //启动一个线程负责处理该客户端交互
+                ClientHandler handler = new ClientHandler(socket);
+                Thread t = new Thread(handler);
+                t.start();
             }
 
         } catch (IOException e) {
@@ -59,4 +54,35 @@ public class Server {
         Server server = new Server();
         server.start();
     }
+
+    /**
+     * 该线程任务负责与指定客户端进行交互
+     */
+    private class ClientHandler implements Runnable{
+        private Socket socket;
+        private String host;//记录当前对应客户端的IP地址
+
+        public ClientHandler(Socket socket){
+            this.socket = socket;
+            //通过socket获取远端计算机IP地址(获取到了客户端的)
+            host = socket.getInetAddress().getHostAddress();
+        }
+
+        public void run(){
+            try {
+                //通过刚接受连接的socket,获取输入流来读取该客户端发送过来的消息
+                InputStream in = socket.getInputStream();
+                InputStreamReader isr = new InputStreamReader(in, StandardCharsets.UTF_8);
+                BufferedReader br = new BufferedReader(isr);
+
+                String line;
+                while((line = br.readLine())!=null) {
+                    System.out.println(host+"说:" + line);
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
 }

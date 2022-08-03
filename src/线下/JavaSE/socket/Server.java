@@ -21,29 +21,48 @@ public class Server {
         }
     }
 
-    public static void main(String[] args) {
-        Server socket = new Server();
-        socket.start();
-    }
-
     public void start() {
         try {
             while (true) {
                 System.out.println("等待客户端连接......");
                 Socket socket = serverSocket.accept();
                 System.out.println("一个客户端连接了!");
+                ClientMandler handler = new ClientMandler(socket);
+                Thread t=new Thread(handler);
+                t.start();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private class ClientMandler implements Runnable {
+        private String host;
+        private Socket socket;
+        public ClientMandler(Socket socket) {
+            this.socket = socket;
+            host=socket.getInetAddress().getHostAddress();
+        }
+
+        @Override
+        public void run() {
+            try {
+
                 InputStream is = socket.getInputStream();
                 BufferedReader br = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
                 String line;
 
                 while (!"exit".equals(line = br.readLine())) {
-                    System.out.println("客户端说:" + line);
-                    System.out.println(socket.getPort());
+                    System.out.println(host+"说:" + line);
                 }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-
-        } catch (IOException e) {
-            e.printStackTrace();
         }
+    }
+
+    public static void main(String[] args) {
+        Server socket = new Server();
+        socket.start();
     }
 }
