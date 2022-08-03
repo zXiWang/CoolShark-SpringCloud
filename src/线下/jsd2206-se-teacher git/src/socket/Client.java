@@ -3,8 +3,14 @@ package socket;
 import java.io.*;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
+import java.util.Scanner;
 
 public class Client {
+    /*
+        Socket封装了TCP协议的通讯细节,使用它就可以与远端计算机建立TCP连接.并基于两个流(一个输入
+        一个输出)与远端计算机进行双向通讯
+        将Socket比喻为是一部手机
+     */
     private Socket socket;//套接字
     public Client(){
         /*
@@ -25,14 +31,32 @@ public class Client {
     public void start(){
 
         //客户端向服务端发送数据,则需要使用socket获取输出流
-        try {
+        try{
             OutputStream out = socket.getOutputStream();
             OutputStreamWriter osw = new OutputStreamWriter(out, StandardCharsets.UTF_8);
             BufferedWriter bw = new BufferedWriter(osw);
             PrintWriter pw = new PrintWriter(bw,true);
-            pw.println("你好服务端!");
+
+            Scanner scanner = new Scanner(System.in);
+            while(true) {
+                String line = scanner.nextLine();
+                if("exit".equals(line)){
+                    break;
+                }
+                pw.println(line);
+            }
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+            try {
+                /*
+                    Socket的close方法里封装了与服务端4次挥手操作.与服务端断开连接.
+                    并且该close还会在内部将通过socket获取的输入流与输出流关闭.
+                 */
+                socket.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 

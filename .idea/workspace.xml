@@ -6,24 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="1.3">
+    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="1.4 移动">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/达内/Test01.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/Test01.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/达内/Test02.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/Test02.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/达内/Test03.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/Test03.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/达内/Test04.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/Test04.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/达内/cn/tedu/submarine/Battleship.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/cn/tedu/submarine/Battleship.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/达内/day0729/Test02.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/day0729/Test02.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/达内/day0729/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/day0729/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/达内/exception/AutoCloseableDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/exception/AutoCloseableDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/达内/exception/FinallyDemo3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/exception/FinallyDemo3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/达内/exception/SubClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/exception/SubClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/达内/exception/ThrowsDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/exception/ThrowsDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/达内/exception/TryCatchDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/exception/TryCatchDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/达内/io/BRDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/io/BRDemo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/达内/socket/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/socket/Client.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/达内/socket/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/socket/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/达内.iml" beforeDir="false" afterPath="$PROJECT_DIR$/达内.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/JavaSE/socket/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/JavaSE/socket/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/JavaSE/socket/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/JavaSE/socket/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,11 +93,11 @@
       <recent name="C:\Users\XiWang\Desktop\待\达内\课外\作业\8.1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\XiWang\Desktop\待\达内\testfile" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\课外\作业\8.1" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\课外\作业\8\1" />
       <recent name="C:\Users\XiWang\Desktop\待\达内" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\课外\课件" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\src\线下\src\apiday02" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="项目.submarine.src.cn.tedu.submarine" />
@@ -124,7 +112,7 @@
       <recent name="项目.danei.src.first.submarine" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.BOSDemo">
+  <component name="RunManager" selected="应用程序.ThreadDemo1">
     <configuration name="BOSDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.BOSDemo" />
       <module name="达内" />
@@ -138,7 +126,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="socket.Client" />
       <module name="达内" />
       <extension name="coverage">
@@ -151,12 +139,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExceptionApiDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exception.ExceptionApiDemo" />
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="socket.Server" />
       <module name="达内" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exception.*" />
+          <option name="PATTERN" value="socket.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -164,8 +152,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="socket.Server" />
+    <configuration name="ThreadDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="socket.ThreadDemo1" />
       <module name="达内" />
       <extension name="coverage">
         <pattern>
@@ -217,19 +205,19 @@
     </configuration>
     <list>
       <item itemvalue="应用程序.World" />
-      <item itemvalue="应用程序.ExceptionApiDemo" />
       <item itemvalue="应用程序.ThrowDemo" />
       <item itemvalue="应用程序.Server" />
       <item itemvalue="应用程序.Client" />
       <item itemvalue="应用程序.BOSDemo" />
+      <item itemvalue="应用程序.ThreadDemo1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.BOSDemo" />
+        <item itemvalue="应用程序.ThreadDemo1" />
         <item itemvalue="应用程序.Client" />
         <item itemvalue="应用程序.Server" />
+        <item itemvalue="应用程序.BOSDemo" />
         <item itemvalue="应用程序.ThrowDemo" />
-        <item itemvalue="应用程序.ExceptionApiDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -276,7 +264,7 @@
       <workItem from="1659439806464" duration="1294000" />
       <workItem from="1659441157612" duration="2213000" />
       <workItem from="1659454095014" duration="990000" />
-      <workItem from="1659485838140" duration="1799000" />
+      <workItem from="1659485838140" duration="7830000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1659442033948</created>
@@ -320,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659455021149</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="1.4 移动">
+      <created>1659488935351</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1659488935351</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,7 +343,8 @@
     <MESSAGE value="第一次提交" />
     <MESSAGE value="第二次提交" />
     <MESSAGE value="1.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.3" />
+    <MESSAGE value="1.4 移动" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.4 移动" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

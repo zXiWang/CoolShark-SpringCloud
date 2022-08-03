@@ -12,6 +12,11 @@ import java.nio.charset.StandardCharsets;
  * 聊天室服务端
  */
 public class Server {
+    /*
+        运行在服务端的ServerSocket,主要作用两个:
+        1:开启服务端口,客户端就是通过这个端口与服务端建立连接的.(ServerSocket构造方法)
+        2:监听该端口,一旦一个客户端连接时,就会返回一个Socket实例与其通讯.(accept()方法的作用)
+     */
     private ServerSocket serverSocket;
     public Server(){
         try {
@@ -30,19 +35,20 @@ public class Server {
     public void start(){
 
         try {
-            System.out.println("等待客户端连接...");
-            Socket socket = serverSocket.accept();//阻塞方法
-            System.out.println("一个客户端连接了!");
+            while(true) {
+                System.out.println("等待客户端连接...");
+                Socket socket = serverSocket.accept();//阻塞方法
+                System.out.println("一个客户端连接了!");
+                //通过刚接受连接的socket,获取输入流来读取该客户端发送过来的消息
+                InputStream in = socket.getInputStream();
+                InputStreamReader isr = new InputStreamReader(in, StandardCharsets.UTF_8);
+                BufferedReader br = new BufferedReader(isr);
 
-            //通过刚接受连接的socket,获取输入流来读取该客户端发送过来的消息
-            InputStream in = socket.getInputStream();
-            InputStreamReader isr = new InputStreamReader(in, StandardCharsets.UTF_8);
-            BufferedReader br = new BufferedReader(isr);
-
-            String line = br.readLine();
-            System.out.println("客户端说:"+line);
-
-
+                String line;
+                while((line = br.readLine())!=null) {
+                    System.out.println("客户端说:" + line);
+                }
+            }
 
         } catch (IOException e) {
             e.printStackTrace();
