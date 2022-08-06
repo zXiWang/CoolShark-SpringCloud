@@ -29,6 +29,12 @@ public class Client {
         }
     }
     public void start(){
+        //将读取来自服务端消息的线程启动起来
+        ServerHandler serverHandler = new ServerHandler();
+        Thread t = new Thread(serverHandler);
+        t.setDaemon(true);
+        t.start();
+
 
         //客户端向服务端发送数据,则需要使用socket获取输出流
         try{
@@ -36,7 +42,6 @@ public class Client {
             OutputStreamWriter osw = new OutputStreamWriter(out, StandardCharsets.UTF_8);
             BufferedWriter bw = new BufferedWriter(osw);
             PrintWriter pw = new PrintWriter(bw,true);
-
             Scanner scanner = new Scanner(System.in);
             while(true) {
                 String line = scanner.nextLine();
@@ -63,6 +68,24 @@ public class Client {
     public static void main(String[] args) {
         Client client = new Client();
         client.start();
+    }
+
+    private class ServerHandler implements Runnable{
+        public void run(){
+            try {
+                //通过socket获取输入流,用于读物服务端发送过来的消息
+                InputStream in = socket.getInputStream();
+                InputStreamReader isr = new InputStreamReader(in, StandardCharsets.UTF_8);
+                BufferedReader br = new BufferedReader(isr);
+
+                String line;
+                while((line = br.readLine())!=null){
+                    System.out.println(line);
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
 }
