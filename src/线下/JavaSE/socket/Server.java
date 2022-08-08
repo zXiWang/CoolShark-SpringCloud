@@ -1,16 +1,17 @@
 package socket;
 
 import java.io.*;
-import java.lang.reflect.Array;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collection;
 
 public class Server {
     private ServerSocket serverSocket;
 
-    public PrintWriter[] allOut={};
+    //    public PrintWriter[] allOut={};
+    private Collection<PrintWriter> allOut = new ArrayList<>();
 
     public Server() {
         try {
@@ -29,7 +30,7 @@ public class Server {
                 Socket socket = serverSocket.accept();
                 System.out.println("一个客户端连接了!");
                 ClientMandler handler = new ClientMandler(socket);
-                Thread t=new Thread(handler);
+                Thread t = new Thread(handler);
                 t.start();
             }
         } catch (IOException e) {
@@ -40,61 +41,64 @@ public class Server {
     private class ClientMandler implements Runnable {
         private String host;
         private Socket socket;
+
         public ClientMandler(Socket socket) {
             this.socket = socket;
-            host=socket.getInetAddress().getHostAddress();
+            host = socket.getInetAddress().getHostAddress();
         }
 
         @Override
         public void run() {
-            PrintWriter pw=null;
+            PrintWriter pw = null;
             try {
 
                 InputStream is = socket.getInputStream();
                 BufferedReader br = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
 
                 OutputStream os = socket.getOutputStream();
-                pw = new PrintWriter(new BufferedWriter(new OutputStreamWriter(os, StandardCharsets.UTF_8)),true);
+                pw = new PrintWriter(new BufferedWriter(new OutputStreamWriter(os, StandardCharsets.UTF_8)), true);
 
                 synchronized (Server.this) {
-                    allOut= Arrays.copyOf(allOut, allOut.length+1);
-                    allOut[allOut.length - 1] =pw;
+//                    allOut= Arrays.copyOf(allOut, allOut.length+1);
+//                    allOut[allOut.length - 1] =pw;
+                    allOut.add(pw);
                 }
 
-                sendMessage(host+"上线了,当前在线人数:"+allOut.length);
+                sendMessage(host + "上线了,当前在线人数:" + allOut.size());
                 String line;
 
-                while ((line = br.readLine())!=null) {
-                    sendMessage(host+"说:" + line);
+                while ((line = br.readLine()) != null) {
+                    sendMessage(host + "说:" + line);
                 }
             } catch (IOException e) {
                 e.printStackTrace();
-            }finally {
-                synchronized (Server.this){
-                    for (int i = 0; i < allOut.length; i++){
-                        if (allOut[i]==pw){
-                            allOut[i]= allOut[allOut.length - 1];
-                            allOut=Arrays.copyOf(allOut, allOut.length-1);
-                            break;
-                        }
-
-                    }
+            } finally {
+                synchronized (allOut) {
+//                    for (int i = 0; i < allOut.size(); i++){
+//                            allOut[i]= allOut[allOut.length - 1];
+//                            allOut=Arrays.copyOf(allOut, allOut.length-1);
+//                            break;
                 }
+                allOut.remove(pw);
+            }
 
-                sendMessage(host+"下线了,当前在线人数:"+allOut.length);
-                try{
-                    socket.close();
-                }catch (IOException e) {
-                    e.printStackTrace();
-                }
+            sendMessage(host + "下线了,当前在线人数:" + allOut.size());
+            try {
+                socket.close();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         }
-        private void sendMessage(String message){
-            System.out.println(message);
-            for (int i = 0; i < allOut.length; i++) {
-                allOut[i].println(message);
+    }
+
+    private void sendMessage(String message) {
+        System.out.println(message);
+        synchronized (allOut) {
+            for (PrintWriter pw : allOut) {
+                pw.println(message);
             }
         }
+
     }
 
     public static void main(String[] args) {

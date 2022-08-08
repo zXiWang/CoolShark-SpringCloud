@@ -10,7 +10,7 @@ public class Client extends JPanel {
     private Socket socket;
 
     public Client() throws IOException {
-        socket = new Socket("176.13.14.3", 8088);
+        socket = new Socket("localhost", 8088);
 //        176.13.14.3
     }
 

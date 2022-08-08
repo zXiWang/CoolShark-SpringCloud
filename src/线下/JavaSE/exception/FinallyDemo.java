@@ -8,22 +8,50 @@ package exception;
  * 通常我们使用finally去完成资源释放这类操作,比如IO中的关闭流操作.
  */
 public class FinallyDemo {
-    public static void main(String[] args) {
-
-
-        System.out.println("程序开始了");
-        try {
-            String str = "null";
-            System.out.println(str.length());
-            return;
-        } catch (Exception e) {
-            System.out.println("出错了");
-        } finally {
-            System.out.println("finally中的代码执行了");
+    static class TestException {
+        public static void main(String[] args) {
+            int result;
+            try {
+                result = foo();
+            } catch (Exception e) {
+                System.out.println(e.getMessage());    //输出：我是finaly中的Exception
+            }
         }
-        System.out.println("程序结束了");
-    }
-}
+        //catch中的异常被抑制
+        @SuppressWarnings("finally")
+        public static int foo() throws Exception {
+            try {
+                int a = 5 / 0;
+                return 1;
+            } catch (ArithmeticException amExp) {
+                throw new Exception("我将被忽略，因为下面的finally中抛出了新的异常");
+            } finally {
+                throw new Exception("我是finaly中的Exception");
+            }
+        }
+
+//        public static void main(String[] args) {
+//            int result;
+//            try {
+//                result = foo();
+//                System.out.println(result);           //输出100
+//            } catch (Exception e) {
+//                System.out.println(e.getMessage());    //没有捕获到异常
+//            }
+//        }
+//        //catch中的异常被抑制
+//        @SuppressWarnings("finally")
+//        public static int foo() throws Exception {
+//            try {
+//                int a = 5 / 0;
+//                return 1;
+//            } catch (ArithmeticException amExp) {
+//                throw new Exception("我将被忽略，因为下面的finally中使用了return");
+//            } finally {
+//                return 100;
+//            }
+//        }
+    }}
 
 
 

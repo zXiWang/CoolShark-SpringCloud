@@ -6,16 +6,16 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="1.5 更新同步线程">
+    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="1.6 Collection">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/达内/file/MkDirDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/file/MkDirDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/达内/exception/FinallyDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/exception/FinallyDemo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/达内/socket/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/socket/Client.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/达内/socket/Server$ClientMandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/socket/Server$ClientMandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/达内/socket/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/socket/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/JavaSE/exception/FinallyDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/JavaSE/exception/FinallyDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/线下/JavaSE/socket/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/JavaSE/socket/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/线下/JavaSE/socket/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/JavaSE/socket/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/socket/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/socket/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/socket/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git/src/socket/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/达内.iml" beforeDir="false" afterPath="$PROJECT_DIR$/达内.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +52,7 @@
         <entry key="$PROJECT_DIR$/src/线下/jsd2206-se-teacher" value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/线下/jsd2206-se-teacher" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
   </component>
@@ -82,21 +82,21 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/线下/src" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/线下/jsd2206-se-teacher git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/线下/src/_Homework" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31911263" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\XiWang\Desktop\待\达内\src\线下\src\_Homework" />
+      <recent name="C:\Users\XiWang\Desktop\待\达内\课外\作业" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\src\线下\jsd2206-se-teacher git" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\src\线下\JavaSE\thread" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\src\线下" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\src\线下\JavaSE\exception" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\src\线下\JavaSE" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\XiWang\Desktop\待\达内\testfile" />
@@ -118,22 +118,9 @@
       <recent name="项目.danei.src.first.submarine" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.CollectionDemo3">
-    <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="socket.Client" />
-      <module name="达内" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="socket.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CollectionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="collection.CollectionDemo" />
+  <component name="RunManager" selected="应用程序.Test04">
+    <configuration name="ArrayToListDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="collection.ArrayToListDemo" />
       <module name="达内" />
       <extension name="coverage">
         <pattern>
@@ -145,12 +132,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CollectionDemo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="collection.CollectionDemo2" />
+    <configuration name="Test01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day09.Test01" />
       <module name="达内" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="collection.*" />
+          <option name="PATTERN" value="day09.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,12 +145,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CollectionDemo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="collection.CollectionDemo3" />
+    <configuration name="Test02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day09.Test02" />
       <module name="达内" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="collection.*" />
+          <option name="PATTERN" value="day09.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -171,12 +158,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="socket.Server" />
+    <configuration name="Test03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day09.Test03" />
       <module name="达内" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="socket.*" />
+          <option name="PATTERN" value="day09.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day09.Test04" />
+      <module name="达内" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day09.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -198,21 +198,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="应用程序.World" />
-      <item itemvalue="应用程序.Client" />
-      <item itemvalue="应用程序.Server" />
-      <item itemvalue="应用程序.CollectionDemo" />
-      <item itemvalue="应用程序.CollectionDemo2" />
-      <item itemvalue="应用程序.CollectionDemo3" />
+      <item itemvalue="应用程序.ArrayToListDemo" />
+      <item itemvalue="应用程序.Test01" />
+      <item itemvalue="应用程序.Test02" />
+      <item itemvalue="应用程序.Test03" />
+      <item itemvalue="应用程序.Test04" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.CollectionDemo3" />
-        <item itemvalue="应用程序.CollectionDemo2" />
-        <item itemvalue="应用程序.CollectionDemo" />
-        <item itemvalue="应用程序.Client" />
-        <item itemvalue="应用程序.Server" />
+        <item itemvalue="应用程序.Test04" />
+        <item itemvalue="应用程序.Test03" />
+        <item itemvalue="应用程序.Test02" />
+        <item itemvalue="应用程序.Test01" />
+        <item itemvalue="应用程序.ArrayToListDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -264,7 +275,9 @@
       <workItem from="1659584491160" duration="8647000" />
       <workItem from="1659659649706" duration="58000" />
       <workItem from="1659659728319" duration="21723000" />
-      <workItem from="1659748207166" duration="1162000" />
+      <workItem from="1659748207166" duration="14608000" />
+      <workItem from="1659776497176" duration="140000" />
+      <workItem from="1659918636512" duration="26104000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1659442033948</created>
@@ -343,7 +356,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659659819687</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="1.6 Collection">
+      <created>1659751217068</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1659751217068</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,7 +394,8 @@
     <MESSAGE value="1.4 移动" />
     <MESSAGE value="1.5 更新线程" />
     <MESSAGE value="1.5 更新同步线程" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.5 更新同步线程" />
+    <MESSAGE value="1.6 Collection" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.6 Collection" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
