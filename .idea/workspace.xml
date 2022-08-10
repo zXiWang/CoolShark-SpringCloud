@@ -5,16 +5,23 @@
       <artifact name="达内:jar" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="1.6 Collection">
+    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="1.7 Collection,ArrayList,List">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2022_8_2_19_16_06____.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2022_8_2_19_16_06_取消提交了变更_[默认变更列表]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/达内/exception/FinallyDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/exception/FinallyDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/达内/socket/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/socket/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/达内/socket/Server$ClientMandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/socket/Server$ClientMandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/达内/socket/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/达内/socket/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/线下/JavaSE/exception/FinallyDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/JavaSE/exception/FinallyDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/线下/JavaSE/socket/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/JavaSE/socket/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/线下/JavaSE/socket/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/JavaSE/socket/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/src/_Homework/day09/Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/src/_Homework/day0808/Test01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/src/_Homework/day09/Test02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/src/_Homework/day0808/Test02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/src/_Homework/day09/Test03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/src/_Homework/day0808/Test03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/src/_Homework/day09/Test04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/src/_Homework/day0808/Test04.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/达内.iml" beforeDir="false" afterPath="$PROJECT_DIR$/达内.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +34,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -76,19 +84,21 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/线下/src" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/线下/src/_Homework" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SB2206" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31911263" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -99,11 +109,11 @@
       <recent name="C:\Users\XiWang\Desktop\待\达内\src\线下" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\XiWang\Desktop\待\达内\SB2206\src\main\resources\static" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\testfile" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\课外\作业\8.1" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\课外\作业\8\1" />
       <recent name="C:\Users\XiWang\Desktop\待\达内" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\课外\课件" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="项目.submarine.src.cn.tedu.submarine" />
@@ -118,9 +128,16 @@
       <recent name="项目.danei.src.first.submarine" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Test04">
-    <configuration name="ArrayToListDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="collection.ArrayToListDemo" />
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="应用程序.SortListDemo3">
+    <configuration name="SortListDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="collection.SortListDemo" />
       <module name="达内" />
       <extension name="coverage">
         <pattern>
@@ -132,12 +149,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day09.Test01" />
+    <configuration name="SortListDemo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="collection.SortListDemo2" />
       <module name="达内" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day09.*" />
+          <option name="PATTERN" value="collection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,12 +162,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day09.Test02" />
+    <configuration name="SortListDemo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="collection.SortListDemo3" />
       <module name="达内" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day09.*" />
+          <option name="PATTERN" value="collection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -159,11 +176,11 @@
       </method>
     </configuration>
     <configuration name="Test03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day09.Test03" />
+      <option name="MAIN_CLASS_NAME" value="day0808.Test03" />
       <module name="达内" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day09.*" />
+          <option name="PATTERN" value="day0808.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -172,11 +189,11 @@
       </method>
     </configuration>
     <configuration name="Test04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day09.Test04" />
+      <option name="MAIN_CLASS_NAME" value="day0808.Test04" />
       <module name="达内" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day09.*" />
+          <option name="PATTERN" value="day0808.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -198,32 +215,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="Demo1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo1" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.Demo1Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sb2206Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SB2206" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tedu.sb2206.Sb2206Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.Demo1Application" />
+      <item itemvalue="Spring Boot.Sb2206Application" />
       <item itemvalue="应用程序.World" />
-      <item itemvalue="应用程序.ArrayToListDemo" />
-      <item itemvalue="应用程序.Test01" />
-      <item itemvalue="应用程序.Test02" />
       <item itemvalue="应用程序.Test03" />
       <item itemvalue="应用程序.Test04" />
+      <item itemvalue="应用程序.SortListDemo" />
+      <item itemvalue="应用程序.SortListDemo3" />
+      <item itemvalue="应用程序.SortListDemo2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.SortListDemo3" />
+        <item itemvalue="应用程序.SortListDemo2" />
+        <item itemvalue="应用程序.SortListDemo" />
         <item itemvalue="应用程序.Test04" />
         <item itemvalue="应用程序.Test03" />
-        <item itemvalue="应用程序.Test02" />
-        <item itemvalue="应用程序.Test01" />
-        <item itemvalue="应用程序.ArrayToListDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -277,7 +299,10 @@
       <workItem from="1659659728319" duration="21723000" />
       <workItem from="1659748207166" duration="14608000" />
       <workItem from="1659776497176" duration="140000" />
-      <workItem from="1659918636512" duration="26104000" />
+      <workItem from="1659918636512" duration="30176000" />
+      <workItem from="1660004563156" duration="11885000" />
+      <workItem from="1660029738865" duration="12008000" />
+      <workItem from="1660092310980" duration="953000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1659442033948</created>
@@ -363,7 +388,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659751217068</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="1.7 Collection,ArrayList,List">
+      <created>1659952717421</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1659952717421</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,7 +427,8 @@
     <MESSAGE value="1.5 更新线程" />
     <MESSAGE value="1.5 更新同步线程" />
     <MESSAGE value="1.6 Collection" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.6 Collection" />
+    <MESSAGE value="1.7 Collection,ArrayList,List" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.7 Collection,ArrayList,List" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
