@@ -9,20 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="1.7 Collection,ArrayList,List">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2022_8_2_19_16_06____.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2022_8_2_19_16_06_取消提交了变更_[默认变更列表]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="1.8 html">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/线下/src/_Homework/day09/Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/src/_Homework/day0808/Test01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/线下/src/_Homework/day09/Test02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/src/_Homework/day0808/Test02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/线下/src/_Homework/day09/Test03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/src/_Homework/day0808/Test03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/线下/src/_Homework/day09/Test04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/src/_Homework/day0808/Test04.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/达内.iml" beforeDir="false" afterPath="$PROJECT_DIR$/达内.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SB2206/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SB2206/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SB2206/src/main/java/com/tedu/sb2206/Sb2206Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/SB2206/src/main/java/com/tedu/sb2206/Sb2206Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SB2206/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/SB2206/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SB2206/src/main/resources/static/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/SB2206/src/main/resources/static/reg.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +78,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -92,7 +89,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/线下/src" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/SB2206" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SB2206/src/main/resources/static" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
@@ -102,18 +99,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\XiWang\Desktop\待\达内\SB2206\src\main\resources\static" />
+      <recent name="C:\Users\XiWang\Desktop\待\达内\SB2206\src\main\resources" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\src\线下\src\_Homework" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\课外\作业" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\src\线下\jsd2206-se-teacher git" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\src\线下\JavaSE\thread" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\src\线下" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\XiWang\Desktop\待\达内\SB2206\src\main\resources\static1" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\SB2206\src\main\resources\static" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\testfile" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\课外\作业\8.1" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\课外\作业\8\1" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="项目.submarine.src.cn.tedu.submarine" />
@@ -135,7 +132,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="应用程序.SortListDemo3">
+  <component name="RunManager" selected="Spring Boot.Sb2206Application">
     <configuration name="SortListDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="collection.SortListDemo" />
       <module name="达内" />
@@ -215,9 +212,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="demo1" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.Demo1Application" />
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -230,7 +231,6 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.Demo1Application" />
       <item itemvalue="Spring Boot.Sb2206Application" />
       <item itemvalue="应用程序.World" />
       <item itemvalue="应用程序.Test03" />
@@ -302,7 +302,8 @@
       <workItem from="1659918636512" duration="30176000" />
       <workItem from="1660004563156" duration="11885000" />
       <workItem from="1660029738865" duration="12008000" />
-      <workItem from="1660092310980" duration="953000" />
+      <workItem from="1660092310980" duration="25902000" />
+      <workItem from="1660179293894" duration="4002000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1659442033948</created>
@@ -395,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659952717421</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="1.8 html">
+      <created>1660093432431</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1660093432431</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,7 +436,8 @@
     <MESSAGE value="1.5 更新同步线程" />
     <MESSAGE value="1.6 Collection" />
     <MESSAGE value="1.7 Collection,ArrayList,List" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.7 Collection,ArrayList,List" />
+    <MESSAGE value="1.8 html" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.8 html" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

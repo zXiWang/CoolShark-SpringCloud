@@ -9,8 +9,9 @@
       text-align: center;
       line-height: 40px;
       margin: 0 auto;
-      border: 2px solid;
+      border: 1px solid;
         border-bottom: 0;
+
     }
 
     .d1 {
@@ -33,37 +34,40 @@
 <body>
 
   <h1 style="text-align: center;">用户注册</h1>
+  <form action="/regUser" method="get">
   <div style="width:300px;border: 0">
     <div style="height: 40px;border:0">
       <div class="d1">
         <b>用户名:</b>
       </div>
       <div style="height: 40px;">
-        <input type="text">
+        <input name="username" type="text">
       </div>
     </div>
     <div style="height: 40px;">
       <div class="d1">
         <b>密码:</b>
       </div>
-      <input type="text">
+      <input name="password" type="text">
     </div>
     <div style="height: 40px;">
       <div class="d1">
         <b>昵称:</b>
       </div>
-      <input type="text">
+      <input name="nickname" type="text">
     </div>
     <div style="height: 40px;">
       <div class="d1">
         <b>年龄:</b>
       </div>
-      <input type="text">
+      <input name="age" type="text">
     </div>
-    <div style="height: 40px;border-bottom: 1px solid;">
-      <a href="https://0x3.com/"><button value="注册" >注册</button></a>
+    <div style="height: 40px;border-bottom: 01px solid;">
+      <a ><button type="submit" value="注册" >注册</button></a>
     </div>
   </div>
+  </form>
 </body>
 
 </html>
+

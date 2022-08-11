@@ -1,8 +1,10 @@
 package com.tedu.sb2206;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.AutoConfigurationPackage;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@AutoConfigurationPackage
 @SpringBootApplication
 public class Sb2206Application {
 
