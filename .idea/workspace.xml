@@ -9,13 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="1.8 html">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="1.8 html login">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SB2206/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/src/main/java/com/tedu/sb2206/Sb2206Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/SB2206/src/main/java/com/tedu/sb2206/Sb2206Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SB2206/src/main/java/com/tedu/sb2206/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SB2206/src/main/java/com/tedu/sb2206/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SB2206/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/SB2206/src/main/resources/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SB2206/src/main/resources/static/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/SB2206/src/main/resources/static/reg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/users/104033102412.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/users/1040331024321434.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/users/123.obj" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -303,7 +304,9 @@
       <workItem from="1660004563156" duration="11885000" />
       <workItem from="1660029738865" duration="12008000" />
       <workItem from="1660092310980" duration="25902000" />
-      <workItem from="1660179293894" duration="4002000" />
+      <workItem from="1660179293894" duration="20812000" />
+      <workItem from="1660211247488" duration="148000" />
+      <workItem from="1660211416321" duration="1230000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1659442033948</created>
@@ -403,7 +406,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660093432431</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="1.8 html login">
+      <created>1660183394317</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1660183394317</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,7 +447,8 @@
     <MESSAGE value="1.6 Collection" />
     <MESSAGE value="1.7 Collection,ArrayList,List" />
     <MESSAGE value="1.8 html" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.8 html" />
+    <MESSAGE value="1.8 html login" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.8 html login" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

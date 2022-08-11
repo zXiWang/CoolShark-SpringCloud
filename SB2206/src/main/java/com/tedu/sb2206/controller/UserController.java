@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 public class UserController {
@@ -60,28 +62,6 @@ public class UserController {
 
     }
 
-//    public Result login(String name, String password) {
-//
-//        User user = null;
-//        try {
-//            InputStream in = new BufferedInputStream(new FileInputStream(new File(userDir, name + ".obj")));
-//            ObjectInputStream ois = new ObjectInputStream(in);
-//            if ((user = (User) ois.readObject()) != null) {
-//                if (name.equals("") || password.equals("")) {
-//                    return new Result("500", "用户名和密码不能为空!", null);
-//                } else if (!name.equals(user.getUsername()) || !password.equals(user.getPassword())) {
-//                    return new Result("502", "用户名或密码错误!", null);
-//                }
-//            } else {
-//                return new Result("501", "用户不存在!", null);
-//            }
-//        } catch (IOException | ClassNotFoundException e) {
-//            e.printStackTrace();
-//        }
-//
-//        return new Result("200", "登陆成功!", null);
-//    }
-
     @RequestMapping("/regUser")
     public void reg(HttpServletRequest request, HttpServletResponse response) {
         System.out.println("处理注册中......");
@@ -124,14 +104,79 @@ public class UserController {
 
         try {
 
-            /*
-                让浏览器重定向到指定的路径查看处理结果页面
-                这里的路径"/reg_success.html"是发送给浏览器让其理解的.
-                所以浏览器还是当这里的"/"为抽象路径中第一个"/"的位置
-                相当于浏览器会根据该路径请求:
-                http://localhost:8080/reg_success.html
-             */
             response.sendRedirect("/reg_success.html");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @RequestMapping("/userList")
+    public void userList(HttpServletRequest request, HttpServletResponse response) {
+        System.out.println("开始......................");
+        List<User> userList = new ArrayList<>();
+        File[] files = userDir.listFiles(f -> f.getName().endsWith(".obj"));
+        for (File file : files) {
+            try (FileInputStream fis = new FileInputStream(file);
+                 ObjectInputStream ois = new ObjectInputStream(fis)) {
+
+                User user = (User) ois.readObject();
+                userList.add(user);
+            } catch (IOException | ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+        }
+        try {
+            response.setContentType("text/html;charset=UTF-8");
+            PrintWriter pw = response.getWriter();
+            pw.println("<!DOCTYPE html>");
+            pw.println("<html lang=\"en\">");
+            pw.println("<head>");
+            pw.println("<meta charset=\"UTF-8\">");
+            pw.println("<title>用户列表</title>");
+            pw.println("</head>");
+            pw.println("<body>");
+            pw.println("<center>");
+            pw.println("<h1>用户列表</h1>");
+            pw.println("<table border=\"1\">");
+            pw.println("<tr>");
+            pw.println("<td>用户名</td>");
+            pw.println("<td>密码</td>");
+            pw.println("<td>昵称</td>");
+            pw.println("<td>年龄</td>");
+            pw.println("<td>操作</td>");
+            pw.println("</tr>");
+            for (User user : userList) {
+                pw.println("<tr>");
+                pw.println("<td>" + user.getUsername() + "</td>");
+                pw.println("<td>" + user.getPassword() + "</td>");
+                pw.println("<td>" + user.getNickname() + "</td>");
+                pw.println("<td>" + user.getAge() + "</td>");
+                pw.println("<td><a href='/deleteUser?username=" + user.getUsername() + "'>删除</a></td>");
+                pw.println("</tr>");
+            }
+            pw.println("</table>");
+            pw.println("<p>" + userList + "</p>");
+            pw.println("</center>");
+            pw.println("</body>");
+            pw.println("</html>");
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+        System.out.println(userList);
+    }
+
+    @RequestMapping("/deleteUser")
+    public void delete(HttpServletRequest request, HttpServletResponse response) {
+        System.out.println("开始处理......");
+        String username = request.getParameter("username");
+        System.out.println("要删除的用户" + username);
+        File file = new File(userDir, username + ".obj");
+        file.delete();
+        try {
+            response.sendRedirect("/userList");
         } catch (IOException e) {
             e.printStackTrace();
         }
