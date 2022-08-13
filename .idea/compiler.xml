@@ -7,12 +7,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="V1" />
+        <module name="V2" />
+        <module name="V3" />
         <module name="SB2206" />
+        <module name="V4" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo1" target="1.8" />
       <module name="SB2206" target="1.8" />
+      <module name="V1" target="1.8" />
+      <module name="V2" target="1.8" />
+      <module name="V3" target="1.8" />
+      <module name="V4" target="1.8" />
+      <module name="WS2206" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

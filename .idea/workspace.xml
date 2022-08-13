@@ -9,14 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="1.8 html login">
+    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="1.9 map spring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/src/main/java/com/tedu/sb2206/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SB2206/src/main/java/com/tedu/sb2206/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/SB2206/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/src/main/resources/static/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/SB2206/src/main/resources/static/reg.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testfile/users/104033102412.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testfile/users/1040331024321434.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testfile/users/123.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WS2206/V4/src/main/java/com/webserver/core/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/WS2206/V4/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WS2206/V4/target/classes/com/webserver/core/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/WS2206/V4/target/classes/com/webserver/core/ClientHandler.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -71,6 +67,7 @@
   </component>
   <component name="ProjectId" id="2BpIyeeuLPYpIckuAWmtPqgKB6s" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -90,21 +87,21 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/线下/src" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/SB2206/src/main/resources/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/WS2206/V4" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31911263" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\XiWang\Desktop\待\达内\SB2206\src\main\resources\static" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\SB2206\src\main\resources" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\src\线下\src\_Homework" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\课外\作业" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\src\线下\jsd2206-se-teacher git" />
+      <recent name="C:\Users\XiWang\Desktop\待\达内\WS2206\V4" />
+      <recent name="C:\Users\XiWang\Desktop\待\达内\WS2206\V3" />
+      <recent name="C:\Users\XiWang\Desktop\待\达内\WS2206\V2\src\main" />
+      <recent name="C:\Users\XiWang\Desktop\待\达内\WS2206\V2\src\main\java\com\webserver\core" />
+      <recent name="C:\Users\XiWang\Desktop\待\达内\WS2206\V1\src\main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\XiWang\Desktop\待\达内\SB2206\src\main\resources\static1" />
@@ -133,13 +130,13 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Sb2206Application">
-    <configuration name="SortListDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="collection.SortListDemo" />
+  <component name="RunManager" selected="应用程序.WebServerApplication (3)">
+    <configuration name="MapDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="map.MapDemo1" />
       <module name="达内" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="collection.*" />
+          <option name="PATTERN" value="map.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,65 +144,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortListDemo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="collection.SortListDemo2" />
-      <module name="达内" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="collection.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SortListDemo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="collection.SortListDemo3" />
-      <module name="达内" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="collection.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day0808.Test03" />
-      <module name="达内" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day0808.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day0808.Test04" />
-      <module name="达内" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day0808.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="World" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration name="MapDemo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="MAIN_CLASS_NAME" value="项目.shoot.World" />
+      <option name="MAIN_CLASS_NAME" value="map.MapDemo2" />
       <module name="达内" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="项目.shoot.*" />
+          <option name="PATTERN" value="map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebServerApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.webserver.core.WebServerApplication" />
+      <module name="V2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.webserver.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebServerApplication (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.webserver.core.WebServerApplication" />
+      <module name="V3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.webserver.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebServerApplication (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.webserver.core.WebServerApplication" />
+      <module name="V4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.webserver.core.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -233,24 +217,26 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.Sb2206Application" />
-      <item itemvalue="应用程序.World" />
-      <item itemvalue="应用程序.Test03" />
-      <item itemvalue="应用程序.Test04" />
-      <item itemvalue="应用程序.SortListDemo" />
-      <item itemvalue="应用程序.SortListDemo3" />
-      <item itemvalue="应用程序.SortListDemo2" />
+      <item itemvalue="应用程序.WebServerApplication (1)" />
+      <item itemvalue="应用程序.WebServerApplication (2)" />
+      <item itemvalue="应用程序.WebServerApplication (3)" />
+      <item itemvalue="应用程序.MapDemo1" />
+      <item itemvalue="应用程序.MapDemo2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.SortListDemo3" />
-        <item itemvalue="应用程序.SortListDemo2" />
-        <item itemvalue="应用程序.SortListDemo" />
-        <item itemvalue="应用程序.Test04" />
-        <item itemvalue="应用程序.Test03" />
+        <item itemvalue="应用程序.WebServerApplication (3)" />
+        <item itemvalue="应用程序.MapDemo2" />
+        <item itemvalue="应用程序.MapDemo1" />
+        <item itemvalue="应用程序.WebServerApplication (2)" />
+        <item itemvalue="应用程序.WebServerApplication (1)" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\XiWang\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
       <changelist id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="" />
@@ -306,7 +292,9 @@
       <workItem from="1660092310980" duration="25902000" />
       <workItem from="1660179293894" duration="20812000" />
       <workItem from="1660211247488" duration="148000" />
-      <workItem from="1660211416321" duration="1230000" />
+      <workItem from="1660211416321" duration="4020000" />
+      <workItem from="1660264285382" duration="26684000" />
+      <workItem from="1660352662542" duration="1482000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1659442033948</created>
@@ -413,7 +401,21 @@
       <option name="project" value="LOCAL" />
       <updated>1660183394317</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="1.8 html article">
+      <created>1660216522563</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1660216522563</updated>
+    </task>
+    <task id="LOCAL-00017" summary="1.9 map spring">
+      <created>1660352799296</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1660352799296</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,6 +439,7 @@
       <path value="$PROJECT_DIR$/src/线下/JavaSE/teacher" />
       <path value="$PROJECT_DIR$/.." />
       <path value="$PROJECT_DIR$/src/线下" />
+      <path value="$PROJECT_DIR$/WS2206" />
     </ignored-roots>
     <MESSAGE value="第一次提交" />
     <MESSAGE value="第二次提交" />
@@ -448,7 +451,9 @@
     <MESSAGE value="1.7 Collection,ArrayList,List" />
     <MESSAGE value="1.8 html" />
     <MESSAGE value="1.8 html login" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.8 html login" />
+    <MESSAGE value="1.8 html article" />
+    <MESSAGE value="1.9 map spring" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.9 map spring" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
