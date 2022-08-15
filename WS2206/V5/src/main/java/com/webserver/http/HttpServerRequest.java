@@ -1,5 +1,4 @@
-package com.webserver.core;
-
+package com.webserver.http;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -7,36 +6,60 @@ import java.net.Socket;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * 与客户端完成一次HTTP的交互
- */
-public class ClientHandler implements Runnable {
+public class HttpServerRequest {
     private Socket socket;
+    private String method;
+    private String uri;
+    private String protocol;
+    private Map<String, String> headers = new HashMap<>();
 
-    public ClientHandler(Socket socket) {
+    public HttpServerRequest(Socket socket) {
         this.socket = socket;
+
+//        请求行
+        parseRequestLine();
+
+//        消息头
+        parseHeaders();
+
+//        正文
+        parseContent();
     }
 
-    public void run() {
-        Map<String, String> headers = new HashMap<>();
+    public String getMethod() {
+        return method;
+    }
+
+    public String getUri() {
+        return uri;
+    }
+
+    public String getProtocol() {
+        return protocol;
+    }
+
+    public String getHeaders(String name) {
+        return headers.get(name);
+    }
+
+    private void parseRequestLine() {
+
         String line = readLine();
         System.out.println("请求行:" + line);
 
-        String method;
-        String uri;
-        String protocol;
 
-        String[] data = line.split("/");
+        String[] data = line.split("\\s");
         method = data[0];
         uri = data[1];
         protocol = data[2];
         System.out.println("method:" + method);
         System.out.println("uri:" + uri);
         System.out.println("protocol:" + protocol);
+    }
 
-
+    private void parseHeaders() {
         while (true) {
-            line = readLine();
+            String line = readLine();
 
             if (line.trim().isEmpty()) {
                 break;
@@ -46,6 +69,10 @@ public class ClientHandler implements Runnable {
             System.out.println("消息头:" + line);
         }
         headers.forEach((k, y) -> System.out.println("名字:" + k + "\t\t值:" + y));
+    }
+
+    private void parseContent() {
+
     }
 
     private String readLine() {
