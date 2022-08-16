@@ -9,14 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="1.9 map spring">
+    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="2.0 springboot http响应">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V4/src/main/java/com/webserver/core/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/WS2206/V4/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V4/target/classes/com/webserver/core/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/WS2206/V4/target/classes/com/webserver/core/ClientHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WS2206/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WS2206/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WS2206/target/classes/com/webserver/core/WebServerApplication.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -91,7 +90,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/线下/src" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/WS2206/V7/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/WS2206/V13" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
@@ -101,11 +100,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\XiWang\Desktop\待\达内\WS2206\V7\src\main\resources" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\WS2206\V7" />
+      <recent name="C:\Users\XiWang\Desktop\待\达内\WS2206\V13" />
+      <recent name="C:\Users\XiWang\Desktop\待\达内\WS2206\V12" />
+      <recent name="C:\Users\XiWang\Desktop\待\达内\WS2206\V11" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\WS2206" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\WS2206\V6" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\WS2206\V5" />
+      <recent name="C:\Users\XiWang\Desktop\待\达内\WS2206\V10" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\XiWang\Desktop\待\达内\SB2206\src\main\resources\static1" />
@@ -134,14 +133,13 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="应用程序.WebServerApplication (2)">
-    <configuration name="MapDemo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="MAIN_CLASS_NAME" value="map.MapDemo2" />
-      <module name="达内" />
+  <component name="RunManager" selected="应用程序.WebServerApplication (4)">
+    <configuration name="ContentTypeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.webserver.test.ContentTypeDemo" />
+      <module name="V11" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="map.*" />
+          <option name="PATTERN" value="com.webserver.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,7 +149,7 @@
     </configuration>
     <configuration name="WebServerApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.webserver.core.WebServerApplication" />
-      <module name="V6" />
+      <module name="V11" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.webserver.core.*" />
@@ -164,7 +162,7 @@
     </configuration>
     <configuration name="WebServerApplication (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.webserver.core.WebServerApplication" />
-      <module name="V7" />
+      <module name="V12" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.webserver.core.*" />
@@ -175,9 +173,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebServerApplication (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="WebServerApplication (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.webserver.core.WebServerApplication" />
-      <module name="V4" />
+      <module name="V13" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.webserver.core.*" />
@@ -190,7 +188,7 @@
     </configuration>
     <configuration name="WebServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.webserver.core.WebServerApplication" />
-      <module name="V5" />
+      <module name="V10" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.webserver.core.*" />
@@ -221,19 +219,19 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.Sb2206Application" />
-      <item itemvalue="应用程序.WebServerApplication (3)" />
-      <item itemvalue="应用程序.MapDemo2" />
       <item itemvalue="应用程序.WebServerApplication" />
+      <item itemvalue="应用程序.ContentTypeDemo" />
       <item itemvalue="应用程序.WebServerApplication (1)" />
       <item itemvalue="应用程序.WebServerApplication (2)" />
+      <item itemvalue="应用程序.WebServerApplication (4)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.WebServerApplication (4)" />
         <item itemvalue="应用程序.WebServerApplication (2)" />
         <item itemvalue="应用程序.WebServerApplication (1)" />
+        <item itemvalue="应用程序.ContentTypeDemo" />
         <item itemvalue="应用程序.WebServerApplication" />
-        <item itemvalue="应用程序.WebServerApplication (3)" />
-        <item itemvalue="应用程序.MapDemo2" />
       </list>
     </recent_temporary>
   </component>
@@ -300,7 +298,8 @@
       <workItem from="1660264285382" duration="26684000" />
       <workItem from="1660352662542" duration="7657000" />
       <workItem from="1660524931557" duration="19770000" />
-      <workItem from="1660555035162" duration="1684000" />
+      <workItem from="1660555035162" duration="2356000" />
+      <workItem from="1660610719092" duration="24830000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1659442033948</created>
@@ -428,7 +427,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660354235365</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="2.0 springboot http响应">
+      <created>1660562055321</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1660562055321</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +472,8 @@
     <MESSAGE value="1.8 html login" />
     <MESSAGE value="1.8 html article" />
     <MESSAGE value="1.9 map spring" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.9 map spring" />
+    <MESSAGE value="2.0 springboot http响应" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.0 springboot http响应" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
