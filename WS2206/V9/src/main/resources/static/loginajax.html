@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+  div {
+    text-align: center;
+    line-height: 40px;
+    margin: 0 auto;
+    border: 1px solid;
+    border-bottom: 0;
+
+  }
+
+  .d1 {
+    border: 0;
+    border-right: 1px solid;
+    height: 40px;
+    width: 30%;
+    float: left;
+
+  }
+
+  input {
+    height: 80%;
+    width: 66%;
+    border: 0;
+  }
+</style>
+</head>
+
+<body>
+
+<h1 style="text-align: center;">用户登录</h1>
+<form action="loginajax.html"method="post" >
+  <div style="width:300px;border: 0">
+    <div style="height: 40px;border:0">
+      <div class="d1">
+        <b >用户名:</b>
+
+      </div>
+      <div style="height: 40px;">
+        <input id="username" name="username" type="text">
+        <label class="text-danger" id="username_error"></label>
+      </div>
+    </div>
+    <div style="height: 40px;">
+      <div class="d1">
+        <b>密码:</b>
+      </div>
+      <input id="password" name="password" type="text">
+      <label class="text-danger" id="password_error"></label>
+    </div>
+
+    <div style="height: 40px;border-bottom: 01px solid;">
+      <a ><button type="submit" value="登录" onclick="login()">登录</button></a>
+    </div>
+  </div>
+</form>
+
+<script>
+
+  function login() {
+    //1. 获取name以及password
+    let username_value = $("#username").val();
+    let password_value = $("#password").val();
+    $("#username_error").html("");
+    $("#password_error").html("");
+
+
+    //2. ajax - post请求
+    $.post('176.13.14.6:8080/loginajax.html', { username: username_value, password: password_value }, function (res) {
+      if (res.code == "500") {
+        $("#username_error").html("用户名和密码不能为空!");
+      } else if (res.code == "501") {
+        $("#username_error").html("用户不存在!");
+      } else if (res.code == "502") {
+        $("#password_error").html("用户名或密码错误!");
+      } else if (res.code == "200") {
+
+        localStorage.setItem("loginUser", res.content);
+        alert("登录成功!");
+        window.location.href='176.13.14.6:8080/index.html'
+      }
+    })
+  }
+</script>
+
+</body>
+</html>
