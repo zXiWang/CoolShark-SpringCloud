@@ -22,7 +22,7 @@ public class Test2 {
             for (Method method : Methods) {
 
                 if (method.getParameterCount() == 0 && method.getModifiers() == Modifier.PUBLIC) {
-                    System.out.println("实例化的类:"+file.getName()+"\t实例化的方法:"+method.getName());
+                    System.out.println("实例化的类:" + file.getName() + "\t实例化的方法:" + method.getName());
                     method.invoke(obj);
                 }
             }
