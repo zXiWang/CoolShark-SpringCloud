@@ -15,8 +15,10 @@
         <module name="V10" />
         <module name="V12" />
         <module name="V11" />
+        <module name="V14" />
         <module name="V13" />
         <module name="V1" />
+        <module name="V15" />
         <module name="V2" />
         <module name="V3" />
         <module name="V4" />
@@ -31,6 +33,8 @@
       <module name="V11" target="1.8" />
       <module name="V12" target="1.8" />
       <module name="V13" target="1.8" />
+      <module name="V14" target="1.8" />
+      <module name="V15" target="1.8" />
       <module name="V2" target="1.8" />
       <module name="V3" target="1.8" />
       <module name="V4" target="1.8" />

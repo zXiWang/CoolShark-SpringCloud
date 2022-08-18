@@ -72,7 +72,7 @@ public class HttpServletRequest {
 
             for (String t : temp) {
 
-                parameters.put(t.split("=")[0], t.split("=",-1)[1]);
+                parameters.put(t.split("=")[0], t.split("=", -1)[1]);
             }
         }
 
@@ -145,7 +145,7 @@ public class HttpServletRequest {
         return queryString;
     }
 
-    public String getParameters(String name) {
+    public String getParameter(String name) {
         return parameters.get(name);
     }
 }
