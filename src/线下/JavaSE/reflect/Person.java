@@ -1,9 +1,12 @@
 package reflect;
 
+
+@AutoRunClass
 public class Person {
+
+    @AutoRunClass
     private String name = "张三";
     private int age = 18;
-
     public Person(){}
 
     @Override
@@ -14,20 +17,24 @@ public class Person {
                 '}';
     }
 
-    public Person(String name, int age) {
+    public Person( String name, int age) {
         this.name = name;
         this.age = age;
     }
 
+    @AutoRunMethod(4)
     public void sayHello(){
         System.out.println(name+"说:hello!");
     }
+
+
     public void watchTV(){
         System.out.println(name+":正在看电视");
     }
     public void sing(){
         System.out.println(name+":正在唱歌");
     }
+    @AutoRunMethod
     public void playGame(){
         System.out.println(name+":正在打游戏");
     }

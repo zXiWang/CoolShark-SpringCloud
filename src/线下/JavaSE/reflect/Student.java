@@ -1,6 +1,8 @@
 package reflect;
-
+@AutoRunClass
 public class Student {
+
+    @AutoRunMethod(5)
     public void study(){
         System.out.println("学生:good good study,day day up!");
     }
