@@ -7,10 +7,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="MySpringBoot2" />
         <module name="MySpringBoot3" />
-        <module name="SB2206" />
         <module name="BirdBoot" />
+        <module name="jsd220603" />
         <module name="V21" />
         <module name="V20" />
         <module name="V1" />
@@ -19,8 +18,8 @@
         <module name="V4" />
         <module name="V5" />
         <module name="V6" />
-        <module name="V7" />
         <module name="QR" />
+        <module name="V7" />
         <module name="V8" />
         <module name="V9" />
         <module name="MyFirstBirdBoot" />
@@ -38,6 +37,7 @@
     <bytecodeTargetLevel>
       <module name="BirdBoot" target="1.8" />
       <module name="demo1" target="1.8" />
+      <module name="jsd220603" target="1.8" />
       <module name="MyFirstBirdBoot" target="1.8" />
       <module name="MySpringBoot2" target="1.8" />
       <module name="MySpringBoot3" target="1.8" />
