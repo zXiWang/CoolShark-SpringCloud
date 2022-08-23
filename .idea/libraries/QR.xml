@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="QR">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/WS2206/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/WS2206/lib" recursive="false" />
+  </library>
+</component>

@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/WS2206/BirdBoot/BirdBoot.iml" filepath="$PROJECT_DIR$/WS2206/BirdBoot/BirdBoot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WS2206/MyFirstBirdBoot/MyFirstBirdBoot.iml" filepath="$PROJECT_DIR$/WS2206/MyFirstBirdBoot/MyFirstBirdBoot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MySpringBoot2/MySpringBoot2.iml" filepath="$PROJECT_DIR$/MySpringBoot2/MySpringBoot2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MySpringBoot3/MySpringBoot3.iml" filepath="$PROJECT_DIR$/MySpringBoot3/MySpringBoot3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WS2206/QR/QR.iml" filepath="$PROJECT_DIR$/WS2206/QR/QR.iml" />
       <module fileurl="file://$PROJECT_DIR$/SB2206/SB2206.iml" filepath="$PROJECT_DIR$/SB2206/SB2206.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS2206/V1/V1.iml" filepath="$PROJECT_DIR$/WS2206/V1/V1.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS2206/V10/V10.iml" filepath="$PROJECT_DIR$/WS2206/V10/V10.iml" />
@@ -14,6 +19,8 @@
       <module fileurl="file://$PROJECT_DIR$/WS2206/V18/V18.iml" filepath="$PROJECT_DIR$/WS2206/V18/V18.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS2206/V19/V19.iml" filepath="$PROJECT_DIR$/WS2206/V19/V19.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS2206/V2/V2.iml" filepath="$PROJECT_DIR$/WS2206/V2/V2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WS2206/V20/V20.iml" filepath="$PROJECT_DIR$/WS2206/V20/V20.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WS2206/V21/V21.iml" filepath="$PROJECT_DIR$/WS2206/V21/V21.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS2206/V3/V3.iml" filepath="$PROJECT_DIR$/WS2206/V3/V3.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS2206/V4/V4.iml" filepath="$PROJECT_DIR$/WS2206/V4/V4.iml" />
       <module fileurl="file://$PROJECT_DIR$/WS2206/V5/V5.iml" filepath="$PROJECT_DIR$/WS2206/V5/V5.iml" />

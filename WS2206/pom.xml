@@ -27,6 +27,11 @@
         <module>V16</module>
         <module>V18</module>
         <module>V19</module>
+        <module>V20</module>
+        <module>V21</module>
+        <module>BirdBoot</module>
+        <module>MyFirstBirdBoot</module>
+        <module>QR</module>
     </modules>
 
     <properties>
