@@ -9,585 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="2.5 Spring Boot">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_78.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_12_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_12_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_jasper_9_0_65.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_9_0_65.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jdt_ecj_3_18_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/QR.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/QR.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="2.6 html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot2/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot2/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot2/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot2/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot2/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot2/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot2/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot2/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot2/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot2/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot2/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot2/src/main/java/com/tedu/myspringboot2/MySpringBoot2Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot2/src/main/java/com/tedu/myspringboot2/MySpringBoot2Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot2/src/main/java/com/tedu/myspringboot2/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot2/src/main/java/com/tedu/myspringboot2/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot2/src/main/java/com/tedu/myspringboot2/entity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot2/src/main/java/com/tedu/myspringboot2/entity/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot2/src/main/java/com/tedu/myspringboot2/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot2/src/main/java/com/tedu/myspringboot2/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot2/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot2/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot2/src/test/java/com/tedu/myspringboot2/MySpringBoot2ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot2/src/test/java/com/tedu/myspringboot2/MySpringBoot2ApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/src/main/java/com/tedu/myspringboot2/MySpringBoot2Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/src/main/java/com/tedu/myspringboot2/MySpringBoot2Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/src/main/java/com/tedu/myspringboot2/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/src/main/java/com/tedu/myspringboot2/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/src/main/java/com/tedu/myspringboot2/entity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/src/main/java/com/tedu/myspringboot2/entity/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/src/main/java/com/tedu/myspringboot2/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/src/main/java/com/tedu/myspringboot2/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/src/main/java/com/tedu/myspringboot3/MySpringBoot3Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/src/main/java/com/tedu/myspringboot3/MySpringBoot3Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/src/main/resources/static/article_fail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/src/main/resources/static/article_fail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/src/main/resources/static/article_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/src/main/resources/static/article_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/src/main/resources/static/classtable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/src/main/resources/static/classtable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/src/main/resources/static/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/src/main/resources/static/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/src/main/resources/static/have_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/src/main/resources/static/have_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/src/main/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/src/main/resources/static/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/src/main/resources/static/login_fail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/src/main/resources/static/login_fail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/src/main/resources/static/login_info_error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/src/main/resources/static/login_info_error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/src/main/resources/static/login_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/src/main/resources/static/login_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/src/main/resources/static/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/src/main/resources/static/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/src/main/resources/static/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/src/main/resources/static/reg.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/src/main/resources/static/reg_info_error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/src/main/resources/static/reg_info_error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/src/main/resources/static/reg_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/src/main/resources/static/reg_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/src/main/resources/static/root/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/src/main/resources/static/root/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/src/main/resources/static/writeArticle.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/src/main/resources/static/writeArticle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/src/test/java/com/tedu/myspringboot2/MySpringBoot2ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/src/test/java/com/tedu/myspringboot2/MySpringBoot2ApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySpringBoot3/src/test/java/com/tedu/myspringboot3/MySpringBoot3ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/MySpringBoot3/src/test/java/com/tedu/myspringboot3/MySpringBoot3ApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/SB2206/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/SB2206/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/SB2206/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/SB2206/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/SB2206/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/SB2206/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/src/main/java/com/tedu/sb2206/Sb2206Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/SB2206/src/main/java/com/tedu/sb2206/Sb2206Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/src/main/java/com/tedu/sb2206/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/SB2206/src/main/java/com/tedu/sb2206/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/src/main/java/com/tedu/sb2206/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/SB2206/src/main/java/com/tedu/sb2206/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/src/main/java/com/tedu/sb2206/entity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/SB2206/src/main/java/com/tedu/sb2206/entity/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/src/main/java/com/tedu/sb2206/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/SB2206/src/main/java/com/tedu/sb2206/entity/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/src/main/java/com/tedu/sb2206/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/SB2206/src/main/java/com/tedu/sb2206/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/SB2206/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/src/main/resources/static/article_fail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/SB2206/src/main/resources/static/article_fail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/src/main/resources/static/article_null.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/SB2206/src/main/resources/static/article_null.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/src/main/resources/static/article_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/SB2206/src/main/resources/static/article_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/src/main/resources/static/classtable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/SB2206/src/main/resources/static/classtable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/src/main/resources/static/have_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/SB2206/src/main/resources/static/have_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/SB2206/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/src/main/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/SB2206/src/main/resources/static/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/src/main/resources/static/loginajax.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/SB2206/src/main/resources/static/loginajax.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/src/main/resources/static/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/SB2206/src/main/resources/static/reg.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/src/main/resources/static/reg_info_error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/SB2206/src/main/resources/static/reg_info_error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/src/main/resources/static/reg_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/SB2206/src/main/resources/static/reg_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/src/main/resources/static/writeArticle.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/SB2206/src/main/resources/static/writeArticle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/src/main/resources/static/下载.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/SB2206/src/main/resources/static/下载.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SB2206/src/test/java/com/tedu/sb2206/Sb2206ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/SB2206/src/test/java/com/tedu/sb2206/Sb2206ApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/BirdBoot.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/main/java/com/webserver/annotatiob/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/main/java/com/webserver/annotatiob/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/main/java/com/webserver/annotatiob/RequestMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/main/java/com/webserver/annotatiob/RequestMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/main/java/com/webserver/core/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/main/java/com/webserver/core/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/main/java/com/webserver/core/DispatcherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/main/java/com/webserver/core/HandlerMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/main/java/com/webserver/core/HandlerMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/main/java/com/webserver/core/WebServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/main/java/com/webserver/core/WebServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/main/java/com/webserver/http/EmptyRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/main/java/com/webserver/http/EmptyRequestException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/main/java/com/webserver/http/HttpServletRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/main/java/com/webserver/http/HttpServletRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/main/java/com/webserver/http/HttpServletResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/main/java/com/webserver/http/HttpServletResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/main/resources/static/article_fail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/main/resources/static/article_fail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/main/resources/static/article_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/main/resources/static/article_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/main/resources/static/classtable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/main/resources/static/classtable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/main/resources/static/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/main/resources/static/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/main/resources/static/have_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/main/resources/static/have_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/main/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/main/resources/static/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/main/resources/static/login_fail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/main/resources/static/login_fail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/main/resources/static/login_info_error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/main/resources/static/login_info_error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/main/resources/static/login_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/main/resources/static/login_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/main/resources/static/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/main/resources/static/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/main/resources/static/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/main/resources/static/reg.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/main/resources/static/reg_info_error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/main/resources/static/reg_info_error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/main/resources/static/reg_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/main/resources/static/reg_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/main/resources/static/root/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/main/resources/static/root/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/main/resources/static/writeArticle.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/main/resources/static/writeArticle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/test/java/com/webserver/test/BAOS.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/test/java/com/webserver/test/BAOS.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/test/java/com/webserver/test/BAOSDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/test/java/com/webserver/test/BAOSDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/test/java/com/webserver/test/ContentTypeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/test/java/com/webserver/test/ContentTypeDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/test/java/com/webserver/test/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/test/java/com/webserver/test/Singleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/test/java/com/webserver/test/SingletonDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/test/java/com/webserver/test/SingletonDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/test/java/com/webserver/test/SplitDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/test/java/com/webserver/test/SplitDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/BirdBoot/src/test/java/com/webserver/test/URLDecoderDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/test/java/com/webserver/test/URLDecoderDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/MyFirstBirdBoot/MyFirstBirdBoot.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/MyFirstBirdBoot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/MyFirstBirdBoot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/MyFirstBirdBoot/src/main/java/com/myboot/MyBootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/MyFirstBirdBoot/src/main/java/com/myboot/MyBootApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/MyFirstBirdBoot/src/main/java/com/myboot/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/MyFirstBirdBoot/src/main/java/com/myboot/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/MyFirstBirdBoot/src/main/resources/static/article_fail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/MyFirstBirdBoot/src/main/resources/static/article_fail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/MyFirstBirdBoot/src/main/resources/static/article_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/MyFirstBirdBoot/src/main/resources/static/article_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/MyFirstBirdBoot/src/main/resources/static/classtable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/MyFirstBirdBoot/src/main/resources/static/classtable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/MyFirstBirdBoot/src/main/resources/static/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/MyFirstBirdBoot/src/main/resources/static/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/MyFirstBirdBoot/src/main/resources/static/have_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/MyFirstBirdBoot/src/main/resources/static/have_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/MyFirstBirdBoot/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/MyFirstBirdBoot/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/MyFirstBirdBoot/src/main/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/MyFirstBirdBoot/src/main/resources/static/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/MyFirstBirdBoot/src/main/resources/static/login_fail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/MyFirstBirdBoot/src/main/resources/static/login_fail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/MyFirstBirdBoot/src/main/resources/static/login_info_error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/MyFirstBirdBoot/src/main/resources/static/login_info_error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/MyFirstBirdBoot/src/main/resources/static/login_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/MyFirstBirdBoot/src/main/resources/static/login_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/MyFirstBirdBoot/src/main/resources/static/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/MyFirstBirdBoot/src/main/resources/static/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/MyFirstBirdBoot/src/main/resources/static/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/MyFirstBirdBoot/src/main/resources/static/reg.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/MyFirstBirdBoot/src/main/resources/static/reg_info_error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/MyFirstBirdBoot/src/main/resources/static/reg_info_error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/MyFirstBirdBoot/src/main/resources/static/reg_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/MyFirstBirdBoot/src/main/resources/static/reg_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/MyFirstBirdBoot/src/main/resources/static/root/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/MyFirstBirdBoot/src/main/resources/static/root/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/MyFirstBirdBoot/src/main/resources/static/writeArticle.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/MyFirstBirdBoot/src/main/resources/static/writeArticle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/QR.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/java/com/webserver/annotatiob/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/java/com/webserver/annotatiob/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/java/com/webserver/annotatiob/RequestMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/java/com/webserver/annotatiob/RequestMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/java/com/webserver/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/java/com/webserver/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/java/com/webserver/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/java/com/webserver/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/java/com/webserver/core/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/java/com/webserver/core/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/java/com/webserver/core/DispatcherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/java/com/webserver/core/HandlerMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/java/com/webserver/core/HandlerMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/java/com/webserver/core/WebServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/java/com/webserver/core/WebServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/java/com/webserver/entity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/java/com/webserver/entity/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/java/com/webserver/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/java/com/webserver/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/java/com/webserver/http/EmptyRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/java/com/webserver/http/EmptyRequestException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/java/com/webserver/http/HttpServletRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/java/com/webserver/http/HttpServletRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/java/com/webserver/http/HttpServletResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/java/com/webserver/http/HttpServletResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/resources/static/article_fail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/resources/static/article_fail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/resources/static/article_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/resources/static/article_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/resources/static/classtable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/resources/static/classtable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/resources/static/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/resources/static/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/resources/static/have_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/resources/static/have_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/resources/static/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/resources/static/login_fail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/resources/static/login_fail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/resources/static/login_info_error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/resources/static/login_info_error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/resources/static/login_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/resources/static/login_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/resources/static/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/resources/static/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/resources/static/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/resources/static/reg.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/resources/static/reg_info_error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/resources/static/reg_info_error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/resources/static/reg_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/resources/static/reg_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/resources/static/root/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/resources/static/root/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/main/resources/static/writeArticle.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/main/resources/static/writeArticle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/test/java/com/webserver/test/BAOS.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/test/java/com/webserver/test/BAOS.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/test/java/com/webserver/test/BAOSDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/test/java/com/webserver/test/BAOSDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/test/java/com/webserver/test/ContentTypeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/test/java/com/webserver/test/ContentTypeDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/test/java/com/webserver/test/QRDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/test/java/com/webserver/test/QRDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/test/java/com/webserver/test/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/test/java/com/webserver/test/Singleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/test/java/com/webserver/test/SingletonDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/test/java/com/webserver/test/SingletonDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/test/java/com/webserver/test/SplitDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/test/java/com/webserver/test/SplitDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/src/test/java/com/webserver/test/URLDecoderDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/src/test/java/com/webserver/test/URLDecoderDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/com/webserver/annotatiob/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/annotatiob/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/com/webserver/annotatiob/RequestMapping.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/annotatiob/RequestMapping.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/com/webserver/controller/ArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/controller/ArticleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/com/webserver/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/com/webserver/core/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/core/ClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/com/webserver/core/DispatcherServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/core/DispatcherServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/com/webserver/core/HandlerMapping.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/core/HandlerMapping.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/com/webserver/core/WebServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/core/WebServerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/com/webserver/entity/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/entity/Article.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/com/webserver/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/com/webserver/http/EmptyRequestException.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/http/EmptyRequestException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/com/webserver/http/HttpServletRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/http/HttpServletRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/com/webserver/http/HttpServletResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/http/HttpServletResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/static/article_fail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/static/article_fail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/static/article_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/static/article_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/static/classtable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/static/classtable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/static/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/static/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/static/have_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/static/have_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/static/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/static/login_fail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/static/login_fail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/static/login_info_error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/static/login_info_error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/static/login_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/static/login_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/static/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/static/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/static/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/static/reg.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/static/reg_info_error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/static/reg_info_error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/static/reg_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/static/reg_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/static/root/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/static/root/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/classes/static/writeArticle.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/static/writeArticle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/test-classes/com/webserver/test/BAOSDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/test-classes/com/webserver/test/BAOSDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/test-classes/com/webserver/test/ContentTypeDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/test-classes/com/webserver/test/ContentTypeDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/test-classes/com/webserver/test/QRDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/test-classes/com/webserver/test/QRDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/test-classes/com/webserver/test/Singleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/test-classes/com/webserver/test/Singleton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/test-classes/com/webserver/test/SingletonDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/test-classes/com/webserver/test/SingletonDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/test-classes/com/webserver/test/SplitDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/test-classes/com/webserver/test/SplitDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/QR/target/test-classes/com/webserver/test/URLDecoderDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/test-classes/com/webserver/test/URLDecoderDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V1/V1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V1/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V1/src/main/java/com/webserver/core/WebServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V1/src/main/java/com/webserver/core/WebServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V10/V10.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V10/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V10/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V10/src/main/java/com/webserver/core/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V10/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V10/src/main/java/com/webserver/core/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V10/src/main/java/com/webserver/core/DispatcherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V10/src/main/java/com/webserver/core/WebServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V10/src/main/java/com/webserver/core/WebServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V10/src/main/java/com/webserver/http/HttpServletRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V10/src/main/java/com/webserver/http/HttpServletRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V10/src/main/java/com/webserver/http/HttpServletResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V10/src/main/java/com/webserver/http/HttpServletResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V10/src/test/java/com/webserver/test/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V10/src/test/java/com/webserver/test/Singleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V10/src/test/java/com/webserver/test/SingletonDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V10/src/test/java/com/webserver/test/SingletonDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V11/V11.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V11/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V11/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V11/src/main/java/com/webserver/core/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V11/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V11/src/main/java/com/webserver/core/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V11/src/main/java/com/webserver/core/DispatcherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V11/src/main/java/com/webserver/core/WebServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V11/src/main/java/com/webserver/core/WebServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V11/src/main/java/com/webserver/http/HttpServletRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V11/src/main/java/com/webserver/http/HttpServletRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V11/src/main/java/com/webserver/http/HttpServletResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V11/src/main/java/com/webserver/http/HttpServletResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V11/src/test/java/com/webserver/test/ContentTypeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V11/src/test/java/com/webserver/test/ContentTypeDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V11/src/test/java/com/webserver/test/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V11/src/test/java/com/webserver/test/Singleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V11/src/test/java/com/webserver/test/SingletonDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V11/src/test/java/com/webserver/test/SingletonDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V12/V12.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V12/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V12/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V12/src/main/java/com/webserver/core/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V12/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V12/src/main/java/com/webserver/core/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V12/src/main/java/com/webserver/core/DispatcherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V12/src/main/java/com/webserver/core/WebServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V12/src/main/java/com/webserver/core/WebServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V12/src/main/java/com/webserver/http/EmptyRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V12/src/main/java/com/webserver/http/EmptyRequestException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V12/src/main/java/com/webserver/http/HttpServletRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V12/src/main/java/com/webserver/http/HttpServletRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V12/src/main/java/com/webserver/http/HttpServletResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V12/src/main/java/com/webserver/http/HttpServletResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V12/src/test/java/com/webserver/test/ContentTypeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V12/src/test/java/com/webserver/test/ContentTypeDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V12/src/test/java/com/webserver/test/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V12/src/test/java/com/webserver/test/Singleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V12/src/test/java/com/webserver/test/SingletonDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V12/src/test/java/com/webserver/test/SingletonDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V13/V13.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V13/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V13/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V13/src/main/java/com/webserver/core/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V13/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V13/src/main/java/com/webserver/core/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V13/src/main/java/com/webserver/core/DispatcherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V13/src/main/java/com/webserver/core/WebServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V13/src/main/java/com/webserver/core/WebServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V13/src/main/java/com/webserver/http/EmptyRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V13/src/main/java/com/webserver/http/EmptyRequestException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V13/src/main/java/com/webserver/http/HttpServletRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V13/src/main/java/com/webserver/http/HttpServletRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V13/src/main/java/com/webserver/http/HttpServletResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V13/src/main/java/com/webserver/http/HttpServletResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V13/src/test/java/com/webserver/test/ContentTypeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V13/src/test/java/com/webserver/test/ContentTypeDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V13/src/test/java/com/webserver/test/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V13/src/test/java/com/webserver/test/Singleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V13/src/test/java/com/webserver/test/SingletonDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V13/src/test/java/com/webserver/test/SingletonDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V13/src/test/java/com/webserver/test/SplitDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V13/src/test/java/com/webserver/test/SplitDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V14/V14.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V14/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V14/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V14/src/main/java/com/webserver/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V14/src/main/java/com/webserver/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V14/src/main/java/com/webserver/core/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V14/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V14/src/main/java/com/webserver/core/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V14/src/main/java/com/webserver/core/DispatcherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V14/src/main/java/com/webserver/core/WebServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V14/src/main/java/com/webserver/core/WebServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V14/src/main/java/com/webserver/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V14/src/main/java/com/webserver/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V14/src/main/java/com/webserver/http/EmptyRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V14/src/main/java/com/webserver/http/EmptyRequestException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V14/src/main/java/com/webserver/http/HttpServletRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V14/src/main/java/com/webserver/http/HttpServletRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V14/src/main/java/com/webserver/http/HttpServletResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V14/src/main/java/com/webserver/http/HttpServletResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V14/src/test/java/com/webserver/test/ContentTypeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V14/src/test/java/com/webserver/test/ContentTypeDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V14/src/test/java/com/webserver/test/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V14/src/test/java/com/webserver/test/Singleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V14/src/test/java/com/webserver/test/SingletonDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V14/src/test/java/com/webserver/test/SingletonDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V14/src/test/java/com/webserver/test/SplitDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V14/src/test/java/com/webserver/test/SplitDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V15/V15.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V15/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V15/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V15/src/main/java/com/webserver/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V15/src/main/java/com/webserver/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V15/src/main/java/com/webserver/core/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V15/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V15/src/main/java/com/webserver/core/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V15/src/main/java/com/webserver/core/DispatcherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V15/src/main/java/com/webserver/core/WebServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V15/src/main/java/com/webserver/core/WebServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V15/src/main/java/com/webserver/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V15/src/main/java/com/webserver/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V15/src/main/java/com/webserver/http/EmptyRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V15/src/main/java/com/webserver/http/EmptyRequestException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V15/src/main/java/com/webserver/http/HttpServletRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V15/src/main/java/com/webserver/http/HttpServletRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V15/src/main/java/com/webserver/http/HttpServletResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V15/src/main/java/com/webserver/http/HttpServletResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V15/src/test/java/com/webserver/test/ContentTypeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V15/src/test/java/com/webserver/test/ContentTypeDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V15/src/test/java/com/webserver/test/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V15/src/test/java/com/webserver/test/Singleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V15/src/test/java/com/webserver/test/SingletonDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V15/src/test/java/com/webserver/test/SingletonDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V15/src/test/java/com/webserver/test/SplitDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V15/src/test/java/com/webserver/test/SplitDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V16/V16.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V16/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V16/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V16/src/main/java/com/webserver/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V16/src/main/java/com/webserver/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V16/src/main/java/com/webserver/core/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V16/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V16/src/main/java/com/webserver/core/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V16/src/main/java/com/webserver/core/DispatcherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V16/src/main/java/com/webserver/core/WebServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V16/src/main/java/com/webserver/core/WebServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V16/src/main/java/com/webserver/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V16/src/main/java/com/webserver/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V16/src/main/java/com/webserver/http/EmptyRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V16/src/main/java/com/webserver/http/EmptyRequestException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V16/src/main/java/com/webserver/http/HttpServletRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V16/src/main/java/com/webserver/http/HttpServletRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V16/src/main/java/com/webserver/http/HttpServletResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V16/src/main/java/com/webserver/http/HttpServletResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V16/src/test/java/com/webserver/test/ContentTypeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V16/src/test/java/com/webserver/test/ContentTypeDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V16/src/test/java/com/webserver/test/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V16/src/test/java/com/webserver/test/Singleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V16/src/test/java/com/webserver/test/SingletonDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V16/src/test/java/com/webserver/test/SingletonDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V16/src/test/java/com/webserver/test/SplitDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V16/src/test/java/com/webserver/test/SplitDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V16/src/test/java/com/webserver/test/URLDecoderDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V16/src/test/java/com/webserver/test/URLDecoderDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V18/V18.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V18/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V18/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V18/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V18/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V18/src/main/java/com/webserver/annotatiob/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V18/src/main/java/com/webserver/annotatiob/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V18/src/main/java/com/webserver/annotatiob/RequestMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V18/src/main/java/com/webserver/annotatiob/RequestMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V18/src/main/java/com/webserver/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V18/src/main/java/com/webserver/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V18/src/main/java/com/webserver/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V18/src/main/java/com/webserver/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V18/src/main/java/com/webserver/core/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V18/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V18/src/main/java/com/webserver/core/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V18/src/main/java/com/webserver/core/DispatcherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V18/src/main/java/com/webserver/core/WebServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V18/src/main/java/com/webserver/core/WebServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V18/src/main/java/com/webserver/entity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V18/src/main/java/com/webserver/entity/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V18/src/main/java/com/webserver/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V18/src/main/java/com/webserver/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V18/src/main/java/com/webserver/http/EmptyRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V18/src/main/java/com/webserver/http/EmptyRequestException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V18/src/main/java/com/webserver/http/HttpServletRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V18/src/main/java/com/webserver/http/HttpServletRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V18/src/main/java/com/webserver/http/HttpServletResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V18/src/main/java/com/webserver/http/HttpServletResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V18/src/test/java/com/webserver/test/ContentTypeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V18/src/test/java/com/webserver/test/ContentTypeDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V18/src/test/java/com/webserver/test/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V18/src/test/java/com/webserver/test/Singleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V18/src/test/java/com/webserver/test/SingletonDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V18/src/test/java/com/webserver/test/SingletonDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V18/src/test/java/com/webserver/test/SplitDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V18/src/test/java/com/webserver/test/SplitDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V18/src/test/java/com/webserver/test/URLDecoderDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V18/src/test/java/com/webserver/test/URLDecoderDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V19/V19.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V19/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V19/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V19/src/main/java/com/webserver/annotatiob/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V19/src/main/java/com/webserver/annotatiob/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V19/src/main/java/com/webserver/annotatiob/RequestMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V19/src/main/java/com/webserver/annotatiob/RequestMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V19/src/main/java/com/webserver/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V19/src/main/java/com/webserver/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V19/src/main/java/com/webserver/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V19/src/main/java/com/webserver/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V19/src/main/java/com/webserver/core/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V19/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V19/src/main/java/com/webserver/core/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V19/src/main/java/com/webserver/core/DispatcherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V19/src/main/java/com/webserver/core/HandlerMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V19/src/main/java/com/webserver/core/HandlerMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V19/src/main/java/com/webserver/core/WebServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V19/src/main/java/com/webserver/core/WebServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V19/src/main/java/com/webserver/entity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V19/src/main/java/com/webserver/entity/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V19/src/main/java/com/webserver/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V19/src/main/java/com/webserver/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V19/src/main/java/com/webserver/http/EmptyRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V19/src/main/java/com/webserver/http/EmptyRequestException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V19/src/main/java/com/webserver/http/HttpServletRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V19/src/main/java/com/webserver/http/HttpServletRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V19/src/main/java/com/webserver/http/HttpServletResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V19/src/main/java/com/webserver/http/HttpServletResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V19/src/test/java/com/webserver/test/ContentTypeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V19/src/test/java/com/webserver/test/ContentTypeDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V19/src/test/java/com/webserver/test/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V19/src/test/java/com/webserver/test/Singleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V19/src/test/java/com/webserver/test/SingletonDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V19/src/test/java/com/webserver/test/SingletonDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V19/src/test/java/com/webserver/test/SplitDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V19/src/test/java/com/webserver/test/SplitDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V19/src/test/java/com/webserver/test/URLDecoderDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V19/src/test/java/com/webserver/test/URLDecoderDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V2/V2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V2/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V2/src/main/java/com/webserver/core/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V2/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V2/src/main/java/com/webserver/core/WebServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V2/src/main/java/com/webserver/core/WebServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V2/target/classes/com/webserver/core/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V2/target/classes/com/webserver/core/ClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V2/target/classes/com/webserver/core/WebServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V2/target/classes/com/webserver/core/WebServerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V20/V20.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V20/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V20/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V20/src/main/java/com/webserver/annotatiob/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V20/src/main/java/com/webserver/annotatiob/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V20/src/main/java/com/webserver/annotatiob/RequestMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V20/src/main/java/com/webserver/annotatiob/RequestMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V20/src/main/java/com/webserver/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V20/src/main/java/com/webserver/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V20/src/main/java/com/webserver/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V20/src/main/java/com/webserver/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V20/src/main/java/com/webserver/core/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V20/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V20/src/main/java/com/webserver/core/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V20/src/main/java/com/webserver/core/DispatcherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V20/src/main/java/com/webserver/core/HandlerMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V20/src/main/java/com/webserver/core/HandlerMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V20/src/main/java/com/webserver/core/WebServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V20/src/main/java/com/webserver/core/WebServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V20/src/main/java/com/webserver/entity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V20/src/main/java/com/webserver/entity/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V20/src/main/java/com/webserver/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V20/src/main/java/com/webserver/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V20/src/main/java/com/webserver/http/EmptyRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V20/src/main/java/com/webserver/http/EmptyRequestException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V20/src/main/java/com/webserver/http/HttpServletRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V20/src/main/java/com/webserver/http/HttpServletRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V20/src/main/java/com/webserver/http/HttpServletResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V20/src/main/java/com/webserver/http/HttpServletResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V20/src/test/java/com/webserver/test/BAOS.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V20/src/test/java/com/webserver/test/BAOS.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V20/src/test/java/com/webserver/test/BAOSDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V20/src/test/java/com/webserver/test/BAOSDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V20/src/test/java/com/webserver/test/ContentTypeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V20/src/test/java/com/webserver/test/ContentTypeDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V20/src/test/java/com/webserver/test/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V20/src/test/java/com/webserver/test/Singleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V20/src/test/java/com/webserver/test/SingletonDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V20/src/test/java/com/webserver/test/SingletonDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V20/src/test/java/com/webserver/test/SplitDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V20/src/test/java/com/webserver/test/SplitDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V20/src/test/java/com/webserver/test/URLDecoderDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V20/src/test/java/com/webserver/test/URLDecoderDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/V21.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/java/com/webserver/annotatiob/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/java/com/webserver/annotatiob/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/java/com/webserver/annotatiob/RequestMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/java/com/webserver/annotatiob/RequestMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/java/com/webserver/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/java/com/webserver/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/java/com/webserver/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/java/com/webserver/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/java/com/webserver/core/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/java/com/webserver/core/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/java/com/webserver/core/DispatcherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/java/com/webserver/core/HandlerMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/java/com/webserver/core/HandlerMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/java/com/webserver/core/WebServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/java/com/webserver/core/WebServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/java/com/webserver/entity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/java/com/webserver/entity/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/java/com/webserver/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/java/com/webserver/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/java/com/webserver/http/EmptyRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/java/com/webserver/http/EmptyRequestException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/java/com/webserver/http/HttpServletRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/java/com/webserver/http/HttpServletRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/java/com/webserver/http/HttpServletResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/java/com/webserver/http/HttpServletResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/resources/static/article_fail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/resources/static/article_fail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/resources/static/article_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/resources/static/article_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/resources/static/classtable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/resources/static/classtable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/resources/static/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/resources/static/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/resources/static/have_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/resources/static/have_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/resources/static/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/resources/static/login_fail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/resources/static/login_fail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/resources/static/login_info_error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/resources/static/login_info_error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/resources/static/login_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/resources/static/login_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/resources/static/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/resources/static/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/resources/static/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/resources/static/reg.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/resources/static/reg_info_error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/resources/static/reg_info_error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/resources/static/reg_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/resources/static/reg_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/resources/static/root/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/resources/static/root/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/main/resources/static/writeArticle.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/main/resources/static/writeArticle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/test/java/com/webserver/test/BAOS.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/test/java/com/webserver/test/BAOS.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/test/java/com/webserver/test/BAOSDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/test/java/com/webserver/test/BAOSDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/test/java/com/webserver/test/ContentTypeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/test/java/com/webserver/test/ContentTypeDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/test/java/com/webserver/test/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/test/java/com/webserver/test/Singleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/test/java/com/webserver/test/SingletonDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/test/java/com/webserver/test/SingletonDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/test/java/com/webserver/test/SplitDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/test/java/com/webserver/test/SplitDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V21/src/test/java/com/webserver/test/URLDecoderDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V21/src/test/java/com/webserver/test/URLDecoderDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V3/V3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V3/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V3/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V3/src/main/java/com/webserver/core/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V3/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V3/src/main/java/com/webserver/core/WebServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V3/src/main/java/com/webserver/core/WebServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V3/target/classes/com/webserver/core/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V3/target/classes/com/webserver/core/ClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V3/target/classes/com/webserver/core/WebServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V3/target/classes/com/webserver/core/WebServerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V4/V4.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V4/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V4/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V4/src/main/java/com/webserver/core/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V4/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V4/src/main/java/com/webserver/core/WebServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V4/src/main/java/com/webserver/core/WebServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V4/target/classes/com/webserver/core/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V4/target/classes/com/webserver/core/ClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V4/target/classes/com/webserver/core/WebServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V4/target/classes/com/webserver/core/WebServerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V5/V5.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V5/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V5/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V5/src/main/java/com/webserver/core/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V5/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V5/src/main/java/com/webserver/core/WebServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V5/src/main/java/com/webserver/core/WebServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V5/src/main/java/com/webserver/http/HttpServerRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V5/src/main/java/com/webserver/http/HttpServerRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V5/target/classes/com/webserver/core/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V5/target/classes/com/webserver/core/ClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V5/target/classes/com/webserver/core/WebServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V5/target/classes/com/webserver/core/WebServerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V5/target/classes/com/webserver/http/HttpServerRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V5/target/classes/com/webserver/http/HttpServerRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V6/V6.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V6/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V6/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V6/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V6/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V6/src/main/java/com/webserver/core/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V6/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V6/src/main/java/com/webserver/core/WebServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V6/src/main/java/com/webserver/core/WebServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V6/src/main/java/com/webserver/http/HttpServletRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V6/src/main/java/com/webserver/http/HttpServletRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V6/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V6/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V6/target/classes/com/webserver/core/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V6/target/classes/com/webserver/core/ClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V6/target/classes/com/webserver/core/WebServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V6/target/classes/com/webserver/core/WebServerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V6/target/classes/com/webserver/http/HttpServletRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V6/target/classes/com/webserver/http/HttpServletRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V6/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V6/target/classes/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/V7.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/src/main/java/com/webserver/core/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/src/main/java/com/webserver/core/WebServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/src/main/java/com/webserver/core/WebServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/src/main/java/com/webserver/http/HttpServletRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/src/main/java/com/webserver/http/HttpServletRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/src/main/resources/static/article_fail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/src/main/resources/static/article_fail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/src/main/resources/static/article_null.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/src/main/resources/static/article_null.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/src/main/resources/static/article_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/src/main/resources/static/article_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/src/main/resources/static/classtable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/src/main/resources/static/classtable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/src/main/resources/static/have_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/src/main/resources/static/have_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/src/main/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/src/main/resources/static/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/src/main/resources/static/loginajax.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/src/main/resources/static/loginajax.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/src/main/resources/static/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/src/main/resources/static/reg.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/src/main/resources/static/reg_info_error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/src/main/resources/static/reg_info_error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/src/main/resources/static/reg_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/src/main/resources/static/reg_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/src/main/resources/static/root/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/src/main/resources/static/root/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/src/main/resources/static/writeArticle.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/src/main/resources/static/writeArticle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/src/main/resources/static/下载.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/src/main/resources/static/下载.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/target/classes/com/webserver/core/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/target/classes/com/webserver/core/ClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/target/classes/com/webserver/core/WebServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/target/classes/com/webserver/core/WebServerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/target/classes/com/webserver/http/HttpServletRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/target/classes/com/webserver/http/HttpServletRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/target/classes/static/article_fail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/target/classes/static/article_fail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/target/classes/static/article_null.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/target/classes/static/article_null.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/target/classes/static/article_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/target/classes/static/article_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/target/classes/static/classtable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/target/classes/static/classtable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/target/classes/static/have_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/target/classes/static/have_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/target/classes/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/target/classes/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/target/classes/static/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/target/classes/static/loginajax.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/target/classes/static/loginajax.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/target/classes/static/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/target/classes/static/reg.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/target/classes/static/reg_info_error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/target/classes/static/reg_info_error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/target/classes/static/reg_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/target/classes/static/reg_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/target/classes/static/root/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/target/classes/static/root/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/target/classes/static/writeArticle.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/target/classes/static/writeArticle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V7/target/classes/static/下载.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V7/target/classes/static/下载.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/V8.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/src/main/java/com/webserver/core/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/src/main/java/com/webserver/core/WebServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/src/main/java/com/webserver/core/WebServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/src/main/java/com/webserver/http/HttpServletRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/src/main/java/com/webserver/http/HttpServletRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/src/main/java/com/webserver/http/HttpServletResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/src/main/java/com/webserver/http/HttpServletResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/src/main/resources/static/article_fail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/src/main/resources/static/article_fail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/src/main/resources/static/article_null.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/src/main/resources/static/article_null.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/src/main/resources/static/article_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/src/main/resources/static/article_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/src/main/resources/static/classtable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/src/main/resources/static/classtable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/src/main/resources/static/have_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/src/main/resources/static/have_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/src/main/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/src/main/resources/static/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/src/main/resources/static/loginajax.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/src/main/resources/static/loginajax.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/src/main/resources/static/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/src/main/resources/static/reg.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/src/main/resources/static/reg_info_error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/src/main/resources/static/reg_info_error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/src/main/resources/static/reg_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/src/main/resources/static/reg_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/src/main/resources/static/root/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/src/main/resources/static/root/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/src/main/resources/static/writeArticle.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/src/main/resources/static/writeArticle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/src/main/resources/static/下载.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/src/main/resources/static/下载.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/target/classes/com/webserver/core/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/target/classes/com/webserver/core/ClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/target/classes/com/webserver/core/WebServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/target/classes/com/webserver/core/WebServerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/target/classes/com/webserver/http/HttpServletRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/target/classes/com/webserver/http/HttpServletRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/target/classes/com/webserver/http/HttpServletResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/target/classes/com/webserver/http/HttpServletResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/target/classes/static/article_fail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/target/classes/static/article_fail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/target/classes/static/article_null.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/target/classes/static/article_null.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/target/classes/static/article_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/target/classes/static/article_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/target/classes/static/classtable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/target/classes/static/classtable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/target/classes/static/have_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/target/classes/static/have_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/target/classes/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/target/classes/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/target/classes/static/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/target/classes/static/loginajax.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/target/classes/static/loginajax.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/target/classes/static/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/target/classes/static/reg.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/target/classes/static/reg_info_error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/target/classes/static/reg_info_error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/target/classes/static/reg_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/target/classes/static/reg_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/target/classes/static/root/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/target/classes/static/root/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/target/classes/static/writeArticle.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/target/classes/static/writeArticle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V8/target/classes/static/下载.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V8/target/classes/static/下载.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/V9.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/src/main/java/com/webserver/core/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/src/main/java/com/webserver/core/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/src/main/java/com/webserver/core/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/src/main/java/com/webserver/core/DispatcherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/src/main/java/com/webserver/core/WebServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/src/main/java/com/webserver/core/WebServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/src/main/java/com/webserver/http/HttpServletRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/src/main/java/com/webserver/http/HttpServletRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/src/main/java/com/webserver/http/HttpServletResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/src/main/java/com/webserver/http/HttpServletResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/src/main/resources/static/article_fail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/src/main/resources/static/article_fail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/src/main/resources/static/article_null.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/src/main/resources/static/article_null.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/src/main/resources/static/article_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/src/main/resources/static/article_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/src/main/resources/static/classtable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/src/main/resources/static/classtable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/src/main/resources/static/have_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/src/main/resources/static/have_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/src/main/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/src/main/resources/static/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/src/main/resources/static/loginajax.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/src/main/resources/static/loginajax.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/src/main/resources/static/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/src/main/resources/static/reg.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/src/main/resources/static/reg_info_error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/src/main/resources/static/reg_info_error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/src/main/resources/static/reg_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/src/main/resources/static/reg_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/src/main/resources/static/root/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/src/main/resources/static/root/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/src/main/resources/static/writeArticle.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/src/main/resources/static/writeArticle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/src/main/resources/static/下载.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/src/main/resources/static/下载.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/src/test/java/com/webserver/test/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/src/test/java/com/webserver/test/Singleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/src/test/java/com/webserver/test/SingletonDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/src/test/java/com/webserver/test/SingletonDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/target/classes/com/webserver/core/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/target/classes/com/webserver/core/ClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/target/classes/com/webserver/core/DispatcherServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/target/classes/com/webserver/core/DispatcherServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/target/classes/com/webserver/core/WebServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/target/classes/com/webserver/core/WebServerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/target/classes/com/webserver/http/HttpServletRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/target/classes/com/webserver/http/HttpServletRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/target/classes/com/webserver/http/HttpServletResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/target/classes/com/webserver/http/HttpServletResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/target/classes/static/article_fail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/target/classes/static/article_fail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/target/classes/static/article_null.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/target/classes/static/article_null.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/target/classes/static/article_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/target/classes/static/article_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/target/classes/static/classtable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/target/classes/static/classtable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/target/classes/static/have_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/target/classes/static/have_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/target/classes/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/target/classes/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/target/classes/static/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/target/classes/static/loginajax.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/target/classes/static/loginajax.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/target/classes/static/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/target/classes/static/reg.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/target/classes/static/reg_info_error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/target/classes/static/reg_info_error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/target/classes/static/reg_success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/target/classes/static/reg_success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/target/classes/static/root/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/target/classes/static/root/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/target/classes/static/writeArticle.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/target/classes/static/writeArticle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/target/classes/static/下载.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/target/classes/static/下载.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/target/test-classes/com/webserver/test/Singleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/target/test-classes/com/webserver/test/Singleton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/V9/target/test-classes/com/webserver/test/SingletonDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/V9/target/test-classes/com/webserver/test/SingletonDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/WS2206.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/http.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/http.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/lib/QRCode.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/lib/QRCode.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/lib/core-3.3.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/lib/core-3.3.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/lib/jai-imageio-core-1.3.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/lib/jai-imageio-core-1.3.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/lib/jcommander-1.48.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/lib/jcommander-1.48.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WS2206/src/main/java/com/webserver/core/WebServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/src/main/java/com/webserver/core/WebServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/达内.iml" beforeDir="false" afterPath="$PROJECT_DIR$/达内.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -663,7 +86,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/线下/src" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/jsd220603/Web/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/jsd220603/Web" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
@@ -673,11 +96,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web\css" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web\img" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\testfile" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\WS2206\QR" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\WS2206\MyFirstBirdBoot" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web" />
@@ -757,19 +180,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -907,7 +317,9 @@
       <workItem from="1661222273120" duration="5353000" />
       <workItem from="1661234528024" duration="7464000" />
       <workItem from="1661243041663" duration="1307000" />
-      <workItem from="1661244376985" duration="5691000" />
+      <workItem from="1661244376985" duration="5865000" />
+      <workItem from="1661301221780" duration="23510000" />
+      <workItem from="1661387015476" duration="525000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1659442033948</created>
@@ -1105,7 +517,21 @@
       <option name="project" value="LOCAL" />
       <updated>1661217713459</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="2.6 html">
+      <created>1661257624069</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1661257624069</updated>
+    </task>
+    <task id="LOCAL-00030" summary="2.6 html">
+      <created>1661257651721</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1661257651722</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1151,7 +577,8 @@
     <MESSAGE value="2.3 Relfect" />
     <MESSAGE value="2.4 Relfect update" />
     <MESSAGE value="2.5 Spring Boot" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.5 Spring Boot" />
+    <MESSAGE value="2.6 html" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.6 html" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
