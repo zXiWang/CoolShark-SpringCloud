@@ -7,6 +7,7 @@
         .bd2left {
             width: 609px;
             height: 377px;
+
             margin-top: 10px;
             float: left;
             background-color: #E8E8E8;
@@ -21,9 +22,10 @@
 
         .bd2left .name {
             font: 30px simhei, Arial, helvetica, sans-serif;
+
             color: #333;
             width: 245px;
-            height: 20px;
+            height: 73.6px;
             margin-top: 50px;
             margin-left: 50px;
         }
@@ -59,6 +61,8 @@
             cursor: pointer;
             text-decoration: none;
             margin-left: 50px;
+            margin-top: 20px;
+
 
         }
 
@@ -77,17 +81,64 @@
             width: 410px;
             height: 320px;
         }
+
+        #bd2right {
+            width: 381px;
+            height: 377px;
+
+
+            margin-top: 10px;
+            float: left;
+            margin-left: 10px;
+            background-color: #E8E8E8;
+            position: relative;
+        }
+
+        #rightimg {
+            width: 292px;
+            height: 232px;
+            position: absolute;
+            right: 20px;
+            top: 120px;
+            cursor: pointer;
+            transition: 1s;
+
+        }
+
+        #rightimg:hover {
+            width: 310px;
+            height: 250px;
+        }
+
+        #bd2right .name,
+        #bd2right .details,
+        #bd2right .view,
+        #bd2right .price {
+            margin-left: 20px;
+
+        }
     </style>
 </head>
 <body>
 <div class="bd2left">
     <div class="bdtext">
         <p class="name">灵越 燃7000系列</p>
-        <p class="details">酷睿双核i5处理器|256GB SSD|8GB内存|英特尔HD显卡620含共享显卡内存</p>
+        <p class="details">酷睿双核i5处理器|256GB SSD|8GB内存<br>
+            英特尔HD显卡620含共享显卡内存</p>
         <p class="price">￥4999.00</p>
         <a class="view" href="">查看详情</a>
     </div>
     <img src="../img/study_computer_img1.png" alt="灵越 燃7000系列"/>
+</div>
+<div class="bd2left" id="bd2right">
+    <div class=".bdtext">
+        <p class="name">小米Air 金属超轻薄</p>
+        <p class="details">酷睿双核i5处理器|512GB SSD|2GB内存<br>
+            英特尔HD独立显卡</p>
+        <p class="price">￥3488.00</p>
+        <a class="view" href="">查看详情</a>
+    </div>
+    <img id="rightimg" src="../img/study_computer_img2.png" />
 </div>
 </body>
 </html>

@@ -9,8 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="2.6 html">
+    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="2.7 html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day02/11作业.html" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/Web/day02/11作业.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/JavaSE/map/MapDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/JavaSE/map/MapDemo1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,17 +99,17 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web" />
+      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web\day03" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web\css" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web\img" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\testfile" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\WS2206\QR" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web\day03" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web\day01" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\src\线下" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\src\项目" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\WS2206\BirdBoot" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="项目.submarine.src.cn.tedu.submarine" />
@@ -131,7 +133,33 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="应用程序.QRDemo">
+  <component name="RunManager" selected="应用程序.MapDemo1">
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="map.Demo" />
+      <module name="达内" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="map.MapDemo1" />
+      <module name="达内" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyBootApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.myboot.MyBootApplication" />
       <module name="MyFirstBirdBoot" />
@@ -151,32 +179,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.webserver.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WebServerApplication (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.webserver.core.WebServerApplication" />
-      <module name="V21" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.webserver.core.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WebServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.webserver.core.WebServerApplication" />
-      <module name="BirdBoot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.webserver.core.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -223,18 +225,18 @@
       <item itemvalue="Spring Boot.MySpringBoot2Application" />
       <item itemvalue="Spring Boot.MySpringBoot3Application" />
       <item itemvalue="Spring Boot.MySpringBoot2Application (1)" />
-      <item itemvalue="应用程序.WebServerApplication" />
-      <item itemvalue="应用程序.WebServerApplication (3)" />
       <item itemvalue="应用程序.MyBootApplication" />
       <item itemvalue="应用程序.QRDemo" />
+      <item itemvalue="应用程序.Demo" />
+      <item itemvalue="应用程序.MapDemo1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.MapDemo1" />
+        <item itemvalue="应用程序.Demo" />
         <item itemvalue="应用程序.QRDemo" />
         <item itemvalue="Spring Boot.MySpringBoot2Application (1)" />
         <item itemvalue="应用程序.MyBootApplication" />
-        <item itemvalue="应用程序.WebServerApplication (3)" />
-        <item itemvalue="应用程序.WebServerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -319,7 +321,7 @@
       <workItem from="1661243041663" duration="1307000" />
       <workItem from="1661244376985" duration="5865000" />
       <workItem from="1661301221780" duration="23510000" />
-      <workItem from="1661387015476" duration="525000" />
+      <workItem from="1661387015476" duration="28582000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1659442033948</created>
@@ -531,7 +533,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661257651722</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="2.7 html">
+      <created>1661387577828</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1661387577828</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -578,7 +587,8 @@
     <MESSAGE value="2.4 Relfect update" />
     <MESSAGE value="2.5 Spring Boot" />
     <MESSAGE value="2.6 html" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.6 html" />
+    <MESSAGE value="2.7 html" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.7 html" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
