@@ -3,8 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/jsd220603/jsd220603 teacher" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/线下/SB2206/spring-boot2206" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/线下/WS2206/web-server2206-teacher" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/线下/jsd2206-se-teacher" vcs="Git" />
   </component>
 </project>

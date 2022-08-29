@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>这是div</div>
+<input id="t1" type="text" placeholder="输入数字">
+<input id="t2" type="text" placeholder="输入数字">
+<button type="button" onclick="addition()">加法</button>
+<button type="button" onclick="subtraction()">减法</button>
+<button type="button" onclick="multiplication()">乘法</button>
+<button type="button" onclick="division()">除法</button>
+
+<p>结果:</p>
+</body>
+<script>
+    let result = document.querySelector("p");
+    let t1 = document.querySelector("input#t1");
+    let t2 = document.querySelector("input#t2");
+
+    function multiplication() {
+
+        if (isNaN(t2.value) || isNaN(t1.value)) {
+            result.innerText = "输入错误!";
+            return;
+        }
+        result.innerText = "结果:" + t1.value * t2.value;
+
+    }
+
+    function addition() {
+
+        if (isNaN(t2.value) || isNaN(t1.value)) {
+            result.innerText = "输入错误!";
+            return;
+        }
+        result.innerText = "结果:" + (parseFloat(t1.value) + parseFloat(t2.value));
+
+    }
+
+    function subtraction() {
+
+        if (isNaN(t2.value) || isNaN(t1.value)) {
+            result.innerText = "输入错误!";
+            return;
+        }
+        result.innerText = "结果:" + (parseFloat(t1.value) - parseFloat(t2.value));
+
+    }
+
+    function division() {
+
+        if (isNaN(t1.value) || isNaN(t2.value)) {
+            result.innerText = "输入错误!";
+            return;
+        }
+        result.innerText = "结果:" + (parseFloat(t1.value) / parseFloat(t2.value));
+
+    }
+</script>
+
+</html>
