@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <input type="text" v-model="info">
+    <input type="button" value="按钮1" @click="f()">
+    <input type="button" value="按钮2" v-on:click="f1()">
+</div>
+</body>
+<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+<script>
+    let v = new Vue({
+        el: "body>div",
+        data: {
+            info: ""
+        },
+        methods: {
+            f() {
+                alert("Hello!");
+            },
+            f1() {
+                alert(v.info);
+            }
+        }
+    })
+</script>
+</html>

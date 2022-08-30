@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <ul>
+        <li v-for="name in arr">{{name}}</li>
+    </ul>
+    <table border="1">
+        <caption>人物列表</caption>
+        <tr>
+            <th>编号</th>
+            <th>名字</th>
+            <th>年龄</th>
+            <th>称号</th>
+        </tr>
+        <tr v-for="(p,i) in persons">
+            <td>{{i + 1}}</td>
+            <td>{{p.name}}</td>
+            <td>{{p.age}}</td>
+            <td>{{p.type}}</td>
+        </tr>
+    </table>
+    <table border="1">
+        <caption>人物列表</caption>
+        <tr>
+            <th>编号</th>
+            <th>名字</th>
+            <th>工作</th>
+            <th>工资</th>
+            <th>年龄</th>
+        </tr>
+        <tr v-for="(e,i) in empArr">
+            <td>{{i + 1}}</td>
+            <td>{{e.name}}</td>
+            <td>{{e.job}}</td>
+            <td>{{e.salary}}</td>
+            <td>{{e.age}}</td>
+        </tr>
+    </table>
+</div>
+</body>
+<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+<script>
+    let v = new Vue({
+        el: "body>div",
+        data: {
+            arr: ["刘备", "关羽", "张飞"],
+            persons: [{name: "孙悟空", age: 500, type: "齐天大圣"}
+                , {name: "猪八戒", age: 400, type: "天蓬元帅"},
+                {name: "牛魔王", age: 660, type: "嗜血牛魔"},],
+            empArr: [{name: "张三", job: "销售", salary: 5000, age: "30"},
+                {name: "李四", job: "老板", salary: 20000, age: "40"},
+                {name: "王五", job: "前台", salary: 5888, age: "75"},
+                {name: "赵六", job: "程序员", salary: 300000, age: "22"},]
+        }
+    })
+</script>
+</html>

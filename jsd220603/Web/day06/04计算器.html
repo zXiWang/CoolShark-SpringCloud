@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <input id="t1" type="text" placeholder="输入数字" v-model="firstNumber"><br>
+    <input id="t2" type="text" placeholder="输入数字" v-model="lastNumber"><br>
+    <button type="button" @click="f('+')">加法</button>
+    <button type="button" @click="f('-')">减法</button>
+    <button type="button" @click="f('*')">乘法</button>
+    <button type="button" @click="f('/')">除法</button>
+    <p>结果:{{result}}</p>
+</div>
+</body>
+<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+<script>
+    let v = new Vue({
+        el: "body>div",
+        data: {
+            firstNumber: "",
+            lastNumber: "",
+            result: ""
+        },
+        methods: {
+            f(x) {
+               v.result=eval(v.firstNumber+x+v.lastNumber);
+            }
+
+        }
+
+    })
+</script>
+</html>
