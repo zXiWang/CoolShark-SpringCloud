@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="d1" type="text" placeholder="输入要几张">
+<input type="button" value="帅哥" onclick="f(1)">
+<input type="button" value="美女" onclick="f(2)">
+<br>
+
+</body>
+<script>
+    let d = document.querySelector('#d1');
+
+    function f(t) {
+        let imgName = t == 1 ? "../img/a.jpg" : "../img/b.jpg";
+
+        for (let i = 0; i < d.value; i++) {
+            let img = document.createElement("img");
+            img.src = imgName;
+            img.style.width="200px";
+            img.style.float = "right";
+            document.body.append(img);
+        }
+    }
+</script>
+</html>
