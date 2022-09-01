@@ -9,10 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="3.0 html">
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="3.1 html&#10;eui">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/jsd220603.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +76,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -89,22 +89,22 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/线下/src" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/jsd220603/Web/day06/eui" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/jsd220603/Web" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31911263" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web" />
+      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web\day07" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web\day06\eui" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web\day05" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web\js" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\jsd220603 teacher\Web\day05" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web\day04" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web" />
@@ -188,15 +188,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -343,7 +341,10 @@
       <workItem from="1661732839291" duration="21853000" />
       <workItem from="1661763959310" duration="4105000" />
       <workItem from="1661818759471" duration="11920000" />
-      <workItem from="1661839717626" duration="11401000" />
+      <workItem from="1661839717626" duration="15035000" />
+      <workItem from="1661905379080" duration="8856000" />
+      <workItem from="1661916876987" duration="16032000" />
+      <workItem from="1661992025243" duration="621000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1659442033948</created>
@@ -583,7 +584,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661819850154</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="3.1 html&#10;eui">
+      <created>1661859080470</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1661859080470</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,7 +644,8 @@
     <MESSAGE value="2.8 html" />
     <MESSAGE value="2.9 html" />
     <MESSAGE value="3.0 html" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.0 html" />
+    <MESSAGE value="3.1 html&#10;eui" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.1 html&#10;eui" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

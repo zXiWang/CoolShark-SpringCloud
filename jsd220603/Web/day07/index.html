@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/element-ui/2.15.9/theme-chalk/index.css">
+    <style>
+        header a {
+            text-decoration: none;
+            color: #6c6c6c;
+        }
+
+        .el-table .el-table__cell {
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <el-container>
+        <el-header height="150px">
+            <div style="width: 1200px;margin: 0 auto">
+                <img src="../imgs/logo.png" alt="logo" style="width: 300px;vertical-align: middle">
+                <a href="">首页</a>
+                <el-divider direction="vertical"></el-divider>
+                <a href="">热点资讯</a>
+                <el-divider direction="vertical"></el-divider>
+                <a href="">商家入驻</a>
+                <el-divider direction="vertical"></el-divider>
+                <a href="">社会招聘</a>
+                <el-divider direction="vertical"></el-divider>
+                <a href="">校园招聘</a>
+                <el-divider direction="vertical"></el-divider>
+                <a href="">帮助</a>
+                <el-divider direction="vertical"></el-divider>
+            </div>
+            <!--导航菜单开始-->
+            <div style="background-color: #82c8ec">
+                <el-menu style="width: 1200px;margin: 0 auto" :default-active="activeIndex" class="el-menu-demo"
+                         background-color="#82c8ec"
+                         text-color="#fff"
+                         active-text-color="#fff"
+                         mode="horizontal" @select="handleSelect">
+                    <el-menu-item index="1">精彩活动</el-menu-item>
+                    <el-menu-item index="2">当季女装</el-menu-item>
+                    <el-menu-item index="3">品牌男装</el-menu-item>
+                    <el-menu-item index="4">环球美食</el-menu-item>
+                    <el-menu-item index="5">医药健康</el-menu-item>
+                    <el-menu-item index="6">美妆彩妆</el-menu-item>
+                    <el-menu-item index="7">母婴产品</el-menu-item>
+                    <div style="float:right">
+                        <el-input type="" placeholder="请输入搜索内容" style="float: right;position: relative;top: 10px">
+                            <el-button slot="append" icon="el-icon-search"></el-button>
+                        </el-input>
+
+                    </div>
+                </el-menu>
+            </div>
+            <!--导航菜单结束-->
+        </el-header>
+        <el-main style="width:1200px;margin: 0 auto;">
+            <el-row gutter="20">
+                <el-col span="18">
+                    <div class="block">
+                        <el-carousel height="300px">
+                            <el-carousel-item v-for="item in imgItem" :key="item">
+                                <img style="width: 100%; height: 100%;" :src="item" alt="">
+                            </el-carousel-item>
+                        </el-carousel>
+                    </div>
+                </el-col>
+
+
+                <el-col span="6">
+                    <el-card width="300">
+                        <h3>
+                            <i style="font-weight: bold" class="el-icon-trophy">销量最高</i>
+                        </h3>
+                        <el-divider></el-divider>
+                        <el-table :data="topArr">
+                            <el-table-column label="排名" width="50" type="index"></el-table-column>
+                            <el-table-column label="商品标题" width="80" prop="title"></el-table-column>
+                            <el-table-column label="销量" width="80" prop="saleCount"></el-table-column>
+                        </el-table>
+                    </el-card>
+                </el-col>
+
+            </el-row>
+        </el-main>
+        <el-footer>
+            <div style="height: 95px;background-image: url('../imgs/wave.png')"></div>
+            <div style="background-color: #3f3f3f;text-align: center;color: #b1b1b1;padding: 30px 0;">
+                <p>Copyright © 北京达内金桥科技有限公司版权所有 京ICP备12003709号-3 京公网安备 11010802029572号
+                </p>
+                <p>达内在线WWW.TMOOC.CN 专注于IT职业技能培训</p>
+                <p>涵盖20余门课程体系，致力于打造权威的IT职业教育学习平台</p>
+            </div>
+        </el-footer>
+    </el-container>
+
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="https://cdn.staticfile.org/vue/2.6.14/vue.min.js"></script>
+<!-- import JavaScript -->
+<script src="https://cdn.staticfile.org/element-ui/2.15.9/index.min.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                activeIndex: '1',
+                imgItem: ["../img/a.jpg", "../img/b.jpg", "../img/c.jpg", "../img/d.jpg", "../img/e.jpg"],
+                topArr: [{title: "蟑螂", saleCount: 4443},
+                    {title: "蜈蚣", saleCount: 45654},
+                    {title: "蚂蚁", saleCount: 9999},
+                    {title: "蜘蛛", saleCount: 564},
+                    {title: "苍蝇", saleCount: 5632},
+                    {title: "蚊子", saleCount: 5543}]
+            }
+        },
+        methods: {
+            handleSelect(key, keyPath) {
+                console.log(key, keyPath);
+            }
+        }
+    })
+</script>
+</html>

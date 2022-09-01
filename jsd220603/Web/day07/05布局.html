@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/element-ui/2.15.9/theme-chalk/index.css">
+    <style>
+        .c1 {
+            border: 1px solid red;
+            border-radius: 5px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <div>
+        <el-row>
+            <el-col span="12">
+                <div class="c1">aaa</div>
+            </el-col>
+            <el-col span="12">
+                <div class="c1">bbb</div>
+            </el-col>
+        </el-row>
+        <el-row gutter="20">
+            <el-col span="8">
+                <div class="c1"></div>
+            </el-col>
+            <el-col span="8">
+                <div class="c1"></div>
+            </el-col>
+            <el-col span="8">
+                <div class="c1"></div>
+            </el-col>
+        </el-row>
+    </div>
+
+
+    <div style="width: 1200px;margin: 0 auto">
+        <el-row gutter="20">
+            <el-col span="6">
+                <div class="c1">aaa</div>
+            </el-col>
+            <el-col span="6">
+                <div class="c1">bbb</div>
+            </el-col>
+            <el-col span="6">
+                <div class="c1">aaa</div>
+            </el-col>
+            <el-col span="6">
+                <div class="c1">bbb</div>
+            </el-col>
+        </el-row>
+    </div>
+    <div style="width: 1200px;margin: 0 auto">
+        <el-row gutter="30">
+            <el-col span="4">
+                <div class="c1">aaa</div>
+            </el-col>
+            <el-col span="8">
+                <div class="c1">bbb</div>
+            </el-col>
+            <el-col span="12">
+                <div class="c1">aaa</div>
+            </el-col>
+        </el-row>
+    </div>
+
+    <h1>分栏偏移</h1>
+    <el-row>
+        <el-col span="20" offset="2">
+            <div class="c1">aaa</div>
+        </el-col>
+    </el-row>
+
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="https://cdn.staticfile.org/vue/2.6.14/vue.min.js"></script>
+<!-- import JavaScript -->
+<script src="https://cdn.staticfile.org/element-ui/2.15.9/index.min.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return {}
+        },
+        methods: {}
+    })
+</script>
+</html>
