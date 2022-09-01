@@ -9,9 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="3.1 html&#10;eui">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="3.2 html&#10;酷鲨1.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day07/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/Web/day07/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +89,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/线下/src" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/jsd220603/Web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/jsd220603/Web/day07" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
@@ -100,8 +100,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web\day07" />
+      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web\day06\eui" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web\day05" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web\js" />
@@ -344,7 +344,7 @@
       <workItem from="1661839717626" duration="15035000" />
       <workItem from="1661905379080" duration="8856000" />
       <workItem from="1661916876987" duration="16032000" />
-      <workItem from="1661992025243" duration="621000" />
+      <workItem from="1661992025243" duration="15098000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1659442033948</created>
@@ -591,7 +591,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661859080470</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="3.2 html&#10;酷鲨1.0">
+      <created>1661992847900</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1661992847900</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -645,7 +652,8 @@
     <MESSAGE value="2.9 html" />
     <MESSAGE value="3.0 html" />
     <MESSAGE value="3.1 html&#10;eui" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.1 html&#10;eui" />
+    <MESSAGE value="3.2 html&#10;酷鲨1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.2 html&#10;酷鲨1.0" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

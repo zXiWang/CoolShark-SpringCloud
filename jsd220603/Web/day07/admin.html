@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/element-ui/2.15.9/theme-chalk/index.css">
+
+</head>
+<body>
+<div id="app">
+    <el-container>
+        <el-header style="background-color: #0095d7">
+            <h1 style="color: white;font-size:22px">
+                CoolShark商城后台管理系统
+                <span style="float: right;font-size: 15px">欢迎XXX会来!<a href="">退出登录</a> </span>
+            </h1>
+        </el-header>
+        <el-container>
+            <el-aside width="200px">
+                <!--导航菜单开始-->
+                <el-menu @select="handleSelect">
+                    <el-submenu index="1">
+                        <template slot="title">
+                            <i class="el-icon-s-flag"></i>
+                            <span>分类管理</span>
+                        </template>
+                        <el-menu-item index="1-1">分类列表</el-menu-item>
+                        <el-menu-item index="1-2">添加分类</el-menu-item>
+                    </el-submenu>
+                    <el-submenu index="2">
+                        <template slot="title">
+                            <i class="el-icon-picture"></i>
+                            <span>轮播图管理</span>
+                        </template>
+                        <el-menu-item index="2-1">轮播图列表</el-menu-item>
+                        <el-menu-item index="2-2">添加轮播图</el-menu-item>
+                    </el-submenu>
+                    <el-submenu index="3">
+                        <template slot="title">
+                            <i class="el-icon-shopping-cart-2"></i>
+                            <span>商品管理</span>
+                        </template>
+                        <el-menu-item index="3-1">商品列表</el-menu-item>
+                        <el-menu-item index="3-2">添加商品</el-menu-item>
+                    </el-submenu>
+
+                </el-menu>
+                <!--导航菜单结束-->
+            </el-aside>
+            <el-container>
+                <el-main><!--分类表格开始-->
+
+
+                    <el-table v-if="currentIndex=='1-1'"
+                              :data="categoryArr"
+                              style="width: 100%">
+                        <el-table-column
+                                type="index"
+                                label="编号"
+                                width="180">
+                        </el-table-column>
+                        <el-table-column
+                                prop="name"
+                                label="分类名称"
+                                width="180">
+                        </el-table-column>
+                        <el-table-column label="操作">
+                            <template slot-scope="scope">
+                                <el-button
+                                        size="mini"
+                                        type="danger"
+                                        @click="categoryDelete(scope.$index, scope.row)">删除
+                                </el-button>
+                            </template>
+                        </el-table-column>
+                    </el-table>
+                    <!--分类表格结束-->
+                    <!--轮播图表格开始-->
+                    <el-table v-if="currentIndex=='2-1'"
+                              :data="bannerArr"
+                              style="width: 100%">
+                        <el-table-column
+                                type="index"
+                                label="编号"
+                                width="180">
+                        </el-table-column>
+                        <el-table-column
+                                prop="name"
+                                label="轮播图"
+                                width="180">
+                            <template slot-scope="scope">
+                                <img :src="scope.row.url" width="100%" alt="">
+                            </template>
+                        </el-table-column>
+                        <el-table-column label="操作">
+                            <template slot-scope="scope">
+                                <el-button
+                                        size="mini"
+                                        type="danger"
+                                        @click="categoryDelete(scope.$index, scope.row)">删除
+                                </el-button>
+                            </template>
+                        </el-table-column>
+                    </el-table>
+                    <!--轮播图表格结束-->
+                    <!--商品表格开始-->
+
+                    <el-table v-if="currentIndex=='3-1'"
+                              :data="productArr"
+                              style="width: 100%">
+                        <el-table-column
+                                type="index"
+                                label="编号"
+                                width="200">
+                        </el-table-column>
+                        <el-table-column
+                                prop="price"
+                                label="价格"
+                                width="80">
+
+                        </el-table-column>
+                        <el-table-column
+                                prop="oldPrice"
+                                label="原价"
+                                width="80">
+
+                        </el-table-column>
+                        <el-table-column
+                                prop="saleCount"
+                                label="销量"
+                                width="80">
+                        </el-table-column>
+                        <el-table-column
+                                label="商品图片"
+                                width="100">
+                            <template slot-scope="scope">
+                                <img :src="scope.row.url" width="100%" alt="">
+                            </template>
+                        </el-table-column>
+                        <el-table-column label="操作">
+                            <template slot-scope="scope">
+                                <el-button
+                                        size="mini"
+                                        type="danger"
+                                        @click="categoryDelete(scope.$index, scope.row)">删除
+                                </el-button>
+                            </template>
+                        </el-table-column>
+                    </el-table>
+                    <!--商品表格结束--></el-main>
+                <el-footer>Footer</el-footer>
+            </el-container>
+        </el-container>
+    </el-container>
+
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="https://cdn.staticfile.org/vue/2.6.14/vue.min.js"></script>
+<!-- import JavaScript -->
+<script src="https://cdn.staticfile.org/element-ui/2.15.9/index.min.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                currentIndex: "1-1",
+                categoryArr: [{name: "品牌服装"}, {name: "精品女装"}, {name: "美食健康"}, {name: "数码科技"}, {name: "母婴产品"}],
+                bannerArr: [{url: "../imgs/b1.jpg"}, {url: "../imgs/b2.jpg"}, {url: "../imgs/b3.jpg"}, {url: "../imgs/b4.jpg"}],
+                productArr: [{
+                    title: "森马牛仔裤女宽松慢跑裤运动风2022春季新款显瘦束脚长裤复古",
+                    price: 233,
+                    oldPrice: 598,
+                    url: "../imgs/a.jpg",
+                    saleCount: 2342
+                },
+                    {
+                        title: "茵曼马甲连衣裙两件套春季新款娃娃领色织格长袖背心裙套装",
+                        price: 233,
+                        oldPrice: 598,
+                        url: "../imgs/b.jpg",
+                        saleCount: 2342
+                    },
+                    {
+                        title: "雪中飞墨绿色短袖t恤女夏2022新款纯棉半袖打底体恤夏季上衣潮ins",
+                        price: 233,
+                        oldPrice: 598,
+                        url: "../imgs/c.jpg",
+                        saleCount: 2342
+                    },
+                    {
+                        title: "【佟丽娅同款】鸭鸭明星同款羽绒服2021年冬季新款时尚连帽外套冬",
+                        price: 233,
+                        oldPrice: 598,
+                        url: "../imgs/d.jpg",
+                        saleCount: 2342
+                    },
+                    {
+                        title: "BEASTER小恶魔鬼脸明星同款夹克毛绒保暖加厚字母印花宽松外套ins",
+                        price: 233,
+                        oldPrice: 598,
+                        url: "../imgs/e.jpg",
+                        saleCount: 2342
+                    },
+                    {
+                        title: "香影毛呢外套女中长款2021年冬季新款气质韩版娃娃领紫色呢子大衣",
+                        price: 233,
+                        oldPrice: 598,
+                        url: "../imgs/f.jpg",
+                        saleCount: 2342
+                    },
+                    {
+                        title: "SEMIR森马商场同款打底针织毛衣纯色高领新品显瘦",
+                        price: 233,
+                        oldPrice: 598,
+                        url: "../imgs/g.jpg",
+                        saleCount: 2342
+                    },
+                    {
+                        title: "美特斯邦威女MTEE 贺岁系列中长款风衣736598",
+                        price: 233,
+                        oldPrice: 598,
+                        url: "../imgs/h.jpg",
+                        saleCount: 2342
+                    },
+                    {
+                        title: "imone2021秋款黑色小西装外套女韩版学生宽松学院风外套jk外套",
+                        price: 233,
+                        oldPrice: 598,
+                        url: "../imgs/i.jpg",
+                        saleCount: 2342
+                    },
+                    {
+                        title: "BEASTER 小恶魔明星同款保暖长袖街头潮流连帽卫衣情侣上衣",
+                        price: 233,
+                        oldPrice: 598,
+                        url: "../imgs/j.jpg",
+                        saleCount: 2342
+                    },
+                    {
+                        title: "憨厚皇后100%绵羊皮2021秋海宁真皮皮衣女长款修身绵羊皮风衣外",
+                        price: 233,
+                        oldPrice: 598,
+                        url: "../imgs/k.jpg",
+                        saleCount: 2342
+                    },
+                    {
+                        title: "美特斯邦威高腰牛仔裤女宽松小脚新款春秋彩色潮流女士牛仔",
+                        price: 233,
+                        oldPrice: 598,
+                        url: "../imgs/a.jpg",
+                        saleCount: 2342
+                    }]
+            }
+        },
+        methods: {
+            categoryDelete(index, category) {
+                this.categoryArr.splice(index, 1);
+            },
+            handleSelect(key, keyPath) {
+                console.log(key);
+                if(key=='1-2') {
+                    this.$message("添加分类");
+                }else if(key=='2-2'){
+                    this.$message("添加轮播图");
+
+                }else if(key=='3-2'){
+                    this.$message("添加商品")
+                }
+                else this.currentIndex=key;
+            }
+        }
+    })
+</script>
+</html>
