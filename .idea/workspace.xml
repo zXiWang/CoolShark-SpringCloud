@@ -9,15 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="3.2 html&#10;酷鲨1.1">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f35ff572-0104-4a0a-ae7b-deaa7079f705.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f35ff572-0104-4a0a-ae7b-deaa7079f705.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="4.0 Mysql">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/达内.iml" beforeDir="false" afterPath="$PROJECT_DIR$/达内.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -354,7 +347,7 @@
       <workItem from="1661916876987" duration="16032000" />
       <workItem from="1661992025243" duration="15136000" />
       <workItem from="1662081270932" duration="13485000" />
-      <workItem from="1662167091958" duration="4427000" />
+      <workItem from="1662167091958" duration="6242000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1659442033948</created>
@@ -615,7 +608,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662031145433</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="4.0 Mysql">
+      <created>1662172356590</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1662172356590</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -645,7 +645,6 @@
       <path value="$PROJECT_DIR$/src/线下/SB2206/spring-boot2206" />
       <path value="$PROJECT_DIR$/src/线下/WS2206/web-server2206-teacher" />
     </ignored-roots>
-    <MESSAGE value="第二次提交" />
     <MESSAGE value="1.3" />
     <MESSAGE value="1.4 移动" />
     <MESSAGE value="1.5 更新线程" />
@@ -670,7 +669,8 @@
     <MESSAGE value="3.1 html&#10;eui" />
     <MESSAGE value="3.2 html&#10;酷鲨1.0" />
     <MESSAGE value="3.2 html&#10;酷鲨1.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.2 html&#10;酷鲨1.1" />
+    <MESSAGE value="4.0 Mysql" />
+    <option name="LAST_COMMIT_MESSAGE" value="4.0 Mysql" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
