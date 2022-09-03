@@ -13,7 +13,7 @@
         <introspection-scope>
           <node kind="schema">
             <name qname="@" />
-            <name qname="heima_mm" />
+            <name qname="empdb" />
           </node>
         </introspection-scope>
       </schema-mapping>
