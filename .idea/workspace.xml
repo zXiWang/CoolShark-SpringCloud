@@ -9,24 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="4.0 Mysql">
+    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="4.1 jdbc">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/f35ff572-0104-4a0a-ae7b-deaa7079f705.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f35ff572-0104-4a0a-ae7b-deaa7079f705.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/jsd220603.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/%E5%BC%AF%E5%BC%AF.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/%E7%94%B5%E9%A5%AD%E9%94%85.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/1232131.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/发个呵呵.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/发个呵呵发过火h.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/达内.iml" beforeDir="false" afterPath="$PROJECT_DIR$/达内.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,22 +91,22 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/线下/src" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/jsd220603/jdbc03/src/main/java/tedu" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/jsd220603/boot01-1/src/main/resources/static" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31911263" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="SQL Resolution Scopes" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\boot01-1\src\main\resources\static" />
+      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\boot01-1\src\main\java\cn\tedu\boot011" />
+      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\boot01-1\src\main\java" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\jdbc03\src\main\java\tedu" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\jdbc03\src\main\java" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\jdbc02\src\main\java" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\jdbc01\src\main\java\cn\tedu" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\testfile\123" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\XiWang\Desktop\待\达内\testfile\123" />
@@ -148,13 +137,13 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="应用程序.Demo05">
-    <configuration name="Demo01 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tedu.Demo01" />
-      <module name="jdbc03" />
+  <component name="RunManager" selected="Spring Boot.Boot01Application (1)">
+    <configuration name="Demo06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.tedu.Demo06" />
+      <module name="jdbc01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tedu.*" />
+          <option name="PATTERN" value="cn.tedu.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -162,12 +151,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo02 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tedu.Demo02" />
-      <module name="jdbc03" />
+    <configuration name="Demo07" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.tedu.Demo07" />
+      <module name="jdbc01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tedu.*" />
+          <option name="PATTERN" value="cn.tedu.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -175,12 +164,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo03 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tedu.Demo03" />
-      <module name="jdbc03" />
+    <configuration name="Demo08" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.tedu.Demo08" />
+      <module name="jdbc01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tedu.*" />
+          <option name="PATTERN" value="cn.tedu.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -188,12 +177,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tedu.Demo04" />
-      <module name="jdbc03" />
+    <configuration name="Demo09" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.tedu.Demo09" />
+      <module name="jdbc01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tedu.*" />
+          <option name="PATTERN" value="cn.tedu.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -201,15 +190,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo05" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tedu.Demo05" />
-      <module name="jdbc03" />
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Boot011Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="boot01-1" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.tedu.boot011.Boot011Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Boot01Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="boot01" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tedu.*" />
+          <option name="PATTERN" value="cn.tedu.boot01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.tedu.boot01.Boot01Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Boot01Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="boot01" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.boot01.Boot01Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -247,19 +268,22 @@
       <item itemvalue="Spring Boot.MySpringBoot2Application" />
       <item itemvalue="Spring Boot.MySpringBoot3Application" />
       <item itemvalue="Spring Boot.S1Application" />
-      <item itemvalue="应用程序.Demo01 (1)" />
-      <item itemvalue="应用程序.Demo02 (1)" />
-      <item itemvalue="应用程序.Demo03 (1)" />
-      <item itemvalue="应用程序.Demo04" />
-      <item itemvalue="应用程序.Demo05" />
+      <item itemvalue="Spring Boot.DemoApplication" />
+      <item itemvalue="应用程序.Demo06" />
+      <item itemvalue="应用程序.Demo07" />
+      <item itemvalue="应用程序.Demo08" />
+      <item itemvalue="应用程序.Demo09" />
+      <item itemvalue="Spring Boot.Boot01Application" />
+      <item itemvalue="Spring Boot.Boot01Application (1)" />
+      <item itemvalue="Spring Boot.Boot011Application" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.Demo05" />
-        <item itemvalue="应用程序.Demo04" />
-        <item itemvalue="应用程序.Demo02 (1)" />
-        <item itemvalue="应用程序.Demo03 (1)" />
-        <item itemvalue="应用程序.Demo01 (1)" />
+        <item itemvalue="Spring Boot.Boot01Application (1)" />
+        <item itemvalue="应用程序.Demo09" />
+        <item itemvalue="应用程序.Demo08" />
+        <item itemvalue="应用程序.Demo07" />
+        <item itemvalue="应用程序.Demo06" />
       </list>
     </recent_temporary>
   </component>
@@ -365,6 +389,8 @@
       <workItem from="1662366225798" duration="362000" />
       <workItem from="1662366611758" duration="444000" />
       <workItem from="1662367089377" duration="9633000" />
+      <workItem from="1662426057001" duration="11704000" />
+      <workItem from="1662446362866" duration="9178000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1659442033948</created>
@@ -646,7 +672,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662187683002</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="4.1 jdbc">
+      <created>1662426159419</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1662426159419</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -676,7 +709,6 @@
       <path value="$PROJECT_DIR$/src/线下/SB2206/spring-boot2206" />
       <path value="$PROJECT_DIR$/src/线下/WS2206/web-server2206-teacher" />
     </ignored-roots>
-    <MESSAGE value="1.3" />
     <MESSAGE value="1.4 移动" />
     <MESSAGE value="1.5 更新线程" />
     <MESSAGE value="1.5 更新同步线程" />
@@ -701,7 +733,8 @@
     <MESSAGE value="3.2 html&#10;酷鲨1.0" />
     <MESSAGE value="3.2 html&#10;酷鲨1.1" />
     <MESSAGE value="4.0 Mysql" />
-    <option name="LAST_COMMIT_MESSAGE" value="4.0 Mysql" />
+    <MESSAGE value="4.1 jdbc" />
+    <option name="LAST_COMMIT_MESSAGE" value="4.1 jdbc" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

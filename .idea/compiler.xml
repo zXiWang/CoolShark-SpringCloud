@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="MySpringBoot3" />
+        <module name="demo" />
         <module name="BirdBoot" />
         <module name="V21" />
         <module name="V20" />
@@ -30,15 +31,20 @@
         <module name="V12" />
         <module name="V11" />
         <module name="V14" />
+        <module name="boot01" />
         <module name="V13" />
         <module name="V16" />
         <module name="V15" />
         <module name="V18" />
+        <module name="boot01-1" />
         <module name="V19" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="BirdBoot" target="1.8" />
+      <module name="boot01" target="1.8" />
+      <module name="boot01-1" target="1.8" />
+      <module name="demo" target="1.8" />
       <module name="demo1" target="1.8" />
       <module name="jdbc01" target="1.8" />
       <module name="jdbc02" target="8" />
@@ -78,6 +84,9 @@
       <module name="MySpringBoot2" options="-parameters" />
       <module name="MySpringBoot3" options="-parameters" />
       <module name="SB2206" options="-parameters" />
+      <module name="boot01" options="-parameters" />
+      <module name="boot01-1" options="-parameters" />
+      <module name="demo" options="-parameters" />
       <module name="demo1" options="-parameters" />
       <module name="s1" options="-parameters" />
     </option>
