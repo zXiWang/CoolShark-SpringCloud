@@ -1,3 +1,0 @@
-# tedu
-
-tedu study

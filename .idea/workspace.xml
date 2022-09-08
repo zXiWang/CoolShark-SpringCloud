@@ -9,15 +9,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="4.2 spring boot">
+    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="4.3 spring boot&#10;Mybatis">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f35ff572-0104-4a0a-ae7b-deaa7079f705.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f35ff572-0104-4a0a-ae7b-deaa7079f705.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/达内.iml" beforeDir="false" afterPath="$PROJECT_DIR$/达内.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsd220603/boot03/src/main/java/cn/xiwang/boot03/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/boot03/src/main/java/cn/xiwang/boot03/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsd220603/boot03/src/main/java/cn/xiwang/boot03/mapper/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/boot03/src/main/java/cn/xiwang/boot03/mapper/ProductMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsd220603/boot03/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/boot03/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/达内/作业/day02/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/达内/作业/day02/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/达内/作业/day02/Test04.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/达内/作业/day02/Test04.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/达内/作业/day02/Test05.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/达内/作业/day02/Test05.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fileDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/fileDelete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/作业/day02/Test05.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/作业/day02/Test05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/111.obj" beforeDir="false" afterPath="$PROJECT_DIR$/testfile/111.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/123.obj" beforeDir="false" afterPath="$PROJECT_DIR$/testfile/123.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/testfile/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/articles/饭都不敢合同工和荣誉感热.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/bos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testfile/bos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/fos.dat" beforeDir="false" afterPath="$PROJECT_DIR$/testfile/fos.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/fos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testfile/fos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/testfile/image.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/image_cp.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/testfile/image_cp.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/java.io.FileOutputStream@16b98e56" beforeDir="false" afterPath="$PROJECT_DIR$/testfile/java.io.FileOutputStream@16b98e56" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/testfile/logo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/osw.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testfile/osw.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/person.obj" beforeDir="false" afterPath="$PROJECT_DIR$/testfile/person.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/pw.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testfile/pw.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/pw2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testfile/pw2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/qr.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/testfile/qr.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/submarine.xw" beforeDir="false" afterPath="$PROJECT_DIR$/testfile/submarine.xw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/testpw.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testfile/testpw.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/users/1040331024%40qq.com.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/users/1040331024.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/users/1040331024@qq.com.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/users/123.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/users/132.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/users/chenyx.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testfile/users/gcj.obj" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +60,9 @@
       <list>
         <option value="AnnotationType" />
         <option value="JavaScript File" />
+        <option value="Interface" />
         <option value="HTML File" />
         <option value="Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -93,29 +124,29 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/线下/src" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/jsd220603/boot03/src/main/resources/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/jsd220603/boot05/src/main/resources/static" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31911263" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\boot05\src\main\resources\static" />
+      <recent name="C:\Users\XiWang\Desktop\待\达内\test\作业" />
+      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\jsd220603 teacher git" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\boot03\src\main\resources\static" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\test" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\jsd220603 teacher git\作业" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\jsd220603 teacher git\笔记" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\XiWang\Desktop\待\达内\test\作业" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\boot02\src\main\resources\static" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\testfile\123" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web\day03" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web\day01" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="项目.submarine.src.cn.tedu.submarine" />
@@ -125,11 +156,11 @@
       <recent name="com.tedu.myspringboot2" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xiwang.boot05.mapper" />
+      <recent name="com.xiwang.boot04.entity" />
+      <recent name="com.xiwang.boot04.controller" />
+      <recent name="com.xiwang.boot04.mapper" />
       <recent name="com.example.boot02.utils" />
-      <recent name="com.webserver.entity" />
-      <recent name="com.webserver.controller" />
-      <recent name="apiday02" />
-      <recent name="项目.submarine.src.cn.tedu.submarine" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -139,13 +170,13 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="应用程序.Test04">
+  <component name="RunManager" selected="应用程序.fileDelete">
     <configuration name="Test01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="作业.day02.Test01" />
+      <option name="MAIN_CLASS_NAME" value="作业.day03.Test01" />
       <module name="达内" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="作业.day02.*" />
+          <option name="PATTERN" value="作业.day03.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,11 +185,11 @@
       </method>
     </configuration>
     <configuration name="Test02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="作业.day02.Test02" />
+      <option name="MAIN_CLASS_NAME" value="作业.day03.Test02" />
       <module name="达内" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="作业.day02.*" />
+          <option name="PATTERN" value="作业.day03.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -167,11 +198,11 @@
       </method>
     </configuration>
     <configuration name="Test03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="作业.day02.Test03" />
+      <option name="MAIN_CLASS_NAME" value="作业.day03.Test03" />
       <module name="达内" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="作业.day02.*" />
+          <option name="PATTERN" value="作业.day03.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -180,11 +211,11 @@
       </method>
     </configuration>
     <configuration name="Test04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="作业.day02.Test04" />
+      <option name="MAIN_CLASS_NAME" value="作业.day03.Test04" />
       <module name="达内" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="作业.day02.*" />
+          <option name="PATTERN" value="作业.day03.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -192,15 +223,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="作业.day01.Test06" />
+    <configuration name="fileDelete" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fileDelete" />
       <module name="达内" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="作业.day01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -253,6 +278,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Boot04Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="boot04" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xiwang.boot04.Boot04Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Boot05Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="boot05" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xiwang.boot05.Boot05Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="demo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
@@ -299,19 +338,21 @@
       <item itemvalue="Spring Boot.Boot02Application" />
       <item itemvalue="Spring Boot.Boot01Application (1)" />
       <item itemvalue="Spring Boot.Boot03Application" />
-      <item itemvalue="应用程序.Test06" />
+      <item itemvalue="Spring Boot.Boot04Application" />
+      <item itemvalue="Spring Boot.Boot05Application" />
       <item itemvalue="应用程序.Test01" />
       <item itemvalue="应用程序.Test02" />
       <item itemvalue="应用程序.Test03" />
       <item itemvalue="应用程序.Test04" />
+      <item itemvalue="应用程序.fileDelete" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.fileDelete" />
         <item itemvalue="应用程序.Test04" />
         <item itemvalue="应用程序.Test03" />
         <item itemvalue="应用程序.Test02" />
         <item itemvalue="应用程序.Test01" />
-        <item itemvalue="应用程序.Test06" />
       </list>
     </recent_temporary>
   </component>
@@ -421,6 +462,7 @@
       <workItem from="1662446362866" duration="13316000" />
       <workItem from="1662469498902" duration="2041000" />
       <workItem from="1662509925603" duration="20871000" />
+      <workItem from="1662597151096" duration="28393000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1659442033948</created>
@@ -723,7 +765,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662462652776</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="4.3 spring boot&#10;Mybatis">
+      <created>1662597269716</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1662597269716</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -753,7 +802,6 @@
       <path value="$PROJECT_DIR$/src/线下/SB2206/spring-boot2206" />
       <path value="$PROJECT_DIR$/src/线下/WS2206/web-server2206-teacher" />
     </ignored-roots>
-    <MESSAGE value="1.5 更新线程" />
     <MESSAGE value="1.5 更新同步线程" />
     <MESSAGE value="1.6 Collection" />
     <MESSAGE value="1.7 Collection,ArrayList,List" />
@@ -778,7 +826,8 @@
     <MESSAGE value="4.0 Mysql" />
     <MESSAGE value="4.1 jdbc" />
     <MESSAGE value="4.2 spring boot" />
-    <option name="LAST_COMMIT_MESSAGE" value="4.2 spring boot" />
+    <MESSAGE value="4.3 spring boot&#10;Mybatis" />
+    <option name="LAST_COMMIT_MESSAGE" value="4.3 spring boot&#10;Mybatis" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

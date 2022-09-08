@@ -36,7 +36,9 @@
         <module name="V16" />
         <module name="V15" />
         <module name="V18" />
+        <module name="boot05" />
         <module name="boot01-1" />
+        <module name="boot04" />
         <module name="boot03" />
         <module name="V19" />
         <module name="boot02" />
@@ -48,6 +50,8 @@
       <module name="boot01-1" target="1.8" />
       <module name="boot02" target="1.8" />
       <module name="boot03" target="1.8" />
+      <module name="boot04" target="1.8" />
+      <module name="boot05" target="1.8" />
       <module name="demo" target="1.8" />
       <module name="demo1" target="1.8" />
       <module name="jdbc01" target="1.8" />
@@ -92,6 +96,8 @@
       <module name="boot01-1" options="-parameters" />
       <module name="boot02" options="-parameters" />
       <module name="boot03" options="-parameters" />
+      <module name="boot04" options="-parameters" />
+      <module name="boot05" options="-parameters" />
       <module name="demo" options="-parameters" />
       <module name="demo1" options="-parameters" />
       <module name="s1" options="-parameters" />

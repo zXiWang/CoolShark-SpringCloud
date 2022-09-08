@@ -2,7 +2,7 @@ import java.io.File;
 
 public class fileDelete {
     public static void main(String[] args) {
-        File[] file = new File("testfile/123").listFiles();
+        File[] file = new File("testfile").listFiles(f-> f.getName().contains("_cp"));
         for (int i = 0; i < file.length; i++) {
             delete(file[i]);
         }
