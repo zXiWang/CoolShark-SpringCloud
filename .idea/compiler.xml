@@ -37,13 +37,17 @@
         <module name="V15" />
         <module name="V18" />
         <module name="boot01-1" />
+        <module name="boot03" />
         <module name="V19" />
+        <module name="boot02" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="BirdBoot" target="1.8" />
       <module name="boot01" target="1.8" />
       <module name="boot01-1" target="1.8" />
+      <module name="boot02" target="1.8" />
+      <module name="boot03" target="1.8" />
       <module name="demo" target="1.8" />
       <module name="demo1" target="1.8" />
       <module name="jdbc01" target="1.8" />
@@ -86,6 +90,8 @@
       <module name="SB2206" options="-parameters" />
       <module name="boot01" options="-parameters" />
       <module name="boot01-1" options="-parameters" />
+      <module name="boot02" options="-parameters" />
+      <module name="boot03" options="-parameters" />
       <module name="demo" options="-parameters" />
       <module name="demo1" options="-parameters" />
       <module name="s1" options="-parameters" />

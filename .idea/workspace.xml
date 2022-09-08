@@ -10,7 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="4.2 spring boot">
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01/src/main/java/cn/tedu/boot01/controller/BMIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/boot01/src/main/java/cn/tedu/boot01/controller/BMIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f35ff572-0104-4a0a-ae7b-deaa7079f705.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f35ff572-0104-4a0a-ae7b-deaa7079f705.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsd220603/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/达内.iml" beforeDir="false" afterPath="$PROJECT_DIR$/达内.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,11 +27,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="AnnotationType" />
         <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -86,7 +93,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/线下/src" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/jsd220603" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/jsd220603/boot03/src/main/resources/static" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
@@ -97,18 +104,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\boot03\src\main\resources\static" />
+      <recent name="C:\Users\XiWang\Desktop\待\达内\test" />
+      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\jsd220603 teacher git\作业" />
+      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\jsd220603 teacher git\笔记" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\boot01-1\src\main\resources\static" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\boot01-1\src\main\java\cn\tedu\boot011" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\boot01-1\src\main\java" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\jdbc03\src\main\java\tedu" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\boot02\src\main\resources\static" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\testfile\123" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web\day03" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\Web\day01" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\src\线下" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="项目.submarine.src.cn.tedu.submarine" />
@@ -118,11 +125,11 @@
       <recent name="com.tedu.myspringboot2" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.boot02.utils" />
       <recent name="com.webserver.entity" />
       <recent name="com.webserver.controller" />
       <recent name="apiday02" />
       <recent name="项目.submarine.src.cn.tedu.submarine" />
-      <recent name="项目.danei.src.test.submarine" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -132,13 +139,13 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Boot01Application (1)">
-    <configuration name="Demo06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.tedu.Demo06" />
-      <module name="jdbc01" />
+  <component name="RunManager" selected="应用程序.Test04">
+    <configuration name="Test01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="作业.day02.Test01" />
+      <module name="达内" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.tedu.*" />
+          <option name="PATTERN" value="作业.day02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,12 +153,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo07" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.tedu.Demo07" />
-      <module name="jdbc01" />
+    <configuration name="Test02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="作业.day02.Test02" />
+      <module name="达内" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.tedu.*" />
+          <option name="PATTERN" value="作业.day02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -159,12 +166,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo08" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.tedu.Demo08" />
-      <module name="jdbc01" />
+    <configuration name="Test03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="作业.day02.Test03" />
+      <module name="达内" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.tedu.*" />
+          <option name="PATTERN" value="作业.day02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -172,12 +179,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo09" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.tedu.Demo09" />
-      <module name="jdbc01" />
+    <configuration name="Test04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="作业.day02.Test04" />
+      <module name="达内" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.tedu.*" />
+          <option name="PATTERN" value="作业.day02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -185,13 +192,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="Test06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="作业.day01.Test06" />
+      <module name="达内" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="作业.day01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -203,14 +225,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Boot01Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="Boot01Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="boot01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.tedu.boot01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.tedu.boot01.Boot01Application" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -219,6 +235,20 @@
     <configuration name="Boot01Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="boot01" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.boot01.Boot01Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Boot02Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="boot02" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.boot02.Boot02Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Boot03Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="boot03" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.xiwang.boot03.Boot03Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -264,21 +294,24 @@
       <item itemvalue="Spring Boot.MySpringBoot3Application" />
       <item itemvalue="Spring Boot.S1Application" />
       <item itemvalue="Spring Boot.DemoApplication" />
-      <item itemvalue="应用程序.Demo06" />
-      <item itemvalue="应用程序.Demo07" />
-      <item itemvalue="应用程序.Demo08" />
-      <item itemvalue="应用程序.Demo09" />
       <item itemvalue="Spring Boot.Boot01Application" />
-      <item itemvalue="Spring Boot.Boot01Application (1)" />
       <item itemvalue="Spring Boot.Boot011Application" />
+      <item itemvalue="Spring Boot.Boot02Application" />
+      <item itemvalue="Spring Boot.Boot01Application (1)" />
+      <item itemvalue="Spring Boot.Boot03Application" />
+      <item itemvalue="应用程序.Test06" />
+      <item itemvalue="应用程序.Test01" />
+      <item itemvalue="应用程序.Test02" />
+      <item itemvalue="应用程序.Test03" />
+      <item itemvalue="应用程序.Test04" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.Boot01Application (1)" />
-        <item itemvalue="应用程序.Demo09" />
-        <item itemvalue="应用程序.Demo08" />
-        <item itemvalue="应用程序.Demo07" />
-        <item itemvalue="应用程序.Demo06" />
+        <item itemvalue="应用程序.Test04" />
+        <item itemvalue="应用程序.Test03" />
+        <item itemvalue="应用程序.Test02" />
+        <item itemvalue="应用程序.Test01" />
+        <item itemvalue="应用程序.Test06" />
       </list>
     </recent_temporary>
   </component>
@@ -385,7 +418,9 @@
       <workItem from="1662366611758" duration="444000" />
       <workItem from="1662367089377" duration="9633000" />
       <workItem from="1662426057001" duration="11704000" />
-      <workItem from="1662446362866" duration="9580000" />
+      <workItem from="1662446362866" duration="13316000" />
+      <workItem from="1662469498902" duration="2041000" />
+      <workItem from="1662509925603" duration="20871000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1659442033948</created>
@@ -681,7 +716,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662462482317</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="4.2 spring boot">
+      <created>1662462652775</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1662462652776</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
