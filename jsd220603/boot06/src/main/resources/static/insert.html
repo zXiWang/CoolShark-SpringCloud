@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <input type="text" v-model="product.title" placeholder="输入标题" @blur="f()">
+    <p>{{titleError}}</p>
+    <input type="text" v-model="product.price" placeholder="输入价格">
+    <input type="text" v-model="product.num" placeholder="输入数量">
+    <input type="button" value="添加" @click="insert()" v-bind:disabled="titleError!='标题可用'">
+</div>
+</body>
+<script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.min.js"></script>
+<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+<script>
+    let v = new Vue({
+        el: "body>div",
+        data: {
+            product: {
+                title: "",
+                price: "",
+                num: ""
+
+            },
+            titleError: "",
+        },
+        methods: {
+            insert() {
+                axios.post("/insert", v.product).then(function (response) {
+                    switch (response.data) {
+                        case 1:
+                            alert("标题不能为空");
+                            break;
+                        case 2:
+                            alert("标题已存在");
+                            break;
+                        case 3:
+                            alert("添加成功");
+                            break;
+                    }
+                })
+            },
+            f() {
+                axios.get("/check?title=" + v.product.title).then(function (response) {
+                    switch (response.data) {
+                        case 1:
+                            v.titleError = "标题不能为空";
+                            break;
+                        case 2:
+                            v.titleError = "标题已存在";
+                            break;
+                        case 3:
+                            v.titleError = "标题可用";
+                            break;
+                    }
+                })
+            }
+        }
+    })
+</script>
+</html>

@@ -33,12 +33,15 @@
       <module fileurl="file://$PROJECT_DIR$/jsd220603/boot03/boot03.iml" filepath="$PROJECT_DIR$/jsd220603/boot03/boot03.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsd220603/boot04/boot04.iml" filepath="$PROJECT_DIR$/jsd220603/boot04/boot04.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsd220603/boot05/boot05.iml" filepath="$PROJECT_DIR$/jsd220603/boot05/boot05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsd220603/boot06/boot06.iml" filepath="$PROJECT_DIR$/jsd220603/boot06/boot06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsd220603/boot07/boot07.iml" filepath="$PROJECT_DIR$/jsd220603/boot07/boot07.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsd220603/demo/demo.iml" filepath="$PROJECT_DIR$/jsd220603/demo/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsd220603/jdbc01/jdbc01.iml" filepath="$PROJECT_DIR$/jsd220603/jdbc01/jdbc01.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsd220603/jdbc02/jdbc02.iml" filepath="$PROJECT_DIR$/jsd220603/jdbc02/jdbc02.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsd220603/jdbc03/jdbc03.iml" filepath="$PROJECT_DIR$/jsd220603/jdbc03/jdbc03.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsd220603/jsd220603.iml" filepath="$PROJECT_DIR$/jsd220603/jsd220603.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsd220603/s1/s1.iml" filepath="$PROJECT_DIR$/jsd220603/s1/s1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsd220603/weibo/weibo.iml" filepath="$PROJECT_DIR$/jsd220603/weibo/weibo.iml" />
       <module fileurl="file://$PROJECT_DIR$/达内.iml" filepath="$PROJECT_DIR$/达内.iml" />
     </modules>
   </component>

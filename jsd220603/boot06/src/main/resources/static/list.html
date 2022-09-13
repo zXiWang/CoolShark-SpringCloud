@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <table border="1">
+        <caption>商品列表</caption>
+        <tr>
+            <th>ID</th>
+            <th>标题</th>
+            <th>价格</th>
+            <th>库存</th>
+            <th>操作</th>
+        </tr>
+        <tr v-for="product in products">
+            <td>{{product.id}}</td>
+            <td>{{product.title}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.num}}</td>
+            <td><a :href="'/update.html?id='+product.id">修改</a>
+                <a href="javascript:void(0)" @click="del(product.id)">删除</a>
+            </td>
+
+        </tr>
+    </table>
+</div>
+</body>
+<script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.min.js"></script>
+<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+<script>
+    let v = new Vue({
+        el: "body>div",
+        data: {
+            products: {
+                id: "",
+                title: "",
+                price: "",
+                num: ""
+            }
+        },
+        methods: {
+
+            del(id) {
+                if (confirm("确认删除?")) {
+                    axios.get("/del?id=" + id).then(function (response) {
+                        switch (response.data) {
+                            case 1:
+                                alert("删除失败");
+                                break
+                            case 2:
+                                alert("删除成功");
+                                window.location.reload();
+                                break;
+                        }
+                    })
+                }
+
+            },
+
+        },
+        created: function () {
+            axios.get("/select").then(function (response) {
+                v.products = response.data;
+            })
+        }
+    })
+</script>
+</html>

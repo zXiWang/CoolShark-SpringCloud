@@ -3,5 +3,6 @@
   <component name="JavaScriptLibraryMappings">
     <file url="file://$PROJECT_DIR$/jsd220603" libraries="{index, shehuizhuyi, vue}" />
     <file url="file://$PROJECT_DIR$/jsd220603/boot05" libraries="{axios}" />
+    <file url="file://$PROJECT_DIR$/jsd220603/boot07" libraries="{element-ui}" />
   </component>
 </project>
