@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/element-ui/2.15.9/theme-chalk/index.css">
+</head>
+<body>
+<div id="app">
+    <el-container>
+        <el-header style="background-color: #0095d7">
+            <h1 style="color: white;font-size: 22px">
+                CoolShark商城后台管理系统
+                <span style="float:right;font-size: 15px">欢迎xxx回来!<a href="">退出登录</a></span>
+            </h1>
+        </el-header>
+        <el-container>
+            <el-aside width="200px" style="overflow: hidden">
+                <!--导航菜单开始-->
+                <el-menu @select="handleSelect">
+                    <!--添加子菜单-->
+                    <el-submenu index="1">
+                        <!--添加子菜单标题-->
+                        <template slot="title">
+                            <i class="el-icon-s-flag"></i>
+                            <span>分类管理</span>
+                        </template>
+                        <!--添加菜单项-->
+                        <el-menu-item index="1-1">分类列表</el-menu-item>
+                        <el-menu-item index="1-2">添加分类</el-menu-item>
+                    </el-submenu>
+
+                    <el-submenu index="2">
+                        <!--添加子菜单标题-->
+                        <template slot="title">
+                            <i class="el-icon-picture"></i>
+                            <span>轮播图管理</span>
+                        </template>
+                        <!--添加菜单项-->
+                        <el-menu-item index="2-1">轮播图列表</el-menu-item>
+                        <el-menu-item index="2-2">添加轮播图</el-menu-item>
+                    </el-submenu>
+                    <el-submenu index="3">
+                        <!--添加子菜单标题-->
+                        <template slot="title">
+                            <i class="el-icon-shopping-cart-2"></i>
+                            <span>商品管理</span>
+                        </template>
+                        <!--添加菜单项-->
+                        <el-menu-item index="3-1">商品列表</el-menu-item>
+                        <el-menu-item index="3-2">添加商品</el-menu-item>
+                    </el-submenu>
+
+                </el-menu>
+                <!--导航菜单结束-->
+            </el-aside>
+            <el-main>
+                <!--分类表格开始-->
+                <el-table v-if="currentIndex=='1-1'" :data="categoryArr" style="width: 100%">
+                    <el-table-column type="index" label="编号" width="180">
+                    </el-table-column>
+                    <el-table-column prop="name" label="分类名称" width="180">
+                    </el-table-column>
+                    <el-table-column label="操作">
+                        <template slot-scope="scope">
+                            <el-button size="mini"
+                                       type="success"
+                                       @click="updateCategory(scope.row)">
+                                修改
+                            </el-button>
+                            <el-popconfirm title="您确认删除此标签吗?"
+                                           @confirm="categoryDelete(scope.$index, scope.row)">
+
+                                <el-button
+                                        slot="reference"
+
+                                        size="mini"
+                                        type="danger">
+                                    删除
+                                </el-button>
+                            </el-popconfirm>
+                        </template>
+                    </el-table-column>
+                </el-table>
+                <!--分类表格结束-->
+                <!--轮播图表格开始-->
+                <el-table v-if="currentIndex=='2-1'" :data="bannerArr" style="width: 100%">
+                    <el-table-column type="index" label="编号" width="180">
+                    </el-table-column>
+                    <el-table-column label="轮播图" width="180">
+                        <!--自定义内容必须写在template里面-->
+                        <template slot-scope="scope">
+                            <!--scope.row得到当前行对应的数组里面的对象-->
+                            <img :src="scope.row.url" width="100%" alt="">
+                        </template>
+                    </el-table-column>
+                    <el-table-column label="操作">
+                        <template slot-scope="scope">
+                            <el-popconfirm title="您确认删除此轮播图吗?"
+                                           @confirm="bannerDelete(scope.$index, scope.row)">
+
+                                <el-button
+                                        slot="reference"
+
+                                        size="mini"
+                                        type="danger">删除
+                                </el-button>
+                            </el-popconfirm>
+                        </template>
+                    </el-table-column>
+                </el-table>
+                <!--轮播图表格结束-->
+                <!--商品表格开始-->
+                <el-table v-if="currentIndex=='3-1'" :data="productArr" style="width: 100%">
+                    <el-table-column type="index" label="编号" width="50">
+                    </el-table-column>
+                    <el-table-column prop="title" label="商品标题" width="200"></el-table-column>
+                    <el-table-column prop="price" label="价格" width="80"></el-table-column>
+                    <el-table-column prop="oldPrice" label="原价" width="80"></el-table-column>
+                    <el-table-column prop="saleCount" label="销量" width="80"></el-table-column>
+                    <el-table-column label="商品图片" width="100">
+                        <!--自定义内容必须写在template里面-->
+                        <template slot-scope="scope">
+                            <!--scope.row得到当前行对应的数组里面的对象-->
+                            <img :src="scope.row.url" width="100%" alt="">
+                        </template>
+                    </el-table-column>
+                    <el-table-column label="操作">
+                        <template slot-scope="scope">
+                            <el-popconfirm title="您确认删除此商品吗?"
+                                           @confirm="productDelete(scope.$index, scope.row)">
+
+                                <el-button
+                                        size="mini"
+                                        type="danger"
+                                        slot="reference"
+
+                                >删除
+                                </el-button>
+                            </el-popconfirm>
+
+                        </template>
+                    </el-table-column>
+                </el-table>
+                <!--商品表格结束-->
+
+            </el-main>
+        </el-container>
+    </el-container>
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="https://cdn.staticfile.org/vue/2.6.14/vue.min.js"></script>
+<!-- import JavaScript -->
+<script src="https://cdn.staticfile.org/element-ui/2.15.9/index.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.min.js"></script>
+
+<script>
+    let v = new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                currentIndex: "1-1",
+                categoryArr: [],
+                bannerArr: [],
+                productArr: [],
+            }
+        },
+        methods: {
+            categoryDelete(i, category) {
+                axios.get("/category/delete?id=" + category.id).then(function (response) {
+                    v.categoryArr.splice(i, 1);
+                })
+            },
+            bannerDelete(i, banner) {
+                axios.get("/banner/delete?id=" + banner.id).then(function (response) {
+                    v.bannerArr.splice(i, 1);
+                })
+            },
+            productDelete(i, product) {
+                axios.get("/product/delete?id=" + product.id).then(function (response) {
+                    v.bannerArr.splice(i, 1);
+                })
+            },
+            updateCategory(category) {
+                let name = prompt("请输入新的名称");
+                if (name != null && name.trim() != "") {
+                    category.name = name;
+                    axios.post("/category/update", category).then(function (response) {
+                        v.$message.success("修改完成!");
+                    })
+                }
+            },
+
+            handleSelect(key, keyPath) {
+                console.log(key);
+                if (key == '1-2') {
+                    let name = prompt("请输入分类名称");
+                    if (name != null && name.trim() != "") {
+                        axios.get("/category/insert?name=" + name).then(function (response) {
+                            v.categoryArr = response.data;
+                        })
+                    }
+                } else if (key == '2-2') {
+                    location.href = "/insertBanner.html";
+                } else if (key == '3-2') {
+                    location.href = "/insertProduct.html";
+                } else {
+                    v.currentIndex = key;
+                }
+
+            }
+        },
+        created: function () {
+            axios.get("category/select").then(function (response) {
+                v.categoryArr = response.data;
+            })
+            axios.get("/banner/select").then(function (response) {
+                v.bannerArr = response.data;
+            })
+            axios.get("/product/select").then(function (response) {
+                v.productArr = response.data;
+            })
+        }
+    })
+</script>
+</html>

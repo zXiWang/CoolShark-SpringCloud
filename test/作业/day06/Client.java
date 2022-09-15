@@ -1,6 +1,11 @@
 package 作业.day06;
 
+import java.io.BufferedWriter;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
 import java.net.Socket;
+import java.nio.charset.StandardCharsets;
 
 /**
  * 改正下面程序的错误,使得程序可以正常运行
@@ -13,7 +18,8 @@ public class Client {
 	
 	public Client() {
 		try {
-			Socket socket = new Socket("localost",8088);
+			socket = new Socket("localhost", 8080);
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -21,19 +27,19 @@ public class Client {
 	
 	public void start() {
 		try {
-//			OutputStream out = socket.getOutputStream();
-//			OutputStreamWriter osw = new OutputStream(out,"YTF-8");
-//			BufferedWriter bw = new BufferedWriter(osw);
-//			PrintWriter pw = new PrintWriter(bw);
-//			
-//			pw.print("你好服务端!");
-//			
+			OutputStream out = socket.getOutputStream();
+			OutputStreamWriter osw = new OutputStreamWriter(out, StandardCharsets.UTF_8);
+			BufferedWriter bw = new BufferedWriter(osw);
+			PrintWriter pw = new PrintWriter(bw,true);
+
+			pw.println("你好服务端!");
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 	
-	public static void mian(String[] args) {
+	public static void main(String[] args) {
 		Client client = new Client();
 		client.start();
 	}

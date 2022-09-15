@@ -11,7 +11,7 @@
       <user-name>root</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="schema" qname="empdb" />
+          <node kind="schema" qname="cs" />
         </introspection-scope>
       </schema-mapping>
     </data-source>

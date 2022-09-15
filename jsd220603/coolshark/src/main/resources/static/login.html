@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/element-ui/2.15.9/theme-chalk/index.css">
+    <style>
+        body {
+            margin: 0; /*去掉自带的外边距*/
+            background-image: url("imgs/bg.jpg");
+            background-size: cover;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 72px;
+            color: #0096dc;
+            margin-bottom: 0;
+        }
+
+        img {
+            width: 100px;
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #0096dc;
+            margin-bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <h1>欢迎来到酷鲨商城</h1>
+    <img src="imgs/shark.png" alt="">
+    <h2>CoolSharkMall</h2>
+    <el-card style="width: 600px;height: 300px;margin: 0 auto;
+    background-color: rgba(255,255,255,0.3)">
+        <el-form label-width="60px" style="width: 400px;margin: 50px auto">
+            <el-form-item label="用户名">
+                <el-input v-model="user.username" type="text" placeholder="请输入用户名"></el-input>
+            </el-form-item>
+            <el-form-item label="密码">
+                <el-input v-model="user.password" type="password" placeholder="请输入密码"></el-input>
+            </el-form-item>
+            <el-form-item>
+                <el-button @click="login()" style="position: relative;right: 30px"
+                           type="primary">登录
+                </el-button>
+            </el-form-item>
+        </el-form>
+    </el-card>
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="https://cdn.staticfile.org/vue/2.6.14/vue.min.js"></script>
+<!-- import JavaScript -->
+<script src="https://cdn.staticfile.org/element-ui/2.15.9/index.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.min.js"></script>
+
+<script>
+    let v = new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                user: {username: '', password: ''},
+            }
+        },
+        methods: {
+            login() {
+                axios.post("/login", v.user).then(function (response) {
+                    switch (response.data) {
+                        case 1:
+                            v.$message.error("用户名或密码不能为空!");
+                            break;
+                        case 2:
+                            v.$message.error("用户名不存在!");
+                            break;
+                        case 3:
+                            v.$message.error("用户名或密码错误!")
+                            break;
+                        case 4:
+                            v.$message.success("登录成功!");
+                            setTimeout(function () {
+                                location.href = "/";
+                            },2000)
+
+                            break;
+                    }
+                })
+            }
+        }
+    })
+</script>
+</html>
