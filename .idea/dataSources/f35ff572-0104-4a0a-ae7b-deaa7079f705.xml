@@ -1011,257 +1011,330 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Host>localhost</Host>
     </user>
     <table id="295" parent="6" name="car"/>
-    <table id="296" parent="6" name="dept"/>
-    <table id="297" parent="6" name="emp"/>
-    <table id="298" parent="6" name="hero"/>
-    <table id="299" parent="6" name="image"/>
-    <table id="300" parent="6" name="person"/>
-    <table id="301" parent="6" name="product"/>
-    <table id="302" parent="6" name="trade"/>
-    <table id="303" parent="6" name="user"/>
-    <column id="304" parent="295" name="id">
+    <table id="296" parent="6" name="comment"/>
+    <table id="297" parent="6" name="dept"/>
+    <table id="298" parent="6" name="emp"/>
+    <table id="299" parent="6" name="hero"/>
+    <table id="300" parent="6" name="image"/>
+    <table id="301" parent="6" name="person"/>
+    <table id="302" parent="6" name="product"/>
+    <table id="303" parent="6" name="trade"/>
+    <table id="304" parent="6" name="user"/>
+    <table id="305" parent="6" name="weibo"/>
+    <column id="306" parent="295" name="id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="305" parent="295" name="title">
+    <column id="307" parent="295" name="title">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="306" parent="295" name="type">
+    <column id="308" parent="295" name="type">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="307" parent="295" name="price">
+    <column id="309" parent="295" name="price">
       <Position>4</Position>
       <DataType>double|0s</DataType>
     </column>
-    <key id="308" parent="295" name="PRIMARY">
+    <key id="310" parent="295" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="309" parent="296" name="id">
+    <column id="311" parent="296" name="id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="310" parent="296" name="name">
+    <column id="312" parent="296" name="content">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="313" parent="296" name="nickname">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="314" parent="296" name="weibo_id">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="315" parent="296" name="comment_id_uindex">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="316" parent="296" name="comment_id_uindex">
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>comment_id_uindex</UnderlyingIndexName>
+    </key>
+    <column id="317" parent="297" name="id">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="318" parent="297" name="name">
       <Position>2</Position>
       <DataType>varchar(14)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="311" parent="296" name="loc">
+    <column id="319" parent="297" name="loc">
       <Position>3</Position>
       <DataType>varchar(13)|0s</DataType>
     </column>
-    <index id="312" parent="296" name="DNAME">
+    <index id="320" parent="297" name="DNAME">
       <ColNames>name</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="313" parent="296" name="PRIMARY">
+    <key id="321" parent="297" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="314" parent="296" name="DNAME">
+    <key id="322" parent="297" name="DNAME">
       <ColNames>name</ColNames>
       <UnderlyingIndexName>DNAME</UnderlyingIndexName>
     </key>
-    <column id="315" parent="297" name="id">
+    <column id="323" parent="298" name="id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="316" parent="297" name="name">
+    <column id="324" parent="298" name="name">
       <Position>2</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="317" parent="297" name="job">
+    <column id="325" parent="298" name="job">
       <Position>3</Position>
       <DataType>varchar(9)|0s</DataType>
     </column>
-    <column id="318" parent="297" name="manager">
+    <column id="326" parent="298" name="manager">
       <Position>4</Position>
       <DataType>int|0s</DataType>
     </column>
-    <column id="319" parent="297" name="hiredate">
+    <column id="327" parent="298" name="hiredate">
       <Position>5</Position>
       <DataType>date|0s</DataType>
     </column>
-    <column id="320" parent="297" name="sal">
+    <column id="328" parent="298" name="sal">
       <Position>6</Position>
       <DataType>double(7,2 digit)|0s</DataType>
     </column>
-    <column id="321" parent="297" name="comm">
+    <column id="329" parent="298" name="comm">
       <Position>7</Position>
       <DataType>double(7,2 digit)|0s</DataType>
     </column>
-    <column id="322" parent="297" name="dept_id">
+    <column id="330" parent="298" name="dept_id">
       <Position>8</Position>
       <DataType>int|0s</DataType>
     </column>
-    <key id="323" parent="297" name="PRIMARY">
+    <key id="331" parent="298" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="324" parent="298" name="id">
+    <column id="332" parent="299" name="id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="325" parent="298" name="name">
+    <column id="333" parent="299" name="name">
       <Position>2</Position>
       <DataType>varchar(20)|0s</DataType>
     </column>
-    <column id="326" parent="298" name="age">
+    <column id="334" parent="299" name="age">
       <Position>3</Position>
       <DataType>int|0s</DataType>
     </column>
-    <key id="327" parent="298" name="PRIMARY">
+    <key id="335" parent="299" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="328" parent="299" name="id">
+    <column id="336" parent="300" name="id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="329" parent="299" name="intro">
+    <column id="337" parent="300" name="intro">
       <Position>2</Position>
       <DataType>varchar(100)|0s</DataType>
     </column>
-    <column id="330" parent="299" name="urls">
+    <column id="338" parent="300" name="urls">
       <Position>3</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="331" parent="299" name="image_id_uindex">
+    <index id="339" parent="300" name="image_id_uindex">
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="332" parent="299" name="PRIMARY">
+    <key id="340" parent="300" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="333" parent="299" name="image_id_uindex">
+    <key id="341" parent="300" name="image_id_uindex">
       <ColNames>id</ColNames>
       <UnderlyingIndexName>image_id_uindex</UnderlyingIndexName>
     </key>
-    <column id="334" parent="300" name="id">
+    <column id="342" parent="301" name="id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="335" parent="300" name="name">
+    <column id="343" parent="301" name="name">
       <Position>2</Position>
       <DataType>varchar(20)|0s</DataType>
     </column>
-    <column id="336" parent="300" name="gender">
+    <column id="344" parent="301" name="gender">
       <Position>3</Position>
       <DataType>char(1)|0s</DataType>
     </column>
-    <column id="337" parent="300" name="rel">
+    <column id="345" parent="301" name="rel">
       <Position>4</Position>
       <DataType>varchar(10)|0s</DataType>
     </column>
-    <key id="338" parent="300" name="PRIMARY">
+    <key id="346" parent="301" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="339" parent="301" name="id">
+    <column id="347" parent="302" name="id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="340" parent="301" name="title">
+    <column id="348" parent="302" name="title">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
     </column>
-    <column id="341" parent="301" name="price">
+    <column id="349" parent="302" name="price">
       <Position>3</Position>
       <DataType>double|0s</DataType>
     </column>
-    <column id="342" parent="301" name="num">
+    <column id="350" parent="302" name="num">
       <Position>4</Position>
       <DataType>int|0s</DataType>
     </column>
-    <index id="343" parent="301" name="product_id_uindex">
+    <index id="351" parent="302" name="product_id_uindex">
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="344" parent="301" name="PRIMARY">
+    <key id="352" parent="302" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="345" parent="301" name="product_id_uindex">
+    <key id="353" parent="302" name="product_id_uindex">
       <ColNames>id</ColNames>
       <UnderlyingIndexName>product_id_uindex</UnderlyingIndexName>
     </key>
-    <column id="346" parent="302" name="id">
+    <column id="354" parent="303" name="id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="347" parent="302" name="money">
+    <column id="355" parent="303" name="money">
       <Position>2</Position>
       <DataType>int|0s</DataType>
     </column>
-    <column id="348" parent="302" name="type">
+    <column id="356" parent="303" name="type">
       <Position>3</Position>
       <DataType>varchar(10)|0s</DataType>
     </column>
-    <column id="349" parent="302" name="time">
+    <column id="357" parent="303" name="time">
       <Position>4</Position>
       <DataType>date|0s</DataType>
     </column>
-    <column id="350" parent="302" name="p_id">
+    <column id="358" parent="303" name="p_id">
       <Position>5</Position>
       <DataType>int|0s</DataType>
     </column>
-    <key id="351" parent="302" name="PRIMARY">
+    <key id="359" parent="303" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="352" parent="303" name="id">
+    <column id="360" parent="304" name="id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="353" parent="303" name="username">
+    <column id="361" parent="304" name="username">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
     </column>
-    <column id="354" parent="303" name="password">
+    <column id="362" parent="304" name="password">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
     </column>
-    <column id="355" parent="303" name="nickname">
+    <column id="363" parent="304" name="nickname">
       <Position>4</Position>
       <DataType>varchar(50)|0s</DataType>
     </column>
-    <key id="356" parent="303" name="PRIMARY">
+    <key id="364" parent="304" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
+    </key>
+    <column id="365" parent="305" name="id">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="366" parent="305" name="content">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="367" parent="305" name="created">
+      <Position>3</Position>
+      <DataType>datetime|0s</DataType>
+    </column>
+    <column id="368" parent="305" name="urls">
+      <Position>4</Position>
+      <DataType>varchar(500)|0s</DataType>
+    </column>
+    <column id="369" parent="305" name="user_id">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="370" parent="305" name="nickname">
+      <Position>6</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="371" parent="305" name="weibo_id_uindex">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="372" parent="305" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="373" parent="305" name="weibo_id_uindex">
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>weibo_id_uindex</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>

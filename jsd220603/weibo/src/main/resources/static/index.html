@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h1>微博首页</h1>
+    <!--isLogin=true时表示登录过 显示div里面的内容-->
+    <div v-if="isLogin">
+        <h2>欢迎{{user.nickname}}回来</h2>
+        <a href="/send.html">发微博</a>
+        <a href="javascript:void(0)" @click="logout()">退出登录</a>
+    </div>
+
+    <div v-else>
+        <a href="/reg.html">注册</a>
+        <a href="/login.html">登录</a>
+    </div>
+    <hr>
+    <div v-for="weibo in arr">
+
+        <a href="" @click="del(weibo.id)">删除</a>
+        <a :href="'/detail.html?id='+weibo.id">
+            <h2>{{weibo.nickname}}说:{{weibo.content}}</h2>
+        </a>
+        <img v-for="url in weibo.urlArr" width="100" :src="url">
+    </div>
+</div>
+</body>
+<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.min.js"></script>
+
+<script>
+    let v = new Vue({
+        el: "body>div",
+        data: {
+            isLogin: false,
+            isMyself: false,
+            user: {},
+            arr: [],
+            urls: [],
+        },
+        methods: {
+            del(id) {
+                if (confirm("确认删除?")) {
+                    axios.get("/weibo/del?id=" + id).then(function (response) {
+                        switch (response.data) {
+                            case 1:
+                                alert("删除失败");
+                                break
+                            case 2:
+                                alert("删除成功");
+                                window.location.reload();
+                                break;
+                        }
+                    })
+                }
+
+            },
+            logout() {
+                if (confirm("确定退出?")) {
+                    axios.get("/logout").then(function (response) {
+                        v.isLogin = false;
+                    })
+                }
+
+            }
+        },
+        created: function () {
+
+            axios.get("/weibo/select").then(function (response) {
+                v.arr = response.data;
+                for (let img of v.arr) {
+                    img.urlArr = img.urls.split(",");
+                }
+
+            })
+            axios.get("/currentUser").then(function (response) {
+                v.isLogin = response.data != "";
+                v.user = response.data;
+
+            })
+        }
+    })
+</script>
+</html>

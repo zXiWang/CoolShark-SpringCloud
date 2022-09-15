@@ -1,4 +1,10 @@
 package 作业.day04;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+
 /**
  * 将当前目录下的所有obj文件获取到，并进行
  * 反序列化后输出每个用户的信息(直接输出反序
@@ -7,7 +13,17 @@ package 作业.day04;
  *
  */
 public class Test04 {
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
+        File []files = new File("testFile").listFiles(f->f.getName().endsWith(".obj"));
+        ObjectInputStream ois = null;
+        for(File file : files) {
+            ois = new ObjectInputStream(new FileInputStream(file));
+            Test03.User user=(Test03.User)ois.readObject();
+            System.out.println(user);
+        }
 
+        ois.close();
+    }
 }
 
 /*
