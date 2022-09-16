@@ -11,7 +11,8 @@
         <el-header style="background-color: #0095d7">
             <h1 style="color: white;font-size: 22px">
                 CoolShark商城后台管理系统
-                <span style="float:right;font-size: 15px">欢迎xxx回来!<a href="">退出登录</a></span>
+                <span style="float:right;font-size: 15px">欢迎{{user.username}}回来!<a href=""
+                                                                                   @click="logout()">退出登录</a></span>
             </h1>
         </el-header>
         <el-container>
@@ -164,9 +165,19 @@
                 categoryArr: [],
                 bannerArr: [],
                 productArr: [],
+                user: [],
             }
         },
         methods: {
+            logout() {
+                if (confirm("确定退出?")) {
+                    axios.get("/logout").then(function (response) {
+                        location.href = "/login.html"
+                    })
+
+
+                }
+            },
             categoryDelete(i, category) {
                 axios.get("/category/delete?id=" + category.id).then(function (response) {
                     v.categoryArr.splice(i, 1);
@@ -178,8 +189,8 @@
                 })
             },
             productDelete(i, product) {
-                axios.get("/product/delete?id=" + product.id).then(function (response) {
-                    v.bannerArr.splice(i, 1);
+                axios.get("/product/delete?id=" + product.id + "&url=" + product.url).then(function (response) {
+                    v.productArr.splice(i, 1);
                 })
             },
             updateCategory(category) {
@@ -203,6 +214,7 @@
                     }
                 } else if (key == '2-2') {
                     location.href = "/insertBanner.html";
+
                 } else if (key == '3-2') {
                     location.href = "/insertProduct.html";
                 } else {
@@ -212,6 +224,11 @@
             }
         },
         created: function () {
+            axios.get("/currentUser").then(function (response) {
+                v.isLogin = response.data != "";
+                v.user = response.data;
+
+            })
             axios.get("category/select").then(function (response) {
                 v.categoryArr = response.data;
             })

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.File;
 import java.util.List;
 
 @RestController
@@ -17,8 +18,6 @@ public class BannerController {
 
     @RequestMapping("/select")
     public List<Banner> select(){
-
-
         return bannerMapper.select();
     }
 
@@ -29,5 +28,10 @@ public class BannerController {
             return 3;
         }
         return 1;
+    }
+
+    @RequestMapping("/delete")
+    public void delete(Integer id) {
+        bannerMapper.deleteById(id);
     }
 }

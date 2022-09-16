@@ -111,7 +111,7 @@
             handleRemove(file, fileList) {
                 console.log(file, fileList);
                 // 当页面中删除文件的时候发出删除请求,把文件夹里的文件也删除掉
-                axios.get("/remove?url=" + file.response).then(function (response) {
+                axios.get("/product/remove?url=" + file.response).then(function (response) {
                     console.log("删除完成!");
                     v.arr.splice(v.arr.indexOf(file.response));
                 })

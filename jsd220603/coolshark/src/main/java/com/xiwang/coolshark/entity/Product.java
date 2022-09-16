@@ -1,5 +1,7 @@
 package com.xiwang.coolshark.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.util.Date;
 
 public class Product {
@@ -11,6 +13,7 @@ public class Product {
     private Integer saleCount;
     private Integer num;
     private Integer viewCount;
+    @JsonFormat(pattern = "yyyy年MM月dd日 HH:mm:ss",timezone = "GMT+8")
     private Date created;
     private Integer categoryId;
 

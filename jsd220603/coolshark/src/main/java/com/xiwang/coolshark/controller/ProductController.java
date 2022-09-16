@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpSession;
+import java.io.File;
 import java.util.Date;
 import java.util.List;
 
@@ -25,12 +27,50 @@ public class ProductController {
     }
 
     @RequestMapping("/select")
-    public List<Product> select(){
+    public List<Product> select() {
         return productMapper.select();
     }
 
-    @RequestMapping("/delete")
-    public void delete(Integer id){
-        productMapper.delete(id);
+    @RequestMapping("/selectForIndex")
+    public List<Product> selectForIndex() {
+        return productMapper.selectForIndex();
     }
+
+    @RequestMapping("/selectByCategoryId")
+    public List<Product> selectByCategoryId(Integer id) {
+        return productMapper.selectByCategoryId(id);
+    }
+
+    @RequestMapping("/selectByWd")
+    public List<Product> selectByWd(String wd) {
+        return productMapper.selectByWd(wd);
+    }
+
+    @RequestMapping("/selectById")
+    public Product selectById(Integer id, HttpSession session) {
+        String info= (String) session.getAttribute("view"+id);
+        if(info==null){
+            productMapper.updateViewCountById(id);
+            session.setAttribute("view"+id,"isVisible");
+        }
+
+        return productMapper.selectById(id);
+    }
+
+    @RequestMapping("/selectTop")
+    public List<Product> selectTop() {
+        return productMapper.selectTop();
+    }
+
+    @RequestMapping("/delete")
+    public void delete(Integer id, String url) {
+        new File("C:/Users/XiWang/Desktop/testFile" + url).delete();
+        productMapper.deleteById(id);
+    }
+
+    @RequestMapping("/remove")
+    public void remove(String url) {
+        new File("C:/Users/XiWang/Desktop/testFile" + url).delete();
+    }
+
 }

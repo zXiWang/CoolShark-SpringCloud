@@ -14,14 +14,15 @@
             padding: 0; /*去掉自带的上下间距*/
         }
 
-        .p_img {
-            transition: 1s;
+        .el-table .cell {
+            white-space: nowrap; /*让内容在一行中显示*/
+            text-overflow: ellipsis; /*让超出的内容以省略号来表示*/
         }
 
         .p_img:hover {
-
             position: relative;
-            top: 5px;
+            top: 5px; /*往下移动5个像素*/
+            /*设置元素阴影:x偏移值 y偏移值 浓度 范围 颜色*/
             box-shadow: 0 0 10px 5px #333;
         }
     </style>
@@ -32,7 +33,7 @@
         <el-header height="150px">
             <div style="width: 1200px;margin: 0 auto">
                 <img src="imgs/logo.png" style="width: 300px;vertical-align: middle" alt="">
-                <a href="/">首页</a>
+                <a href="/index.html">首页</a>
                 <el-divider direction="vertical"></el-divider>
                 <a href="">热点资讯</a>
                 <el-divider direction="vertical"></el-divider>
@@ -43,8 +44,6 @@
                 <a href="">校园招聘</a>
                 <el-divider direction="vertical"></el-divider>
                 <a href="">帮助</a>
-                <el-divider direction="vertical"></el-divider>
-                <a href="login.html">后台登录</a>
             </div>
             <!--导航菜单开始-->
             <div style="background-color: #82c8ec">
@@ -55,7 +54,8 @@
                          text-color="#fff"
                          active-text-color="#fff"
                          mode="horizontal" @select="handleSelect">
-                    <el-menu-item v-for="category in categoryArr" :index="category.id">{{category.name}}</el-menu-item>
+                    <el-menu-item v-for="c in categoryArr" :index="c.id">{{c.name}}</el-menu-item>
+
                     <div style="float:right;position: relative;top: 10px">
                         <el-input v-model="wd" placeholder="请输入搜索内容">
                             <el-button @click="search()" slot="append" icon="el-icon-search"></el-button>
@@ -66,40 +66,16 @@
             <!--导航菜单结束-->
         </el-header>
         <el-main style="width: 1200px;margin: 0 auto;">
-            <el-row gutter="20">
-                <el-col span="18">
-                    <el-carousel height="300px">
-                        <el-carousel-item v-for="b in bannerArr">
-                            <img :src="b.url" width="100%" height="100%" alt="">
-                        </el-carousel-item>
 
-                    </el-carousel>
-                </el-col>
-                <el-col span="6">
-                    <el-card>
-                        <h3>
-                            <i style="font-weight: bold" class="el-icon-trophy">销量最高</i>
-                        </h3>
-                        <el-divider></el-divider>
-                        <el-table :data="topArr">
-                            <el-table-column label="排名" width="50" type="index"></el-table-column>
-                            <el-table-column label="商品标题" width="80" prop="title"></el-table-column>
-                            <el-table-column label="销量" width="80" prop="saleCount"></el-table-column>
-                        </el-table>
-                    </el-card>
-                </el-col>
-            </el-row>
             <!--商品列表开始-->
             <el-row gutter="20">
                 <el-col span="6" v-for="p in productArr">
                     <el-card>
-                       <a :href="'/detail.html?id='+p.id"> <img  class="p_img" :src="p.url" width="100%" height="233" alt=""></a>
+                        <img class="p_img" :src="p.url" width="100%" height="233" alt="">
                         <div>
-                            <a :href="'/detail.html?id='+p.id">
                             <p style="font-size: 15px;height: 40px;margin-top: 0">
                                 {{p.title}}
                             </p>
-                            </a>
                             <p style="font-size: 12px;color: #666">
                                 ￥{{p.price}} <s>{{p.oldPrice}}</s>
                                 <span style="float: right">销量:{{p.saleCount}}</span>
@@ -125,12 +101,11 @@
     </el-container>
 </div>
 </body>
+<script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.min.js"></script>
 <!-- import Vue before Element -->
 <script src="https://cdn.staticfile.org/vue/2.6.14/vue.min.js"></script>
 <!-- import JavaScript -->
 <script src="https://cdn.staticfile.org/element-ui/2.15.9/index.min.js"></script>
-<script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.min.js"></script>
-
 <script>
     let v = new Vue({
         el: '#app',
@@ -141,35 +116,51 @@
                 activeIndex: "1",
                 topArr: [],
                 productArr: [],
-                wd:"",
+                wd: "",
             }
         },
         methods: {
-            search(){
-                location.href ="/result.html?wd="+v.wd;
+            search() {
+                axios.get("/product/selectByWd?wd=" + v.wd).then(function (response) {
+                    v.productArr = response.data;
+                })
             },
             handleSelect(key, keyPath) {
                 console.log(key, keyPath);
                 //跳转到显示结果的页面  key代表的就是分类id
-                location.href = "/result.html?id="+key;
+                axios.get("/product/selectByCategoryId?id=" + key).then(function (response) {
+                    v.productArr = response.data;
+                })
             }
         },
         created: function () {
 
-            axios.get("category/select").then(function (response) {
+            //发请求获取所有分类信息
+            axios.get("/category/select").then(function (response) {
                 v.categoryArr = response.data;
+
             })
+            //发请求获取所有轮播图信息
             axios.get("/banner/select").then(function (response) {
                 v.bannerArr = response.data;
             })
-            axios.get("/product/selectForIndex").then(function (response) {
-                v.productArr = response.data;
-            })
+            //发请求获取排行榜数据
             axios.get("/product/selectTop").then(function (response) {
                 v.topArr = response.data;
             })
+            //发请求获取所有商品数据
+            let url = location.search.indexOf("wd") != -1 ?
+                "/product/selectByWd" + location.search : "/product/selectByCategoryId" + location.search;
 
+            axios.get(url).then(function (response) {
+                v.productArr = response.data;
+            })
+            if (location.search.indexOf("id") != -1) {
+                let id=location.search.split("=")[1];
+                this.activeIndex = id;
+            }
         }
+
     })
 </script>
 </html>

@@ -17,7 +17,7 @@ public class UserController {
 
 
     @RequestMapping("/login")
-    public int login(@RequestBody User user) {
+    public int login(@RequestBody User user,HttpSession session) {
         User u;
         if (user.getUsername().trim().isEmpty()) {
             return 1;
@@ -28,7 +28,7 @@ public class UserController {
             return 3;
         }
 
-
+        session.setAttribute("user", u);
         return 4;
     }
 

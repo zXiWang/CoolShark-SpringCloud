@@ -33,13 +33,8 @@
                          text-color="#fff"
                          active-text-color="#fff"
                          mode="horizontal" @select="handleSelect">
-                    <el-menu-item index="1">精彩活动</el-menu-item>
-                    <el-menu-item index="2">当季女装</el-menu-item>
-                    <el-menu-item index="3">品牌男装</el-menu-item>
-                    <el-menu-item index="4">环球美食</el-menu-item>
-                    <el-menu-item index="5">医药健康</el-menu-item>
-                    <el-menu-item index="6">美妆彩妆</el-menu-item>
-                    <el-menu-item index="7">母婴产品</el-menu-item>
+                    <el-menu-item v-for="c in categoryArr" :index="c.id">{{c.name}}</el-menu-item>
+
                     <div style="float:right;position: relative;top: 10px">
                         <el-input placeholder="请输入搜索内容">
                             <el-button slot="append" icon="el-icon-search"></el-button>
@@ -53,20 +48,22 @@
             <el-row gutter="20">
                 <el-col span="12">
                     <el-card>
-                        <img src="imgs/a.jpg" width="100%" alt="">
+                        <img :src="product.url" width="100%" alt="">
                     </el-card>
                 </el-col>
                 <el-col span="12">
                     <p style="font-size: 25px">
-                        森马牛仔裤女宽松慢跑裤运动风2022春季新款显瘦束脚长裤复古
+                        {{product.title}}
                     </p>
                     <el-divider></el-divider>
                     <p style="font-size: 15px;color: #666">
-                        销量:342 浏览量:200
+                        销量:{{product.saleCount}} 浏览量:{{product.viewCount}}
+                        <span style="float: right">{{product.created}}</span>
+
                     </p>
                     <p style="font-size: 25px;font-weight: bold">
-                        ￥ 68
-                        <span style="font-size: 15px;color: #666">原价:<s>99</s></span>
+                        ￥ {{product.price}}
+                        <span style="font-size: 15px;color: #666">原价:<s>{{product.oldPrice}}</s></span>
                     </p>
                     <el-row gutter="20">
                         <el-col span="8">
@@ -108,6 +105,8 @@
 <script src="https://cdn.staticfile.org/vue/2.6.14/vue.min.js"></script>
 <!-- import JavaScript -->
 <script src="https://cdn.staticfile.org/element-ui/2.15.9/index.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.min.js"></script>
+
 <script>
     let v = new Vue({
         el: '#app',
@@ -116,13 +115,26 @@
                 activeIndex:"1",
                 topArr:[{title:"小米电视",saleCount:685},{title:"李宁毛巾",saleCount:457},
                     {title:"安踏拖鞋",saleCount:185},{title:"华为手机",saleCount:57},
-                    {title:"耐克篮球",saleCount:32},{title:"联想电脑",saleCount:18}]
+                    {title:"耐克篮球",saleCount:32},{title:"联想电脑",saleCount:18}],
+                product:"",
+                categoryArr:"",
             }
         },
         methods: {
             handleSelect(key,keyPath){
                 console.log(key,keyPath);
+                location.href = "/result.html?id="+key;
             }
+        },
+
+        created: function () {
+            axios.get("/product/selectById"+location.search).then(function(response){
+                v.product=response.data;
+
+            })
+            axios.get("category/select").then(function (response) {
+                v.categoryArr = response.data;
+            })
         }
     })
 </script>
