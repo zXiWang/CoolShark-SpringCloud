@@ -1,11 +1,10 @@
 package com.xiwang.coolshark.controller;
 
 
-
 import com.xiwang.coolshark.entity.Banner;
 import com.xiwang.coolshark.mapper.BannerMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
@@ -18,6 +17,9 @@ import java.util.UUID;
 @RestController
 public class UploadController {
 
+    @Value("${dirPath}")
+    private String dirPath;
+
     @Autowired
     private BannerMapper bannerMapper;
 
@@ -27,7 +29,6 @@ public class UploadController {
 
         String suffix = fileName.substring(fileName.lastIndexOf("."));
         fileName = UUID.randomUUID() + suffix;
-        String dirPath = "C:/Users/XiWang/Desktop/testFile";
         File dirFile = new File(dirPath);
         if (!dirFile.exists()) {
             dirFile.mkdirs();
@@ -45,7 +46,7 @@ public class UploadController {
 
     @RequestMapping("/remove")
     public void remove(String url) {
-        new File("C:/Users/XiWang/Desktop/testFile" + url).delete();
+        new File(dirPath + url).delete();
     }
 
     @RequestMapping("/del")
@@ -55,7 +56,7 @@ public class UploadController {
         bannerMapper.deleteById(id);
         for (String url : urls.split(",")) {
             //删除文件
-            new File("C:/Users/XiWang/Desktop/testFile" + url).delete();
+            new File(dirPath+ url).delete();
         }
         if (bannerMapper.selectById(id) != null) {
             return 1;

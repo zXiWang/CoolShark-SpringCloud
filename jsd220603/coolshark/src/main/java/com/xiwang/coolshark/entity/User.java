@@ -5,6 +5,7 @@ public class User {
     private String username;
     private String password;
     private String nickname;
+    private Boolean rem;
 
     @Override
     public String toString() {
@@ -13,7 +14,16 @@ public class User {
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", nickname='" + nickname + '\'' +
+                ", rem=" + rem +
                 '}';
+    }
+
+    public Boolean getRem() {
+        return rem;
+    }
+
+    public void setRem(Boolean rem) {
+        this.rem = rem;
     }
 
     public Integer getId() {

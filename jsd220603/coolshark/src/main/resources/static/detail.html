@@ -36,8 +36,8 @@
                     <el-menu-item v-for="c in categoryArr" :index="c.id">{{c.name}}</el-menu-item>
 
                     <div style="float:right;position: relative;top: 10px">
-                        <el-input placeholder="请输入搜索内容">
-                            <el-button slot="append" icon="el-icon-search"></el-button>
+                        <el-input v-model="wd" placeholder="请输入搜索内容">
+                            <el-button @click="search()" slot="append" icon="el-icon-search"></el-button>
                         </el-input>
                     </div>
                 </el-menu>
@@ -113,14 +113,16 @@
         data: function () {
             return {
                 activeIndex:"1",
-                topArr:[{title:"小米电视",saleCount:685},{title:"李宁毛巾",saleCount:457},
-                    {title:"安踏拖鞋",saleCount:185},{title:"华为手机",saleCount:57},
-                    {title:"耐克篮球",saleCount:32},{title:"联想电脑",saleCount:18}],
+                topArr:[],
+                wd:"",
                 product:"",
                 categoryArr:"",
             }
         },
         methods: {
+            search() {
+                location.href='/result.html?wd='+v.wd;
+            },
             handleSelect(key,keyPath){
                 console.log(key,keyPath);
                 location.href = "/result.html?id="+key;

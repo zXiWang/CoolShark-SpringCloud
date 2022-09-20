@@ -3,6 +3,7 @@ package com.xiwang.coolshark.controller;
 import com.xiwang.coolshark.entity.Product;
 import com.xiwang.coolshark.mapper.ProductMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,6 +16,8 @@ import java.util.List;
 @RestController
 @RequestMapping("/product")
 public class ProductController {
+    @Value("${dirPath}")
+    private String dirPath;
 
     @Autowired
     private ProductMapper productMapper;
@@ -48,13 +51,24 @@ public class ProductController {
 
     @RequestMapping("/selectById")
     public Product selectById(Integer id, HttpSession session) {
-        String info= (String) session.getAttribute("view"+id);
-        if(info==null){
+        String info = (String) session.getAttribute("view" + id);
+        if (info == null) {
             productMapper.updateViewCountById(id);
-            session.setAttribute("view"+id,"isVisible");
+            session.setAttribute("view" + id, "isVisible");
         }
 
         return productMapper.selectById(id);
+    }
+
+    @RequestMapping("/selectByIdForUpdate")
+    public Product selectByIdForUpdate(Integer id) {
+        return productMapper.selectByIdForUpdate(id);
+    }
+
+    @RequestMapping("/update")
+    public int update(@RequestBody Product product) {
+        productMapper.update(product);
+        return 1;
     }
 
     @RequestMapping("/selectTop")
@@ -64,13 +78,13 @@ public class ProductController {
 
     @RequestMapping("/delete")
     public void delete(Integer id, String url) {
-        new File("C:/Users/XiWang/Desktop/testFile" + url).delete();
+        new File(dirPath + url).delete();
         productMapper.deleteById(id);
     }
 
     @RequestMapping("/remove")
     public void remove(String url) {
-        new File("C:/Users/XiWang/Desktop/testFile" + url).delete();
+        new File(dirPath + url).delete();
     }
 
 }

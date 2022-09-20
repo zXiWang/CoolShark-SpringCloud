@@ -44,6 +44,10 @@
             <el-form-item label="密码">
                 <el-input v-model="user.password" type="password" placeholder="请输入密码"></el-input>
             </el-form-item>
+            <label>
+                <input type="checkbox" v-model="user.rem">记住用户名和密码<br>
+            </label>
+
             <el-form-item>
                 <el-button @click="login()" style="position: relative;right: 30px"
                            type="primary">登录
@@ -64,7 +68,11 @@
         el: '#app',
         data: function () {
             return {
-                user: {username: '', password: ''},
+                user: {
+                    username: '',
+                    password: '',
+                    rem: false,
+                },
             }
         },
         methods: {
@@ -84,11 +92,25 @@
                             v.$message.success("登录成功!");
                             setTimeout(function () {
                                 location.href = "/admin.html";
-                            },1000)
+                            }, 1000)
 
                             break;
                     }
                 })
+            },
+
+        },
+        created: function () {
+            let cookieArr = document.cookie.split(";");
+            for (let cookie of cookieArr) {
+                let arr = cookie.split("=");
+                let name = arr[0].trim();
+                let value = arr[1];
+                if (name == "username") {
+                    this.user.username = value;
+                } else if (name == "password") {
+                    this.user.password = value;
+                }
             }
         }
     })

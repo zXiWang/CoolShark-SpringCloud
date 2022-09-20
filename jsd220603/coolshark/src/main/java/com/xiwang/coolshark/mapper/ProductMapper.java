@@ -33,8 +33,11 @@ public interface ProductMapper {
     @Select("select id,title,price,old_price,sale_count,url,view_Count,created from product where id=#{id}")
     Product selectById(Integer id);
 
+    @Select("select id,title,price,old_price,sale_count,num,url,view_Count,created,category_id from product where id=#{id}")
+    Product selectByIdForUpdate(Integer id);
+
     @Update("update product set title=#{title},price=#{price},old_price=#{oldPrice}" +
-            ",sale_count=#{saleCount},url=#{url},view_count=#{viewCount},created=#{created} where id=#{id}")
+            ",sale_count=#{saleCount},num=#{num},url=#{url},view_count=#{viewCount},created=#{created},category_id=#{categoryId} where id=#{id}")
     void update(Product product);
 
     @Update("update product set view_count=view_count+1 where id=#{id}")

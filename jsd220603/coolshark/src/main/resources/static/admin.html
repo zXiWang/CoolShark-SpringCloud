@@ -11,8 +11,9 @@
         <el-header style="background-color: #0095d7">
             <h1 style="color: white;font-size: 22px">
                 CoolShark商城后台管理系统
-                <span style="float:right;font-size: 15px">欢迎{{user.username}}回来!<a href=""
-                                                                                   @click="logout()">退出登录</a></span>
+                <span style="float:right;font-size: 15px">欢迎{{user.nickname}}回来!<a href="" @click="logout()">退出登录</a>
+                <a href="index.html">首页</a>
+                </span>
             </h1>
         </el-header>
         <el-container>
@@ -50,6 +51,16 @@
                         <!--添加菜单项-->
                         <el-menu-item index="3-1">商品列表</el-menu-item>
                         <el-menu-item index="3-2">添加商品</el-menu-item>
+                    </el-submenu>
+                    <el-submenu index="4">
+                        <!--添加子菜单标题-->
+                        <template slot="title">
+                            <i class="el-icon-s-comment"></i>
+                            <span>咨询管理</span>
+                        </template>
+                        <!--添加菜单项-->
+                        <el-menu-item index="4-1">咨询列表</el-menu-item>
+                        <el-menu-item index="4-2">添加咨询</el-menu-item>
                     </el-submenu>
 
                 </el-menu>
@@ -126,16 +137,23 @@
                             <img :src="scope.row.url" width="100%" alt="">
                         </template>
                     </el-table-column>
+
                     <el-table-column label="操作">
+
                         <template slot-scope="scope">
+                            <el-button
+                                    @click="productUpdate(scope.$index, scope.row)"
+                                    size="mini"
+                                    type="success"
+                                    slot="reference"
+                            >修改
+                            </el-button>
                             <el-popconfirm title="您确认删除此商品吗?"
                                            @confirm="productDelete(scope.$index, scope.row)">
-
                                 <el-button
                                         size="mini"
                                         type="danger"
                                         slot="reference"
-
                                 >删除
                                 </el-button>
                             </el-popconfirm>
@@ -144,7 +162,47 @@
                     </el-table-column>
                 </el-table>
                 <!--商品表格结束-->
+                <!--热点资讯开始-->
+                <el-table v-if="currentIndex=='4-1'" :data="newsArr" style="width: 100%">
+                    <el-table-column type="index" label="编号" width="80">
+                    </el-table-column>
+                    <el-table-column prop="source" label="来源" width="80"></el-table-column>
+                    <el-table-column prop="title" label="标题" width="80"></el-table-column>
 
+                    <el-table-column label="咨询图片" width="100">
+                        <!--自定义内容必须写在template里面-->
+                        <template slot-scope="scope">
+                            <!--scope.row得到当前行对应的数组里面的对象-->
+                            <img :src="scope.row.url" width="100%" alt="">
+                        </template>
+                    </el-table-column>
+                    <el-table-column prop="content" label="正文" width="200"></el-table-column>
+
+
+                    <el-table-column label="操作">
+
+                        <template slot-scope="scope">
+                            <el-button
+                                    @click="newsUpdate(scope.$index, scope.row)"
+                                    size="mini"
+                                    type="success"
+                                    slot="reference"
+                            >修改
+                            </el-button>
+                            <el-popconfirm title="您确认删除此咨询吗?"
+                                           @confirm="newsDelete(scope.$index, scope.row)">
+                                <el-button
+                                        size="mini"
+                                        type="danger"
+                                        slot="reference"
+                                >删除
+                                </el-button>
+                            </el-popconfirm>
+
+                        </template>
+                    </el-table-column>
+                </el-table>
+                <!--热点资讯结束-->
             </el-main>
         </el-container>
     </el-container>
@@ -165,10 +223,17 @@
                 categoryArr: [],
                 bannerArr: [],
                 productArr: [],
+                newsArr: [],
                 user: [],
             }
         },
         methods: {
+            productUpdate(i, product) {
+                location.href = "/productUpdate.html?id=" + product.id;
+            },
+            newsUpdate(i, news) {
+                location.href = "/newsUpdate.html?id=" + news.id;
+            },
             logout() {
                 if (confirm("确定退出?")) {
                     axios.get("/logout").then(function (response) {
@@ -191,6 +256,11 @@
             productDelete(i, product) {
                 axios.get("/product/delete?id=" + product.id + "&url=" + product.url).then(function (response) {
                     v.productArr.splice(i, 1);
+                })
+            },
+            newsDelete(i, news) {
+                axios.get("/news/delete?id=" + news.id + "&url=" + news.url).then(function (response) {
+                    v.newsArr.splice(i, 1);
                 })
             },
             updateCategory(category) {
@@ -217,16 +287,26 @@
 
                 } else if (key == '3-2') {
                     location.href = "/insertProduct.html";
+                } else if (key == '4-2') {
+                    location.href = "/insertNews.html";
                 } else {
                     v.currentIndex = key;
-                }
 
+                }
             }
+
+
         },
         created: function () {
             axios.get("/currentUser").then(function (response) {
                 v.isLogin = response.data != "";
+                if (!v.isLogin) {
+                    alert("请先登录!")
+                    location.href = "/login.html";
+                }
+
                 v.user = response.data;
+                v.isShow = true;
 
             })
             axios.get("category/select").then(function (response) {
@@ -237,6 +317,9 @@
             })
             axios.get("/product/select").then(function (response) {
                 v.productArr = response.data;
+            })
+            axios.get("/news/select").then(function (response) {
+                v.newsArr = response.data;
             })
         }
     })

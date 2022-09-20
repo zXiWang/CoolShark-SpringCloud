@@ -9,27 +9,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="4.9.1 coolShark">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="4.9.2 coolShark">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/f35ff572-0104-4a0a-ae7b-deaa7079f705.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f35ff572-0104-4a0a-ae7b-deaa7079f705.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/QR/QR.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/QR.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/annotatiob/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/annotatiob/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/annotatiob/RequestMapping.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/annotatiob/RequestMapping.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/controller/ArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/controller/ArticleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/core/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/core/ClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/core/DispatcherServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/core/DispatcherServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/core/HandlerMapping.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/core/HandlerMapping.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/core/WebServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/core/WebServerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/entity/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/entity/Article.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/http/EmptyRequestException.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/http/EmptyRequestException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/http/HttpServletRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/http/HttpServletRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/http/HttpServletResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/target/classes/com/webserver/http/HttpServletResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFile/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testFile/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/达内.iml" beforeDir="false" afterPath="$PROJECT_DIR$/达内.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/CoolsharkApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/CoolsharkApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/controller/BannerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/controller/BannerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/controller/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/controller/UploadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/mapper/BannerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/mapper/BannerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/mapper/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/mapper/ProductMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/达内/作业/day08/Test03$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/达内/作业/day08/Test03$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/达内/作业/day08/Test03.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/达内/作业/day08/Test03.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +103,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/线下/src" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
@@ -116,11 +114,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\coolshark\src\main\resources" />
+      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\coolshark\src\main\resources\static" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\test" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\weibo\src\main\resources\static" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\test\作业" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\coolshark\src\main\resources\static" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\coolshark\src\main\java\com\xiwang\coolshark" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\coolshark\src\main\resources\static" />
@@ -137,11 +135,11 @@
       <recent name="com.tedu.myspringboot2" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xiwang.coolshark.mapper" />
       <recent name="com.xiwang.coolshark.controller" />
       <recent name="com.xiwang.weibo.mapper" />
       <recent name="com.xiwang.weibo.entity" />
       <recent name="com.xiwang.weibo.controller" />
-      <recent name="com.xiwang.boot06.mapper" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -151,7 +149,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="应用程序.Test02">
+  <component name="RunManager" selected="Spring Boot.CoolsharkApplication">
     <configuration name="Test01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="作业.day11.Test01" />
       <module name="达内" />
@@ -191,28 +189,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="作业.day10.Test04" />
+    <configuration name="Test03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="作业.day08.Test03" />
       <module name="达内" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="作业.day10.*" />
+          <option name="PATTERN" value="作业.day08.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -352,19 +337,19 @@
       <item itemvalue="Spring Boot.Boot07Application" />
       <item itemvalue="Spring Boot.WeiboApplication" />
       <item itemvalue="Spring Boot.CoolsharkApplication" />
-      <item itemvalue="应用程序.Test04" />
-      <item itemvalue="数据库脚本.916.sql" />
       <item itemvalue="应用程序.Test01" />
       <item itemvalue="应用程序.Test03 (1)" />
       <item itemvalue="应用程序.Test02" />
+      <item itemvalue="应用程序.Test03" />
+      <item itemvalue="数据库脚本.916.sql" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Test03" />
         <item itemvalue="应用程序.Test02" />
         <item itemvalue="应用程序.Test03 (1)" />
         <item itemvalue="应用程序.Test01" />
         <item itemvalue="数据库脚本.916.sql" />
-        <item itemvalue="应用程序.Test04" />
       </list>
     </recent_temporary>
   </component>
@@ -486,14 +471,8 @@
       <workItem from="1663115511212" duration="28750000" />
       <workItem from="1663204393466" duration="27261000" />
       <workItem from="1663288085439" duration="26865000" />
-      <workItem from="1663376004553" duration="4225000" />
-    </task>
-    <task id="LOCAL-00006" summary="1.3">
-      <created>1659455021149</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1659455021149</updated>
+      <workItem from="1663376004553" duration="9195000" />
+      <workItem from="1663547514243" duration="28890000" />
     </task>
     <task id="LOCAL-00007" summary="1.4 移动">
       <created>1659488935351</created>
@@ -831,7 +810,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663329182046</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="4.9.2 coolShark">
+      <created>1663385473026</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1663385473027</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -871,7 +857,6 @@
       <path value="$PROJECT_DIR$/src/线下/SB2206/spring-boot2206" />
       <path value="$PROJECT_DIR$/src/线下/WS2206/web-server2206-teacher" />
     </ignored-roots>
-    <MESSAGE value="2.0 springboot http响应" />
     <MESSAGE value="2.1 springboot&#10;request and response" />
     <MESSAGE value="2.2 springboot&#10;sendRedirect" />
     <MESSAGE value="2.3 Relfect" />
@@ -896,7 +881,8 @@
     <MESSAGE value="4.8 spring boot&#10;Mybatis axios&#10;文件上传,发帖回帖" />
     <MESSAGE value="4.9 coolShark" />
     <MESSAGE value="4.9.1 coolShark" />
-    <option name="LAST_COMMIT_MESSAGE" value="4.9.1 coolShark" />
+    <MESSAGE value="4.9.2 coolShark" />
+    <option name="LAST_COMMIT_MESSAGE" value="4.9.2 coolShark" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

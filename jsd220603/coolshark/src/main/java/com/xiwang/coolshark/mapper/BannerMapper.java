@@ -22,6 +22,10 @@ public interface BannerMapper {
 
     @Insert("insert into banner values(null,#{url})")
     void insert(String url);
-@Select("select * from banner where url=#{url}")
+
+    @Select("select * from banner where url=#{url}")
     Banner selectByUrl(String url);
+
+    @Select("select url from banner where id=#{id}")
+    String selectUrlById(Integer id);
 }
