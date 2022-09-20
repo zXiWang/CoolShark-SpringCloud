@@ -29,6 +29,7 @@
       <excludeFolder url="file://$MODULE_DIR$/src/线下/jsd2206-se-teacher git" />
       <excludeFolder url="file://$MODULE_DIR$/src/线下/MySpringBoot2" />
       <excludeFolder url="file://$MODULE_DIR$/src/线下/SB2206" />
+      <excludeFolder url="file://$MODULE_DIR$/csmall-web-client/jsd2206-csmall-web-client-teacher" />
     </content>
     <content url="file://$MODULE_DIR$/out" />
     <content url="file://$MODULE_DIR$/out/artifacts" />

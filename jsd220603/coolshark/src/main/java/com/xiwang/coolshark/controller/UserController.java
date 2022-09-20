@@ -28,11 +28,12 @@ public class UserController {
             return 2;
         } else if (!u.getPassword().equals(user.getPassword())) {
             return 3;
-        } else if (user.getRem()) {
+        } else if (user.getRem()!=null&& user.getRem()) {
             Cookie c1 = new Cookie("username", user.getUsername());
             Cookie c2 = new Cookie("password", user.getPassword());
             response.addCookie(c1);
             response.addCookie(c2);
+//            System.out.println(c1.getName()+"="+c1.getValue()+"\n"+c2.getName()+"="+c2.getValue());
 
         }
         session.setAttribute("user", u);
