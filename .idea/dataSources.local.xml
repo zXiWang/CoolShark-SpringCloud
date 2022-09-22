@@ -12,9 +12,8 @@
       <schema-mapping>
         <introspection-scope>
           <node kind="schema">
-            <name qname="cs" />
-            <name qname="db2" />
-            <name qname="db3" />
+            <name qname="mall_ams" />
+            <name qname="mall_pms" />
           </node>
         </introspection-scope>
       </schema-mapping>

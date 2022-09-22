@@ -9,13 +9,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="4.9.3 coolShark">
+    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="5.0.1 coolShark npm vue">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f35ff572-0104-4a0a-ae7b-deaa7079f705.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f35ff572-0104-4a0a-ae7b-deaa7079f705.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/CoolsharkApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/CoolsharkApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/达内.iml" beforeDir="false" afterPath="$PROJECT_DIR$/达内.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/jsd2206-csmall-web-client-teacher" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/jsd2206-csmall-web-client-teacher" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/views/AdminView.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/views/HomeView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/views/LoginView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/views/LoginView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/QR/QR.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/QR.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +103,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/线下/src" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/课外/课件" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/entity" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
@@ -103,11 +114,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\XiWang\Desktop\待\达内\csmall-web-client\src\views\sys-admin\temp" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\课外\课件" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\csmall-web-client\public" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\csmall-web-client\src\views" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\coolshark\src\main\resources" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\coolshark\src\main\resources\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\XiWang\Desktop\待\达内\csmall-web-client\src\assets" />
@@ -122,6 +133,9 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
       <recent name="com.tedu.myspringboot2" />
+    </key>
+    <key name="DestinationChooserDialog.Package.RECENTS_KEY">
+      <recent name="com.xiwang.csmall.product.entity" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.xiwang.coolshark.mapper" />
@@ -138,46 +152,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CoolsharkApplication">
-    <configuration name="Test01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="作业.day11.Test01" />
-      <module name="达内" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="作业.day11.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="作业.day11.Test02" />
-      <module name="达内" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="作业.day11.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test03 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="作业.day11.Test03" />
-      <module name="达内" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="作业.day11.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.CsmallProductApplicationTests.amsAdminInsert">
     <configuration name="Test03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="作业.day08.Test03" />
       <module name="达内" />
@@ -191,22 +166,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
+    <configuration name="sqlCreate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xiwang.csmall.product.sqlCreate" />
+      <module name="csmall-product" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiwang.csmall.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CsmallProductApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="csmall-product" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiwang.csmall.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xiwang.csmall.product" />
+      <option name="MAIN_CLASS_NAME" value="com.xiwang.csmall.product.CsmallProductApplicationTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="916.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
-      <script-file value="$PROJECT_DIR$/jsd220603/MySQL/916.sql" />
-      <script-mode>FILE</script-mode>
-      <data-source id="f35ff572-0104-4a0a-ae7b-deaa7079f705" namespace="schema/&quot;db2&quot;" />
-      <method v="2" />
+    <configuration name="CsmallProductApplicationTests.amsAdminInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="csmall-product" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiwang.csmall.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xiwang.csmall.product" />
+      <option name="MAIN_CLASS_NAME" value="com.xiwang.csmall.product.CsmallProductApplicationTests" />
+      <option name="METHOD_NAME" value="amsAdminInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CsmallProductApplicationTests.amsAdminSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="csmall-product" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiwang.csmall.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xiwang.csmall.product" />
+      <option name="MAIN_CLASS_NAME" value="com.xiwang.csmall.product.CsmallProductApplicationTests" />
+      <option name="METHOD_NAME" value="amsAdminSelect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Boot011Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="boot01-1" />
@@ -278,6 +296,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CsmallProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="csmall-product" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xiwang.csmall.product.CsmallProductApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="demo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
@@ -321,6 +346,9 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.CsmallProductApplicationTests" />
+      <item itemvalue="JUnit.CsmallProductApplicationTests.amsAdminSelect" />
+      <item itemvalue="JUnit.CsmallProductApplicationTests.amsAdminInsert" />
       <item itemvalue="Spring Boot.Sb2206Application" />
       <item itemvalue="Spring Boot.MySpringBoot2Application" />
       <item itemvalue="Spring Boot.MySpringBoot3Application" />
@@ -337,19 +365,17 @@
       <item itemvalue="Spring Boot.Boot07Application" />
       <item itemvalue="Spring Boot.WeiboApplication" />
       <item itemvalue="Spring Boot.CoolsharkApplication" />
-      <item itemvalue="应用程序.Test01" />
-      <item itemvalue="应用程序.Test03 (1)" />
-      <item itemvalue="应用程序.Test02" />
+      <item itemvalue="Spring Boot.CsmallProductApplication" />
       <item itemvalue="应用程序.Test03" />
-      <item itemvalue="数据库脚本.916.sql" />
+      <item itemvalue="应用程序.sqlCreate" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CsmallProductApplicationTests.amsAdminInsert" />
+        <item itemvalue="JUnit.CsmallProductApplicationTests" />
+        <item itemvalue="应用程序.sqlCreate" />
+        <item itemvalue="JUnit.CsmallProductApplicationTests.amsAdminSelect" />
         <item itemvalue="应用程序.Test03" />
-        <item itemvalue="应用程序.Test02" />
-        <item itemvalue="应用程序.Test03 (1)" />
-        <item itemvalue="应用程序.Test01" />
-        <item itemvalue="数据库脚本.916.sql" />
       </list>
     </recent_temporary>
   </component>
@@ -474,14 +500,9 @@
       <workItem from="1663376004553" duration="9195000" />
       <workItem from="1663547514243" duration="28890000" />
       <workItem from="1663634408655" duration="5556000" />
-      <workItem from="1663643399685" duration="19493000" />
-    </task>
-    <task id="LOCAL-00008" summary="1.5 更新线程">
-      <created>1659507456038</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1659507456038</updated>
+      <workItem from="1663643399685" duration="20079000" />
+      <workItem from="1663720306078" duration="29475000" />
+      <workItem from="1663806594922" duration="851000" />
     </task>
     <task id="LOCAL-00009" summary="1.5 更新线程">
       <created>1659525065708</created>
@@ -819,7 +840,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663634477615</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="5.0.1 coolShark npm vue">
+      <created>1663676554909</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1663676554909</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -861,7 +889,6 @@
       <path value="$PROJECT_DIR$/jsd2206-csmall-web-client-teacher" />
       <path value="$PROJECT_DIR$/csmall-web-client" />
     </ignored-roots>
-    <MESSAGE value="2.2 springboot&#10;sendRedirect" />
     <MESSAGE value="2.3 Relfect" />
     <MESSAGE value="2.4 Relfect update" />
     <MESSAGE value="2.5 Spring Boot" />
@@ -886,7 +913,8 @@
     <MESSAGE value="4.9.1 coolShark" />
     <MESSAGE value="4.9.2 coolShark" />
     <MESSAGE value="4.9.3 coolShark" />
-    <option name="LAST_COMMIT_MESSAGE" value="4.9.3 coolShark" />
+    <MESSAGE value="5.0.1 coolShark npm vue" />
+    <option name="LAST_COMMIT_MESSAGE" value="5.0.1 coolShark npm vue" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

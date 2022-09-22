@@ -1,5 +1,5 @@
-<template>
-  <div style="width: 600px;margin: 0 auto;background: white;padding-top: 30px">
+<template >
+  <div style="width: 600px;margin: 150px auto;background: white;padding-top: 30px;text-align: center;">
     <h1>管理员登录</h1>
     <el-form style="padding: 30px 50px;margin: 0 auto;" :model="ruleForm" :rules="rules" ref="ruleForm"
              label-width="100px" class="demo-ruleForm">

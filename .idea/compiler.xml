@@ -11,6 +11,7 @@
         <module name="MySpringBoot3" />
         <module name="demo" />
         <module name="BirdBoot" />
+        <module name="csmall-product" />
         <module name="V21" />
         <module name="weibo" />
         <module name="V20" />
@@ -59,6 +60,7 @@
       <module name="boot06" target="1.8" />
       <module name="boot07" target="1.8" />
       <module name="coolshark" target="1.8" />
+      <module name="csmall-product" target="1.8" />
       <module name="demo" target="1.8" />
       <module name="demo1" target="1.8" />
       <module name="jdbc01" target="1.8" />
@@ -109,6 +111,7 @@
       <module name="boot06" options="-parameters" />
       <module name="boot07" options="-parameters" />
       <module name="coolshark" options="-parameters" />
+      <module name="csmall-product" options="-parameters" />
       <module name="demo" options="-parameters" />
       <module name="demo1" options="-parameters" />
       <module name="s1" options="-parameters" />
