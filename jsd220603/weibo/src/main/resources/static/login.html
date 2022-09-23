@@ -29,6 +29,7 @@
         },
         methods: {
             login() {
+
                 axios.post("/login", v.user).then(function (response) {
                     switch (response.data) {
                         case 1:

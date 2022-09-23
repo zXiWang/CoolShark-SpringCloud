@@ -112,10 +112,10 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Collation>utf8_general_ci</Collation>
     </schema>
     <schema id="11" parent="1" name="mall_ams">
-      <Current>1</Current>
       <Collation>utf8_general_ci</Collation>
     </schema>
     <schema id="12" parent="1" name="mall_pms">
+      <Current>1</Current>
       <Collation>utf8_general_ci</Collation>
     </schema>
     <schema id="13" parent="1" name="mana">

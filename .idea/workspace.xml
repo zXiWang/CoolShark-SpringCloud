@@ -9,24 +9,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="5.0.1 coolShark npm vue">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="5.0.2 coolShark vue mybatis-plus">
+      <change afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/pojo/entity/Admin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/f35ff572-0104-4a0a-ae7b-deaa7079f705.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f35ff572-0104-4a0a-ae7b-deaa7079f705.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_engine_core_2_3.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-web-client/jsd2206-csmall-web-client-teacher" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/jsd2206-csmall-web-client-teacher" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/views/AdminView.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/views/HomeView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/views/LoginView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/views/LoginView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/QR/QR.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/QR.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/CsmallProductApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/CsmallProductApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/entity/AmsAdmin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/AmsAdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/AdminMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/test/java/com/xiwang/csmall/product/CsmallProductApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/test/java/com/xiwang/csmall/product/CsmallProductApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsd220603/weibo/src/main/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/jsd220603/weibo/src/main/resources/static/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +35,12 @@
         <option value="AnnotationType" />
         <option value="JavaScript File" />
         <option value="HTML File" />
-        <option value="Interface" />
-        <option value="Class" />
         <option value="Vue Single File Component" />
+        <option value="Interface" />
+        <option value="FxmlFile" />
+        <option value="spring-beans.schema" />
+        <option value="Tag Library Descriptor" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -109,16 +108,16 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31911263" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\XiWang\Desktop\待\达内\csmall-product\src\main\resources\mapper" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\csmall-web-client\src\views\sys-admin\temp" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\课外\课件" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\csmall-web-client\public" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\csmall-web-client\src\views" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\coolshark\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\XiWang\Desktop\待\达内\csmall-web-client\src\assets" />
@@ -138,11 +137,11 @@
       <recent name="com.xiwang.csmall.product.entity" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xiwang.csmall.product.pojo.vo" />
+      <recent name="com.xiwang.csmall.product.mapper" />
       <recent name="com.xiwang.coolshark.mapper" />
       <recent name="com.xiwang.coolshark.controller" />
       <recent name="com.xiwang.weibo.mapper" />
-      <recent name="com.xiwang.weibo.entity" />
-      <recent name="com.xiwang.weibo.controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -152,75 +151,93 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CsmallProductApplicationTests.amsAdminInsert">
-    <configuration name="Test03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="作业.day08.Test03" />
-      <module name="达内" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="作业.day08.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="sqlCreate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xiwang.csmall.product.sqlCreate" />
-      <module name="csmall-product" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xiwang.csmall.product.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CsmallProductApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="csmall-product" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xiwang.csmall.product.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.xiwang.csmall.product" />
-      <option name="MAIN_CLASS_NAME" value="com.xiwang.csmall.product.CsmallProductApplicationTests" />
+  <component name="RunManager" selected="JUnit.AlbumMapperTests.getNormalById">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CsmallProductApplicationTests.amsAdminInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AlbumMapperTests.SelectMaps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="csmall-product" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xiwang.csmall.product.*" />
+          <option name="PATTERN" value="com.xiwang.csmall.product.mapper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.xiwang.csmall.product" />
-      <option name="MAIN_CLASS_NAME" value="com.xiwang.csmall.product.CsmallProductApplicationTests" />
-      <option name="METHOD_NAME" value="amsAdminInsert" />
+      <option name="PACKAGE_NAME" value="com.xiwang.csmall.product.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.xiwang.csmall.product.mapper.AlbumMapperTests" />
+      <option name="METHOD_NAME" value="SelectMaps" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CsmallProductApplicationTests.amsAdminSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AlbumMapperTests.count" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="csmall-product" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xiwang.csmall.product.*" />
+          <option name="PATTERN" value="com.xiwang.csmall.product.mapper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.xiwang.csmall.product" />
-      <option name="MAIN_CLASS_NAME" value="com.xiwang.csmall.product.CsmallProductApplicationTests" />
-      <option name="METHOD_NAME" value="amsAdminSelect" />
+      <option name="PACKAGE_NAME" value="com.xiwang.csmall.product.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.xiwang.csmall.product.mapper.AlbumMapperTests" />
+      <option name="METHOD_NAME" value="count" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AlbumMapperTests.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="csmall-product" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiwang.csmall.product.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xiwang.csmall.product.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.xiwang.csmall.product.mapper.AlbumMapperTests" />
+      <option name="METHOD_NAME" value="delete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AlbumMapperTests.getNormalById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="csmall-product" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiwang.csmall.product.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xiwang.csmall.product.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.xiwang.csmall.product.mapper.AlbumMapperTests" />
+      <option name="METHOD_NAME" value="getNormalById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AttributeTemplateMapperTests.selectAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="csmall-product" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiwang.csmall.product.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xiwang.csmall.product.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.xiwang.csmall.product.mapper.AttributeTemplateMapperTests" />
+      <option name="METHOD_NAME" value="selectAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -346,9 +363,10 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CsmallProductApplicationTests" />
-      <item itemvalue="JUnit.CsmallProductApplicationTests.amsAdminSelect" />
-      <item itemvalue="JUnit.CsmallProductApplicationTests.amsAdminInsert" />
+      <item itemvalue="JUnit.AttributeTemplateMapperTests.selectAll" />
+      <item itemvalue="JUnit.AlbumMapperTests.delete" />
+      <item itemvalue="JUnit.AlbumMapperTests.count" />
+      <item itemvalue="JUnit.AlbumMapperTests.SelectMaps" />
       <item itemvalue="Spring Boot.Sb2206Application" />
       <item itemvalue="Spring Boot.MySpringBoot2Application" />
       <item itemvalue="Spring Boot.MySpringBoot3Application" />
@@ -366,20 +384,22 @@
       <item itemvalue="Spring Boot.WeiboApplication" />
       <item itemvalue="Spring Boot.CoolsharkApplication" />
       <item itemvalue="Spring Boot.CsmallProductApplication" />
-      <item itemvalue="应用程序.Test03" />
-      <item itemvalue="应用程序.sqlCreate" />
+      <item itemvalue="JUnit.AlbumMapperTests.getNormalById" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CsmallProductApplicationTests.amsAdminInsert" />
-        <item itemvalue="JUnit.CsmallProductApplicationTests" />
-        <item itemvalue="应用程序.sqlCreate" />
-        <item itemvalue="JUnit.CsmallProductApplicationTests.amsAdminSelect" />
-        <item itemvalue="应用程序.Test03" />
+        <item itemvalue="JUnit.AlbumMapperTests.getNormalById" />
+        <item itemvalue="JUnit.AlbumMapperTests.SelectMaps" />
+        <item itemvalue="JUnit.AlbumMapperTests.count" />
+        <item itemvalue="JUnit.AttributeTemplateMapperTests.selectAll" />
+        <item itemvalue="JUnit.AlbumMapperTests.delete" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="beanDetailsProportion" value="0.3" />
+  </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\XiWang\AppData\Roaming\Subversion</configuration>
   </component>
@@ -502,14 +522,9 @@
       <workItem from="1663634408655" duration="5556000" />
       <workItem from="1663643399685" duration="20079000" />
       <workItem from="1663720306078" duration="29475000" />
-      <workItem from="1663806594922" duration="851000" />
-    </task>
-    <task id="LOCAL-00009" summary="1.5 更新线程">
-      <created>1659525065708</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1659525065708</updated>
+      <workItem from="1663806594922" duration="7525000" />
+      <workItem from="1663814243956" duration="21007000" />
+      <workItem from="1663893530072" duration="3183000" />
     </task>
     <task id="LOCAL-00010" summary="1.5 更新线程">
       <created>1659574433976</created>
@@ -847,7 +862,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663676554909</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="5.0.2 coolShark vue mybatis-plus">
+      <created>1663807584223</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1663807584224</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -889,7 +911,6 @@
       <path value="$PROJECT_DIR$/jsd2206-csmall-web-client-teacher" />
       <path value="$PROJECT_DIR$/csmall-web-client" />
     </ignored-roots>
-    <MESSAGE value="2.3 Relfect" />
     <MESSAGE value="2.4 Relfect update" />
     <MESSAGE value="2.5 Spring Boot" />
     <MESSAGE value="2.6 html" />
@@ -914,7 +935,8 @@
     <MESSAGE value="4.9.2 coolShark" />
     <MESSAGE value="4.9.3 coolShark" />
     <MESSAGE value="5.0.1 coolShark npm vue" />
-    <option name="LAST_COMMIT_MESSAGE" value="5.0.1 coolShark npm vue" />
+    <MESSAGE value="5.0.2 coolShark vue mybatis-plus" />
+    <option name="LAST_COMMIT_MESSAGE" value="5.0.2 coolShark vue mybatis-plus" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

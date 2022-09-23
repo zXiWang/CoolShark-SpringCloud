@@ -1,7 +1,9 @@
 package com.xiwang.csmall.product;
 
-import com.xiwang.csmall.product.entity.AmsAdmin;
-import com.xiwang.csmall.product.mapper.AmsAdminMapper;
+
+import com.xiwang.csmall.product.pojo.entity.Admin;
+import com.xiwang.csmall.product.mapper.AdminMapper;
+import com.xiwang.csmall.product.mapper.AlbumMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -12,26 +14,30 @@ import java.util.List;
 class CsmallProductApplicationTests {
 
     @Autowired
-    private AmsAdminMapper amsAdminMapper;
+    private AdminMapper adminMapper;
+    @Autowired
+    private AlbumMapper albumMapper;
 
     @Test
     void contextLoads() {
     }
 
 
+
     @Test
-    public void amsAdminSelect() {
+    public void AdminSelect() {
         System.out.println("测试开始......");
-        List<AmsAdmin> aaList = amsAdminMapper.selectList(null);
+        List<Admin> aaList = adminMapper.selectList(null);
         aaList.forEach(System.out::println);
     }
+
     @Test
-    public void amsAdminInsert() {
+    public void AdminInsert() {
         System.out.println("测试开始......");
-        AmsAdmin amsAdmin=new AmsAdmin();
-        amsAdmin.setUsername("张三");
-        amsAdminMapper.insert(amsAdmin);
-        List<AmsAdmin> aaList = amsAdminMapper.selectList(null);
+        Admin Admin = new Admin();
+        Admin.setUsername("张三");
+        adminMapper.insert(Admin);
+        List<Admin> aaList = adminMapper.selectList(null);
         aaList.forEach(System.out::println);
     }
 
