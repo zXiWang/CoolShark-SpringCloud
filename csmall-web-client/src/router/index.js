@@ -24,6 +24,9 @@ const routes = [
             }, {
                 path: '/sys-admin/temp/attributeTemplate/add-new',
                 component: () => import('../views/sys-admin/temp/AttributeTemplateAddNewView.vue')
+            }, {
+                path: '/sys-admin/temp/attribute/add-new',
+                component: () => import('../views/sys-admin/temp/AttributeAddNewView.vue')
             },
         ]
     },

@@ -34,7 +34,7 @@
                 <i class="el-icon-s-operation"></i>
                 品牌列表
               </el-menu-item>
-              <el-menu-item index="/sys-admin/temp/album/add-new">
+              <el-menu-item index="/sys-admin/temp/brand/add-new">
                 <i class="el-icon-circle-plus-outline"></i>
                 添加品牌
               </el-menu-item>
@@ -50,7 +50,7 @@
                 <i class="el-icon-s-operation"></i>
                 相册列表
               </el-menu-item>
-              <el-menu-item index="/sys-admin/temp/brand/add-new">
+              <el-menu-item index="/sys-admin/temp/album/add-new">
                 <i class="el-icon-circle-plus-outline"></i>
                 添加相册
               </el-menu-item>
@@ -66,7 +66,7 @@
                 <i class="el-icon-s-operation"></i>
                 属性列表
               </el-menu-item>
-              <el-menu-item index="2-10">
+              <el-menu-item index="/sys-admin/temp/attribute/add-new">
                 <i class="el-icon-circle-plus-outline"></i>
                 添加属性
               </el-menu-item>

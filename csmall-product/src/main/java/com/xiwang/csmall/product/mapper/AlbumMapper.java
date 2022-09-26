@@ -3,8 +3,8 @@ package com.xiwang.csmall.product.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.xiwang.csmall.product.pojo.entity.Album;
+import com.xiwang.csmall.product.pojo.vo.AlbumListItemVO;
 import com.xiwang.csmall.product.pojo.vo.AlbumNormalVO;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -18,10 +18,25 @@ import java.util.List;
 
 @Repository
 public interface AlbumMapper extends BaseMapper<Album> {
-    List<Album> selectAll();
 
-    int insert(@Param("album") Album album);
+
+    int insert(Album album);
+
+    int insertBatch(List<Album> albumList);
+
+    int deleteById(Long id);
+
+    int deleteByIds(Long[] ids);
+
+    int updateById(Album album);
+
+    int count();
 
     AlbumNormalVO getNormalById(Long id);
+
+    List<AlbumListItemVO> list();
+
+    List<Album> selectAll();
+
 
 }

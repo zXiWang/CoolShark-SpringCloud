@@ -1,0 +1,66 @@
+Index: csmall-product/jsd2206-csmall-product-teacher/src/main/resources/mapper/AttributeTemplateMapper.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\" ?>\r\n<!DOCTYPE mapper PUBLIC \"-//mybatis.org//DTD Mapper 3.0//EN\" \"http://mybatis.org/dtd/mybatis-3-mapper.dtd\">\r\n\r\n<mapper namespace=\"cn.tedu.csmall.product.mapper.AttributeTemplateMapper\">\r\n\r\n    <!-- int insert(AttributeTemplate attributeTemplate); -->\r\n    <insert id=\"insert\">\r\n        INSERT INTO pms_attribute_template (\r\n            name, pinyin, keywords, sort\r\n        ) VALUES (\r\n            #{name}, #{pinyin}, #{keywords}, #{sort}\r\n        )\r\n    </insert>\r\n\r\n    <!-- int deleteById(Long id); -->\r\n    <delete id=\"deleteById\">\r\n        DELETE FROM pms_attribute_template WHERE id=#{id}\r\n    </delete>\r\n\r\n    <!-- int count(); -->\r\n    <select id=\"count\" resultType=\"int\">\r\n        SELECT count(*) FROM pms_attribute_template\r\n    </select>\r\n\r\n    <!-- AttributeTemplateStandardVO getStandardById(Long id); -->\r\n    <select id=\"getStandardById\" resultMap=\"StandardResultMap\">\r\n        SELECT\r\n            <include refid=\"StandardQueryFields\"/>\r\n        FROM\r\n            pms_attribute_template\r\n        WHERE\r\n            id=#{id}\r\n    </select>\r\n\r\n    <!-- List<AlbumListItemVO> list(); -->\r\n    <select id=\"list\" resultMap=\"ListResultMap\">\r\n        SELECT\r\n            <include refid=\"ListQueryFields\"/>\r\n        FROM\r\n            pms_attribute_template\r\n        ORDER BY\r\n            id DESC\r\n    </select>\r\n\r\n    <sql id=\"StandardQueryFields\">\r\n        id, name, pinyin, keywords, sort\r\n    </sql>\r\n\r\n    <resultMap id=\"StandardResultMap\"\r\n               type=\"cn.tedu.csmall.product.pojo.vo.AttributeTemplateStandardVO\">\r\n    </resultMap>\r\n\r\n    <sql id=\"ListQueryFields\">\r\n        id, name, pinyin, keywords, sort\r\n    </sql>\r\n\r\n    <resultMap id=\"ListResultMap\"\r\n               type=\"cn.tedu.csmall.product.pojo.vo.AttributeTemplateListItemVO\">\r\n    </resultMap>\r\n\r\n</mapper>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/csmall-product/jsd2206-csmall-product-teacher/src/main/resources/mapper/AttributeTemplateMapper.xml b/csmall-product/jsd2206-csmall-product-teacher/src/main/resources/mapper/AttributeTemplateMapper.xml
+--- a/csmall-product/jsd2206-csmall-product-teacher/src/main/resources/mapper/AttributeTemplateMapper.xml	(revision 4514eee56bee02c5c0759ac06c4879a56fda522e)
++++ b/csmall-product/jsd2206-csmall-product-teacher/src/main/resources/mapper/AttributeTemplateMapper.xml	(date 1663919611008)
+@@ -5,41 +5,42 @@
+ 
+     <!-- int insert(AttributeTemplate attributeTemplate); -->
+     <insert id="insert">
+-        INSERT INTO pms_attribute_template (
+-            name, pinyin, keywords, sort
+-        ) VALUES (
+-            #{name}, #{pinyin}, #{keywords}, #{sort}
+-        )
++        INSERT INTO pms_attribute_template (name, pinyin, keywords, sort)
++        VALUES (#{name}, #{pinyin}, #{keywords}, #{sort})
+     </insert>
+ 
++
+     <!-- int deleteById(Long id); -->
+     <delete id="deleteById">
+-        DELETE FROM pms_attribute_template WHERE id=#{id}
++        DELETE
++        FROM pms_attribute_template
++        WHERE id = #{id}
+     </delete>
+ 
+     <!-- int count(); -->
+     <select id="count" resultType="int">
+-        SELECT count(*) FROM pms_attribute_template
++        SELECT count(*)
++        FROM pms_attribute_template
+     </select>
+ 
+     <!-- AttributeTemplateStandardVO getStandardById(Long id); -->
+     <select id="getStandardById" resultMap="StandardResultMap">
+         SELECT
+-            <include refid="StandardQueryFields"/>
++        <include refid="StandardQueryFields"/>
+         FROM
+-            pms_attribute_template
++        pms_attribute_template
+         WHERE
+-            id=#{id}
++        id=#{id}
+     </select>
+ 
+     <!-- List<AlbumListItemVO> list(); -->
+     <select id="list" resultMap="ListResultMap">
+         SELECT
+-            <include refid="ListQueryFields"/>
++        <include refid="ListQueryFields"/>
+         FROM
+-            pms_attribute_template
++        pms_attribute_template
+         ORDER BY
+-            id DESC
++        id DESC
+     </select>
+ 
+     <sql id="StandardQueryFields">

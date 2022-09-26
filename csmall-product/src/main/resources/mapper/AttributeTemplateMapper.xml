@@ -10,8 +10,95 @@
     </select>
 
     <!--insert-->
-    <insert id="insert" >
-        insert into pms_attribute_template(name, pinyin, keywords)
-        values (#{name}, #{pinyin}, #{keywords})
+    <insert id="insert">
+        insert into pms_attribute_template(name, pinyin, sort)
+        values (#{name}, #{pinyin}, #{sort})
     </insert>
+
+    <insert id="insertBatch" useGeneratedKeys="true" keyProperty="id">
+        insert into pms_attribute_template(name, pinyin, sort)
+        values
+        <foreach collection="list" item="attributeTemplate" separator=",">
+            (#{attributeTemplate.name}, #{attributeTemplate.pinyin},
+            #{attributeTemplate.sort})
+        </foreach>
+
+    </insert>
+
+    <!--    根据id删除数据-->
+    <delete id="deleteById">
+        delete
+        from pms_attribute_template
+        where id = #{id}
+    </delete>
+
+    <delete id="deleteByIds">
+        delete
+        from pms_attribute_template
+        where id in (
+        <foreach collection="array" item="id" separator=",">
+            #{id}
+        </foreach>
+        )
+    </delete>
+
+    <!--    根据id更新数据-->
+    <!-- int updateById(Album album); -->
+    <update id="updateById">
+        UPDATE
+        pms_attribute_template
+        SET
+        <if test="name != null">
+            name=#{name},
+        </if>
+        <if test="pinyin != null">
+            pinyin=#{pinyin},
+        </if>
+        <if test="keywords != null">
+            keywords=#{keywords},
+        </if>
+        <if test="sort != null">
+            sort=#{sort}
+        </if>
+        WHERE
+        id=#{id}
+    </update>
+
+    <select id="count" resultType="int">
+        select count(*)
+        from pms_attribute_template
+    </select>
+
+    <select id="getNormalById" resultMap="NormalResultMap">
+        select
+        <include refid="NormalQueryFields"/>
+        from
+        pms_attribute_template
+        where
+        id = #{id}
+    </select>
+
+    <resultMap id="NormalResultMap" type="com.xiwang.csmall.product.pojo.vo.AttributeTemplateNormalVO"/>
+
+    <sql id="NormalQueryFields">
+        <if test="true"/>
+        id,name,pinyin,keywords,sort
+    </sql>
+
+
+    <select id="list" resultMap="ListResultMap">
+        select
+        <include refid="ListQueryFields"/>
+        from
+        pms_attribute_template
+    </select>
+
+    <resultMap id="ListResultMap" type="com.xiwang.csmall.product.pojo.vo.AttributeTemplateListItemVO"/>
+
+    <sql id="ListQueryFields">
+        <if test="true"/>
+        id,name,pinyin,sort
+    </sql>
+
+
 </mapper>

@@ -24,21 +24,21 @@ class CsmallProductApplicationTests {
 
 
 
-    @Test
-    public void AdminSelect() {
-        System.out.println("测试开始......");
-        List<Admin> aaList = adminMapper.selectList(null);
-        aaList.forEach(System.out::println);
-    }
-
-    @Test
-    public void AdminInsert() {
-        System.out.println("测试开始......");
-        Admin Admin = new Admin();
-        Admin.setUsername("张三");
-        adminMapper.insert(Admin);
-        List<Admin> aaList = adminMapper.selectList(null);
-        aaList.forEach(System.out::println);
-    }
+//    @Test
+//    public void AdminSelect() {
+//        System.out.println("测试开始......");
+//        List<Admin> aaList = adminMapper.selectList(null);
+//        aaList.forEach(System.out::println);
+//    }
+//
+//    @Test
+//    public void AdminInsert() {
+//        System.out.println("测试开始......");
+//        Admin Admin = new Admin();
+//        Admin.setUsername("张三");
+//        adminMapper.insert(Admin);
+//        List<Admin> aaList = adminMapper.selectList(null);
+//        aaList.forEach(System.out::println);
+//    }
 
 }
