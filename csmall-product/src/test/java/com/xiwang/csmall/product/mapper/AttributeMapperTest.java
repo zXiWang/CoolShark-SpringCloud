@@ -4,6 +4,7 @@ import com.xiwang.csmall.product.pojo.entity.Attribute;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import lombok.extern.slf4j.Slf4j;
 
 import java.awt.print.PageFormat;
 import java.awt.print.Pageable;
@@ -13,6 +14,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Slf4j
 @SpringBootTest
 class AttributeMapperTest {
 
@@ -22,7 +24,9 @@ class AttributeMapperTest {
 
     @Test
     void queryById() {
-        mapper.queryById(2L);
+        mapper.selectById(2L);
+        int i=1,j=3;
+        log.trace("{}+{}={}",i,j,i+j);
     }
 
     @Test
@@ -90,6 +94,5 @@ class AttributeMapperTest {
         Map<String, Integer> map = new HashMap<String, Integer>();
         map.put("offset", 1);
         map.put("pageSize", 2);
-        mapper.queryAllByLimit(object, pageable);
     }
 }

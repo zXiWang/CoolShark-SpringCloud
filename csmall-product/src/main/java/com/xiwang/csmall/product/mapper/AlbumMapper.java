@@ -2,6 +2,7 @@ package com.xiwang.csmall.product.mapper;
 
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.xiwang.csmall.product.pojo.dto.AlbumAddNewDTO;
 import com.xiwang.csmall.product.pojo.entity.Album;
 import com.xiwang.csmall.product.pojo.vo.AlbumListItemVO;
 import com.xiwang.csmall.product.pojo.vo.AlbumNormalVO;
@@ -36,7 +37,9 @@ public interface AlbumMapper extends BaseMapper<Album> {
 
     List<AlbumListItemVO> list();
 
-    List<Album> selectAll();
+    int countByName(String name);
+
+//    List<Album> selectAll();
 
 
 }

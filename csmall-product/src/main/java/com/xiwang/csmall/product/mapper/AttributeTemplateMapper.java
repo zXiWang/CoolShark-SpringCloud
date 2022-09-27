@@ -37,4 +37,5 @@ public interface AttributeTemplateMapper extends BaseMapper<AttributeTemplate> {
 
     List<AttributeTemplate> selectAll();
 
+    int countByName(String name);
 }

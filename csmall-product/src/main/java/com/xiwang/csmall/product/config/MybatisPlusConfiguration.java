@@ -7,6 +7,6 @@ import org.springframework.context.annotation.Configuration;
 @MapperScan("com.xiwang.csmall.product.mapper")
 public class MybatisPlusConfiguration {
     public MybatisPlusConfiguration() {
-        System.out.println("Configuration running");
+
     }
 }

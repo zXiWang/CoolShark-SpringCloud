@@ -2,13 +2,10 @@ package com.xiwang.csmall.product.mapper;
 
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.xiwang.csmall.product.pojo.entity.Brand;
+import com.xiwang.csmall.product.pojo.dto.BrandAddNewDTO;
 import com.xiwang.csmall.product.pojo.entity.Brand;
 import com.xiwang.csmall.product.pojo.vo.BrandListItemVO;
 import com.xiwang.csmall.product.pojo.vo.BrandNormalVO;
-import com.xiwang.csmall.product.pojo.vo.BrandListItemVO;
-import com.xiwang.csmall.product.pojo.vo.BrandNormalVO;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -37,4 +34,7 @@ public interface BrandMapper extends BaseMapper<Brand> {
     BrandNormalVO getNormalById(Long id);
 
     List<BrandListItemVO> list();
+
+    int countByName(String name);
+
 }

@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.xiwang.csmall.product.mapper.AttributeMapper">
 
-    <resultMap type="com.xiwang.csmall.product.pojo.entity.Attribute" id="AttributeMap">
+    <resultMap type="com.xiwang.csmall.product.pojo.vo.AttributeListItemVO" id="ListResultMap">
         <result property="id" column="id" jdbcType="INTEGER"/>
         <result property="templateId" column="template_id" jdbcType="INTEGER"/>
         <result property="name" column="name" jdbcType="VARCHAR"/>
@@ -13,33 +13,62 @@
         <result property="unit" column="unit" jdbcType="VARCHAR"/>
         <result property="sort" column="sort" jdbcType="INTEGER"/>
         <result property="isAllowCustomize" column="is_allow_customize" jdbcType="INTEGER"/>
-        <result property="gmtCreate" column="gmt_create" jdbcType="TIMESTAMP"/>
-        <result property="gmtModified" column="gmt_modified" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    <resultMap type="com.xiwang.csmall.product.pojo.vo.AttributeListItemVO" id="NormalResultMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="templateId" column="template_id" jdbcType="INTEGER"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="description" column="description" jdbcType="VARCHAR"/>
+        <result property="type" column="type" jdbcType="INTEGER"/>
+        <result property="inputType" column="input_type" jdbcType="INTEGER"/>
+        <result property="valueList" column="value_list" jdbcType="VARCHAR"/>
+        <result property="unit" column="unit" jdbcType="VARCHAR"/>
+        <result property="sort" column="sort" jdbcType="INTEGER"/>
+        <result property="isAllowCustomize" column="is_allow_customize" jdbcType="INTEGER"/>
     </resultMap>
 
+    <sql id="normalQueryFields">
+        <if test="true"/>
+        id,
+        template_id,
+        name,
+        description,
+        type,
+        input_type,
+        value_list,
+        unit,
+        sort,
+        is_allow_customize,
+        gmt_create,
+        gmt_modified
+    </sql>
+    <sql id="listQueryFields">
+        <if test="true"/>
+        id,
+        template_id,
+        name,
+        description,
+        type,
+        input_type,
+        value_list,
+        unit,
+        sort,
+        is_allow_customize,
+        gmt_create,
+        gmt_modified
+    </sql>
     <!--查询单个-->
-    <select id="queryById" resultMap="AttributeMap" >
-        select id,
-               template_id,
-               name,
-               description,
-               type,
-               input_type,
-               value_list,
-               unit,
-               sort,
-               is_allow_customize,
-               gmt_create,
-               gmt_modified
+    <select id="getNormalById" resultMap="NormalResultMap">
+        select
+        <include refid="normalQueryFields"/>
         from pms_attribute
         where id = #{id}
     </select>
 
     <!--查询指定行数据-->
-    <select id="queryAllByLimit" resultMap="AttributeMap">
+    <select id="list" resultMap="ListResultMap">
         select
-        id, template_id, name, description, type, input_type, value_list, unit, sort, is_allow_customize, gmt_create,
-        gmt_modified
+        <include refid="listQueryFields"/>
         from pms_attribute
         <where>
             <if test="id != null">
@@ -83,7 +112,7 @@
     </select>
 
     <!--统计总行数-->
-    <select id="count" resultType="java.lang.Long">
+    <select id="count" resultType="int">
         select count(1)
         from pms_attribute
         <where>

@@ -9,7 +9,7 @@ import java.awt.print.Pageable;
 import java.util.List;
 
 /**
- * 属性(PmsAttribute)表数据库访问层
+ * 属性(Attribute)表数据库访问层
  *
  * @author makejava
  * @since 2022-09-24 10:52:47
@@ -23,7 +23,7 @@ public interface AttributeMapper extends BaseMapper<Attribute> {
      * @param id 主键
      * @return 实例对象
      */
-    Attribute queryById(Long id);
+    Attribute getNormalById(Long id);
 
     /**
      * 查询指定行数据
@@ -32,15 +32,14 @@ public interface AttributeMapper extends BaseMapper<Attribute> {
      * @param pageable  分页对象
      * @return 对象列表
      */
-    List<Attribute> queryAllByLimit(Attribute attribute, @Param("pageable") Pageable pageable);
+    List<Attribute> list(Attribute attribute, @Param("pageable") Pageable pageable);
 
     /**
      * 统计总行数
      *
-     * @param attribute 查询条件
      * @return 总行数
      */
-    long count(Attribute attribute);
+    int count();
 
     /**
      * 新增数据
@@ -73,7 +72,7 @@ public interface AttributeMapper extends BaseMapper<Attribute> {
      * @param attribute 实例对象
      * @return 影响行数
      */
-    int update(Attribute attribute);
+    int updateById(Attribute attribute);
 
     /**
      * 通过主键删除数据

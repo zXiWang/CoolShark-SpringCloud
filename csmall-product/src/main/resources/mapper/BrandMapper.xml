@@ -41,46 +41,46 @@
     </delete>
 
     <!--    根据id更新数据-->
-    <!-- int updateById(Brand album); -->
+    <!-- int updateById(Brand brand); -->
     <update id="updateById">
         UPDATE
         pms_brand
-        SET
-        <if test="name != null">
-            name=#{name},
-        </if>
-        <if test="pinyin != null">
-            pinyin=#{pinyin},
-        </if>
-        <if test="logo != null">
-            logo=#{logo}
-        </if>
-        <if test="description != null">
-            description=#{description}
-        </if>
-        <if test="keywords != null">
-            keywords=#{keywords}
-        </if>
-        <if test="sort != null">
-            sort=#{sort}
-        </if>
-        <if test="enable != null">
-            enable=#{enable}
-        </if>
-<!--        <if test="logo != null">-->
-<!--            logo=#{logo}-->
-<!--        </if>-->
-<!--        <if test="logo != null">-->
-<!--            logo=#{logo}-->
-<!--        </if>-->
-<!--        <if test="logo != null">-->
-<!--            logo=#{logo}-->
-<!--        </if>-->
-<!--        <if test="logo != null">-->
-<!--            logo=#{logo}-->
-<!--        </if>-->
-        WHERE
-        id=#{id}
+        <set>
+            <if test="name != null">
+                name=#{name},
+            </if>
+            <if test="pinyin != null">
+                pinyin=#{pinyin},
+            </if>
+            <if test="logo != null">
+                logo=#{logo},
+            </if>
+            <if test="description != null">
+                description=#{description},
+            </if>
+            <if test="keywords != null">
+                keywords=#{keywords},
+            </if>
+            <if test="sort != null">
+                sort=#{sort},
+            </if>
+            <if test="sales != null">
+                sales=#{sales},
+            </if>
+            <if test="productCount != null">
+                product_count=#{productCount},
+            </if>
+            <if test="commentCount != null">
+                comment_count=#{commentCount},
+            </if>
+            <if test="positiveCommentCount != null">
+                positive_comment_count=#{positiveCommentCount},
+            </if>
+            <if test="enable != null">
+                enable=#{enable},
+            </if>
+        </set>
+        WHERE id=#{id}
     </update>
 
     <!--if-else-->
@@ -122,6 +122,11 @@
         <include refid="ListQueryFields"/>
         from
         pms_brand
+    </select>
+    <select id="countByName" resultType="java.lang.Integer">
+        select count(*)
+        from pms_brand
+        where name = #{name}
     </select>
 
     <resultMap id="ListResultMap" type="com.xiwang.csmall.product.pojo.vo.BrandListItemVO"/>

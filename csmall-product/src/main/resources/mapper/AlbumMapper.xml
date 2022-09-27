@@ -100,6 +100,12 @@
         pms_album
     </select>
 
+    <select id="countByName" resultType="int">
+        select count(*)
+        from pms_album
+        where name=#{name}
+    </select>
+
     <resultMap id="ListResultMap" type="com.xiwang.csmall.product.pojo.vo.AlbumListItemVO"/>
 
     <sql id="ListQueryFields">

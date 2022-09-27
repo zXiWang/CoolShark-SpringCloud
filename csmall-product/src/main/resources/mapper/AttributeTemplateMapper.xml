@@ -92,6 +92,11 @@
         from
         pms_attribute_template
     </select>
+    <select id="countByName" resultType="java.lang.Integer">
+        select count(*)
+        from pms_attribute_template
+        where name = #{name}
+    </select>
 
     <resultMap id="ListResultMap" type="com.xiwang.csmall.product.pojo.vo.AttributeTemplateListItemVO"/>
 

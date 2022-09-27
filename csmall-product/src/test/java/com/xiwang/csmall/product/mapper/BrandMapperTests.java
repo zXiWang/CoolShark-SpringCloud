@@ -113,7 +113,7 @@ public class BrandMapperTests {
     @Test
     void updateById() {
         Brand object = new Brand();
-        object.setId(1L);
+        object.setId(4L);
         object.setName("牛逼");
         object.setDescription("牛逼");
         object.setSort(99);
