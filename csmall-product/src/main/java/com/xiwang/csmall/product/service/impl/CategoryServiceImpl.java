@@ -43,6 +43,6 @@ public class CategoryServiceImpl implements CategoryService {
         if(categoryMapper.getNormalById(id)==null) {
             throw new ServiceException("删除失败!不存在此类别!");
         }
-        categoryMapper.delete(id);
+        categoryMapper.deleteById(id);
     }
 }

@@ -38,6 +38,11 @@ public class BrandController {
         return "添加成功!";
     }
 
+    /**
+     * 删除品牌
+     * @param id 主键id
+     * @return 消息
+     */
     @RequestMapping
     public String delete(Long id) {
         log.debug("品牌删除开始id= {}",id);

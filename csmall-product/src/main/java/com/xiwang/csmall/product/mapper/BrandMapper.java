@@ -23,7 +23,7 @@ public interface BrandMapper extends BaseMapper<Brand> {
 
     int insertBatch(List<Brand> brandList);
 
-    int delete(Long id);
+    int deleteById(Long id);
 
     int deleteByIds(Long[] ids);
 

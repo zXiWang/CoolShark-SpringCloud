@@ -15,539 +15,25 @@
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="5.2.0 coolShark mybatis-plus&#10;controller层/service层创建">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="5.3.0 coolShark mybatis-plus&#10;品牌/类别/属性模板&#10;controller层/service层创建">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/controller/AlbumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/controller/AlbumController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/controller/AttributeTemplateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/controller/AttributeTemplateController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/controller/BrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/controller/BrandController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/AlbumMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/AlbumMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/AttributeTemplateMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/AttributeTemplateMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/BrandMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/BrandMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/CategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/CategoryMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/pojo/vo/AlbumNormalVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/pojo/vo/AlbumNormalVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/pojo/vo/SkuNormalVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/pojo/vo/SkuNormalVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/AlbumService.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/AlbumService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/AttributeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/AttributeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/AttributeTemplateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/AttributeTemplateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/BrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/BrandService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/AlbumServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/AlbumServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/AttributeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/AttributeServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/AttributeTemplateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/AttributeTemplateServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/BrandCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/BrandCategoryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/BrandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/BrandServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/CategoryAttributeTemplateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/CategoryAttributeTemplateServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/PictureServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/PictureServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/SkuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/SkuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/SkuSpecificationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/SkuSpecificationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/SpuDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/SpuDetailServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/SpuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/SpuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/AttributeTemplateMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/AttributeTemplateMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/BrandMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/BrandMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/CategoryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/test/java/com/xiwang/csmall/product/service/impl/AlbumServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/test/java/com/xiwang/csmall/product/service/impl/AlbumServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/MySQL/903hw.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/MySQL/905.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/MySQL/913.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/MySQL/916.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/MySQL/day02.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/css/my.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day01/01文本相关标签.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day01/02简历练习.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day01/03图片标签.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day01/04超链接.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day01/05表格.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day01/06表单.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day01/07分区标签.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day01/08css引入方式.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day01/09选择器.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day01/10选择器练习.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day02/01选择器续.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day02/02选择器练习.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day02/03颜色和背景.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day02/04文本和字体.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day02/05文本和字体练习.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day02/06显示方式.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day02/07外边距.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day02/08边框和内边距.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day02/09盒子模型练习.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day02/10CSS三大特性.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day02/11作业.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day03/01综合练习.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day03/02综合练习.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day03/03综合练习.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day03/04相对定位.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day03/05绝对定位.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day03/06绝对定位练习.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day03/07固定定位.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day03/08浮动定位.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day03/09综合练习.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day03/10综合练习.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day04/01溢出设置.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day04/02层级显示.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day04/03JS引入方式.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day04/04方法.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day04/05页面相关方法.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day04/06平方.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day04/07计算器练习.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day04/07计算器练习1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day04/08猜数字练习.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day04/09晚课盗链图片.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day04/10晚课视频.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day04/11Tmooc练习.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day04/my.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day05/01Tmooc练习.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day05/02定时器.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day05/03页面相关.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day05/04图片练习.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day05/05员工列表练习.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day05/06自定义对象.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day05/07综合练习.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day05/08HelloVueCDN.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day05/08HelloVue本地.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day05/09文本相关指令.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day05/10属性绑定.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day06/01双向绑定.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day06/02事件绑定.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day06/03综合练习.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day06/04计算器.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day06/05循环遍历.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day06/06员工列表练习.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day06/07综合练习.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day06/08显示隐藏相关.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day06/eui/01按钮.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day06/eui/02图标.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day06/eui/03分割线.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day06/eui/04消息提示.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day06/eui/05下拉菜单.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day06/eui/hello.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day07/01选择器.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day07/02表格.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day07/03员工练习.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day07/04导航菜单.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day07/05布局.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day07/06布局容器.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day07/07走马灯.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day07/08卡片.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day07/admin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day07/detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day07/hello.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day07/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/day07/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/57ad359dNd4a6f130.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/57ad8846N64ac3c79 (1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/57ad8846N64ac3c79.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/57b12a31N8f4f75a3 (1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/57b12a31N8f4f75a3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/57b15612N81dc489d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/57b15616N1e285f09.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/android.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/arrow-left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/arrow-right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/b1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/b2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/b3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/b4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/banner1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/banner2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/banner3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/banner4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/care.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/computer_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/erweima.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/ewm.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/footerFont.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/g.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/h.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/header_normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/i.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/icon1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/icon2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/icon3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/icon4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/ios.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/j.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/k.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/kefuf.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/mm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/order.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/product_detail_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/product_detail_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/product_detail_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/product_detail_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/product_detail_icon_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/product_detail_icon_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/product_detail_icon_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/product_detail_icon_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/product_detail_icon_bao_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/product_detail_icon_d_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/product_detail_icon_g_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/product_detail_icon_t_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/product_detail_icon_up_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/product_detail_img16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/product_detail_img6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/product_detail_img7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/product_detail_img9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/qr.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/shark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/shop_car.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/sinablog.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/study_computer_img1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/study_computer_img2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/study_computer_img3 (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/study_computer_img3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/study_computer_img4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/study_computer_img5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/wanhuatong.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/wave.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/wechat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/img/yhm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/imgs/a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/imgs/b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/imgs/b1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/imgs/b2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/imgs/b3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/imgs/b4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/imgs/bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/imgs/c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/imgs/d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/imgs/e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/imgs/ewm.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/imgs/f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/imgs/g.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/imgs/h.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/imgs/i.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/imgs/j.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/imgs/k.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/imgs/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/imgs/shark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/imgs/wave.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/Web/js/vue.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01-1/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01-1/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01-1/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01-1/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01-1/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01-1/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01-1/src/main/java/cn/tedu/boot011/Boot011Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01-1/src/main/java/cn/tedu/boot011/controller/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01-1/src/main/java/cn/tedu/boot011/controller/ParamController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01-1/src/main/java/cn/tedu/boot011/entity/Emp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01-1/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01-1/src/main/resources/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01-1/src/main/resources/static/param.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01-1/src/test/java/cn/tedu/boot011/Boot011ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01/src/main/java/cn/tedu/boot01/Boot01Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01/src/main/java/cn/tedu/boot01/controller/BMIController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01/src/main/java/cn/tedu/boot01/controller/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01/src/main/java/cn/tedu/boot01/controller/ParamController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01/src/main/java/cn/tedu/boot01/entity/Emp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01/src/main/resources/static/bmi.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01/src/main/resources/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01/src/main/resources/static/param.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot01/src/test/java/cn/tedu/boot01/Boot01ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot02/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot02/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot02/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot02/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot02/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot02/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot02/src/main/java/com/example/boot02/Boot02Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot02/src/main/java/com/example/boot02/controller/ProductController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot02/src/main/java/com/example/boot02/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot02/src/main/java/com/example/boot02/entity/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot02/src/main/java/com/example/boot02/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot02/src/main/java/com/example/boot02/utils/DBUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot02/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot02/src/main/resources/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot02/src/main/resources/static/insert.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot02/src/main/resources/static/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot02/src/main/resources/static/reg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot02/src/main/resources/static/update.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot02/src/test/java/com/example/boot02/Boot02ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot03/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot03/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot03/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot03/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot03/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot03/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot03/src/main/java/cn/xiwang/boot03/Boot03Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot03/src/main/java/cn/xiwang/boot03/controller/ProductController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot03/src/main/java/cn/xiwang/boot03/entity/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot03/src/main/java/cn/xiwang/boot03/mapper/ProductMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot03/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot03/src/main/resources/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot03/src/main/resources/static/insert.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot03/src/main/resources/static/update.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot03/src/test/java/cn/xiwang/boot03/Boot03ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot04/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot04/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot04/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot04/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot04/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot04/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot04/src/main/java/com/xiwang/boot04/Boot04Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot04/src/main/java/com/xiwang/boot04/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot04/src/main/java/com/xiwang/boot04/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot04/src/main/java/com/xiwang/boot04/mapper/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot04/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot04/src/main/resources/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot04/src/main/resources/static/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot04/src/main/resources/static/reg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot04/src/test/java/com/xiwang/boot04/Boot04ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot05/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot05/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot05/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot05/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot05/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot05/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot05/src/main/java/com/xiwang/boot05/Boot05Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot05/src/main/java/com/xiwang/boot05/controller/AxiosController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot05/src/main/java/com/xiwang/boot05/controller/BmiController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot05/src/main/java/com/xiwang/boot05/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot05/src/main/java/com/xiwang/boot05/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot05/src/main/java/com/xiwang/boot05/mapper/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot05/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot05/src/main/resources/static/bmi.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot05/src/main/resources/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot05/src/main/resources/static/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot05/src/main/resources/static/reg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot05/src/test/java/com/xiwang/boot05/Boot05ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot06/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot06/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot06/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot06/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot06/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot06/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot06/src/main/java/com/xiwang/boot06/Boot06Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot06/src/main/java/com/xiwang/boot06/controller/ProductController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot06/src/main/java/com/xiwang/boot06/entity/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot06/src/main/java/com/xiwang/boot06/mapper/ProductMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot06/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot06/src/main/resources/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot06/src/main/resources/static/insert.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot06/src/main/resources/static/list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot06/src/main/resources/static/update.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot06/src/test/java/com/xiwang/boot06/Boot06ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot07/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot07/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot07/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot07/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot07/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot07/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot07/src/main/java/com/xiwang/boot07/Boot07Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot07/src/main/java/com/xiwang/boot07/controller/UploadController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot07/src/main/java/com/xiwang/boot07/entity/Image.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot07/src/main/java/com/xiwang/boot07/mapper/ImageMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot07/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot07/src/main/resources/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot07/src/main/resources/static/upload.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/boot07/src/test/java/com/xiwang/boot07/Boot07ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/CoolsharkApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/controller/BannerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/controller/CategoryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/controller/NewsController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/controller/ProductController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/controller/UploadController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/entity/Banner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/entity/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/entity/News.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/entity/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/filter/MyFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/mapper/BannerMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/mapper/CategoryMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/mapper/NewsMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/mapper/ProductMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/java/com/xiwang/coolshark/mapper/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/admin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/imgs/a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/imgs/b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/imgs/b1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/imgs/b2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/imgs/b3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/imgs/b4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/imgs/bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/imgs/c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/imgs/d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/imgs/e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/imgs/ewm.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/imgs/f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/imgs/g.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/imgs/h.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/imgs/i.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/imgs/j.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/imgs/k.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/imgs/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/imgs/shark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/imgs/wave.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/insertBanner.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/insertNews.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/insertProduct.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/news.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/newsUpdate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/productUpdate.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/main/resources/static/result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/coolshark/src/test/java/com/xiwang/coolshark/CoolsharkApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc01/jdbc01.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc01/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc01/src/main/java/cn/tedu/DBUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc01/src/main/java/cn/tedu/Demo01.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc01/src/main/java/cn/tedu/Demo02.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc01/src/main/java/cn/tedu/Demo03.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc01/src/main/java/cn/tedu/Demo04.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc01/src/main/java/cn/tedu/Demo05.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc01/src/main/java/cn/tedu/Demo06.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc01/src/main/java/cn/tedu/Demo07.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc01/src/main/java/cn/tedu/Demo08.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc01/src/main/java/cn/tedu/Demo09.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc02/jdbc02.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc02/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc02/src/main/java/tedu/DBUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc02/src/main/java/tedu/Demo01.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc02/src/main/java/tedu/Demo02.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc02/src/main/java/tedu/Demo03.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc02/src/main/java/tedu/Demo04.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc02/src/main/java/tedu/Demo05.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc03/jdbc03.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc03/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc03/src/main/java/tedu/DBUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc03/src/main/java/tedu/Demo01.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc03/src/main/java/tedu/Demo02.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc03/src/main/java/tedu/Demo03.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc03/src/main/java/tedu/Demo04.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc03/src/main/java/tedu/Demo05.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jdbc03/src/main/java/tedu/day03.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/作业/day01/Test01.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/作业/day01/Test02.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/作业/day01/Test03.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/作业/day01/Test04.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/作业/day01/Test05.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/作业/day01/Test06.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/作业/day02/Test01.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/作业/day02/Test02.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/作业/day02/Test03.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/作业/day02/Test04.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/作业/day02/Test05.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/文件/06数据库笔记day01.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/文件/element-2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/SpringBoot/day01.assets/image-20220906140225877.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/SpringBoot/day01.assets/image-20220906143023291.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/SpringBoot/day01.assets/image-20220906143131378.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/SpringBoot/day01.assets/image-20220906143213992.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/SpringBoot/day01.assets/image-20220906143358226.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/SpringBoot/day01.assets/image-20220906143502880.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/SpringBoot/day01.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/SpringBoot/day02.assets/image-20220907164024704.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/SpringBoot/day02.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/SpringBoot/day03.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/Web前端/2206Web笔记.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/day01.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/day02.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/常见错误列表.assets/image-20220907141435560.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/常见错误列表.assets/image-20220907142152190.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/常见错误列表.assets/image-20220907162704360.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/常见错误列表.assets/image-20220907162919954.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/常见错误列表.assets/image-20220907163345881.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/常见错误列表.assets/image-20220907163858549.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/常见错误列表.assets/image-20220908113109175.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/常见错误列表.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/数据库/day01.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/数据库/day02.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/数据库/day03.assets/image-20220905103424439.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/数据库/day03.assets/image-20220905103531208.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/数据库/day03.assets/image-20220905103643559.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/数据库/day03.assets/image-20220905142121356.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/数据库/day03.assets/image-20220905143405363.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/数据库/day03.assets/image-20220905165415313.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/数据库/day03.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/数据库/day04.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/数据库/image-20220902195244709.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/数据库/image-20220902195423962.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/数据库/image-20220902195615637.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/数据库/image-20220902201053997.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/数据库/image-20220902201224424.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/数据库/image-20220902201302102.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/数据库/image-20220902201654552.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/数据库/image-20220902201720426.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603 teacher git/笔记/数据库/image-20220902201833233.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/jsd220603.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/s1/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/s1/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/s1/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/s1/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/s1/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/s1/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/s1/src/main/java/com/example/s1/S1Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/s1/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/s1/src/main/resources/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/s1/src/test/java/com/example/s1/S1ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/weibo/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/weibo/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/weibo/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/weibo/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/weibo/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/weibo/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/weibo/src/main/java/com/xiwang/weibo/WeiboApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/weibo/src/main/java/com/xiwang/weibo/controller/CommentController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/weibo/src/main/java/com/xiwang/weibo/controller/UploadController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/weibo/src/main/java/com/xiwang/weibo/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/weibo/src/main/java/com/xiwang/weibo/controller/WeiboController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/weibo/src/main/java/com/xiwang/weibo/entity/Comment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/weibo/src/main/java/com/xiwang/weibo/entity/Image.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/weibo/src/main/java/com/xiwang/weibo/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/weibo/src/main/java/com/xiwang/weibo/entity/Weibo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/weibo/src/main/java/com/xiwang/weibo/mapper/CommentMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/weibo/src/main/java/com/xiwang/weibo/mapper/ImageMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/weibo/src/main/java/com/xiwang/weibo/mapper/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/weibo/src/main/java/com/xiwang/weibo/mapper/WeiboMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/weibo/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/weibo/src/main/resources/static/detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/weibo/src/main/resources/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/weibo/src/main/resources/static/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/weibo/src/main/resources/static/reg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/weibo/src/main/resources/static/send.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsd220603/weibo/src/test/java/com/xiwang/weibo/WeiboApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/作业/day11/Test03.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/作业/day11/Test03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/达内/作业/day08/Test03$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/达内/作业/day08/Test03$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/达内/作业/day08/Test03.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/达内/作业/day08/Test03.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/达内/作业/day11/Test03.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/达内/作业/day11/Test03.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -951,14 +437,7 @@
       <workItem from="1663925048406" duration="7048000" />
       <workItem from="1663981361923" duration="8688000" />
       <workItem from="1664154354512" duration="24549000" />
-      <workItem from="1664240477473" duration="23958000" />
-    </task>
-    <task id="LOCAL-00013" summary="1.7 Collection,ArrayList,List">
-      <created>1659952717421</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1659952717421</updated>
+      <workItem from="1664240477473" duration="25681000" />
     </task>
     <task id="LOCAL-00014" summary="1.8 html">
       <created>1660093432431</created>
@@ -1296,7 +775,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664240556562</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="5.3.0 coolShark mybatis-plus&#10;品牌/类别/属性模板&#10;controller层/service层创建">
+      <created>1664279249663</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1664279249663</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1382,8 +868,6 @@
       <path value="$PROJECT_DIR$/csmall-web-client" />
       <path value="$PROJECT_DIR$/jsd220603/jsd220603 teacher" />
     </ignored-roots>
-    <MESSAGE value="2.7 html" />
-    <MESSAGE value="2.8 html" />
     <MESSAGE value="2.9 html" />
     <MESSAGE value="3.0 html" />
     <MESSAGE value="3.1 html&#10;eui" />
@@ -1407,7 +891,9 @@
     <MESSAGE value="5.0.3 coolShark mybatis-plus" />
     <MESSAGE value="5.1.0 coolShark mybatis-plus" />
     <MESSAGE value="5.2.0 coolShark mybatis-plus&#10;controller层/service层创建" />
-    <option name="LAST_COMMIT_MESSAGE" value="5.2.0 coolShark mybatis-plus&#10;controller层/service层创建" />
+    <MESSAGE value="5.2.0 coolShark mybatis-plus&#10;品牌/类别/属性模板&#10;controller层/service层创建" />
+    <MESSAGE value="5.3.0 coolShark mybatis-plus&#10;品牌/类别/属性模板&#10;controller层/service层创建" />
+    <option name="LAST_COMMIT_MESSAGE" value="5.3.0 coolShark mybatis-plus&#10;品牌/类别/属性模板&#10;controller层/service层创建" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

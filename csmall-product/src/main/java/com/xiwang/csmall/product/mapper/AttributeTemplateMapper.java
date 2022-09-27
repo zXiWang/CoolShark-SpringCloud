@@ -23,7 +23,12 @@ public interface AttributeTemplateMapper extends BaseMapper<AttributeTemplate> {
 
     int insertBatch(List<AttributeTemplate> attributeTemplateList);
 
-    int delete(Long id);
+    /**
+     * 根据id删除数据
+     * @param id 主键
+     * @return 影响行数
+     */
+    int deleteById(Long id);
 
     int deleteByIds(Long[] ids);
 
@@ -37,5 +42,10 @@ public interface AttributeTemplateMapper extends BaseMapper<AttributeTemplate> {
 
     List<AttributeTemplate> selectAll();
 
+    /**
+     * 根据名称查询数据
+     * @param name 属性模板名称
+     * @return 影响行数
+     */
     int countByName(String name);
 }

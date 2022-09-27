@@ -21,10 +21,20 @@ import java.util.List;
 public interface AlbumMapper extends BaseMapper<Album> {
 
 
+    /**
+     * 插入数据
+     * @param album 相册对象
+     * @return 处理行数
+     */
     int insert(Album album);
 
     int insertBatch(List<Album> albumList);
 
+    /**
+     *根据id删除数据
+     * @param id 主键
+     * @return 影响行数
+     */
     int deleteById(Long id);
 
     int deleteByIds(Long[] ids);
@@ -37,6 +47,11 @@ public interface AlbumMapper extends BaseMapper<Album> {
 
     List<AlbumListItemVO> list();
 
+    /**
+     * 返回指定名字相册的数量
+     * @param name 相册名称
+     * @return 行数
+     */
     int countByName(String name);
 
 //    List<Album> selectAll();

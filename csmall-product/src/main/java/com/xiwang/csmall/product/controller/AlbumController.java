@@ -27,6 +27,7 @@ public class AlbumController {
 
     @PostMapping(value = "/addNew")
     public String addNew(AlbumAddNewDTO albumAddNewDTO) {
+        log.debug("开始测试添加相册请求,对象实例= {}",albumAddNewDTO);
         albumService.addNew(albumAddNewDTO);
         return "相册添加成功!";
     }

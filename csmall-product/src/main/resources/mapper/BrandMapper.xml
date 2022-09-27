@@ -22,7 +22,7 @@
     </insert>
 
     <!--    根据id删除数据-->
-    <delete id="delete">
+    <delete id="deleteById">
         delete
         from pms_brand
         where id = #{id}

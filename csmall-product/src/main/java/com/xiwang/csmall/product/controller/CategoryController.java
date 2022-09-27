@@ -29,6 +29,7 @@ public class CategoryController {
 
     @PostMapping(value = "/addNew")
     public String addNew(CategoryAddNewDTO categoryAddNewDTO) {
+        log.debug("开始测试添加相册请求,对象实例= {}",categoryAddNewDTO);
         categoryService.addNew(categoryAddNewDTO);
         return "类别添加成功!";
     }

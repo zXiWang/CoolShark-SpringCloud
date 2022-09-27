@@ -71,7 +71,7 @@ public interface CategoryMapper {
      * @param id 主键
      * @return 影响行数
      */
-    int delete(Long id);
+    int deleteById(Long id);
 
 }
 

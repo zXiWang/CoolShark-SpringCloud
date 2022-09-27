@@ -40,6 +40,6 @@ public class AttributeTemplateServiceImpl implements AttributeTemplateService {
         if(attributeTemplateMapper.getNormalById(id)==null){
             throw new ServiceException("删除失败!不存在该属性模板!");
         }
-        attributeTemplateMapper.delete(id);
+        attributeTemplateMapper.deleteById(id);
     }
 }

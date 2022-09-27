@@ -43,6 +43,6 @@ public class BrandServiceImpl implements BrandService {
         if(brandMapper.getNormalById(id)==null){
             throw new ServiceException("删除失败!没有该品牌");
         }
-        brandMapper.delete(id);
+        brandMapper.deleteById(id);
     }
 }

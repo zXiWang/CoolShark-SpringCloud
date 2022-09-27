@@ -30,6 +30,7 @@ public class AttributeTemplateController {
      */
     @RequestMapping("/addNew")
     public String addNew(AttributeTemplateAddNewDTO attributeTemplateAddNewDTO) {
+        log.debug("开始测试添加相册请求,对象实例= {}",attributeTemplateAddNewDTO);
         attributeTemplateService.addNew(attributeTemplateAddNewDTO);
         return "属性模板添加成功!";
 
