@@ -1,5 +1,6 @@
 package com.xiwang.csmall.product.mapper;
 
+import com.xiwang.csmall.product.pojo.dto.CategoryAddNewDTO;
 import com.xiwang.csmall.product.pojo.entity.Category;
 import com.xiwang.csmall.product.pojo.vo.CategoryNormalVO;
 import org.apache.ibatis.annotations.Param;
@@ -37,7 +38,7 @@ public interface CategoryMapper {
      *
      * @return 总行数
      */
-    int count();
+    int countByName(String name);
 
     /**
      * 新增数据
@@ -70,7 +71,7 @@ public interface CategoryMapper {
      * @param id 主键
      * @return 影响行数
      */
-    int deleteById(Long id);
+    int delete(Long id);
 
 }
 

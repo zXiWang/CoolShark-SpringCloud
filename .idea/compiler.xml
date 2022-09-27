@@ -7,46 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="coolshark" />
-        <module name="MySpringBoot3" />
-        <module name="demo" />
-        <module name="BirdBoot" />
         <module name="csmall-product" />
-        <module name="V21" />
-        <module name="weibo" />
-        <module name="V20" />
-        <module name="V1" />
-        <module name="V2" />
-        <module name="V3" />
-        <module name="V4" />
-        <module name="s1" />
-        <module name="V5" />
-        <module name="V6" />
-        <module name="QR" />
-        <module name="V7" />
-        <module name="V8" />
-        <module name="V9" />
-        <module name="jdbc01" />
-        <module name="jdbc02" />
-        <module name="jdbc03" />
-        <module name="MyFirstBirdBoot" />
-        <module name="boot07" />
-        <module name="boot06" />
-        <module name="V10" />
-        <module name="V12" />
-        <module name="V11" />
-        <module name="V14" />
-        <module name="boot01" />
-        <module name="V13" />
-        <module name="V16" />
-        <module name="V15" />
-        <module name="V18" />
-        <module name="boot05" />
-        <module name="boot01-1" />
-        <module name="boot04" />
-        <module name="boot03" />
-        <module name="V19" />
-        <module name="boot02" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

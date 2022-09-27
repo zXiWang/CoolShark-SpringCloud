@@ -2,23 +2,6 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/csmall-product/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jsd220603/boot01-1/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jsd220603/boot01/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jsd220603/boot02/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jsd220603/boot03/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jsd220603/boot04/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jsd220603/boot05/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jsd220603/boot06/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jsd220603/boot07/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jsd220603/coolshark/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jsd220603/jdbc01/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jsd220603/jdbc01/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jsd220603/jdbc02/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jsd220603/jdbc02/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jsd220603/jdbc03/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jsd220603/jdbc03/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jsd220603/s1/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jsd220603/weibo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/线下/MySpringBoot3/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/线下/MySpringBoot3/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/线下/WS2206/BirdBoot/src/main/java" charset="UTF-8" />
@@ -69,6 +52,23 @@
     <file url="file://$PROJECT_DIR$/src/线下/WS2206/V9/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/线下/WS2206/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/线下/WS2206/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/项目/jsd220603/boot01-1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/项目/jsd220603/boot01/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/项目/jsd220603/boot02/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/项目/jsd220603/boot03/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/项目/jsd220603/boot04/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/项目/jsd220603/boot05/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/项目/jsd220603/boot06/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/项目/jsd220603/boot07/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/项目/jsd220603/coolshark/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/项目/jsd220603/jdbc01/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/项目/jsd220603/jdbc01/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/项目/jsd220603/jdbc02/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/项目/jsd220603/jdbc02/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/项目/jsd220603/jdbc03/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/项目/jsd220603/jdbc03/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/项目/jsd220603/s1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/项目/jsd220603/weibo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/课外/作业/8.1/note.txt" charset="GBK" />
   </component>
 </project>

@@ -1,7 +1,7 @@
 package com.xiwang.csmall.product.service.impl;
 
-import com.xiwang.csmall.product.pojo.entity.Sku;
 import com.xiwang.csmall.product.mapper.SkuMapper;
+import com.xiwang.csmall.product.pojo.entity.Sku;
 import com.xiwang.csmall.product.pojo.vo.SkuNormalVO;
 import com.xiwang.csmall.product.service.SkuService;
 import org.springframework.stereotype.Service;

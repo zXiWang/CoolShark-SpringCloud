@@ -1,12 +1,14 @@
 package com.xiwang.csmall.product.service.impl;
 
-import com.xiwang.csmall.product.pojo.entity.Category;
+import com.xiwang.csmall.product.ex.ServiceException;
 import com.xiwang.csmall.product.mapper.CategoryMapper;
-import com.xiwang.csmall.product.pojo.vo.CategoryNormalVO;
+import com.xiwang.csmall.product.pojo.dto.CategoryAddNewDTO;
+import com.xiwang.csmall.product.pojo.entity.Category;
 import com.xiwang.csmall.product.service.CategoryService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.awt.print.Pageable;
 
 /**
  * 类别(Category)表服务实现类
@@ -19,49 +21,28 @@ public class CategoryServiceImpl implements CategoryService {
     @Resource
     private CategoryMapper categoryMapper;
 
-    /**
-     * 通过ID查询单条数据
-     *
-     * @param id 主键
-     * @return 实例对象
-     */
+
     @Override
-    public CategoryNormalVO getNormalById(Long id) {
-        return this.categoryMapper.getNormalById(id);
+    public void addNew(CategoryAddNewDTO categoryAddNewDTO) {
+        if (categoryMapper.countByName(categoryAddNewDTO.getName())!= 0) {
+            throw new ServiceException("添加类别失败!名称重复!");
+        }
+        Category category=new Category();
+        category.setName(categoryAddNewDTO.getName());
+        category.setParentId(categoryAddNewDTO.getParentId());
+        category.setKeywords(categoryAddNewDTO.getKeywords());
+        category.setSort(categoryAddNewDTO.getSort());
+        category.setIcon(categoryAddNewDTO.getIcon());
+        category.setEnable(categoryAddNewDTO.getEnable());
+        category.setIsDisplay(categoryAddNewDTO.getIsDisplay());
+        categoryMapper.insert(category);
     }
 
-    /**
-     * 新增数据
-     *
-     * @param category 实例对象
-     * @return 实例对象
-     */
     @Override
-    public Category insert(Category category) {
-        this.categoryMapper.insert(category);
-        return category;
-    }
-
-    /**
-     * 修改数据
-     *
-     * @param category 实例对象
-     * @return 实例对象
-     */
-    @Override
-    public CategoryNormalVO updateById(Category category) {
-        this.categoryMapper.updateById(category);
-        return this.getNormalById(category.getId());
-    }
-
-    /**
-     * 通过主键删除数据
-     *
-     * @param id 主键
-     * @return 是否成功
-     */
-    @Override
-    public boolean deleteById(Long id) {
-        return this.categoryMapper.deleteById(id) > 0;
+    public void delete(Long id) {
+        if(categoryMapper.getNormalById(id)==null) {
+            throw new ServiceException("删除失败!不存在此类别!");
+        }
+        categoryMapper.delete(id);
     }
 }

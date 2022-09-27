@@ -1,10 +1,9 @@
 package com.xiwang.csmall.product.service.impl;
 
+import com.xiwang.csmall.product.ex.ServiceException;
+import com.xiwang.csmall.product.mapper.AttributeTemplateMapper;
 import com.xiwang.csmall.product.pojo.dto.AttributeTemplateAddNewDTO;
 import com.xiwang.csmall.product.pojo.entity.AttributeTemplate;
-import com.xiwang.csmall.product.pojo.entity.AttributeTemplate;
-import com.xiwang.csmall.product.mapper.AttributeTemplateMapper;
-import com.xiwang.csmall.product.pojo.vo.AttributeTemplateNormalVO;
 import com.xiwang.csmall.product.service.AttributeTemplateService;
 import org.springframework.stereotype.Service;
 
@@ -28,12 +27,19 @@ public class AttributeTemplateServiceImpl implements AttributeTemplateService {
      */
     public void addNew(AttributeTemplateAddNewDTO attributeTemplateAddNewDTO) {
         if(attributeTemplateMapper.countByName(attributeTemplateAddNewDTO.getName())!=0){
-            throw new RuntimeException();
+            throw new ServiceException("添加失败!名称重复!");
         }
         AttributeTemplate attributeTemplate=new AttributeTemplate();
         attributeTemplate.setName(attributeTemplateAddNewDTO.getName());
         attributeTemplate.setKeywords(attributeTemplateAddNewDTO.getKeywords());
         attributeTemplate.setSort(attributeTemplateAddNewDTO.getSort());
         attributeTemplateMapper.insert(attributeTemplate);
+    }
+
+    public void delete(Long id){
+        if(attributeTemplateMapper.getNormalById(id)==null){
+            throw new ServiceException("删除失败!不存在该属性模板!");
+        }
+        attributeTemplateMapper.delete(id);
     }
 }

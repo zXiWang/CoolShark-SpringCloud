@@ -1,7 +1,7 @@
 package com.xiwang.csmall.product.service.impl;
 
-import com.xiwang.csmall.product.pojo.entity.SpuDetail;
 import com.xiwang.csmall.product.mapper.SpuDetailMapper;
+import com.xiwang.csmall.product.pojo.entity.SpuDetail;
 import com.xiwang.csmall.product.pojo.vo.SpuDetailNormalVO;
 import com.xiwang.csmall.product.service.SpuDetailService;
 import org.springframework.stereotype.Service;

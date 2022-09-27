@@ -1,5 +1,6 @@
 package com.xiwang.csmall.product.service;
 
+import com.xiwang.csmall.product.pojo.dto.CategoryAddNewDTO;
 import com.xiwang.csmall.product.pojo.entity.Category;
 import com.xiwang.csmall.product.pojo.vo.CategoryNormalVO;
 
@@ -11,36 +12,14 @@ import com.xiwang.csmall.product.pojo.vo.CategoryNormalVO;
  */
 public interface CategoryService {
 
-    /**
-     * 通过ID查询单条数据
-     *
-     * @param id 主键
-     * @return 实例对象
-     */
-    CategoryNormalVO getNormalById(Long id);
 
-    /**
-     * 新增数据
-     *
-     * @param category 实例对象
-     * @return 实例对象
-     */
-    Category insert(Category category);
-
-    /**
-     * 修改数据
-     *
-     * @param category 实例对象
-     * @return 实例对象
-     */
-    CategoryNormalVO updateById(Category category);
+    void addNew(CategoryAddNewDTO categoryAddNewDTO);
 
     /**
      * 通过主键删除数据
      *
      * @param id 主键
-     * @return 是否成功
      */
-    boolean deleteById(Long id);
+    void delete(Long id);
 
 }

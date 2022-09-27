@@ -1,7 +1,7 @@
 package com.xiwang.csmall.product.service.impl;
 
-import com.xiwang.csmall.product.pojo.entity.Picture;
 import com.xiwang.csmall.product.mapper.PictureMapper;
+import com.xiwang.csmall.product.pojo.entity.Picture;
 import com.xiwang.csmall.product.pojo.vo.PictureNormalVO;
 import com.xiwang.csmall.product.service.PictureService;
 import org.springframework.stereotype.Service;

@@ -1,9 +1,9 @@
 package com.xiwang.csmall.product.service.impl;
 
+import com.xiwang.csmall.product.ex.ServiceException;
+import com.xiwang.csmall.product.mapper.BrandMapper;
 import com.xiwang.csmall.product.pojo.dto.BrandAddNewDTO;
 import com.xiwang.csmall.product.pojo.entity.Brand;
-import com.xiwang.csmall.product.mapper.BrandMapper;
-import com.xiwang.csmall.product.pojo.vo.BrandNormalVO;
 import com.xiwang.csmall.product.service.BrandService;
 import org.springframework.stereotype.Service;
 
@@ -37,5 +37,12 @@ public class BrandServiceImpl implements BrandService {
         brand.setSort(albumAddNewDTO.getSort());
         brand.setEnable(albumAddNewDTO.getEnable());
         brandMapper.insert(brand);
+    }
+
+    public void delete(Long id){
+        if(brandMapper.getNormalById(id)==null){
+            throw new ServiceException("删除失败!没有该品牌");
+        }
+        brandMapper.delete(id);
     }
 }

@@ -1,7 +1,7 @@
 package com.xiwang.csmall.product.service.impl;
 
-import com.xiwang.csmall.product.pojo.entity.CategoryAttributeTemplate;
 import com.xiwang.csmall.product.mapper.CategoryAttributeTemplateMapper;
+import com.xiwang.csmall.product.pojo.entity.CategoryAttributeTemplate;
 import com.xiwang.csmall.product.pojo.vo.CategoryAttributeTemplateNormalVO;
 import com.xiwang.csmall.product.service.CategoryAttributeTemplateService;
 import org.springframework.stereotype.Service;

@@ -1,7 +1,7 @@
 package com.xiwang.csmall.product.service.impl;
 
-import com.xiwang.csmall.product.pojo.entity.BrandCategory;
 import com.xiwang.csmall.product.mapper.BrandCategoryMapper;
+import com.xiwang.csmall.product.pojo.entity.BrandCategory;
 import com.xiwang.csmall.product.pojo.vo.BrandCategoryNormalVO;
 import com.xiwang.csmall.product.service.BrandCategoryService;
 import org.springframework.stereotype.Service;

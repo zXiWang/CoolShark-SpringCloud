@@ -2,7 +2,6 @@ package com.xiwang.csmall.product.service;
 
 
 import com.xiwang.csmall.product.pojo.entity.Attribute;
-import org.springframework.data.domain.PageRequest;
 
 /**
  * 属性(Attribute)表服务接口

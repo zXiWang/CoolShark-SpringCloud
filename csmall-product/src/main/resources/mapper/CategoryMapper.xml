@@ -5,47 +5,46 @@
 
     <!-- int insert(Category category); -->
     <insert id="insert" useGeneratedKeys="true" keyProperty="id">
-        INSERT INTO pms_category (
-            name, parent_id, depth, keywords, sort,
-            icon, enable, is_parent, is_display
-        ) VALUES (
-            #{name}, #{parentId}, #{depth}, #{keywords}, #{sort},
-            #{icon}, #{enable}, #{isParent}, #{isDisplay}
-        )
+        INSERT INTO pms_category (name, parent_id, depth, keywords, sort,
+                                  icon, enable, is_parent, is_display)
+        VALUES (#{name}, #{parentId}, #{depth}, #{keywords}, #{sort},
+                #{icon}, #{enable}, #{isParent}, #{isDisplay})
     </insert>
 
     <!-- int insertBatch(List<Category> categoryList); -->
     <insert id="insertBatch" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO pms_category (
-            name, parent_id, depth, keywords, sort,
-            icon, enable, is_parent, is_display
+        name, parent_id, depth, keywords, sort,
+        icon, enable, is_parent, is_display
         ) VALUES
         <foreach collection="list" item="category" separator=",">
             (
-                #{category.name}, #{category.parentId}, #{category.depth}, #{category.keywords}, #{category.sort},
-                #{category.icon}, #{category.enable}, #{category.isParent}, #{category.isDisplay}
+            #{category.name}, #{category.parentId}, #{category.depth}, #{category.keywords}, #{category.sort},
+            #{category.icon}, #{category.enable}, #{category.isParent}, #{category.isDisplay}
             )
         </foreach>
     </insert>
 
     <!-- int deleteById(Long id); -->
-    <delete id="deleteById">
-        DELETE FROM pms_category WHERE id=#{id}
+    <delete id="delete">
+        DELETE
+        FROM pms_category
+        WHERE id = #{id}
     </delete>
 
     <!-- int deleteByIds(List<Long> ids); -->
     <delete id="deleteByIds">
         DELETE FROM pms_category WHERE id IN (
-            <foreach collection="array" item="id" separator=",">
-                #{id}
-            </foreach>
+        <foreach collection="array" item="id" separator=",">
+            #{id}
+        </foreach>
         )
     </delete>
 
     <!-- int updateById(Category category); -->
     <update id="updateById">
         UPDATE
-            pms_category
+        pms_category
         <set>
             <if test="name != null">
                 name=#{name},
@@ -79,28 +78,30 @@
     </update>
 
     <!-- int count(); -->
-    <select id="count" resultType="int">
-        SELECT count(*) FROM pms_category
+    <select id="countByName" resultType="int">
+        SELECT count(*)
+        FROM pms_category
+        where name = #{name}
     </select>
 
     <!-- CategoryNormalVO getNormalById(Long id); -->
     <select id="getNormalById" resultMap="NormalResultMap">
         SELECT
-            <include refid="NormalQueryFields"/>
+        <include refid="NormalQueryFields"/>
         FROM
-            pms_category
+        pms_category
         WHERE
-            id=#{id}
+        id=#{id}
     </select>
 
     <!-- List<CategoryListItemVO> list(); -->
     <select id="list" resultMap="ListResultMap">
         SELECT
-            <include refid="ListQueryFields"/>
+        <include refid="ListQueryFields"/>
         FROM
-            pms_category
+        pms_category
         ORDER BY
-            sort DESC, id DESC
+        sort DESC, id DESC
     </select>
 
     <sql id="NormalQueryFields">

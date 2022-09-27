@@ -3,9 +3,6 @@ package com.xiwang.csmall.product.service.impl;
 import com.xiwang.csmall.product.mapper.AttributeMapper;
 import com.xiwang.csmall.product.pojo.entity.Attribute;
 import com.xiwang.csmall.product.service.AttributeService;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageImpl;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

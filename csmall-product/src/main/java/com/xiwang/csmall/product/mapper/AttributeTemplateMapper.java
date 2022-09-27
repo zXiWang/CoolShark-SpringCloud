@@ -23,7 +23,7 @@ public interface AttributeTemplateMapper extends BaseMapper<AttributeTemplate> {
 
     int insertBatch(List<AttributeTemplate> attributeTemplateList);
 
-    int deleteById(Long id);
+    int delete(Long id);
 
     int deleteByIds(Long[] ids);
 

@@ -1,6 +1,5 @@
 package 作业.day11;
 
-import com.webserver.http.EmptyRequestException;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -25,7 +24,7 @@ import java.io.InputStream;
  * @author Xiloer
  */
 public class Test03 {
-    public static void main(String[] args) throws IOException, EmptyRequestException {
+    public static void main(String[] args) throws IOException {
         String line;
         while (true) {
             line = readLine();

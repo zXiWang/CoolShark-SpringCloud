@@ -1,4 +1,4 @@
 # 激活Profile配置
 spring:
   profiles:
-    active: prod
+    active: dev
