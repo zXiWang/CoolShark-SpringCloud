@@ -10,30 +10,96 @@
   </component>
   <component name="AutomaticModuleUnloader">
     <loaded-modules>
+      <module name="V3" />
+      <module name="V14" />
+      <module name="V6" />
+      <module name="WS2206" />
+      <module name="V20" />
+      <module name="MySpringBoot3" />
+      <module name="V18" />
+      <module name="V9" />
+      <module name="V15" />
+      <module name="V12" />
+      <module name="V19" />
+      <module name="V10" />
+      <module name="V13" />
+      <module name="V21" />
+      <module name="V1" />
+      <module name="V11" />
+      <module name="V4" />
+      <module name="V16" />
+      <module name="V8" />
+      <module name="QR" />
       <module name="达内" />
-      <module name="csmall-product" />
+      <module name="V7" />
+      <module name="BirdBoot" />
+      <module name="V5" />
+      <module name="MyFirstBirdBoot" />
+      <module name="V2" />
+      <module name="csmall-passport" />
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="5.3.0 coolShark mybatis-plus&#10;品牌/类别/属性模板&#10;controller层/service层创建">
+    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="5.3.1 coolShark mybatis-plus&#10;品牌/类别/属性模板&#10;controller层/service层创建">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f35ff572-0104-4a0a-ae7b-deaa7079f705.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f35ff572-0104-4a0a-ae7b-deaa7079f705.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/easyCodeTableSetting.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_spring_boot_starter_1_1_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_generator_3_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_27.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_1_6_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_common_1_6_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_6_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_6_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_12_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_12_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_7_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_16_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_16_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_16_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_16_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_16_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/controller/AlbumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/controller/AlbumController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/controller/AttributeTemplateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/controller/AttributeTemplateController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/controller/BrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/controller/BrandController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/controller/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/AlbumMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/AlbumMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/AttributeTemplateMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/AttributeTemplateMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/BrandMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/BrandMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/CategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/CategoryMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/ex/ServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/ex/ServiceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mall_ams_jsd2206.sql" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/resources/mall_ams_jsd2206.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/AlbumServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/AlbumServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/AttributeTemplateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/AttributeTemplateServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/BrandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/BrandServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/AttributeTemplateMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/AttributeTemplateMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/BrandMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/BrandMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/CategoryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/达内/作业/day08/Test03$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/达内/作业/day08/Test03$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/达内/作业/day08/Test03.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/达内/作业/day08/Test03.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/达内/作业/day11/Test03.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/达内/作业/day11/Test03.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/jsd2206-csmall-web-client-teacher" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/jsd2206-csmall-web-client-teacher" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/views/LoginView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/views/LoginView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/AlbumAddNewView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/AlbumAddNewView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/QR/QR.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/线下/WS2206/QR/QR.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/达内.iml" beforeDir="false" afterPath="$PROJECT_DIR$/达内.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +118,8 @@
         <option value="spring-beans.schema" />
         <option value="Tag Library Descriptor" />
         <option value="Mybatis Mapper" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -110,7 +176,7 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunConfigurationTargetLRU" value="f35ff572-0104-4a0a-ae7b-deaa7079f705&#10;f35ff572-0104-4a0a-ae7b-deaa7079f705/schema/&quot;db2&quot;&#10;f35ff572-0104-4a0a-ae7b-deaa7079f705/schema/&quot;mall_pms&quot;" />
+    <property name="RunConfigurationTargetLRU" value="f35ff572-0104-4a0a-ae7b-deaa7079f705&#10;f35ff572-0104-4a0a-ae7b-deaa7079f705/schema/&quot;db2&quot;&#10;f35ff572-0104-4a0a-ae7b-deaa7079f705/schema/&quot;mall_pms&quot;&#10;f35ff572-0104-4a0a-ae7b-deaa7079f705/schema/&quot;mall_ams&quot;" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -122,13 +188,13 @@
     <property name="database.data.extractors.current.id" value="SQL 插入" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/线下/src" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/项目/jsd220603/jsd220603 teacher" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/csmall-web-client" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31911263" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="com.sjhy.plugin.ui.TemplateSettingForm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -136,18 +202,18 @@
       <recent name="com.xiwang.csmall.product.pojo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\XiWang\Desktop\待\达内\csmall-product\src\main\resources" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\csmall-product\src\main\java\com\xiwang\csmall\product\pojo\vo" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\csmall-product\src\main\resources\mapper" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\csmall-web-client\src\views\sys-admin\temp" />
+      <recent name="C:\Users\XiWang\Desktop\待\达内\csmall-passport\src\main\java\com\xiwang\csmall\passport\config" />
+      <recent name="C:\Users\XiWang\Desktop\待\达内\csmall-passport\src\main\java\com\xiwang\csmall\passport" />
+      <recent name="C:\Users\XiWang\Desktop\待\达内\csmall-passport\src\main\resources" />
+      <recent name="C:\Users\XiWang\Desktop\待\达内\csmall-product\src\main\java\com\xiwang\csmall\product\config" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\csmall-product\src\main\java\com\xiwang\csmall\product" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\XiWang\Desktop\待\达内\csmall-passport\src\main\resources" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\src\项目" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\csmall-web-client\src\assets" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\csmall-web-client" />
       <recent name="C:\Users\XiWang\Desktop\待\达内\jsd220603\coolshark\src\main\resources\static" />
-      <recent name="C:\Users\XiWang\Desktop\待\达内\test\作业" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -162,19 +228,22 @@
       <recent name="com.tedu.myspringboot2" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.xiwang.csmall.passport.service.impl" />
+      <recent name="com.xiwang.csmall.passport.mapper" />
       <recent name="com.xiwang.csmall.product.service.impl" />
       <recent name="com.xiwang.csmall.product.controller" />
       <recent name="com.xiwang.csmall.product.mapper" />
     </key>
     <key name="DestinationChooserDialog.Package.RECENTS_KEY">
+      <recent name="com.xiwang.csmall.passport" />
       <recent name="com.xiwang.csmall.product.entity" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xiwang.csmall.product.config" />
+      <recent name="com.xiwang.csmall.passport.pojo.entity" />
+      <recent name="com.xiwang.csmall.passport.mapper" />
       <recent name="com.xiwang.csmall.product.pojo.dto" />
       <recent name="com.xiwang.csmall.product.pojo.vo" />
-      <recent name="com.xiwang.csmall.product.mapper" />
-      <recent name="com.xiwang.coolshark.mapper" />
-      <recent name="com.xiwang.coolshark.controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -184,95 +253,79 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CategoryServiceImplTest">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager" selected="Spring Boot.CsmallPassportApplication">
+    <configuration name="mall_ams_jsd2206.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/csmall-passport/src/main/resources/mall_ams_jsd2206.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="f35ff572-0104-4a0a-ae7b-deaa7079f705" namespace="schema/&quot;mall_ams&quot;" />
+      <method v="2" />
     </configuration>
-    <configuration name="AlbumServiceImplTest.addNew" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="csmall-product" />
+    <configuration name="AdminMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="csmall-passport" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xiwang.csmall.product.service.impl.*" />
+          <option name="PATTERN" value="com.xiwang.csmall.passport.mapper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.xiwang.csmall.product.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.xiwang.csmall.product.service.impl.AlbumServiceImplTest" />
-      <option name="METHOD_NAME" value="addNew" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AlbumServiceImplTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="csmall-product" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xiwang.csmall.product.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.xiwang.csmall.product.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.xiwang.csmall.product.service.impl.AlbumServiceImplTest" />
-      <option name="METHOD_NAME" value="delete" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CategoryServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="csmall-product" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xiwang.csmall.product.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.xiwang.csmall.product.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.xiwang.csmall.product.service.impl.CategoryServiceImplTest" />
+      <option name="PACKAGE_NAME" value="com.xiwang.csmall.passport.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.xiwang.csmall.passport.mapper.AdminMapperTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CategoryServiceImplTest.addNew" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="csmall-product" />
+    <configuration name="AdminMapperTest.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="csmall-passport" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xiwang.csmall.product.service.impl.*" />
+          <option name="PATTERN" value="com.xiwang.csmall.passport.mapper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.xiwang.csmall.product.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.xiwang.csmall.product.service.impl.CategoryServiceImplTest" />
+      <option name="PACKAGE_NAME" value="com.xiwang.csmall.passport.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.xiwang.csmall.passport.mapper.AdminMapperTest" />
+      <option name="METHOD_NAME" value="insert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminServiceImplTest.addNew" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="csmall-passport" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiwang.csmall.passport.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xiwang.csmall.passport.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.xiwang.csmall.passport.service.impl.AdminServiceImplTest" />
       <option name="METHOD_NAME" value="addNew" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CategoryServiceImplTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="csmall-product" />
+    <configuration name="CsmallPassportApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="csmall-passport" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xiwang.csmall.product.service.impl.*" />
+          <option name="PATTERN" value="com.xiwang.csmall.passport.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.xiwang.csmall.product.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.xiwang.csmall.product.service.impl.CategoryServiceImplTest" />
-      <option name="METHOD_NAME" value="delete" />
+      <option name="PACKAGE_NAME" value="com.xiwang.csmall.passport" />
+      <option name="MAIN_CLASS_NAME" value="com.xiwang.csmall.passport.CsmallPassportApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CsmallPassportApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="csmall-passport" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xiwang.csmall.passport.CsmallPassportApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -287,20 +340,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.AlbumServiceImplTest.addNew" />
-      <item itemvalue="JUnit.AlbumServiceImplTest.delete" />
+      <item itemvalue="JUnit.CsmallPassportApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.AdminMapperTest.insert" />
+      <item itemvalue="JUnit.AdminMapperTest" />
+      <item itemvalue="JUnit.AdminServiceImplTest.addNew" />
       <item itemvalue="Spring Boot.CsmallProductApplication" />
-      <item itemvalue="JUnit.CategoryServiceImplTest.addNew" />
-      <item itemvalue="JUnit.CategoryServiceImplTest.delete" />
-      <item itemvalue="JUnit.CategoryServiceImplTest" />
+      <item itemvalue="Spring Boot.CsmallPassportApplication" />
+      <item itemvalue="数据库脚本.mall_ams_jsd2206.sql" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CategoryServiceImplTest" />
-        <item itemvalue="JUnit.CategoryServiceImplTest.delete" />
-        <item itemvalue="JUnit.CategoryServiceImplTest.addNew" />
-        <item itemvalue="JUnit.AlbumServiceImplTest.addNew" />
-        <item itemvalue="JUnit.AlbumServiceImplTest.delete" />
+        <item itemvalue="JUnit.AdminServiceImplTest.addNew" />
+        <item itemvalue="JUnit.AdminMapperTest.insert" />
+        <item itemvalue="JUnit.AdminMapperTest" />
+        <item itemvalue="JUnit.CsmallPassportApplicationTests.contextLoads" />
+        <item itemvalue="数据库脚本.mall_ams_jsd2206.sql" />
       </list>
     </recent_temporary>
   </component>
@@ -437,14 +491,11 @@
       <workItem from="1663925048406" duration="7048000" />
       <workItem from="1663981361923" duration="8688000" />
       <workItem from="1664154354512" duration="24549000" />
-      <workItem from="1664240477473" duration="25681000" />
-    </task>
-    <task id="LOCAL-00014" summary="1.8 html">
-      <created>1660093432431</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1660093432431</updated>
+      <workItem from="1664240477473" duration="26568000" />
+      <workItem from="1664411504870" duration="814000" />
+      <workItem from="1664412369816" duration="18123000" />
+      <workItem from="1664438585870" duration="6024000" />
+      <workItem from="1664497390069" duration="403000" />
     </task>
     <task id="LOCAL-00015" summary="1.8 html login">
       <created>1660183394317</created>
@@ -782,7 +833,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664279249663</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="5.3.1 coolShark mybatis-plus&#10;品牌/类别/属性模板&#10;controller层/service层创建">
+      <created>1664280728424</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1664280728425</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -868,7 +926,6 @@
       <path value="$PROJECT_DIR$/csmall-web-client" />
       <path value="$PROJECT_DIR$/jsd220603/jsd220603 teacher" />
     </ignored-roots>
-    <MESSAGE value="2.9 html" />
     <MESSAGE value="3.0 html" />
     <MESSAGE value="3.1 html&#10;eui" />
     <MESSAGE value="3.2 html&#10;酷鲨1.0" />
@@ -893,7 +950,8 @@
     <MESSAGE value="5.2.0 coolShark mybatis-plus&#10;controller层/service层创建" />
     <MESSAGE value="5.2.0 coolShark mybatis-plus&#10;品牌/类别/属性模板&#10;controller层/service层创建" />
     <MESSAGE value="5.3.0 coolShark mybatis-plus&#10;品牌/类别/属性模板&#10;controller层/service层创建" />
-    <option name="LAST_COMMIT_MESSAGE" value="5.3.0 coolShark mybatis-plus&#10;品牌/类别/属性模板&#10;controller层/service层创建" />
+    <MESSAGE value="5.3.1 coolShark mybatis-plus&#10;品牌/类别/属性模板&#10;controller层/service层创建" />
+    <option name="LAST_COMMIT_MESSAGE" value="5.3.1 coolShark mybatis-plus&#10;品牌/类别/属性模板&#10;controller层/service层创建" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

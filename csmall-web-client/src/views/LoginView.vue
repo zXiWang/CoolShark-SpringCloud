@@ -44,10 +44,10 @@ export default {
     submitForm(formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {
-          let url = 'http://localhost:8080/login';
-          console.log('url = ' + url);
-          console.log('请求参数：' + this.ruleForm);
-          console.log(this.ruleForm);
+          let url = 'http://localhost:8081/login';
+          // console.log('url = ' + url);
+          // console.log('请求参数：' + this.ruleForm);
+          // console.log(this.ruleForm);
           this.axios.post(url, this.ruleForm).then((response) => {
             switch (response.data) {
               case 1:

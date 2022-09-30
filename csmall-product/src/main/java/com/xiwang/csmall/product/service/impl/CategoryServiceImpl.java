@@ -5,10 +5,11 @@ import com.xiwang.csmall.product.mapper.CategoryMapper;
 import com.xiwang.csmall.product.pojo.dto.CategoryAddNewDTO;
 import com.xiwang.csmall.product.pojo.entity.Category;
 import com.xiwang.csmall.product.service.CategoryService;
+import com.xiwang.csmall.product.web.ServiceCode;
+import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.awt.print.Pageable;
 
 /**
  * 类别(Category)表服务实现类
@@ -24,24 +25,20 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public void addNew(CategoryAddNewDTO categoryAddNewDTO) {
-        if (categoryMapper.countByName(categoryAddNewDTO.getName())!= 0) {
-            throw new ServiceException("添加类别失败!名称重复!");
+        if (categoryMapper.countByName(categoryAddNewDTO.getName()) != 0) {
+            String message = "添加类别失败!名称重复!";
+            throw new ServiceException(ServiceCode.ERR_CONFLICT, message);
         }
-        Category category=new Category();
-        category.setName(categoryAddNewDTO.getName());
-        category.setParentId(categoryAddNewDTO.getParentId());
-        category.setKeywords(categoryAddNewDTO.getKeywords());
-        category.setSort(categoryAddNewDTO.getSort());
-        category.setIcon(categoryAddNewDTO.getIcon());
-        category.setEnable(categoryAddNewDTO.getEnable());
-        category.setIsDisplay(categoryAddNewDTO.getIsDisplay());
+        Category category = new Category();
+        BeanUtils.copyProperties(categoryAddNewDTO,category);
         categoryMapper.insert(category);
     }
 
     @Override
     public void delete(Long id) {
-        if(categoryMapper.getNormalById(id)==null) {
-            throw new ServiceException("删除失败!不存在此类别!");
+        if (categoryMapper.getNormalById(id) == null) {
+            String message = "删除失败!不存在此类别!";
+            throw new ServiceException(ServiceCode.ERR_NOT_FOUND, message);
         }
         categoryMapper.deleteById(id);
     }

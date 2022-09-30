@@ -6,7 +6,10 @@ import com.xiwang.csmall.product.pojo.dto.AlbumAddNewDTO;
 import com.xiwang.csmall.product.pojo.entity.Album;
 import com.xiwang.csmall.product.pojo.vo.AlbumNormalVO;
 import com.xiwang.csmall.product.service.AlbumService;
+import com.xiwang.csmall.product.web.JsonResult;
+import com.xiwang.csmall.product.web.ServiceCode;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -26,12 +29,12 @@ public class AlbumServiceImpl implements AlbumService {
     @Override
     public void addNew(AlbumAddNewDTO albumAddNewDTO) {
         if (albumMapper.countByName(albumAddNewDTO.getName()) != 0) {
-            throw new ServiceException("添加失败!名称重复!");
+            String message = "添加相册失败，尝试添加的相册名称已经被占用！";
+            log.debug(message);
+            throw new ServiceException(ServiceCode.ERR_CONFLICT, message);
         }
         Album album = new Album();
-        album.setName(albumAddNewDTO.getName());
-        album.setDescription(albumAddNewDTO.getDescription());
-        album.setSort(albumAddNewDTO.getSort());
+        BeanUtils.copyProperties(albumAddNewDTO,album);
         albumMapper.insert(album);
     }
 
@@ -82,7 +85,9 @@ public class AlbumServiceImpl implements AlbumService {
         log.debug("开始处理[删除相册]过程,处理id为: {}", id);
         AlbumNormalVO queryResult = albumMapper.getNormalById(id);
         if (queryResult == null) {
-            throw new ServiceException("删除失败!没有该相册");
+            String message = "删除相册失败，尝试访问的数据不存在！";
+            log.warn(message);
+            throw new ServiceException(ServiceCode.ERR_NOT_FOUND, message);
         }
         albumMapper.deleteById(id);
     }

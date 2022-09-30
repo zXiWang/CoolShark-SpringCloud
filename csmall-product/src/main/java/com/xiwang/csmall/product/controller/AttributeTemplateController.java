@@ -1,10 +1,12 @@
 package com.xiwang.csmall.product.controller;
 
+import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
 import com.xiwang.csmall.product.pojo.dto.AttributeTemplateAddNewDTO;
 import com.xiwang.csmall.product.service.AttributeTemplateService;
+import com.xiwang.csmall.product.web.JsonResult;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
@@ -28,11 +30,13 @@ public class AttributeTemplateController {
      * @param attributeTemplateAddNewDTO 实例对象
      * @return 返回消息
      */
-    @RequestMapping("/addNew")
-    public String addNew(AttributeTemplateAddNewDTO attributeTemplateAddNewDTO) {
+    @ApiOperation("添加属性模板")
+    @ApiOperationSupport(order = 1)
+    @PostMapping("/addNew")
+    public JsonResult addNew(AttributeTemplateAddNewDTO attributeTemplateAddNewDTO) {
         log.debug("开始测试添加相册请求,对象实例= {}",attributeTemplateAddNewDTO);
         attributeTemplateService.addNew(attributeTemplateAddNewDTO);
-        return "属性模板添加成功!";
+        return JsonResult.ok();
 
     }
 
@@ -41,11 +45,13 @@ public class AttributeTemplateController {
      * @param id 主键id
      * @return 消息
      */
-    @RequestMapping("/delete")
-    public String delete(Long id) {
+    @ApiOperation("删除属性模板")
+    @ApiOperationSupport(order = 100)
+    @GetMapping("/delete")
+    public JsonResult delete(Long id) {
         log.debug("开始测试删除属性模板请求,id={}", id);
         attributeTemplateService.delete(id);
-        return "属性模板删除成功!";
+        return JsonResult.ok();
     }
 }
 

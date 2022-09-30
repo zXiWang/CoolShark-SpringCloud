@@ -52,7 +52,30 @@ export default {
     submitForm(formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {
+          let url = 'http://localhost:8080/album/addNew';
+          // console.log('url: ' + url);
+          // console.log('ruleForm:');
+          // console.log(this.ruleForm);
 
+          let formData = this.qs.stringify(this.ruleForm);
+
+          this.axios.post(url, formData).then((response) => {
+            // console.log('服务器端响应了结果：');
+            // console.log(response);
+            // console.log(response.data);
+            let responseBody = response.data;
+            if (responseBody.state == 200) {
+              // console.log('添加相册成功！');
+              this.$message({
+                message: '添加相册成功！',
+                type: 'success'
+              });
+              this.resetForm(formName);
+            } else {
+              // console.log(responseBody.message);
+              this.$message.error(responseBody.message);
+            }
+          });
         } else {
           console.log('error submit!!');
           return false;

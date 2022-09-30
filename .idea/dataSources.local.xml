@@ -11,10 +11,7 @@
       <user-name>root</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="schema">
-            <name qname="mall_ams" />
-            <name qname="mall_pms" />
-          </node>
+          <node kind="schema" qname="mall_ams" />
         </introspection-scope>
       </schema-mapping>
     </data-source>
