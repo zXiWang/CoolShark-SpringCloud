@@ -1,13 +1,10 @@
 package com.xiwang.csmall.product.service.impl;
 
 import com.xiwang.csmall.product.pojo.dto.CategoryAddNewDTO;
-import com.xiwang.csmall.product.pojo.entity.Category;
 import com.xiwang.csmall.product.service.CategoryService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class CategoryServiceImplTest {

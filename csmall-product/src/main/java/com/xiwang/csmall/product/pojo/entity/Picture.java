@@ -11,15 +11,15 @@ import java.time.LocalDateTime;
 @TableName("pms_picture")
 public class Picture {
 
-  private long id;
-  private long albumId;
-  private String url;
-  private String description;
-  private long width;
-  private long height;
-  private long isCover;
-  private long sort;
-  private LocalDateTime gmtCreate;
-  private LocalDateTime gmtModified;
+    private long id;
+    private long albumId;
+    private String url;
+    private String description;
+    private long width;
+    private long height;
+    private long isCover;
+    private long sort;
+    private LocalDateTime gmtCreate;
+    private LocalDateTime gmtModified;
 
 }

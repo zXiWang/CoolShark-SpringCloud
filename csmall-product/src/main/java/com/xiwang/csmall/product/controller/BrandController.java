@@ -1,13 +1,15 @@
 package com.xiwang.csmall.product.controller;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
 import com.xiwang.csmall.product.pojo.dto.BrandAddNewDTO;
 import com.xiwang.csmall.product.service.BrandService;
 import com.xiwang.csmall.product.web.JsonResult;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 
@@ -44,6 +46,7 @@ public class BrandController {
 
     /**
      * 删除品牌
+     *
      * @param id 主键id
      * @return 消息
      */
@@ -51,7 +54,7 @@ public class BrandController {
     @ApiOperationSupport(order = 100)
     @GetMapping
     public JsonResult delete(Long id) {
-        log.debug("品牌删除开始id= {}",id);
+        log.debug("品牌删除开始id= {}", id);
         brandService.delete(id);
         return JsonResult.ok();
     }

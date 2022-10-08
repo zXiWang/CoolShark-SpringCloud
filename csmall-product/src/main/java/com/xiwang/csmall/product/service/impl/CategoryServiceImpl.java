@@ -30,7 +30,7 @@ public class CategoryServiceImpl implements CategoryService {
             throw new ServiceException(ServiceCode.ERR_CONFLICT, message);
         }
         Category category = new Category();
-        BeanUtils.copyProperties(categoryAddNewDTO,category);
+        BeanUtils.copyProperties(categoryAddNewDTO, category);
         categoryMapper.insert(category);
     }
 

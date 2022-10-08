@@ -27,7 +27,7 @@ public interface SpuDetailMapper {
      * 查询指定行数据
      *
      * @param SpuDetail 查询条件
-     * @param pageable         分页对象
+     * @param pageable  分页对象
      * @return 对象列表
      */
     List<SpuDetail> list(SpuDetail SpuDetail, @Param("pageable") Pageable pageable);
@@ -37,7 +37,7 @@ public interface SpuDetailMapper {
      *
      * @return 总行数
      */
-    int count( );
+    int count();
 
     /**
      * 新增数据

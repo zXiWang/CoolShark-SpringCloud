@@ -9,10 +9,11 @@ package com.xiwang.csmall.product.web;
 public enum ServiceCode {
 
     OK(200),
+    ERR_BAD_REQUEST(400),
     ERR_NOT_FOUND(404),
     ERR_CONFLICT(409);
 
-    private Integer value;
+    private final Integer value;
 
     ServiceCode(Integer value) {
         this.value = value;

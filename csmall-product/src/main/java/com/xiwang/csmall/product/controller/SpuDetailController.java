@@ -22,6 +22,5 @@ public class SpuDetailController {
     private SpuDetailService spuDetailService;
 
 
-    
 }
 

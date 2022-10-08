@@ -22,6 +22,5 @@ public class SkuSpecificationController {
     private SkuSpecificationService skuSpecificationService;
 
 
-    
 }
 

@@ -22,6 +22,5 @@ public class CategoryAttributeTemplateController {
     private CategoryAttributeTemplateService categoryAttributeTemplateService;
 
 
-    
 }
 

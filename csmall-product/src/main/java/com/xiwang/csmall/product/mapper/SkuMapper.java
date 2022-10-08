@@ -26,8 +26,8 @@ public interface SkuMapper {
     /**
      * 查询指定行数据
      *
-     * @param Sku 查询条件
-     * @param pageable         分页对象
+     * @param Sku      查询条件
+     * @param pageable 分页对象
      * @return 对象列表
      */
     List<Sku> list(Sku Sku, @Param("pageable") Pageable pageable);

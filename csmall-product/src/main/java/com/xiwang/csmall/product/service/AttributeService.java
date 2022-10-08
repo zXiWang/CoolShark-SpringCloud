@@ -18,7 +18,7 @@ public interface AttributeService {
      * @return 实例对象
      */
     Attribute getNormalById(Long id);
-    
+
 
     /**
      * 新增数据

@@ -2,7 +2,10 @@ package com.xiwang.csmall.product.service;
 
 import com.xiwang.csmall.product.pojo.dto.AlbumAddNewDTO;
 import com.xiwang.csmall.product.pojo.entity.Album;
+import com.xiwang.csmall.product.pojo.vo.AlbumListItemVO;
 import com.xiwang.csmall.product.pojo.vo.AlbumNormalVO;
+
+import java.util.List;
 
 /**
  * 相册(Album)表服务接口
@@ -11,6 +14,8 @@ import com.xiwang.csmall.product.pojo.vo.AlbumNormalVO;
  * @since 2022-09-26 15:02:44
  */
 public interface AlbumService {
+
+    List<AlbumListItemVO> list();
 
     /**
      * 新增数据

@@ -11,10 +11,10 @@ import java.time.LocalDateTime;
 @TableName("pms_spu_detail")
 public class SpuDetail {
 
-  private long id;
-  private long spuId;
-  private String detail;
-  private LocalDateTime gmtCreate;
-  private LocalDateTime gmtModified;
+    private long id;
+    private long spuId;
+    private String detail;
+    private LocalDateTime gmtCreate;
+    private LocalDateTime gmtModified;
 
 }

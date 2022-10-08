@@ -20,7 +20,6 @@ public interface BrandCategoryService {
     BrandCategoryNormalVO getNormalById(Long id);
 
 
-
     /**
      * 新增数据
      *

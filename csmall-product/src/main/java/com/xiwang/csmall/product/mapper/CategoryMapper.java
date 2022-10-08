@@ -1,6 +1,5 @@
 package com.xiwang.csmall.product.mapper;
 
-import com.xiwang.csmall.product.pojo.dto.CategoryAddNewDTO;
 import com.xiwang.csmall.product.pojo.entity.Category;
 import com.xiwang.csmall.product.pojo.vo.CategoryNormalVO;
 import org.apache.ibatis.annotations.Param;
@@ -28,7 +27,7 @@ public interface CategoryMapper {
      * 查询指定行数据
      *
      * @param Category 查询条件
-     * @param pageable         分页对象
+     * @param pageable 分页对象
      * @return 对象列表
      */
     List<Category> list(Category Category, @Param("pageable") Pageable pageable);

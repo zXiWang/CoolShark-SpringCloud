@@ -22,6 +22,5 @@ public class PictureController {
     private PictureService pictureService;
 
 
-    
 }
 

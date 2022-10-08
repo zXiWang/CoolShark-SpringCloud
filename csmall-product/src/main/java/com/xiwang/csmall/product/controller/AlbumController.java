@@ -2,17 +2,19 @@ package com.xiwang.csmall.product.controller;
 
 import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
 import com.xiwang.csmall.product.pojo.dto.AlbumAddNewDTO;
+import com.xiwang.csmall.product.pojo.vo.AlbumListItemVO;
 import com.xiwang.csmall.product.service.AlbumService;
 import com.xiwang.csmall.product.web.JsonResult;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.hibernate.validator.constraints.Range;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * 相册(Album)表控制层
@@ -22,6 +24,7 @@ import javax.annotation.Resource;
  */
 @Slf4j
 @Api(tags = "01 相册管理")
+@Validated
 @RestController
 @RequestMapping("/album")
 public class AlbumController {
@@ -31,19 +34,39 @@ public class AlbumController {
     @Resource
     private AlbumService albumService;
 
+    @ApiOperation("查询相册")
+    @ApiOperationSupport(order = 400)
+    @GetMapping(value ="/show")
+    public JsonResult<List<AlbumListItemVO>> show(){
+       List<AlbumListItemVO> list=albumService.list();
+        return JsonResult.ok(list);
+    }
     @ApiOperation("添加相册")
     @ApiOperationSupport(order = 1)
     @PostMapping(value = "/addNew")
-    public JsonResult addNew(AlbumAddNewDTO albumAddNewDTO) {
+    public JsonResult<List<AlbumAddNewDTO>> addNew(@Validated AlbumAddNewDTO albumAddNewDTO) {
         log.debug("开始处理【添加相册】的请求，参数：{}", albumAddNewDTO);
         albumService.addNew(albumAddNewDTO);
         return JsonResult.ok();
     }
 
+    //    @Deprecated
     @ApiOperation("删除相册")
+    @ApiImplicitParam(name = "id", value = "相册id", required = true, dataType = "long")
     @ApiOperationSupport(order = 100)
-    @GetMapping("/delete")
-    public JsonResult delete(Long id) {
+    @GetMapping("/{id:[0-9]+}/delete")
+    public JsonResult delete(@PathVariable Long id) {
+        log.debug("开始测试删除相册请求,id={}", id);
+        albumService.delete(id);
+        return JsonResult.ok();
+    }
+
+    @Deprecated
+    @ApiOperation("删除相册2")
+    @ApiImplicitParam(name = "id", value = "相册id", paramType = "query")
+    @ApiOperationSupport(order = 101)
+    @GetMapping("/delete/test")
+    public JsonResult deleteTest(@Range(min = 1, message = "测试删除相册失败，id值必须是1或更大的有效整数！") Long id) {
         log.debug("开始测试删除相册请求,id={}", id);
         albumService.delete(id);
         return JsonResult.ok();

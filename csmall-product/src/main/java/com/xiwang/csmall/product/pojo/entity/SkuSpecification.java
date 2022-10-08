@@ -11,14 +11,14 @@ import java.time.LocalDateTime;
 @TableName("pms_sku_specification")
 public class SkuSpecification {
 
-  private long id;
-  private long skuId;
-  private long attributeId;
-  private String attributeName;
-  private String attributeValue;
-  private String unit;
-  private long sort;
-  private LocalDateTime gmtCreate;
-  private LocalDateTime gmtModified;
+    private long id;
+    private long skuId;
+    private long attributeId;
+    private String attributeName;
+    private String attributeValue;
+    private String unit;
+    private long sort;
+    private LocalDateTime gmtCreate;
+    private LocalDateTime gmtModified;
 
 }

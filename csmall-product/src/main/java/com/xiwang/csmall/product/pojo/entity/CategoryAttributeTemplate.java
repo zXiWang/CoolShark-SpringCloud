@@ -11,10 +11,10 @@ import java.time.LocalDateTime;
 @TableName("pms_category_attribute_template")
 public class CategoryAttributeTemplate {
 
-  private long id;
-  private long categoryId;
-  private long attributeTemplateId;
-  private LocalDateTime gmtCreate;
-  private LocalDateTime gmtModified;
+    private long id;
+    private long categoryId;
+    private long attributeTemplateId;
+    private LocalDateTime gmtCreate;
+    private LocalDateTime gmtModified;
 
 }

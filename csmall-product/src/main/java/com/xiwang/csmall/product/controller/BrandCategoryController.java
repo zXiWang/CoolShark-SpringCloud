@@ -22,6 +22,5 @@ public class BrandCategoryController {
     private BrandCategoryService brandCategoryService;
 
 
-    
 }
 

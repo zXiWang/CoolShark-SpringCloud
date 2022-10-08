@@ -4,15 +4,16 @@ import com.xiwang.csmall.product.ex.ServiceException;
 import com.xiwang.csmall.product.mapper.AlbumMapper;
 import com.xiwang.csmall.product.pojo.dto.AlbumAddNewDTO;
 import com.xiwang.csmall.product.pojo.entity.Album;
+import com.xiwang.csmall.product.pojo.vo.AlbumListItemVO;
 import com.xiwang.csmall.product.pojo.vo.AlbumNormalVO;
 import com.xiwang.csmall.product.service.AlbumService;
-import com.xiwang.csmall.product.web.JsonResult;
 import com.xiwang.csmall.product.web.ServiceCode;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * 相册(Album)表服务实现类
@@ -27,6 +28,11 @@ public class AlbumServiceImpl implements AlbumService {
     private AlbumMapper albumMapper;
 
     @Override
+    public List<AlbumListItemVO> list() {
+        return albumMapper.list();
+    }
+
+    @Override
     public void addNew(AlbumAddNewDTO albumAddNewDTO) {
         if (albumMapper.countByName(albumAddNewDTO.getName()) != 0) {
             String message = "添加相册失败，尝试添加的相册名称已经被占用！";
@@ -34,7 +40,7 @@ public class AlbumServiceImpl implements AlbumService {
             throw new ServiceException(ServiceCode.ERR_CONFLICT, message);
         }
         Album album = new Album();
-        BeanUtils.copyProperties(albumAddNewDTO,album);
+        BeanUtils.copyProperties(albumAddNewDTO, album);
         albumMapper.insert(album);
     }
 

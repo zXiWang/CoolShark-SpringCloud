@@ -11,19 +11,19 @@ import java.time.LocalDateTime;
 @TableName("pms_brand")
 public class Brand {
 
-  private long id;
-  private String name;
-  private String pinyin;
-  private String logo;
-  private String description;
-  private String keywords;
-  private long sort;
-  private long sales;
-  private long productCount;
-  private long commentCount;
-  private long positiveCommentCount;
-  private long enable;
-  private LocalDateTime gmtCreate;
-  private LocalDateTime gmtModified;
+    private long id;
+    private String name;
+    private String pinyin;
+    private String logo;
+    private String description;
+    private String keywords;
+    private long sort;
+    private long sales;
+    private long productCount;
+    private long commentCount;
+    private long positiveCommentCount;
+    private long enable;
+    private LocalDateTime gmtCreate;
+    private LocalDateTime gmtModified;
 
 }

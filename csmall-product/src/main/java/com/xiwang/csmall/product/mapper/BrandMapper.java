@@ -2,7 +2,6 @@ package com.xiwang.csmall.product.mapper;
 
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.xiwang.csmall.product.pojo.dto.BrandAddNewDTO;
 import com.xiwang.csmall.product.pojo.entity.Brand;
 import com.xiwang.csmall.product.pojo.vo.BrandListItemVO;
 import com.xiwang.csmall.product.pojo.vo.BrandNormalVO;

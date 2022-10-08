@@ -26,8 +26,8 @@ public interface PictureMapper {
     /**
      * 查询指定行数据
      *
-     * @param Picture 查询条件
-     * @param pageable         分页对象
+     * @param Picture  查询条件
+     * @param pageable 分页对象
      * @return 对象列表
      */
     List<Picture> list(Picture Picture, @Param("pageable") Pageable pageable);

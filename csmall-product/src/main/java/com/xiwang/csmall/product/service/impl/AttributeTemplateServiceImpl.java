@@ -5,7 +5,6 @@ import com.xiwang.csmall.product.mapper.AttributeTemplateMapper;
 import com.xiwang.csmall.product.pojo.dto.AttributeTemplateAddNewDTO;
 import com.xiwang.csmall.product.pojo.entity.AttributeTemplate;
 import com.xiwang.csmall.product.service.AttributeTemplateService;
-import com.xiwang.csmall.product.web.JsonResult;
 import com.xiwang.csmall.product.web.ServiceCode;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
@@ -25,22 +24,22 @@ public class AttributeTemplateServiceImpl implements AttributeTemplateService {
 
     /**
      * 添加属性模板
-     * @param attributeTemplateAddNewDTO 实例对象
      *
+     * @param attributeTemplateAddNewDTO 实例对象
      */
     public void addNew(AttributeTemplateAddNewDTO attributeTemplateAddNewDTO) {
-        if(attributeTemplateMapper.countByName(attributeTemplateAddNewDTO.getName())!=0){
-            String message="添加失败!名称重复!";
+        if (attributeTemplateMapper.countByName(attributeTemplateAddNewDTO.getName()) != 0) {
+            String message = "添加失败!名称重复!";
             throw new ServiceException(ServiceCode.ERR_CONFLICT, message);
         }
-        AttributeTemplate attributeTemplate=new AttributeTemplate();
-        BeanUtils.copyProperties(attributeTemplateAddNewDTO,attributeTemplate);
+        AttributeTemplate attributeTemplate = new AttributeTemplate();
+        BeanUtils.copyProperties(attributeTemplateAddNewDTO, attributeTemplate);
         attributeTemplateMapper.insert(attributeTemplate);
     }
 
-    public void delete(Long id){
-        if(attributeTemplateMapper.getNormalById(id)==null){
-            String message="删除失败!不存在该属性模板!";
+    public void delete(Long id) {
+        if (attributeTemplateMapper.getNormalById(id) == null) {
+            String message = "删除失败!不存在该属性模板!";
             throw new ServiceException(ServiceCode.ERR_NOT_FOUND, message);
         }
         attributeTemplateMapper.deleteById(id);

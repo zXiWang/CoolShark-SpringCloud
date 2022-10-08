@@ -27,7 +27,7 @@ public interface CategoryAttributeTemplateMapper {
      * 查询指定行数据
      *
      * @param CategoryAttributeTemplate 查询条件
-     * @param pageable         分页对象
+     * @param pageable                  分页对象
      * @return 对象列表
      */
     List<CategoryAttributeTemplate> list(CategoryAttributeTemplate CategoryAttributeTemplate, @Param("pageable") Pageable pageable);

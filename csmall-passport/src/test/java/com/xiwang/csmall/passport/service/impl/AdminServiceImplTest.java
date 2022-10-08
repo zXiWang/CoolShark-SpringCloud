@@ -1,8 +1,6 @@
 package com.xiwang.csmall.passport.service.impl;
 
-import com.xiwang.csmall.passport.mapper.AdminMapper;
 import com.xiwang.csmall.passport.pojo.dto.AdminAddNewDTO;
-import com.xiwang.csmall.passport.pojo.entity.Admin;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

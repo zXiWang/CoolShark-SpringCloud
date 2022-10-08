@@ -4,7 +4,6 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 import java.io.Serializable;
-import java.util.Date;
 
 /**
  * 品牌与类别关联(PmsBrandCategory)实体类

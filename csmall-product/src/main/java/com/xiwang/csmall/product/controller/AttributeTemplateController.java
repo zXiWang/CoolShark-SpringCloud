@@ -4,9 +4,13 @@ import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
 import com.xiwang.csmall.product.pojo.dto.AttributeTemplateAddNewDTO;
 import com.xiwang.csmall.product.service.AttributeTemplateService;
 import com.xiwang.csmall.product.web.JsonResult;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 
@@ -17,6 +21,7 @@ import javax.annotation.Resource;
  * @since 2022-09-26 17:20:36
  */
 @Slf4j
+@Api(tags = "02 属性模板管理")
 @RestController
 @RequestMapping("/attributeTemplate")
 public class AttributeTemplateController {
@@ -34,7 +39,7 @@ public class AttributeTemplateController {
     @ApiOperationSupport(order = 1)
     @PostMapping("/addNew")
     public JsonResult addNew(AttributeTemplateAddNewDTO attributeTemplateAddNewDTO) {
-        log.debug("开始测试添加相册请求,对象实例= {}",attributeTemplateAddNewDTO);
+        log.debug("开始测试添加相册请求,对象实例= {}", attributeTemplateAddNewDTO);
         attributeTemplateService.addNew(attributeTemplateAddNewDTO);
         return JsonResult.ok();
 
@@ -42,6 +47,7 @@ public class AttributeTemplateController {
 
     /**
      * 删除属性模板
+     *
      * @param id 主键id
      * @return 消息
      */

@@ -12,5 +12,6 @@ public interface BrandService {
 
 
     void addNew(BrandAddNewDTO brandAddNewDTO);
+
     void delete(Long id);
 }

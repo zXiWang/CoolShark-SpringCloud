@@ -1,13 +1,14 @@
 package com.xiwang.csmall.product.controller;
 
 import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
-import com.xiwang.csmall.product.pojo.dto.AlbumAddNewDTO;
 import com.xiwang.csmall.product.pojo.dto.CategoryAddNewDTO;
-import com.xiwang.csmall.product.pojo.entity.Category;
 import com.xiwang.csmall.product.service.CategoryService;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 
@@ -31,7 +32,7 @@ public class CategoryController {
     @ApiOperationSupport(order = 1)
     @PostMapping(value = "/addNew")
     public String addNew(CategoryAddNewDTO categoryAddNewDTO) {
-        log.debug("开始测试添加类别请求,对象实例= {}",categoryAddNewDTO);
+        log.debug("开始测试添加类别请求,对象实例= {}", categoryAddNewDTO);
         categoryService.addNew(categoryAddNewDTO);
         return "类别添加成功!";
     }
@@ -40,10 +41,10 @@ public class CategoryController {
     @ApiOperationSupport(order = 100)
     @GetMapping("/delete")
     public String delete(Long id) {
-        log.debug("开始测试删除类别请求,id={}",id);
+        log.debug("开始测试删除类别请求,id={}", id);
         categoryService.delete(id);
         return "类别删除成功!";
     }
-    
+
 }
 

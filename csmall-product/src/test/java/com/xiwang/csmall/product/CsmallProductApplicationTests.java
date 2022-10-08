@@ -1,14 +1,11 @@
 package com.xiwang.csmall.product;
 
 
-import com.xiwang.csmall.product.pojo.entity.Admin;
 import com.xiwang.csmall.product.mapper.AdminMapper;
 import com.xiwang.csmall.product.mapper.AlbumMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import java.util.List;
 
 @SpringBootTest
 class CsmallProductApplicationTests {
