@@ -46,7 +46,7 @@
                 <i class="el-icon-circle-plus-outline"></i>
                 添加类别
               </el-menu-item>
-              <el-menu-item index="2-5">
+              <el-menu-item index="/sys-admin/temp/album/list">
                 <i class="el-icon-s-operation"></i>
                 相册列表
               </el-menu-item>

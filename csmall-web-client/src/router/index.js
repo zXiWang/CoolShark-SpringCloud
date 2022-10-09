@@ -15,6 +15,10 @@ const routes = [
                 component: () => import('../views/sys-admin/temp/AlbumAddNewView.vue')
             },
             {
+                path: '/sys-admin/temp/album/list',
+                component: () => import('../views/sys-admin/temp/AlbumListView.vue')
+            },
+            {
                 path: '/sys-admin/temp/brand/add-new',
                 component: () => import('../views/sys-admin/temp/BrandAddNewView.vue')
             },

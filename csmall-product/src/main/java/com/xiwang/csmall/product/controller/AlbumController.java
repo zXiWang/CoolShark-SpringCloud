@@ -10,10 +10,10 @@ import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.hibernate.validator.constraints.Range;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -31,16 +31,17 @@ public class AlbumController {
     /**
      * 服务对象
      */
-    @Resource
+    @Autowired
     private AlbumService albumService;
 
     @ApiOperation("查询相册")
     @ApiOperationSupport(order = 400)
-    @GetMapping(value ="/show")
-    public JsonResult<List<AlbumListItemVO>> show(){
-       List<AlbumListItemVO> list=albumService.list();
+    @GetMapping(value = "/list")
+    public JsonResult<List<AlbumListItemVO>> list() {
+        List<AlbumListItemVO> list = albumService.list();
         return JsonResult.ok(list);
     }
+
     @ApiOperation("添加相册")
     @ApiOperationSupport(order = 1)
     @PostMapping(value = "/addNew")
