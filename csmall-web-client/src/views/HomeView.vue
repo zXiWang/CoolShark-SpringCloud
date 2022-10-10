@@ -30,7 +30,11 @@
             <!--临时页面-->
             <el-submenu index="2">
               <template slot="title"><i class="el-icon-s-tools"></i>临时页面</template>
-              <el-menu-item index="2-1">
+              <el-menu-item index="/sys-admin/temp/admin/list">
+                <i class="el-icon-location"></i>
+                <span>管理员列表</span>
+              </el-menu-item>
+              <el-menu-item index="/sys-admin/temp/brand/list">
                 <i class="el-icon-s-operation"></i>
                 品牌列表
               </el-menu-item>
@@ -54,7 +58,7 @@
                 <i class="el-icon-circle-plus-outline"></i>
                 添加相册
               </el-menu-item>
-              <el-menu-item index="2-7">
+              <el-menu-item index="/sys-admin/temp/attributeTemplate/list">
                 <i class="el-icon-s-operation"></i>
                 属性模板列表
               </el-menu-item>
@@ -71,7 +75,6 @@
                 添加属性
               </el-menu-item>
             </el-submenu>
-
             <!--商品管理-->
             <el-submenu index="3">
               <template slot="title"><i class="el-icon-goods"></i>商品管理</template>

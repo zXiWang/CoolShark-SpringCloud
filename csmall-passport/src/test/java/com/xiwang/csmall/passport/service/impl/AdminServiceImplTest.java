@@ -12,10 +12,21 @@ class AdminServiceImplTest {
 
     @Test
     void addNew() {
-        AdminAddNewDTO obj= new AdminAddNewDTO();
-        obj.setUsername("66");
-        obj.setPhone("admin");
-        obj.setEmail("admin");
+        AdminAddNewDTO obj = new AdminAddNewDTO();
+        obj.setUsername("666");
+        obj.setPhone("admin66");
+        obj.setEmail("admin66");
+        Long[] l = new Long[]{1L, 2L, 3L};
+        obj.setRoleIds(l);
         adminService.addNew(obj);
+    }
+
+    @Test
+    void list() {
+
+    }
+
+    @Test
+    void testAddNew() {
     }
 }

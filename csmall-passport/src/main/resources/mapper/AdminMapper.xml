@@ -159,6 +159,70 @@
         where email = #{email}
     </select>
 
+    <!-- List<AdminNormalVO> getNormalById(); -->
+    <select id="getNormalById" resultMap="NormalResultMap">
+        SELECT
+        <include refid="NormalQueryFields"/>
+        FROM
+        ams_admin
+        where id = #{id}
+    </select>
+
+    <sql id="NormalQueryFields">
+        <if test="true">
+            id, username, nickname, avatar, phone,
+            email, description, enable, last_login_ip, login_count,
+            gmt_last_login
+        </if>
+    </sql>
+
+    <resultMap id="NormalResultMap" type="com.xiwang.csmall.passport.pojo.vo.AdminNormalVO">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="nickname" property="nickname"/>
+        <result column="avatar" property="avatar"/>
+        <result column="phone" property="phone"/>
+        <result column="email" property="email"/>
+        <result column="description" property="description"/>
+        <result column="enable" property="enable"/>
+        <result column="last_login_ip" property="lastLoginIp"/>
+        <result column="login_count" property="loginCount"/>
+        <result column="gmt_last_login" property="gmtLastLogin"/>
+    </resultMap>
+
+
+    <!-- List<AdminListItemVO> list(); -->
+    <select id="list" resultMap="ListResultMap">
+        SELECT
+        <include refid="ListQueryFields"/>
+        FROM
+        ams_admin
+        ORDER BY
+        enable DESC, id
+    </select>
+
+    <sql id="ListQueryFields">
+        <if test="true">
+            id, username, nickname, avatar, phone,
+            email, description, enable, last_login_ip, login_count,
+            gmt_last_login
+        </if>
+    </sql>
+
+    <resultMap id="ListResultMap" type="com.xiwang.csmall.passport.pojo.vo.AdminListItemVO">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="nickname" property="nickname"/>
+        <result column="avatar" property="avatar"/>
+        <result column="phone" property="phone"/>
+        <result column="email" property="email"/>
+        <result column="description" property="description"/>
+        <result column="enable" property="enable"/>
+        <result column="last_login_ip" property="lastLoginIp"/>
+        <result column="login_count" property="loginCount"/>
+        <result column="gmt_last_login" property="gmtLastLogin"/>
+    </resultMap>
+
     <!--新增所有列-->
     <insert id="insert" keyProperty="id" useGeneratedKeys="true">
         insert into ams_admin(username, password, nickname, avatar, phone, email, description, enable, last_login_ip,

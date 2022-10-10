@@ -1,4 +1,4 @@
-package com.xiwang.csmall.passport.pojo.entity;
+package com.xiwang.csmall.passport.pojo.vo;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
@@ -6,26 +6,16 @@ import lombok.Data;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * 管理员(Admin)实体类
- *
- * @author 夕妄
- * @since 2022-09-29 10:33:55
- */
 @Data
 @TableName("ams_admin")
-public class Admin implements Serializable {
+public class AdminNormalVO implements Serializable {
     private static final long serialVersionUID = -50152907884194151L;
-    
+
     private Long id;
     /**
      * 用户名
      */
     private String username;
-    /**
-     * 密码（密文）
-     */
-    private String password;
     /**
      * 昵称
      */
@@ -62,15 +52,4 @@ public class Admin implements Serializable {
      * 最后登录时间（冗余）
      */
     private Date gmtLastLogin;
-    /**
-     * 数据创建时间
-     */
-    private Date gmtCreate;
-    /**
-     * 数据最后修改时间
-     */
-    private Date gmtModified;
-
-
 }
-

@@ -2,17 +2,16 @@ package com.xiwang.csmall.product.controller;
 
 import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
 import com.xiwang.csmall.product.pojo.dto.AttributeTemplateAddNewDTO;
+import com.xiwang.csmall.product.pojo.vo.AttributeTemplateListItemVO;
 import com.xiwang.csmall.product.service.AttributeTemplateService;
 import com.xiwang.csmall.product.web.JsonResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * 属性模版(AttributeTemplate)表控制层
@@ -42,7 +41,6 @@ public class AttributeTemplateController {
         log.debug("开始测试添加相册请求,对象实例= {}", attributeTemplateAddNewDTO);
         attributeTemplateService.addNew(attributeTemplateAddNewDTO);
         return JsonResult.ok();
-
     }
 
     /**
@@ -53,11 +51,19 @@ public class AttributeTemplateController {
      */
     @ApiOperation("删除属性模板")
     @ApiOperationSupport(order = 100)
-    @GetMapping("/delete")
-    public JsonResult delete(Long id) {
+    @PostMapping("/{id:[0-9]+}/delete")
+    public JsonResult delete(@PathVariable Long id) {
         log.debug("开始测试删除属性模板请求,id={}", id);
         attributeTemplateService.delete(id);
         return JsonResult.ok();
+    }
+
+    @ApiOperation("查询属性模板列表")
+    @ApiOperationSupport(order = 400)
+    @GetMapping(value = "/list")
+    public JsonResult<List<AttributeTemplateListItemVO>> list() {
+        List<AttributeTemplateListItemVO> list = attributeTemplateService.list();
+        return JsonResult.ok(list);
     }
 }
 

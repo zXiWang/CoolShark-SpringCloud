@@ -40,4 +40,9 @@ class AdminMapperTest {
     void countByEmail() {
         mapper.countByEmail("admin@example.com");
     }
+
+    @Test
+    void getNormalById() {
+        mapper.getNormalById(2L);
+    }
 }

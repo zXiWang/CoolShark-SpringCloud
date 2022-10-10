@@ -4,7 +4,7 @@
       <el-breadcrumb-item :to="{ path: '/sys-admin' }">
         <i class="el-icon-s-promotion"></i> 后台管理
       </el-breadcrumb-item>
-      <el-breadcrumb-item>相册列表</el-breadcrumb-item>
+      <el-breadcrumb-item>属性模板列表</el-breadcrumb-item>
     </el-breadcrumb>
 
     <el-divider></el-divider>
@@ -12,9 +12,9 @@
     <el-table :data="tableData" border style="width: 100%">
       <el-table-column prop="id" label="序号" align="center" width="180">
       </el-table-column>
-      <el-table-column prop="name" label="相册名称" align="center" width="180">
+      <el-table-column prop="name" label="属性模板名称" align="center" width="180">
       </el-table-column>
-      <el-table-column prop="description" header-align="center" label="相册简介">
+      <el-table-column prop="pinyin" align="center" label="属性模板拼音" >
       </el-table-column>
       <el-table-column prop="sort" align="center" label="排序序号" width="100">
       </el-table-column>
@@ -39,11 +39,11 @@ export default {
     }
   },
   methods: {
-    handleEdit(album) {
-      alert(album.name);
+    handleEdit(attributeTemplate) {
+      alert(attributeTemplate.name);
     },
-    handleDelete(album) {
-      let url = "http://localhost:8080/album/" + album.id + "/delete";
+    handleDelete(attributeTemplate) {
+      let url = "http://localhost:8080/attributeTemplate/" + attributeTemplate.id + "/delete";
       this.axios.post(url).then(response => {
         let responseBody = response.data;
         if (responseBody.state == 200) {
@@ -54,20 +54,20 @@ export default {
         this.loadAlbumList();
       })
     },
-    openDeleteConfirm(album){
+    openDeleteConfirm(attributeTemplate){
       let title = "提示";
-      let message = "此操作将永久删除"+album.name+"相册,是否继续?";
+      let message = "此操作将永久删除"+attributeTemplate.name+"属性模板,是否继续?";
       this.$confirm(message, title, {
         confirmButtonText: '确定',
         cancelButtonText: '取消',
         type: 'warning'
       }).then(() => {
-        this.handleDelete(album);
+        this.handleDelete(attributeTemplate);
       }).catch(() => {
       });
     },
     loadAlbumList() {
-      let url = "http://localhost:8080/album/list";
+      let url = "http://localhost:8080/attributeTemplate/list";
       console.log("url:" + url);
       this.axios.get(url).then(response => {
         let responseBody = response.data;

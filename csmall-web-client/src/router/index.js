@@ -11,6 +11,10 @@ const routes = [
         component: HomeView,
         children: [
             {
+                path: '/sys-admin/temp/admin/list',
+                component: () => import('../views/sys-admin/temp/AdminListView.vue')
+            },
+            {
                 path: '/sys-admin/temp/album/add-new',
                 component: () => import('../views/sys-admin/temp/AlbumAddNewView.vue')
             },
@@ -23,15 +27,29 @@ const routes = [
                 component: () => import('../views/sys-admin/temp/BrandAddNewView.vue')
             },
             {
+                //品牌列表
+                path: '/sys-admin/temp/brand/list',
+                component: () => import('../views/sys-admin/temp/BrandListView.vue')
+            },
+            {
                 path: '/sys-admin/temp/category/add-new',
                 component: () => import('../views/sys-admin/temp/CategoryAddNewView.vue')
-            }, {
+            },
+            {
                 path: '/sys-admin/temp/attributeTemplate/add-new',
                 component: () => import('../views/sys-admin/temp/AttributeTemplateAddNewView.vue')
-            }, {
+            },
+            {
+                //属性模板列表
+                path: '/sys-admin/temp/attributeTemplate/list',
+                component: () => import('../views/sys-admin/temp/AttributeTemplateListView.vue')
+            },
+            {
+                //添加属性界面
                 path: '/sys-admin/temp/attribute/add-new',
                 component: () => import('../views/sys-admin/temp/AttributeAddNewView.vue')
             },
+
         ]
     },
     {

@@ -1,6 +1,9 @@
 package com.xiwang.csmall.product.service;
 
 import com.xiwang.csmall.product.pojo.dto.BrandAddNewDTO;
+import com.xiwang.csmall.product.pojo.vo.BrandListItemVO;
+
+import java.util.List;
 
 /**
  * 品牌(Brand)表服务接口
@@ -14,4 +17,6 @@ public interface BrandService {
     void addNew(BrandAddNewDTO brandAddNewDTO);
 
     void delete(Long id);
+
+    List<BrandListItemVO> list();
 }

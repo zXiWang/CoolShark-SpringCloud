@@ -2,7 +2,6 @@ package com.xiwang.csmall.product.pojo.dto;
 
 
 import com.baomidou.mybatisplus.annotation.TableName;
-import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 

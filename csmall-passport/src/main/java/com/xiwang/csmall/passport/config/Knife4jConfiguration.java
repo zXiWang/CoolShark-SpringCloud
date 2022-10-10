@@ -28,43 +28,43 @@ public class Knife4jConfiguration {
     /**
      * 【重要】指定Controller包路径
      */
-    private String basePackage = "com.xiwang.csmall.passport.controller";
+    private final String basePackage = "com.xiwang.csmall.passport.controller";
     /**
      * 分组名称
      */
-    private String groupName = "passport";
+    private final String groupName = "passport";
     /**
      * 主机名
      */
-    private String host = "https://java.xiwang.com";
+    private final String host = "https://java.xiwang.com";
     /**
      * 标题
      */
-    private String title = "酷鲨商城在线API文档--管理员管理";
+    private final String title = "酷鲨商城在线API文档--管理员管理";
     /**
      * 简介
      */
-    private String description = "酷鲨商城在线API文档--管理员管理";
+    private final String description = "酷鲨商城在线API文档--管理员管理";
     /**
      * 服务条款URL
      */
-    private String termsOfServiceUrl = "http://www.apache.org/licenses/LICENSE-2.0";
+    private final String termsOfServiceUrl = "http://www.apache.org/licenses/LICENSE-2.0";
     /**
      * 联系人
      */
-    private String contactName = "Java教学研发部";
+    private final String contactName = "Java教学研发部";
     /**
      * 联系网址
      */
-    private String contactUrl = "https://java.xiwang.com";
+    private final String contactUrl = "https://java.xiwang.com";
     /**
      * 联系邮箱
      */
-    private String contactEmail = "java@xiwang.com";
+    private final String contactEmail = "java@xiwang.com";
     /**
      * 版本号
      */
-    private String version = "1.0.0";
+    private final String version = "1.0.0";
 
     @Autowired
     private OpenApiExtensionResolver openApiExtensionResolver;

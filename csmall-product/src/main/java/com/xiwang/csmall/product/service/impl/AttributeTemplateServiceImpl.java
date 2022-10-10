@@ -4,12 +4,14 @@ import com.xiwang.csmall.product.ex.ServiceException;
 import com.xiwang.csmall.product.mapper.AttributeTemplateMapper;
 import com.xiwang.csmall.product.pojo.dto.AttributeTemplateAddNewDTO;
 import com.xiwang.csmall.product.pojo.entity.AttributeTemplate;
+import com.xiwang.csmall.product.pojo.vo.AttributeTemplateListItemVO;
 import com.xiwang.csmall.product.service.AttributeTemplateService;
 import com.xiwang.csmall.product.web.ServiceCode;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * 属性模版(AttributeTemplate)表服务实现类
@@ -27,6 +29,7 @@ public class AttributeTemplateServiceImpl implements AttributeTemplateService {
      *
      * @param attributeTemplateAddNewDTO 实例对象
      */
+    @Override
     public void addNew(AttributeTemplateAddNewDTO attributeTemplateAddNewDTO) {
         if (attributeTemplateMapper.countByName(attributeTemplateAddNewDTO.getName()) != 0) {
             String message = "添加失败!名称重复!";
@@ -37,11 +40,17 @@ public class AttributeTemplateServiceImpl implements AttributeTemplateService {
         attributeTemplateMapper.insert(attributeTemplate);
     }
 
+    @Override
     public void delete(Long id) {
         if (attributeTemplateMapper.getNormalById(id) == null) {
             String message = "删除失败!不存在该属性模板!";
             throw new ServiceException(ServiceCode.ERR_NOT_FOUND, message);
         }
         attributeTemplateMapper.deleteById(id);
+    }
+
+    @Override
+    public List<AttributeTemplateListItemVO> list() {
+        return attributeTemplateMapper.list();
     }
 }

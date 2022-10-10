@@ -34,14 +34,6 @@ public class AlbumController {
     @Autowired
     private AlbumService albumService;
 
-    @ApiOperation("查询相册")
-    @ApiOperationSupport(order = 400)
-    @GetMapping(value = "/list")
-    public JsonResult<List<AlbumListItemVO>> list() {
-        List<AlbumListItemVO> list = albumService.list();
-        return JsonResult.ok(list);
-    }
-
     @ApiOperation("添加相册")
     @ApiOperationSupport(order = 1)
     @PostMapping(value = "/addNew")
@@ -55,7 +47,7 @@ public class AlbumController {
     @ApiOperation("删除相册")
     @ApiImplicitParam(name = "id", value = "相册id", required = true, dataType = "long")
     @ApiOperationSupport(order = 100)
-    @GetMapping("/{id:[0-9]+}/delete")
+    @PostMapping("/{id:[0-9]+}/delete")
     public JsonResult delete(@PathVariable Long id) {
         log.debug("开始测试删除相册请求,id={}", id);
         albumService.delete(id);
@@ -73,6 +65,12 @@ public class AlbumController {
         return JsonResult.ok();
     }
 
-
+    @ApiOperation("查询相册列表")
+    @ApiOperationSupport(order = 400)
+    @GetMapping(value = "/list")
+    public JsonResult<List<AlbumListItemVO>> list() {
+        List<AlbumListItemVO> list = albumService.list();
+        return JsonResult.ok(list);
+    }
 }
 

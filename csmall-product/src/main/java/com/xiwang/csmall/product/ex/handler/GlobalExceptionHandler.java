@@ -17,9 +17,9 @@ import javax.validation.ConstraintViolationException;
 public class GlobalExceptionHandler {
 
     @ExceptionHandler
-    public String handlerServiceException(ServiceException e) {
+    public JsonResult handlerServiceException(ServiceException e) {
         log.debug("捕获到一条ServiceException: {}", e.getMessage());
-        return e.getMessage();
+        return JsonResult.fail(e);
     }
 
     @ExceptionHandler

@@ -14,7 +14,6 @@ import java.io.Serializable;
 public class AdminAddNewDTO implements Serializable {
     private static final long serialVersionUID = -50152907884194151L;
     
-    private Long id;
     /**
      * 用户名
      */
@@ -40,6 +39,9 @@ public class AdminAddNewDTO implements Serializable {
      */
     private String email;
 
-
+    /**
+     * 尝试添加的管理员的角色id列表
+     */
+    private Long[] roleIds;
 }
 

@@ -32,7 +32,7 @@ public class Knife4jConfiguration {
     /**
      * 分组名称
      */
-    private final String groupName = "passport";
+    private final String groupName = "product";
     /**
      * 主机名
      */
