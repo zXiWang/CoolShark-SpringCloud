@@ -31,8 +31,20 @@
             <el-submenu index="2">
               <template slot="title"><i class="el-icon-s-tools"></i>临时页面</template>
               <el-menu-item index="/sys-admin/temp/admin/list">
-                <i class="el-icon-location"></i>
+                <i class="el-icon-s-operation"></i>
                 <span>管理员列表</span>
+              </el-menu-item>
+              <el-menu-item index="/sys-admin/temp/admin/add-new">
+                <i class="el-icon-circle-plus-outline"></i>
+                添加管理员
+              </el-menu-item>
+              <el-menu-item index="/sys-admin/temp/role/list">
+                <i class="el-icon-s-operation"></i>
+                <span>角色列表</span>
+              </el-menu-item>
+              <el-menu-item index="/sys-admin/temp/role/add-new">
+                <i class="el-icon-circle-plus-outline"></i>
+                添加角色
               </el-menu-item>
               <el-menu-item index="/sys-admin/temp/brand/list">
                 <i class="el-icon-s-operation"></i>

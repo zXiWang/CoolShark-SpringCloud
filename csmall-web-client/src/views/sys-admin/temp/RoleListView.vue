@@ -1,34 +1,19 @@
 <template>
   <div>
     <el-breadcrumb separator-class="el-icon-arrow-right" style="font-size: 16px;">
-      <el-breadcrumb-item :to="{ path: '/sys-admin' }">
+      <el-breadcrumb-item :to="{ path: '/sys-role' }">
         <i class="el-icon-s-promotion"></i> 后台管理
       </el-breadcrumb-item>
-      <el-breadcrumb-item>管理员列表</el-breadcrumb-item>
+      <el-breadcrumb-item>角色列表</el-breadcrumb-item>
     </el-breadcrumb>
 
     <el-divider></el-divider>
 
     <el-table :data="tableData" border style="width: 100%">
       <el-table-column prop="id" label="ID" align="center" width="80"></el-table-column>
-      <el-table-column prop="username" label="用户名" header-align="center" width="180"></el-table-column>
-      <el-table-column prop="nickname" label="昵称" align="center" width="100"></el-table-column>
-      <el-table-column prop="phone" label="手机号码" align="center" width="110"></el-table-column>
-      <el-table-column prop="email" label="电子邮箱" header-align="center" width="180"></el-table-column>
-      <el-table-column prop="description" label="简介" header-align="center"></el-table-column>
-      <el-table-column label="是否启用" align="center" width="80">
-        <template slot-scope="scope">
-          <el-switch
-              v-model="scope.row.enable"
-              :active-value="1"
-              :inactive-value="0"
-              active-color="#13ce66"
-              inactive-color="#ccc"
-              @change="changeEnable(scope.row)"
-          >
-          </el-switch>
-        </template>
-      </el-table-column>
+      <el-table-column prop="name" label="名称" width="180"></el-table-column>
+      <el-table-column prop="description" label="描述" header-align="center"></el-table-column>
+      <el-table-column prop="sort" label="排序序号" align="center" width="80"></el-table-column>
       <el-table-column align="center" label="操作" width="150">
         <template slot-scope="scope">
           <el-button @click="handleDetails(scope.row)" type="primary" icon="el-icon-view" size="mini"
@@ -53,33 +38,22 @@ export default {
     }
   },
   methods: {
-    changeEnable(admin) {
-      let url = "http://localhost:8081/admin/enable"
-      let params = new URLSearchParams();
-      params.append("id",admin.id);
-      params.append("enable",admin.enable);
-      this.axios.post(url, params).then(response => {
-        let responseBody = response.data;
-        if (responseBody.state == 200) {
-          this.$message.success("修改成功!");
-        } else {
-          this.$message.error(responseBody.message);
-        }
-      })
+    changeEnable() {
+
     },
-    handleDetails(admin) {
-      let url = "http://localhost:8081/admin/details?id=" + admin.id;
-      this.axios.get(url).then(response => {
+    handleDetails(role) {
+      let url = "http://localhost:8081/role/details?id="+role.id;
+      this.axios.get(url).then(response=>{
         let responseBody = response.data;
         console.log(responseBody);
         alert(responseBody.data);
       })
     },
-    handleEdit(admin) {
-      alert(admin.name);
+    handleEdit(role) {
+      alert(role.name);
     },
-    handleDelete(admin) {
-      let url = "http://localhost:8081/admin/" + admin.id + "/delete";
+    handleDelete(role) {
+      let url = "http://localhost:8081/role/" + role.id + "/delete";
       this.axios.post(url).then(response => {
         let responseBody = response.data;
         if (responseBody.state == 200) {
@@ -90,20 +64,20 @@ export default {
         this.loadAlbumList();
       })
     },
-    openDeleteConfirm(admin) {
+    openDeleteConfirm(role) {
       let title = "提示";
-      let message = "此操作将永久删除" + admin.username + "管理员,是否继续?";
+      let message = "此操作将永久删除" + role.name + "角色,是否继续?";
       this.$confirm(message, title, {
         confirmButtonText: '确定',
         cancelButtonText: '取消',
         type: 'warning'
       }).then(() => {
-        this.handleDelete(admin);
+        this.handleDelete(role);
       }).catch(() => {
       });
     },
     loadAlbumList() {
-      let url = "http://localhost:8081/admin/list";
+      let url = "http://localhost:8081/role/list";
       console.log("url:" + url);
       this.axios.get(url).then(response => {
         let responseBody = response.data;

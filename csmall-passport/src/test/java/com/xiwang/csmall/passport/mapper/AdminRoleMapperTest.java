@@ -25,6 +25,18 @@ class AdminRoleMapperTest {
             roles.add(adminRole);
         }
         mapper.insertBatch(roles);
+    }
 
+    @Test
+    void delete(){
+        mapper.deleteByAdminId(2L);
+    }
+
+    @Test
+    void getAdminIdByRoleId() {
+        Long []id=mapper.getAdminIdByRoleId(7L);
+        for (Long ids : id) {
+            System.out.println(ids);
+        }
     }
 }

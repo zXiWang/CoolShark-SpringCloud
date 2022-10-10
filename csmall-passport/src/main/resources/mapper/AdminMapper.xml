@@ -201,6 +201,7 @@
         enable DESC, id
     </select>
 
+
     <sql id="ListQueryFields">
         <if test="true">
             id, username, nickname, avatar, phone,
@@ -304,12 +305,6 @@
             <if test="gmtLastLogin != null">
                 gmt_last_login = #{gmtLastLogin},
             </if>
-            <if test="gmtCreate != null">
-                gmt_create = #{gmtCreate},
-            </if>
-            <if test="gmtModified != null">
-                gmt_modified = #{gmtModified},
-            </if>
         </set>
         where id = #{id}
     </update>
@@ -319,6 +314,15 @@
         delete
         from ams_admin
         where id = #{id}
+    </delete>
+    <delete id="deleteByIds">
+        delete
+        from ams_admin
+        where id in(
+        <foreach collection="array" item="id" separator=",">
+            #{id}
+        </foreach>
+            )
     </delete>
 
 </mapper>

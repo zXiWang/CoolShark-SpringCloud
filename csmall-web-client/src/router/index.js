@@ -11,8 +11,24 @@ const routes = [
         component: HomeView,
         children: [
             {
+                //管理员列表
                 path: '/sys-admin/temp/admin/list',
                 component: () => import('../views/sys-admin/temp/AdminListView.vue')
+            },
+            {
+                //添加管理员
+                path: '/sys-admin/temp/admin/add-new',
+                component: () => import('../views/sys-admin/temp/AdminAddNewView.vue')
+            },
+            {
+                //角色列表
+                path: '/sys-admin/temp/role/list',
+                component: () => import('../views/sys-admin/temp/RoleListView.vue')
+            },
+            {
+                //添加角色
+                path: '/sys-admin/temp/role/add-new',
+                component: () => import('../views/sys-admin/temp/RoleAddNewView.vue')
             },
             {
                 path: '/sys-admin/temp/album/add-new',

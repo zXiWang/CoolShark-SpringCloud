@@ -13,13 +13,18 @@ public interface AdminMapper extends BaseMapper<Admin> {
 
     int insert(Admin admin);
 
+    int update(Admin admin);
+
     int countByUsername(String username);
 
     int countByPhone(String phone);
 
     int countByEmail(String email);
 
+
     List<AdminListItemVO> list();
 
     AdminNormalVO getNormalById(Long id);
+
+    int deleteByIds(Long[] adminIdByRoleId);
 }

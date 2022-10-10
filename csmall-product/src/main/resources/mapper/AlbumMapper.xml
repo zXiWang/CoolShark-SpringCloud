@@ -33,8 +33,8 @@
     <delete id="deleteByIds">
         delete
         from pms_album
-        where
-        <foreach collection="Array" item="id" separator=",">
+        where id in
+        <foreach collection="array" item="id" separator=",">
             #{id}
         </foreach>
     </delete>

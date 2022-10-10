@@ -29,4 +29,14 @@ class AdminServiceImplTest {
     @Test
     void testAddNew() {
     }
+
+    @Test
+    void update() {
+        AdminAddNewDTO obj = new AdminAddNewDTO();
+        obj.setUsername("666");
+        obj.setPhone("admin66");
+        obj.setEmail("admin66");
+
+        adminService.update(obj);
+    }
 }

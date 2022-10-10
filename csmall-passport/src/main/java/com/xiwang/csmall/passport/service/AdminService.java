@@ -24,4 +24,12 @@ public interface AdminService {
     @Transactional
     void delete(Long id);
 
+    @Transactional
+    void update(AdminAddNewDTO adminAddNewDTO);
+
+    @Transactional
+    void setEnabled(Long id);
+
+    @Transactional
+    void setDisabled(Long id);
 }

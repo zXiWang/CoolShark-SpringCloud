@@ -17,7 +17,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @Slf4j
-@Api(tags = "01 管理员管理模块")
+@Api(tags = "01 管理员模块")
 @Validated
 @RestController
 @RequestMapping("/admin")
@@ -43,6 +43,19 @@ public class AdminController {
         return JsonResult.ok();
     }
 
+    @ApiOperation("修改管理员")
+    @ApiOperationSupport(order = 201)
+    @PostMapping("/enable")
+    public JsonResult enable(Long id, Integer enable) {
+        log.debug("开始处理更新管理员: id={}", id);
+        if (enable == 1){
+            adminService.setEnabled(id);
+        }else {
+            adminService.setDisabled(id);
+        }
+        return JsonResult.ok();
+    }
+
     @ApiOperation("查询管理员列表")
     @ApiOperationSupport(order = 400)
     @GetMapping(value = "/list")
@@ -55,7 +68,7 @@ public class AdminController {
     @ApiOperationSupport(order = 401)
     @GetMapping(value = "/details")
     public JsonResult<AdminNormalVO> details(Long id) {
-        log.debug("输入了id="+id);
+        log.debug("输入了id=" + id);
         AdminNormalVO object = adminService.getNormalById(id);
         return JsonResult.ok(object);
     }

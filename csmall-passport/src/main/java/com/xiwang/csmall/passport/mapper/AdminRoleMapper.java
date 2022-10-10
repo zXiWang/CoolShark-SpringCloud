@@ -1,9 +1,11 @@
 package com.xiwang.csmall.passport.mapper;
 
+import com.xiwang.csmall.passport.pojo.entity.Admin;
 import com.xiwang.csmall.passport.pojo.entity.AdminRole;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -80,7 +82,13 @@ public interface AdminRoleMapper {
      * @param id 主键
      * @return 影响行数
      */
-    int deleteById(Long id);
+    @Transactional
+    int deleteByAdminId(Long id);
+    @Transactional
+    int deleteByRoleId(Long id);
 
+    int countByRoleId(Long id);
+
+    Long[] getAdminIdByRoleId(Long id);
 }
 
