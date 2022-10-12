@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-breadcrumb separator-class="el-icon-arrow-right" style="font-size: 16px;">
-      <el-breadcrumb-item :to="{ path: '/sys-admin' }">
+      <el-breadcrumb-item :to="{ path: '/sys-brand' }">
         <i class="el-icon-s-promotion"></i> 后台管理
       </el-breadcrumb-item>
       <el-breadcrumb-item>品牌列表</el-breadcrumb-item>
@@ -40,7 +40,7 @@
               :inactive-value="0"
               active-color="#13ce66"
               inactive-color="#ccc"
-              @change="changeEnable"
+              @change="changeEnable(scope.row)"
           >
           </el-switch>
         </template>
@@ -66,8 +66,21 @@ export default {
     }
   },
   methods: {
-    changeEnable() {
-
+    changeEnable(brand) {
+      let enable =["disable", "enable"];
+      let url = "http://localhost:8080/brand/" + brand.id +"/"+ enable[brand.enable];
+      console.log(url);
+      // let params = new URLSearchParams();
+      // params.append("id",brand.id);
+      // params.append("enable",brand.enable);
+      this.axios.post(url).then(response => {
+        let responseBody = response.data;
+        if (responseBody.state == 200) {
+          this.$message.success("修改成功!");
+        } else {
+          this.$message.error(responseBody.message);
+        }
+      })
     },
     handleEdit(brand) {
       alert(brand.name);

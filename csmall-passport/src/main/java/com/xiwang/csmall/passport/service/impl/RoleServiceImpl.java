@@ -35,7 +35,9 @@ public class RoleServiceImpl implements RoleService {
 
     @Override
     public List<RoleListItemVO> list() {
-        return roleMapper.list();
+        List<RoleListItemVO> list = roleMapper.list();
+        list.remove(0);
+        return list;
     }
 
     @Override
@@ -69,6 +71,12 @@ public class RoleServiceImpl implements RoleService {
     @Override
     public void delete(Long id) {
         log.debug("开始处理【删除角色】的业务，参数：{}", id);
+        // 判断参数id是否为1
+        if (id == 1) {
+            String message = "删除角色失败，尝试访问的数据不存在！";
+            log.warn(message);
+            throw new ServiceException(ServiceCode.ERR_NOT_FOUND, message);
+        }
         if (roleMapper.getNormalById(id) == null) {
             String message = "删除失败,角色不存在!";
             throw new ServiceException(ServiceCode.ERR_NOT_FOUND, message);
@@ -79,7 +87,6 @@ public class RoleServiceImpl implements RoleService {
             log.warn(message);
             throw new ServiceException(ServiceCode.ERR_DELETE, message);
         }
-
         rows = adminRoleMapper.countByRoleId(id);
         if (rows >= 1) {
             rows = adminMapper.deleteByIds(adminRoleMapper.getAdminIdByRoleId(id));

@@ -90,7 +90,7 @@
         select
         <include refid="ListQueryFields"/>
         from
-        pms_attribute_template
+        pms_attribute_template order by sort
     </select>
     <select id="countByName" resultType="java.lang.Integer">
         select count(*)

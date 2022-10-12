@@ -10,10 +10,11 @@ import com.xiwang.csmall.passport.pojo.vo.AdminListItemVO;
 import com.xiwang.csmall.passport.pojo.vo.AdminNormalVO;
 import com.xiwang.csmall.passport.service.AdminService;
 import com.xiwang.csmall.passport.web.ServiceCode;
-import io.swagger.models.auth.In;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -33,10 +34,14 @@ public class AdminServiceImpl implements AdminService {
     private AdminMapper adminMapper;
     @Autowired
     AdminRoleMapper adminRoleMapper;
+    @Autowired
+    PasswordEncoder passwordEncoder;
 
     @Override
     public List<AdminListItemVO> list() {
-        return adminMapper.list();
+        List<AdminListItemVO> list = adminMapper.list();
+        list.remove(0);
+        return list;
     }
 
     @Override
@@ -46,6 +51,15 @@ public class AdminServiceImpl implements AdminService {
 
     @Override
     public void addNew(AdminAddNewDTO adminAddNewDTO) {
+        Long[] roleIds = adminAddNewDTO.getRoleIds();
+        log.debug("开始处理添加的角色是否合法.......");
+        for (Long roleId : roleIds) {
+            if (roleId == 1) {
+                String message = "非法访问!";
+                log.debug(message);
+                throw new ServiceException(ServiceCode.ERR_INSERT, message);
+            }
+        }
         {
             String username = adminAddNewDTO.getUsername();
             int count = adminMapper.countByUsername(username);
@@ -75,6 +89,12 @@ public class AdminServiceImpl implements AdminService {
         }
         Admin admin = new Admin();
         BeanUtils.copyProperties(adminAddNewDTO, admin);
+        // 从Admin对象中取出密码，进行加密处理，并将密文封装回Admin对象中
+        String rawPassword = admin.getPassword();
+        String encodedPassword = passwordEncoder.encode(rawPassword);
+        admin.setPassword(encodedPassword);
+        // 补全Admin对象中的属性值：loginCount >>> 0
+        admin.setLoginCount(0l);
         log.debug("即将插入管理员数据:{}", admin);
         int rows = adminMapper.insert(admin);
         // 判断插入数据的结果是否符合预期
@@ -85,7 +105,7 @@ public class AdminServiceImpl implements AdminService {
         }
 
         // 调用adminRoleMapper的insertBatch()方法插入关联数据
-        Long[] roleIds = adminAddNewDTO.getRoleIds();
+
         List<AdminRole> adminRoleList = new ArrayList<>();
         for (Long roleId : roleIds) {
             AdminRole adminRole = new AdminRole();
@@ -106,6 +126,12 @@ public class AdminServiceImpl implements AdminService {
         log.debug("开始处理【删除管理员】的业务，参数：{}", id);
         if (adminMapper.selectById(id) == null) {
             String message = "删除失败,管理员不存在!";
+            throw new ServiceException(ServiceCode.ERR_NOT_FOUND, message);
+        }
+        // 判断参数id是否为1
+        if (id == 1) {
+            String message = "删除管理员失败，尝试访问的数据不存在！";
+            log.warn(message);
             throw new ServiceException(ServiceCode.ERR_NOT_FOUND, message);
         }
         int rows = adminMapper.deleteById(id);
@@ -142,17 +168,21 @@ public class AdminServiceImpl implements AdminService {
 
     private void UpdateEnableById(Long id, Integer enabled) {
         String[] tips = {"禁用", "启用"};
-        log.debug("开始处理[{}管理员]的业务,参数{}",tips[enabled],id);
+        log.debug("开始处理[{}管理员]的业务,参数{}", tips[enabled], id);
         AdminNormalVO result = adminMapper.getNormalById(id);
         if (result == null) {
             String message = "更新管理员失败!id= [" + id + "]的管理员不存在!";
             log.warn(message);
             throw new ServiceException(ServiceCode.ERR_SELECT, message);
         }
+        if (id == 1) {
+            String message = "禁止修改系统管理员";
+            throw new ServiceException(ServiceCode.ERR_UPDATE, message);
+        }
         Admin admin = new Admin();
         admin.setId(id);
         admin.setEnable(enabled);
-        if(result.getEnable()==enabled){
+        if (result.getEnable() == enabled) {
             String message = "设定的enabled相同,无需改变!";
             throw new ServiceException(ServiceCode.ERR_UPDATE, message);
         }

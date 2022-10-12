@@ -60,6 +60,24 @@ public class BrandController {
         return JsonResult.ok();
     }
 
+    @ApiOperation("启用品牌")
+    @ApiOperationSupport(order = 301)
+    @PostMapping("/{id:[0-9]+}/enable")
+    public JsonResult enable(@PathVariable Long id) {
+        log.debug("开始处理修改品牌: id={}", id);
+        brandService.setEnabled(id);
+        return JsonResult.ok();
+    }
+
+    @ApiOperation("禁用品牌")
+    @ApiOperationSupport(order = 301)
+    @PostMapping("/{id:[0-9]+}/disable")
+    public JsonResult disable(@PathVariable Long id) {
+        log.debug("开始处理修改品牌: id={}", id);
+        brandService.setDisabled(id);
+        return JsonResult.ok();
+    }
+
     @ApiOperation("查询品牌列表")
     @ApiOperationSupport(order = 400)
     @GetMapping(value = "/list")

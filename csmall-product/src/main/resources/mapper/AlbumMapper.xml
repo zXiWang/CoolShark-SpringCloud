@@ -97,13 +97,13 @@
         select
         <include refid="ListQueryFields"/>
         from
-        pms_album
+        pms_album order by sort
     </select>
 
     <select id="countByName" resultType="int">
         select count(*)
         from pms_album
-        where name=#{name}
+        where name = #{name}
     </select>
 
     <resultMap id="ListResultMap" type="com.xiwang.csmall.product.pojo.vo.AlbumListItemVO"/>

@@ -11,14 +11,79 @@
   <component name="AutomaticModuleUnloader">
     <loaded-modules>
       <module name="csmall-product" />
+      <module name="V4" />
       <module name="QR" />
+      <module name="V16" />
+      <module name="V11" />
+      <module name="V1" />
+      <module name="MySpringBoot3" />
+      <module name="V20" />
+      <module name="V21" />
+      <module name="WS2206" />
       <module name="达内" />
+      <module name="V6" />
+      <module name="BirdBoot" />
+      <module name="V7" />
+      <module name="V8" />
+      <module name="V3" />
       <module name="csmall-passport" />
+      <module name="V19" />
+      <module name="V9" />
+      <module name="V2" />
+      <module name="V15" />
+      <module name="V14" />
+      <module name="V13" />
+      <module name="V10" />
+      <module name="V5" />
+      <module name="V12" />
+      <module name="MyFirstBirdBoot" />
+      <module name="V18" />
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="5.5.2 coolShark mybatis-plus&#10;品牌/属性模板 view list">
+    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="5.5.3 coolShark mybatis-plus&#10;管理员-addNew/角色-addNew-list-enable">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-passport/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/service/impl/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/controller/BrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/controller/BrandController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/BrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/BrandService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/BrandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/BrandServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/web/ServiceCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/web/ServiceCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/AlbumMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/AlbumMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/AttributeTemplateMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/AttributeTemplateMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/BrandMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/BrandMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/jsd2206-csmall-web-client-teacher" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/jsd2206-csmall-web-client-teacher" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/AdminAddNewView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/AdminAddNewView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/AdminListView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/AdminListView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/AttributeAddNewView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/AttributeAddNewView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/AttributeTemplateAddNewView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/AttributeTemplateAddNewView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/BrandAddNewView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/BrandAddNewView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/BrandListView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/BrandListView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/BirdBoot/BirdBoot.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/MyFirstBirdBoot/MyFirstBirdBoot.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/V1/V1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/V10/V10.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/V11/V11.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/V12/V12.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/V13/V13.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/V14/V14.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/V15/V15.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/V16/V16.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/V18/V18.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/V19/V19.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/V2/V2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/V20/V20.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/V21/V21.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/V3/V3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/V4/V4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/V5/V5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/V6/V6.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/V7/V7.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/V8/V8.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/V9/V9.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/线下/WS2206/WS2206.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -424,13 +489,8 @@
       <workItem from="1665276223475" duration="58000" />
       <workItem from="1665318162483" duration="375000" />
       <workItem from="1665362352568" duration="3746000" />
-    </task>
-    <task id="LOCAL-00019" summary="2.0 springboot http响应">
-      <created>1660562055321</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1660562055321</updated>
+      <workItem from="1665400498677" duration="204000" />
+      <workItem from="1665538422394" duration="15000" />
     </task>
     <task id="LOCAL-00020" summary="2.1 springboot&#10;request and response">
       <created>1660650973445</created>
@@ -768,7 +828,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665362650339</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="5.5.3 coolShark mybatis-plus&#10;管理员-addNew/角色-addNew-list-enable">
+      <created>1665400637161</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1665400637161</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -853,7 +920,6 @@
       <path value="$PROJECT_DIR$/csmall-web-client" />
       <path value="$PROJECT_DIR$/jsd220603/jsd220603 teacher" />
     </ignored-roots>
-    <MESSAGE value="4.0 Mysql" />
     <MESSAGE value="4.1 jdbc" />
     <MESSAGE value="4.2 spring boot" />
     <MESSAGE value="4.3 spring boot&#10;Mybatis" />
@@ -878,7 +944,8 @@
     <MESSAGE value="5.5.0 coolShark mybatis-plus&#10;品牌/类别/属性模板&#10;controller层优化" />
     <MESSAGE value="5.5.1 coolShark mybatis-plus&#10;相册view list" />
     <MESSAGE value="5.5.2 coolShark mybatis-plus&#10;品牌/属性模板 view list" />
-    <option name="LAST_COMMIT_MESSAGE" value="5.5.2 coolShark mybatis-plus&#10;品牌/属性模板 view list" />
+    <MESSAGE value="5.5.3 coolShark mybatis-plus&#10;管理员-addNew/角色-addNew-list-enable" />
+    <option name="LAST_COMMIT_MESSAGE" value="5.5.3 coolShark mybatis-plus&#10;管理员-addNew/角色-addNew-list-enable" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

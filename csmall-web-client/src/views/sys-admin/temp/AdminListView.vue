@@ -54,11 +54,13 @@ export default {
   },
   methods: {
     changeEnable(admin) {
-      let url = "http://localhost:8081/admin/enable"
-      let params = new URLSearchParams();
-      params.append("id",admin.id);
-      params.append("enable",admin.enable);
-      this.axios.post(url, params).then(response => {
+      let enable =["disable", "enable"];
+      let url = "http://localhost:8081/admin/" + admin.id +"/"+ enable[admin.enable];
+      console.log(url);
+      // let params = new URLSearchParams();
+      // params.append("id",admin.id);
+      // params.append("enable",admin.enable);
+      this.axios.post(url).then(response => {
         let responseBody = response.data;
         if (responseBody.state == 200) {
           this.$message.success("修改成功!");

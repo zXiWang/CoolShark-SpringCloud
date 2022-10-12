@@ -38,7 +38,7 @@ export default {
         name: '',
         pinyin: '',
         keywords: '',
-        sort: '',
+        sort: 99,
 
       },
       rules: {
@@ -57,7 +57,21 @@ export default {
     submitForm(formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {
-
+          let formData = this.qs.stringify(this.ruleForm);
+          let url = 'http://localhost:8080/attributeTemplate/addNew';
+          this.axios.post(url, formData).then(response => {
+            let responseBody = response.data;
+            if (responseBody.state == 200) {
+              // console.log('添加管理员成功！');
+              this.$message({
+                message: '添加管理员成功！',
+                type: 'success'
+              });
+              this.resetForm(formName);
+            } else {
+              this.$message.error(responseBody.message);
+            }
+          });
         } else {
           console.log('error submit!!');
           return false;

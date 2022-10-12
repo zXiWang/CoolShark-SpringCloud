@@ -26,7 +26,7 @@ public class AdminController {
     private AdminService adminService;
 
     @ApiOperation("添加管理员")
-    @ApiOperationSupport(order = 1)
+    @ApiOperationSupport(order = 100)
     @PostMapping("/addNew")
     public JsonResult addNew(AdminAddNewDTO addNewDTO) {
         log.debug("开始处理添加管理员: {}", addNewDTO);
@@ -35,7 +35,7 @@ public class AdminController {
     }
 
     @ApiOperation("删除管理员")
-    @ApiOperationSupport(order = 100)
+    @ApiOperationSupport(order = 200)
     @PostMapping("/{id:[0-9]+}/delete")
     public JsonResult delete(@PathVariable Long id) {
         log.debug("开始处理删除管理员: id={}", id);
@@ -43,16 +43,21 @@ public class AdminController {
         return JsonResult.ok();
     }
 
-    @ApiOperation("修改管理员")
-    @ApiOperationSupport(order = 201)
-    @PostMapping("/enable")
-    public JsonResult enable(Long id, Integer enable) {
-        log.debug("开始处理更新管理员: id={}", id);
-        if (enable == 1){
-            adminService.setEnabled(id);
-        }else {
-            adminService.setDisabled(id);
-        }
+    @ApiOperation("启用管理员")
+    @ApiOperationSupport(order = 301)
+    @PostMapping("/{id:[0-9]+}/enable")
+    public JsonResult enable(@PathVariable Long id) {
+        log.debug("开始处理修改管理员: id={}", id);
+        adminService.setEnabled(id);
+        return JsonResult.ok();
+    }
+
+    @ApiOperation("禁用管理员")
+    @ApiOperationSupport(order = 401)
+    @PostMapping("/{id:[0-9]+}/disable")
+    public JsonResult disable(@PathVariable Long id) {
+        log.debug("开始处理修改管理员: id={}", id);
+        adminService.setDisabled(id);
         return JsonResult.ok();
     }
 

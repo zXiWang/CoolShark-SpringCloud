@@ -65,7 +65,7 @@ export default {
         ],
         pinyin: [
           {required: true, message: '请输入品牌拼音', trigger: 'blur'},
-          {min: 4, max: 25, message: '长度在 4 到 25 个字符', trigger: 'blur'}
+          {min: 2, max: 25, message: '长度在 2 到 25 个字符', trigger: 'blur'}
         ],
         description: [
           {required: true, message: '请输入品牌简介', trigger: 'blur'},
@@ -78,7 +78,21 @@ export default {
     submitForm(formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {
-
+          let formData = this.qs.stringify(this.ruleForm);
+          let url = 'http://localhost:8080/brand/addNew';
+          this.axios.post(url, formData).then(response => {
+            let responseBody = response.data;
+            if (responseBody.state == 200) {
+              // console.log('添加管理员成功！');
+              this.$message({
+                message: '添加品牌成功！',
+                type: 'success'
+              });
+              this.resetForm(formName);
+            } else {
+              this.$message.error(responseBody.message);
+            }
+          });
         } else {
           alert('error submit!!');
           return false;

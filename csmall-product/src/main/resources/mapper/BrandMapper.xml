@@ -121,7 +121,7 @@
         select
         <include refid="ListQueryFields"/>
         from
-        pms_brand
+        pms_brand order by enable desc,sort
     </select>
     <select id="countByName" resultType="java.lang.Integer">
         select count(*)
@@ -134,7 +134,7 @@
     <sql id="ListQueryFields">
         <if test="true"/>
         id, name, pinyin, logo,description,keywords,sort,sales,
-        product_count,comment_count,positive_comment_count
+        product_count,comment_count,positive_comment_count,enable
         enable
     </sql>
 
