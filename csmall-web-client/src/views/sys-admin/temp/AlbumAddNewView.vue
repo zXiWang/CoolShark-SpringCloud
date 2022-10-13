@@ -53,12 +53,7 @@ export default {
       this.$refs[formName].validate((valid) => {
         if (valid) {
           let url = 'http://localhost:8080/album/addNew';
-          // console.log('url: ' + url);
-          // console.log('ruleForm:');
-          // console.log(this.ruleForm);
-
           let formData = this.qs.stringify(this.ruleForm);
-
           this.axios.post(url, formData).then((response) => {
             // console.log('服务器端响应了结果：');
             // console.log(response);

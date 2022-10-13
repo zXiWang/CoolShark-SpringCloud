@@ -19,6 +19,9 @@
       <el-form-item label="属性类型" prop="type">
         <el-input v-model="ruleForm.type"></el-input>
       </el-form-item>
+      <el-form-item label="输入类型" prop="inputType">
+        <el-input v-model="ruleForm.inputType"></el-input>
+      </el-form-item>
       <el-form-item label="计量单位" prop="unit">
         <el-input v-model="ruleForm.unit"></el-input>
       </el-form-item>
@@ -40,15 +43,15 @@
           </el-option>
         </el-select>
       </el-form-item>
-      <el-form-item label="是否允许自定义" prop="enable">
-        <el-switch
-            v-model="ruleForm.isAllowCustomize"
-            :active-value="1"
-            :inactive-value="0"
-            active-color="#13ce66"
-            inactive-color="#999">
-        </el-switch>
-      </el-form-item>
+<!--      <el-form-item label="是否允许自定义" prop="enable">-->
+<!--        <el-switch-->
+<!--            v-model="ruleForm.isAllowCustomize"-->
+<!--            :active-value="1"-->
+<!--            :inactive-value="0"-->
+<!--            active-color="#13ce66"-->
+<!--            inactive-color="#999">-->
+<!--        </el-switch>-->
+<!--      </el-form-item>-->
       <el-form-item>
         <el-button type="primary" @click="submitForm('ruleForm')">添加</el-button>
         <el-button @click="resetForm('ruleForm')">重置</el-button>
@@ -67,9 +70,10 @@ export default {
         name: '',
         description: '',
         type: '',
+        inputType: 0,
         unit: '',
         sort: '',
-        isAllowCustomize: false,
+        isAllowCustomize: true,
       },
       rules: {
         name: [
@@ -84,9 +88,16 @@ export default {
     };
   },
   methods: {
-    attributeTemplateList(){
-
-    }
+    LoadAttributeTemplateList() {
+      let url = "http://localhost:8080/attributeTemplate/list";
+      this.axios.get(url).then(response => {
+        let responseBody = response.data;
+        console.log(responseBody);
+        if (responseBody.state == 200) {
+          this.attributeTemplateList = responseBody.data;
+        }
+      })
+    },
     submitForm(formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {
@@ -102,7 +113,7 @@ export default {
     }
   },
   mounted() {
-    this.attributeTemplateList();
+    this.LoadAttributeTemplateList();
   }
 }
 </script>

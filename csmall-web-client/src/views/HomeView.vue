@@ -78,7 +78,7 @@
                 <i class="el-icon-circle-plus-outline"></i>
                 添加属性模板
               </el-menu-item>
-              <el-menu-item index="2-9">
+              <el-menu-item index="/sys-admin/temp/attribute/list">
                 <i class="el-icon-s-operation"></i>
                 属性列表
               </el-menu-item>

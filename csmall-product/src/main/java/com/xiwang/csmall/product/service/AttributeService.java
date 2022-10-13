@@ -1,7 +1,11 @@
 package com.xiwang.csmall.product.service;
 
 
+import com.xiwang.csmall.product.pojo.dto.AttributeAddNewDTO;
 import com.xiwang.csmall.product.pojo.entity.Attribute;
+import com.xiwang.csmall.product.pojo.vo.AttributeListItemVO;
+
+import java.util.List;
 
 /**
  * 属性(Attribute)表服务接口
@@ -42,6 +46,9 @@ public interface AttributeService {
      * @param id 主键
      * @return 是否成功
      */
-    boolean deleteById(Long id);
+    void delete(Long id);
 
+    void addNew(AttributeAddNewDTO attributeAddNewDTO);
+
+    List<AttributeListItemVO> list();
 }

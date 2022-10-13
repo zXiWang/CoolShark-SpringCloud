@@ -65,6 +65,11 @@ const routes = [
                 path: '/sys-admin/temp/attribute/add-new',
                 component: () => import('../views/sys-admin/temp/AttributeAddNewView.vue')
             },
+            {
+                //属性列表
+                path: '/sys-admin/temp/attribute/list',
+                component: () => import('../views/sys-admin/temp/AttributeListView.vue')
+            },
 
         ]
     },

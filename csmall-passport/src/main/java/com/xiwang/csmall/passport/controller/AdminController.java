@@ -3,6 +3,7 @@ package com.xiwang.csmall.passport.controller;
 
 import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
 import com.xiwang.csmall.passport.pojo.dto.AdminAddNewDTO;
+import com.xiwang.csmall.passport.pojo.dto.AdminLoginDTO;
 import com.xiwang.csmall.passport.pojo.vo.AdminListItemVO;
 import com.xiwang.csmall.passport.pojo.vo.AdminNormalVO;
 import com.xiwang.csmall.passport.service.AdminService;
@@ -53,7 +54,7 @@ public class AdminController {
     }
 
     @ApiOperation("禁用管理员")
-    @ApiOperationSupport(order = 401)
+    @ApiOperationSupport(order = 302)
     @PostMapping("/{id:[0-9]+}/disable")
     public JsonResult disable(@PathVariable Long id) {
         log.debug("开始处理修改管理员: id={}", id);
@@ -76,5 +77,14 @@ public class AdminController {
         log.debug("输入了id=" + id);
         AdminNormalVO object = adminService.getNormalById(id);
         return JsonResult.ok(object);
+    }
+
+    @ApiOperation("登录管理员")
+    @ApiOperationSupport(order = 402)
+    @PostMapping("/login")
+    public JsonResult login(AdminLoginDTO adminLoginDTO) {
+        log.debug("开始处理登录,参数:{}", adminLoginDTO);
+        adminService.login(adminLoginDTO);
+        return JsonResult.ok();
     }
 }

@@ -65,8 +65,15 @@ export default {
         if (responseBody.state == 200) {
           this.$message.success("修改成功!");
         } else {
-          this.$message.error(responseBody.message);
-        }
+          // this.$message.error(responseBody.message);
+            let title = '操作失败';
+            this.$alert(responseBody.message, title, {
+              confirmButtonText: '确定',
+              callback: action => {
+                this.loadAdminList();
+              }
+            });
+          }
       })
     },
     handleDetails(admin) {

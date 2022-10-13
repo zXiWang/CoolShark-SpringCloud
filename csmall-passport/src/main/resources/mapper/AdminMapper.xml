@@ -200,6 +200,11 @@
         ORDER BY
         enable DESC, id
     </select>
+    <select id="getLoginInfoByUsername" resultType="com.xiwang.csmall.passport.pojo.vo.AdminLoginInfoVO">
+        select id, username, password,enable
+        from ams_admin
+        where username = #{username}
+    </select>
 
 
     <sql id="ListQueryFields">
@@ -322,7 +327,7 @@
         <foreach collection="array" item="id" separator=",">
             #{id}
         </foreach>
-            )
+        )
     </delete>
 
 </mapper>

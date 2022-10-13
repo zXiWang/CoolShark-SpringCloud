@@ -1,6 +1,7 @@
 package com.xiwang.csmall.passport.service;
 
 import com.xiwang.csmall.passport.pojo.dto.AdminAddNewDTO;
+import com.xiwang.csmall.passport.pojo.dto.AdminLoginDTO;
 import com.xiwang.csmall.passport.pojo.vo.AdminListItemVO;
 import com.xiwang.csmall.passport.pojo.vo.AdminNormalVO;
 import org.springframework.transaction.annotation.Transactional;
@@ -32,4 +33,7 @@ public interface AdminService {
 
     @Transactional
     void setDisabled(Long id);
+
+    @Transactional
+    void login(AdminLoginDTO adminLoginDTO);
 }

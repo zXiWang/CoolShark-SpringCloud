@@ -1,16 +1,18 @@
 package com.xiwang.csmall.product.service.impl;
 
 import com.xiwang.csmall.product.ex.ServiceException;
+import com.xiwang.csmall.product.mapper.AttributeMapper;
 import com.xiwang.csmall.product.mapper.AttributeTemplateMapper;
 import com.xiwang.csmall.product.pojo.dto.AttributeTemplateAddNewDTO;
 import com.xiwang.csmall.product.pojo.entity.AttributeTemplate;
 import com.xiwang.csmall.product.pojo.vo.AttributeTemplateListItemVO;
 import com.xiwang.csmall.product.service.AttributeTemplateService;
 import com.xiwang.csmall.product.web.ServiceCode;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -19,10 +21,14 @@ import java.util.List;
  * @author 夕妄
  * @since 2022-09-26 15:02:45
  */
+@Slf4j
 @Service("attributeTemplateService")
 public class AttributeTemplateServiceImpl implements AttributeTemplateService {
-    @Resource
+    @Autowired
     private AttributeTemplateMapper attributeTemplateMapper;
+
+    @Autowired
+    private AttributeMapper attributeMapper;
 
     /**
      * 添加属性模板
@@ -46,7 +52,18 @@ public class AttributeTemplateServiceImpl implements AttributeTemplateService {
             String message = "删除失败!不存在该属性模板!";
             throw new ServiceException(ServiceCode.ERR_NOT_FOUND, message);
         }
-        attributeTemplateMapper.deleteById(id);
+        int rows = attributeTemplateMapper.deleteById(id);
+        if (rows != 1) {
+            String message = "删除属性模板失败，服务器忙，请稍后再次尝试！";
+            log.warn(message);
+            throw new ServiceException(ServiceCode.ERR_DELETE, message);
+        }
+        rows = attributeMapper.deleteByTemplateId(id);
+        if (rows < 1) {
+            String message = "删除属性模板失败，服务器忙，请稍后再次尝试！";
+            log.warn(message);
+            throw new ServiceException(ServiceCode.ERR_DELETE, message);
+        }
     }
 
     @Override

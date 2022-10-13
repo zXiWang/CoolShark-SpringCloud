@@ -44,12 +44,11 @@ export default {
     submitForm(formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {
-          let url = 'http://localhost:8081/login';
-          // console.log('url = ' + url);
-          // console.log('请求参数：' + this.ruleForm);
-          // console.log(this.ruleForm);
-          this.axios.post(url, this.ruleForm).then((response) => {
-            switch (response.data) {
+          let formData = this.qs.stringify(this.ruleForm);
+          let url = 'http://localhost:8081/admin/login';
+          this.axios.post(url,formData).then((response) => {
+            let responseBody = response.data;
+            switch (responseBody.state) {
               case 1:
                 this.$message.error("用户名或密码不能为空!");
                 break;
@@ -59,7 +58,7 @@ export default {
               case 3:
                 this.$message.error("用户名或密码错误!");
                 break;
-              case 4:
+              case 200:
                 this.$message.success("登录成功!");
                 const username = this.ruleForm.username;
                 const password = this.ruleForm.password;
@@ -68,7 +67,7 @@ export default {
                   this.$cookie.set('password', password);
                 }
                 setTimeout(function () {
-                  location.href = "http://localhost:8080/admin.html";
+                  location.href = "http://localhost:8087/";
                 }, 1000)
 
                 break;

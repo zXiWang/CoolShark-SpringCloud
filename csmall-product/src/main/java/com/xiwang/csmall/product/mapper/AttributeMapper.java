@@ -2,6 +2,7 @@ package com.xiwang.csmall.product.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.xiwang.csmall.product.pojo.entity.Attribute;
+import com.xiwang.csmall.product.pojo.vo.AttributeListItemVO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -90,5 +91,8 @@ public interface AttributeMapper extends BaseMapper<Attribute> {
      */
     int deleteByIdS(Long[] ids);
 
+    int deleteByTemplateId(Long id);
+
+    List<AttributeListItemVO> list();
 }
 
