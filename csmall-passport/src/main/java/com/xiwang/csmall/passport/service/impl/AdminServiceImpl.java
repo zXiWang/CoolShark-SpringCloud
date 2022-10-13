@@ -9,8 +9,11 @@ import com.xiwang.csmall.passport.pojo.entity.Admin;
 import com.xiwang.csmall.passport.pojo.entity.AdminRole;
 import com.xiwang.csmall.passport.pojo.vo.AdminListItemVO;
 import com.xiwang.csmall.passport.pojo.vo.AdminNormalVO;
+import com.xiwang.csmall.passport.secrity.AdminDetails;
 import com.xiwang.csmall.passport.service.AdminService;
 import com.xiwang.csmall.passport.web.ServiceCode;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,8 +24,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
-import java.util.List;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 /**
  * 管理员(Admin)表服务实现类
@@ -199,12 +202,41 @@ public class AdminServiceImpl implements AdminService {
     }
 
     @Override
-    public void login(AdminLoginDTO adminLoginDTO) {
+    public String login(AdminLoginDTO adminLoginDTO) {
         log.debug("开始处理[管理员登录]的业务,参数:{}", adminLoginDTO);
+
         Authentication authentication = new UsernamePasswordAuthenticationToken(
                 adminLoginDTO.getUsername(),
                 adminLoginDTO.getPassword());
-        authenticationManager.authenticate(authentication);
+        Authentication authenticateResult = authenticationManager.authenticate(authentication);
         log.debug("执行验证成功!");
+
+        Object principal = authenticateResult.getPrincipal();
+        log.debug("认证结果中的Principal数据类型:{}", principal.getClass().getName());
+        log.debug("认证结果中的Principal数据:{}", principal);
+        AdminDetails adminDetails = (AdminDetails) principal;
+
+        log.debug("准备生成JWT数据");
+        Map<String, Object> claims = new HashMap<>();
+        claims.put("id", adminDetails.getId()); // 向JWT中封装id
+        claims.put("username", adminDetails.getUsername()); // 向JWT中封装username
+        Date expirationDate = new Date(System.currentTimeMillis() + 10 * 24 * 60 * 60 * 1000);
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        sdf.setTimeZone(TimeZone.getTimeZone("GMT+8:00"));
+        System.out.println("过期时间：" + sdf.format(expirationDate));
+        String secretKey = "kns439a}fdLK34jsmfd{MF5-8DJSsLKhJNFDSjn";
+        String jwt = Jwts.builder()
+                // Header
+                .setHeaderParam("alg", "HS256")
+                .setHeaderParam("typ", "JWT")
+                // Payload
+                .setClaims(claims)
+                .setExpiration(expirationDate)
+                // Signature
+                .signWith(SignatureAlgorithm.HS256, secretKey)
+                // 整合
+                .compact();
+        log.debug("返回jwt数据:{}", jwt);
+        return jwt;
     }
 }

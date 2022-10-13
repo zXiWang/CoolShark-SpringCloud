@@ -16,6 +16,8 @@
       </el-table-column>
       <el-table-column prop="description" label="简介" align="center" >
       </el-table-column>
+      <el-table-column prop="templateId" label="所属属性模板id" align="center" width="80">
+      </el-table-column>
       <el-table-column prop="type" label="属性类型" align="center" width="80">
       </el-table-column>
       <el-table-column prop="inputType" label="输入类型" align="center" width="80">

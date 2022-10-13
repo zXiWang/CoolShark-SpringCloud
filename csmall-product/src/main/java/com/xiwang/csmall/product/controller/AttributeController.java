@@ -33,7 +33,7 @@ public class AttributeController {
     @Resource
     private AttributeService attributeService;
 
-    @ApiOperation("查询相册列表")
+    @ApiOperation("查询属性列表")
     @ApiOperationSupport(order = 400)
     @GetMapping(value = "/list")
     public JsonResult<List<AttributeListItemVO>> list() {
@@ -41,22 +41,22 @@ public class AttributeController {
         return JsonResult.ok(list);
     }
 
-    @ApiOperation("添加相册")
+    @ApiOperation("添加属性")
     @ApiOperationSupport(order = 1)
     @PostMapping(value = "/addNew")
     public JsonResult<List<AttributeAddNewDTO>> addNew(@Validated AttributeAddNewDTO attributeAddNewDTO) {
-        log.debug("开始处理【添加相册】的请求，参数：{}", attributeAddNewDTO);
+        log.debug("开始处理【添加属性】的请求，参数：{}", attributeAddNewDTO);
         attributeService.addNew(attributeAddNewDTO);
         return JsonResult.ok();
     }
 
     //    @Deprecated
-    @ApiOperation("删除相册")
-    @ApiImplicitParam(name = "id", value = "相册id", required = true, dataType = "long")
+    @ApiOperation("删除属性")
+    @ApiImplicitParam(name = "id", value = "属性id", required = true, dataType = "long")
     @ApiOperationSupport(order = 100)
     @PostMapping("/{id:[0-9]+}/delete")
     public JsonResult delete(@PathVariable Long id) {
-        log.debug("开始测试删除相册请求,id={}", id);
+        log.debug("开始测试删除属性请求,id={}", id);
         attributeService.delete(id);
         return JsonResult.ok();
     }

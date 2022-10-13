@@ -41,32 +41,8 @@
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="5.5.4 coolShark mybatis-plus&#10;管理员-changeEnable/品牌-changeEnable">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="5.5.5 coolShark mybatis-plus&#10;属性-addNew/管理员-login校验">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-passport/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/config/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/ex/handler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/ex/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/mapper/AdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/mapper/AdminMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/secrity/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/secrity/UserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/service/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/service/impl/AdminServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/web/ServiceCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/web/ServiceCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/resources/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/resources/mapper/AdminMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/controller/AttributeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/controller/AttributeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/AttributeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/AttributeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/AttributeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/AttributeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/AttributeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/AttributeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/AttributeTemplateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/AttributeTemplateServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/AttributeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/AttributeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-web-client/jsd2206-csmall-web-client-teacher" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/jsd2206-csmall-web-client-teacher" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/views/HomeView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/views/LoginView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/views/LoginView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/AdminListView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/AdminListView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/AlbumAddNewView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/AlbumAddNewView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/AttributeAddNewView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/AttributeAddNewView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -474,14 +450,7 @@
       <workItem from="1665362352568" duration="3746000" />
       <workItem from="1665400498677" duration="204000" />
       <workItem from="1665538422394" duration="81000" />
-      <workItem from="1665621439293" duration="10000" />
-    </task>
-    <task id="LOCAL-00021" summary="2.1 springboot&#10;request and response">
-      <created>1660651077393</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1660651077393</updated>
+      <workItem from="1665621439293" duration="1257000" />
     </task>
     <task id="LOCAL-00022" summary="2.1 springboot&#10;request and response">
       <created>1660651134716</created>
@@ -819,7 +788,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665538493278</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="5.5.5 coolShark mybatis-plus&#10;属性-addNew/管理员-login校验">
+      <created>1665621748232</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1665621748234</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -904,7 +880,6 @@
       <path value="$PROJECT_DIR$/csmall-web-client" />
       <path value="$PROJECT_DIR$/jsd220603/jsd220603 teacher" />
     </ignored-roots>
-    <MESSAGE value="4.2 spring boot" />
     <MESSAGE value="4.3 spring boot&#10;Mybatis" />
     <MESSAGE value="4.4 spring boot&#10;Mybatis axios" />
     <MESSAGE value="4.5 spring boot&#10;Mybatis axios" />
@@ -929,7 +904,8 @@
     <MESSAGE value="5.5.2 coolShark mybatis-plus&#10;品牌/属性模板 view list" />
     <MESSAGE value="5.5.3 coolShark mybatis-plus&#10;管理员-addNew/角色-addNew-list-enable" />
     <MESSAGE value="5.5.4 coolShark mybatis-plus&#10;管理员-changeEnable/品牌-changeEnable" />
-    <option name="LAST_COMMIT_MESSAGE" value="5.5.4 coolShark mybatis-plus&#10;管理员-changeEnable/品牌-changeEnable" />
+    <MESSAGE value="5.5.5 coolShark mybatis-plus&#10;属性-addNew/管理员-login校验" />
+    <option name="LAST_COMMIT_MESSAGE" value="5.5.5 coolShark mybatis-plus&#10;属性-addNew/管理员-login校验" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

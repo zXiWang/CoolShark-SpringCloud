@@ -4,6 +4,7 @@ package com.xiwang.csmall.product.service;
 import com.xiwang.csmall.product.pojo.dto.AttributeAddNewDTO;
 import com.xiwang.csmall.product.pojo.entity.Attribute;
 import com.xiwang.csmall.product.pojo.vo.AttributeListItemVO;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -16,29 +17,21 @@ import java.util.List;
 public interface AttributeService {
 
     /**
-     * 通过ID查询单条数据
-     *
-     * @param id 主键
-     * @return 实例对象
-     */
-    Attribute getNormalById(Long id);
-
-
-    /**
      * 新增数据
      *
      * @param attribute 实例对象
      * @return 实例对象
      */
+    @Transactional
     Attribute insert(Attribute attribute);
 
     /**
      * 修改数据
      *
      * @param attribute 实例对象
-     * @return 实例对象
      */
-    Attribute updateById(Attribute attribute);
+    @Transactional
+    void updateById(Attribute attribute);
 
     /**
      * 通过主键删除数据
@@ -46,8 +39,10 @@ public interface AttributeService {
      * @param id 主键
      * @return 是否成功
      */
+    @Transactional
     void delete(Long id);
 
+    @Transactional
     void addNew(AttributeAddNewDTO attributeAddNewDTO);
 
     List<AttributeListItemVO> list();

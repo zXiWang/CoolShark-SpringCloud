@@ -1,9 +1,10 @@
 package com.xiwang.csmall.passport.pojo.entity;
 
-import java.util.Date;
-import java.io.Serializable;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
+
+import java.io.Serializable;
+import java.util.Date;
 
 /**
  * 角色(Role)实体类

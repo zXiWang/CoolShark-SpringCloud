@@ -35,5 +35,5 @@ public interface AdminService {
     void setDisabled(Long id);
 
     @Transactional
-    void login(AdminLoginDTO adminLoginDTO);
+    String login(AdminLoginDTO adminLoginDTO);
 }

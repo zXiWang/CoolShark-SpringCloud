@@ -44,8 +44,9 @@
 </template>
 
 <script>
-
+let localJwt = localStorage.getItem("jwt");
 export default {
+
   data() {
     return {
       tableData: [],
@@ -54,31 +55,35 @@ export default {
   },
   methods: {
     changeEnable(admin) {
-      let enable =["disable", "enable"];
-      let url = "http://localhost:8081/admin/" + admin.id +"/"+ enable[admin.enable];
+      let enable = ["disable", "enable"];
+      let url = "http://localhost:8081/admin/" + admin.id + "/" + enable[admin.enable];
       console.log(url);
       // let params = new URLSearchParams();
       // params.append("id",admin.id);
       // params.append("enable",admin.enable);
-      this.axios.post(url).then(response => {
+      this.axios.create({
+        'headers': {'Authorization': localJwt}
+      }).post(url).then(response => {
         let responseBody = response.data;
         if (responseBody.state == 200) {
           this.$message.success("修改成功!");
         } else {
           // this.$message.error(responseBody.message);
-            let title = '操作失败';
-            this.$alert(responseBody.message, title, {
-              confirmButtonText: '确定',
-              callback: action => {
-                this.loadAdminList();
-              }
-            });
-          }
+          let title = '操作失败';
+          this.$alert(responseBody.message, title, {
+            confirmButtonText: '确定',
+            callback: action => {
+              this.loadAdminList();
+            }
+          });
+        }
       })
     },
     handleDetails(admin) {
       let url = "http://localhost:8081/admin/details?id=" + admin.id;
-      this.axios.get(url).then(response => {
+      this.axios.create({
+        'headers': {'Authorization': localJwt}
+      }).get(url).then(response => {
         let responseBody = response.data;
         console.log(responseBody);
         alert(responseBody.data);
@@ -89,7 +94,9 @@ export default {
     },
     handleDelete(admin) {
       let url = "http://localhost:8081/admin/" + admin.id + "/delete";
-      this.axios.post(url).then(response => {
+      this.axios.create({
+        'headers': {'Authorization': localJwt}
+      }).post(url).then(response => {
         let responseBody = response.data;
         if (responseBody.state == 200) {
           this.$message.success("删除成功!");
@@ -114,9 +121,13 @@ export default {
     loadAlbumList() {
       let url = "http://localhost:8081/admin/list";
       console.log("url:" + url);
-      this.axios.get(url).then(response => {
+      this.axios
+          .create({
+            'headers': {'Authorization': localJwt}
+          }).get(url).then(response => {
         let responseBody = response.data;
         console.log(responseBody);
+        console.log(localStorage.getItem("jwt"));
         this.tableData = responseBody.data;
       })
     }
@@ -126,6 +137,7 @@ export default {
 
   },
   created() {
+    // localJwt = ;
   }
 }
 </script>

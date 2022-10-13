@@ -5,11 +5,15 @@ import com.xiwang.csmall.passport.pojo.vo.AdminLoginInfoVO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.BadCredentialsException;
-import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Slf4j
 @Service
@@ -29,16 +33,18 @@ public class UserDetailsServiceImpl implements UserDetailsService {
             throw new BadCredentialsException(message);
         }
 
-        UserDetails userDetails = User.builder()
-                .username(loginInfo.getUsername())
-                .password(loginInfo.getPassword())
-                .accountExpired(false)
-                .accountLocked(false)
-                .disabled(loginInfo.getEnable() == 0)
-                .authorities("这是一个山寨的权限标识") // 权限，注意，此方法的参数不可以为null，在不处理权限之前，可以写一个随意的字符串值
-                .build();
-        log.debug("即将向Spring Security返回UserDetails对象：{}", userDetails);
-        return userDetails;
+
+        List<GrantedAuthority> authorities = new ArrayList<>();
+        GrantedAuthority authority = new SimpleGrantedAuthority("这是一个山寨的权限标识");
+        authorities.add(authority);
+
+        AdminDetails adminDetails = new AdminDetails(
+                loginInfo.getUsername(), loginInfo.getPassword(),
+                loginInfo.getEnable() == 1, authorities);
+        adminDetails.setId(loginInfo.getId());
+
+        log.debug("即将向Spring Security返回UserDetails接口类型的对象：{}", adminDetails);
+        return adminDetails;
     }
 
 }

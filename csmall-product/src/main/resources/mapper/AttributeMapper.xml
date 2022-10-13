@@ -14,7 +14,7 @@
         <result property="sort" column="sort" jdbcType="INTEGER"/>
         <result property="isAllowCustomize" column="is_allow_customize" jdbcType="INTEGER"/>
     </resultMap>
-    <resultMap type="com.xiwang.csmall.product.pojo.vo.AttributeListItemVO" id="NormalResultMap">
+    <resultMap type="com.xiwang.csmall.product.pojo.vo.AttributeNormalVO" id="NormalResultMap">
         <result property="id" column="id" jdbcType="INTEGER"/>
         <result property="templateId" column="template_id" jdbcType="INTEGER"/>
         <result property="name" column="name" jdbcType="VARCHAR"/>
@@ -115,6 +115,12 @@
                 and gmt_modified = #{gmtModified}
             </if>
         </where>
+    </select>
+    <select id="countByNameAndTemplateId" resultType="java.lang.Integer">
+        select count(*)
+        from pms_attribute
+        where name = #{name}
+          and template_id = #{templateId}
     </select>
 
     <!--新增所有列-->

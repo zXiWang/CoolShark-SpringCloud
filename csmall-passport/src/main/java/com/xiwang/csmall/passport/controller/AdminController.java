@@ -6,13 +6,16 @@ import com.xiwang.csmall.passport.pojo.dto.AdminAddNewDTO;
 import com.xiwang.csmall.passport.pojo.dto.AdminLoginDTO;
 import com.xiwang.csmall.passport.pojo.vo.AdminListItemVO;
 import com.xiwang.csmall.passport.pojo.vo.AdminNormalVO;
+import com.xiwang.csmall.passport.secrity.LoginPrincipal;
 import com.xiwang.csmall.passport.service.AdminService;
 import com.xiwang.csmall.passport.web.JsonResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+import springfox.documentation.annotations.ApiIgnore;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -38,8 +41,10 @@ public class AdminController {
     @ApiOperation("删除管理员")
     @ApiOperationSupport(order = 200)
     @PostMapping("/{id:[0-9]+}/delete")
-    public JsonResult delete(@PathVariable Long id) {
-        log.debug("开始处理删除管理员: id={}", id);
+    public JsonResult<Void> delete(@PathVariable Long id,
+                                   @ApiIgnore @AuthenticationPrincipal LoginPrincipal loginPrincipal) {
+        log.debug("开始处理【删除管理员】的请求，参数：{}", id);
+        log.debug("当前登录的当事人：{}", loginPrincipal);
         adminService.delete(id);
         return JsonResult.ok();
     }
@@ -82,9 +87,9 @@ public class AdminController {
     @ApiOperation("登录管理员")
     @ApiOperationSupport(order = 402)
     @PostMapping("/login")
-    public JsonResult login(AdminLoginDTO adminLoginDTO) {
+    public JsonResult<String> login(AdminLoginDTO adminLoginDTO) {
         log.debug("开始处理登录,参数:{}", adminLoginDTO);
-        adminService.login(adminLoginDTO);
-        return JsonResult.ok();
+        String jwt = adminService.login(adminLoginDTO);
+        return JsonResult.ok(jwt);
     }
 }

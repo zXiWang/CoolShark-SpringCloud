@@ -1,8 +1,11 @@
 package com.xiwang.csmall.product.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.xiwang.csmall.product.pojo.dto.AttributeAddNewDTO;
 import com.xiwang.csmall.product.pojo.entity.Attribute;
 import com.xiwang.csmall.product.pojo.vo.AttributeListItemVO;
+import com.xiwang.csmall.product.pojo.vo.AttributeNormalVO;
+import net.bytebuddy.build.Plugin;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -24,7 +27,7 @@ public interface AttributeMapper extends BaseMapper<Attribute> {
      * @param id 主键
      * @return 实例对象
      */
-    Attribute getNormalById(Long id);
+    AttributeNormalVO getNormalById(Long id);
 
     /**
      * 查询指定行数据
@@ -94,5 +97,8 @@ public interface AttributeMapper extends BaseMapper<Attribute> {
     int deleteByTemplateId(Long id);
 
     List<AttributeListItemVO> list();
+
+    int countByNameAndTemplateId(AttributeAddNewDTO attributeAddNewDTO);
+
 }
 

@@ -48,6 +48,7 @@ export default {
           let url = 'http://localhost:8081/admin/login';
           this.axios.post(url,formData).then((response) => {
             let responseBody = response.data;
+            console.log(responseBody);
             switch (responseBody.state) {
               case 1:
                 this.$message.error("用户名或密码不能为空!");
@@ -60,6 +61,8 @@ export default {
                 break;
               case 200:
                 this.$message.success("登录成功!");
+                console.log("JWT="+responseBody);
+                localStorage.setItem("jwt",responseBody.data);
                 const username = this.ruleForm.username;
                 const password = this.ruleForm.password;
                 if (this.ruleForm.rem) {

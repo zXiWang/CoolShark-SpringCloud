@@ -6,6 +6,7 @@ import com.xiwang.csmall.product.mapper.AttributeTemplateMapper;
 import com.xiwang.csmall.product.pojo.dto.AttributeAddNewDTO;
 import com.xiwang.csmall.product.pojo.entity.Attribute;
 import com.xiwang.csmall.product.pojo.vo.AttributeListItemVO;
+import com.xiwang.csmall.product.pojo.vo.AttributeTemplateNormalVO;
 import com.xiwang.csmall.product.service.AttributeService;
 import com.xiwang.csmall.product.web.ServiceCode;
 import lombok.extern.slf4j.Slf4j;
@@ -32,14 +33,18 @@ public class AttributeServiceImpl implements AttributeService {
 
     @Override
     public void addNew(AttributeAddNewDTO attributeAddNewDTO) {
+
+        AttributeTemplateNormalVO attributeTemplateNormalVO = attributeTemplateMapper.getNormalById(attributeAddNewDTO.getTemplateId());
+        //查询有无此属性模板
+        if (attributeTemplateNormalVO == null) {
+            String message = "添加属性失败，未找到该属性模板！";
+            log.debug(message);
+            throw new ServiceException(ServiceCode.ERR_CONFLICT, message);
+        }
         //判断相关属性模板里有没有此名称
-        if (attributeAddNewDTO
-                .getName()
-                .equals(attributeTemplateMapper
-                        .getNormalById(attributeAddNewDTO
-                                .getTemplateId())
-                        .getName())){
-            String message = "添加属性失败，尝试添加的相册名称已经被占用！";
+        int rows = attributeMapper.countByNameAndTemplateId(attributeAddNewDTO);
+        if (rows != 0) {
+            String message = "添加属性失败，尝试添加的属性名称已经被占用！";
             log.debug(message);
             throw new ServiceException(ServiceCode.ERR_CONFLICT, message);
         }
@@ -53,18 +58,6 @@ public class AttributeServiceImpl implements AttributeService {
         return attributeMapper.list();
 
     }
-
-    /**
-     * 通过ID查询单条数据
-     *
-     * @param id 主键
-     * @return 实例对象
-     */
-    @Override
-    public Attribute getNormalById(Long id) {
-        return this.attributeMapper.getNormalById(id);
-    }
-
     /**
      * 新增数据
      *
@@ -81,12 +74,10 @@ public class AttributeServiceImpl implements AttributeService {
      * 修改数据
      *
      * @param attribute 实例对象
-     * @return 实例对象
      */
     @Override
-    public Attribute updateById(Attribute attribute) {
-        this.attributeMapper.updateById(attribute);
-        return this.getNormalById(attribute.getId());
+    public void updateById(Attribute attribute) {
+        attributeMapper.updateById(attribute);
     }
 
     /**
@@ -101,6 +92,11 @@ public class AttributeServiceImpl implements AttributeService {
             String message = "删除失败!不存在该属性!";
             throw new ServiceException(ServiceCode.ERR_NOT_FOUND, message);
         }
-        attributeMapper.deleteById(id);
+        int rows = attributeMapper.deleteById(id);
+        if (rows != 1) {
+            String message = "服务器未响应!删除失败!";
+            throw new ServiceException(ServiceCode.ERR_DELETE, message);
+
+        }
     }
 }

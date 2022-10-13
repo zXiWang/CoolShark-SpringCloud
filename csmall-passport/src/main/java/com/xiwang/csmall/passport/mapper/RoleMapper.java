@@ -4,9 +4,9 @@ import com.xiwang.csmall.passport.pojo.entity.Role;
 import com.xiwang.csmall.passport.pojo.vo.RoleListItemVO;
 import com.xiwang.csmall.passport.pojo.vo.RoleNormalVO;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
-import org.springframework.stereotype.Repository;
 
 /**
  * 角色(Role)表数据库访问层

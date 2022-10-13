@@ -5,7 +5,6 @@ import com.xiwang.csmall.passport.ex.ServiceException;
 import com.xiwang.csmall.passport.web.JsonResult;
 import com.xiwang.csmall.passport.web.ServiceCode;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.security.authentication.AuthenticationServiceException;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.DisabledException;
 import org.springframework.security.authentication.InternalAuthenticationServiceException;

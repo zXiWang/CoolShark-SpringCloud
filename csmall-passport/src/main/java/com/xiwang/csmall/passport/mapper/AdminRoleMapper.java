@@ -1,6 +1,5 @@
 package com.xiwang.csmall.passport.mapper;
 
-import com.xiwang.csmall.passport.pojo.entity.Admin;
 import com.xiwang.csmall.passport.pojo.entity.AdminRole;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.data.domain.Pageable;
