@@ -1,5 +1,6 @@
 package com.xiwang.csmall.product.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.xiwang.csmall.product.ex.ServiceException;
 import com.xiwang.csmall.product.mapper.AttributeMapper;
 import com.xiwang.csmall.product.mapper.AttributeTemplateMapper;
@@ -33,7 +34,6 @@ public class AttributeServiceImpl implements AttributeService {
 
     @Override
     public void addNew(AttributeAddNewDTO attributeAddNewDTO) {
-
         AttributeTemplateNormalVO attributeTemplateNormalVO = attributeTemplateMapper.getNormalById(attributeAddNewDTO.getTemplateId());
         //查询有无此属性模板
         if (attributeTemplateNormalVO == null) {
@@ -56,8 +56,13 @@ public class AttributeServiceImpl implements AttributeService {
     @Override
     public List<AttributeListItemVO> list() {
         return attributeMapper.list();
-
     }
+
+    @Override
+    public List<AttributeListItemVO> listByTemplateId(Long templateId) {
+        return attributeMapper.listByTemplateId(templateId);
+    }
+
     /**
      * 新增数据
      *

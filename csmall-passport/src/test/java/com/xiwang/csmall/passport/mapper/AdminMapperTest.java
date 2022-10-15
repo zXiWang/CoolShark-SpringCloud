@@ -1,10 +1,13 @@
 package com.xiwang.csmall.passport.mapper;
 
 import com.xiwang.csmall.passport.pojo.entity.Admin;
+import com.xiwang.csmall.passport.pojo.vo.AdminLoginInfoVO;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import java.util.List;
 
 @Slf4j
 @SpringBootTest
@@ -44,5 +47,11 @@ class AdminMapperTest {
     @Test
     void getNormalById() {
         mapper.getNormalById(2L);
+    }
+
+    @Test
+    void getLoginInfoByUsername() {
+        AdminLoginInfoVO  query=mapper.getLoginInfoByUsername("root");
+        System.out.println(query);
     }
 }

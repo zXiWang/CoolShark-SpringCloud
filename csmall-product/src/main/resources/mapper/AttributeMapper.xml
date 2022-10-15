@@ -123,6 +123,14 @@
           and template_id = #{templateId}
     </select>
 
+    <!--    查询指定属性模板下的所有属性-->
+    <select id="listByTemplateId" resultMap="ListResultMap">
+        select
+        <include refid="listQueryFields"/>
+        from pms_attribute
+        where template_id = #{templateId}
+    </select>
+
     <!--新增所有列-->
     <insert id="insert" keyProperty="id" useGeneratedKeys="true">
         insert into pms_attribute(template_id, name, description, type, input_type, value_list, unit, sort,

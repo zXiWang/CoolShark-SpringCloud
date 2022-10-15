@@ -1,7 +1,6 @@
 package com.xiwang.csmall.product;
 
 
-import com.xiwang.csmall.product.mapper.AdminMapper;
 import com.xiwang.csmall.product.mapper.AlbumMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

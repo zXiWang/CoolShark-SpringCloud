@@ -28,15 +28,17 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         AdminLoginInfoVO loginInfo = adminMapper.getLoginInfoByUsername(s);
         log.debug("从数据库查询与用户名【{}】匹配的管理员信息：{}", s, loginInfo);
         if (loginInfo == null) {
-            log.debug("此用户名【{}】不存在，即将抛出异常",s);
+            log.debug("此用户名【{}】不存在，即将抛出异常", s);
             String message = "登录失败，用户名不存在！";
             throw new BadCredentialsException(message);
         }
 
 
         List<GrantedAuthority> authorities = new ArrayList<>();
-        GrantedAuthority authority = new SimpleGrantedAuthority("这是一个山寨的权限标识");
-        authorities.add(authority);
+        for (String permission : loginInfo.getPermissions()) {
+            GrantedAuthority authority = new SimpleGrantedAuthority(permission);
+            authorities.add(authority);
+        }
 
         AdminDetails adminDetails = new AdminDetails(
                 loginInfo.getUsername(), loginInfo.getPassword(),

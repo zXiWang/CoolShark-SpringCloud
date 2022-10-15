@@ -1,14 +1,15 @@
 package com.xiwang.csmall.passport.filter;
 
+import com.alibaba.fastjson2.JSON;
 import com.xiwang.csmall.passport.secrity.LoginPrincipal;
-import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.Jwts;
+import com.xiwang.csmall.passport.web.JsonResult;
+import com.xiwang.csmall.passport.web.ServiceCode;
+import io.jsonwebtoken.*;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
@@ -19,7 +20,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.ArrayList;
+import java.io.PrintWriter;
 import java.util.List;
 
 @Slf4j
@@ -27,11 +28,16 @@ import java.util.List;
 public class JwtAuthorizationFilter extends OncePerRequestFilter {
 
     public static final int JWT_MIN_LENGTH = 100;
+    @Value("${csmall.jwt.secret-key}")
+    String secretKey;
 
     @Override
     protected void doFilterInternal(HttpServletRequest request,
                                     HttpServletResponse response,
                                     FilterChain filterChain) throws ServletException, IOException {
+        //清楚SecurityContext中原有的数据(认证信息)
+        SecurityContextHolder.clearContext();
+
         // 尝试获取客户端提交请求时可能携带的JWT
         String jwt = request.getHeader("Authorization");
         log.debug("接收到JWT数据：{}", jwt);
@@ -44,28 +50,70 @@ public class JwtAuthorizationFilter extends OncePerRequestFilter {
             return;
         }
 
+        // 设置响应的文档类型
+        response.setContentType("application/json; charset=utf-8");
         // 尝试解析JWT，从中获取用户的相关数据，例如id、username等
         log.debug("将尝试解析JWT……");
-        String secretKey = "kns439a}fdLK34jsmfd{MF5-8DJSsLKhJNFDSjn";
-        Claims claims = Jwts.parser().setSigningKey(secretKey).parseClaimsJws(jwt).getBody();
+        Claims claims = null;
+        try {
+            claims = Jwts.parser().setSigningKey(secretKey).parseClaimsJws(jwt).getBody();
+        } catch (SignatureException e) {
+            String message = "非法访问！";
+            JsonResult jsonResult = JsonResult.fail(ServiceCode.ERR_JWT_SIGNATURE, message);
+            String jsonResultString = JSON.toJSONString(jsonResult);
+            PrintWriter writer = response.getWriter();
+            writer.println(jsonResultString);
+            writer.close();
+            return;
+        } catch (MalformedJwtException e) {
+            String message = "非法访问！";
+            JsonResult jsonResult = JsonResult.fail(ServiceCode.ERR_JWT_MALFORMED, message);
+            String jsonResultString = JSON.toJSONString(jsonResult);
+            PrintWriter writer = response.getWriter();
+            writer.println(jsonResultString);
+            writer.close();
+            return;
+        } catch (ExpiredJwtException e) {
+            String message = "登录已过期，请重新登录！";
+            JsonResult jsonResult = JsonResult.fail(ServiceCode.ERR_JWT_EXPIRED, message);
+            String jsonResultString = JSON.toJSONString(jsonResult);
+            PrintWriter writer = response.getWriter();
+            writer.println(jsonResultString);
+            writer.close();
+            return;
+        } catch (Throwable e) {
+            e.printStackTrace(); // 重要
+            String message = "服务器忙，请稍后再次尝试！";
+            JsonResult jsonResult = JsonResult.fail(ServiceCode.ERR_UNKNOWN, message);
+            String jsonResultString = JSON.toJSONString(jsonResult);
+            PrintWriter writer = response.getWriter();
+            writer.println(jsonResultString);
+            writer.close();
+            return;
+        }
+
         Long id = claims.get("id", Long.class);
         String username = claims.get("username", String.class);
+        String authoritiesJsonString = claims.get("authorities", String.class);
         log.debug("从JWT中解析得到数据：id={}", id);
         log.debug("从JWT中解析得到数据：username={}", username);
+        log.debug("从JWT中解析得到数据：authoritiesJsonString={}", authoritiesJsonString);
 
-        // 将根据从JWT中解析得到的数据来创建认证信息
-        List<GrantedAuthority> authorities = new ArrayList<>();
-        GrantedAuthority authority = new SimpleGrantedAuthority("这是一个山寨的权限标识");
-        authorities.add(authority);
+        // 准备用于创建认证信息的权限数据
+        List<SimpleGrantedAuthority> authorities
+                = JSON.parseArray(authoritiesJsonString, SimpleGrantedAuthority.class);
+
+        // 准备用于创建认证信息的当事人数据
         LoginPrincipal loginPrincipal = new LoginPrincipal();
         loginPrincipal.setId(id);
         loginPrincipal.setUsername(username);
+
+        // 创建认证信息
         Authentication authentication = new UsernamePasswordAuthenticationToken(
                 loginPrincipal, null, authorities);
-
         // 将认证信息存储到SecurityContext中
-        SecurityContext securityContext = SecurityContextHolder.getContext();
-        securityContext.setAuthentication(authentication);
+        log.debug("即将处理将认证信息存储到SecurityContext中");
+        SecurityContextHolder.getContext().setAuthentication(authentication);
 
         // 放行
         filterChain.doFilter(request, response);

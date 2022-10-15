@@ -12,6 +12,7 @@ import com.xiwang.csmall.passport.web.JsonResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -32,6 +33,7 @@ public class AdminController {
     @ApiOperation("添加管理员")
     @ApiOperationSupport(order = 100)
     @PostMapping("/addNew")
+    @PreAuthorize("hasAuthority('/ams/admin/add-new')")
     public JsonResult addNew(AdminAddNewDTO addNewDTO) {
         log.debug("开始处理添加管理员: {}", addNewDTO);
         adminService.addNew(addNewDTO);
@@ -70,6 +72,7 @@ public class AdminController {
     @ApiOperation("查询管理员列表")
     @ApiOperationSupport(order = 400)
     @GetMapping(value = "/list")
+    @PreAuthorize("hasAuthority('/ams/admin/read')")
     public JsonResult<List<AdminListItemVO>> list() {
         List<AdminListItemVO> list = adminService.list();
         return JsonResult.ok(list);

@@ -11,38 +11,33 @@
   <component name="AutomaticModuleUnloader">
     <loaded-modules>
       <module name="csmall-product" />
-      <module name="V20" />
       <module name="QR" />
-      <module name="V7" />
-      <module name="V12" />
-      <module name="V15" />
-      <module name="MyFirstBirdBoot" />
-      <module name="V16" />
-      <module name="V9" />
-      <module name="V10" />
       <module name="达内" />
-      <module name="V13" />
-      <module name="V5" />
-      <module name="V21" />
-      <module name="V3" />
-      <module name="V8" />
       <module name="csmall-passport" />
-      <module name="V4" />
-      <module name="V14" />
-      <module name="V19" />
-      <module name="V18" />
-      <module name="V11" />
-      <module name="MySpringBoot3" />
-      <module name="V1" />
-      <module name="BirdBoot" />
-      <module name="WS2206" />
-      <module name="V6" />
-      <module name="V2" />
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="5.5.5 coolShark mybatis-plus&#10;属性-addNew/管理员-login校验">
+    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="5.6.5 coolShark mybatis-plus&#10;登录校验 jwt/属性添加,删除">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/config/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/filter/JwtAuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/filter/JwtAuthorizationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/pojo/vo/AdminLoginInfoVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/pojo/vo/AdminLoginInfoVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/secrity/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/secrity/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/service/impl/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/web/ServiceCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/web/ServiceCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/resources/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/resources/mapper/AdminMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-passport/src/test/java/com/xiwang/csmall/passport/mapper/AdminMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/test/java/com/xiwang/csmall/passport/mapper/AdminMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-passport/src/test/java/com/xiwang/csmall/passport/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/test/java/com/xiwang/csmall/passport/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/AdminMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/AttributeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/AttributeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/pojo/entity/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/AttributeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/AttributeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/AttributeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/AttributeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/AttributeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/AttributeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/test/java/com/xiwang/csmall/product/CsmallProductApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/test/java/com/xiwang/csmall/product/CsmallProductApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/课外/作业/10.1/gm.sql" beforeDir="false" afterPath="$PROJECT_DIR$/课外/作业/10.1/gm.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -451,13 +446,8 @@
       <workItem from="1665400498677" duration="204000" />
       <workItem from="1665538422394" duration="81000" />
       <workItem from="1665621439293" duration="1257000" />
-    </task>
-    <task id="LOCAL-00022" summary="2.1 springboot&#10;request and response">
-      <created>1660651134716</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1660651134716</updated>
+      <workItem from="1665663785220" duration="138000" />
+      <workItem from="1665750506542" duration="813000" />
     </task>
     <task id="LOCAL-00023" summary="2.1 springboot&#10;request and response">
       <created>1660651217753</created>
@@ -795,7 +785,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665621748234</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="5.6.5 coolShark mybatis-plus&#10;登录校验 jwt/属性添加,删除">
+      <created>1665663890921</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1665663890921</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -880,7 +877,6 @@
       <path value="$PROJECT_DIR$/csmall-web-client" />
       <path value="$PROJECT_DIR$/jsd220603/jsd220603 teacher" />
     </ignored-roots>
-    <MESSAGE value="4.3 spring boot&#10;Mybatis" />
     <MESSAGE value="4.4 spring boot&#10;Mybatis axios" />
     <MESSAGE value="4.5 spring boot&#10;Mybatis axios" />
     <MESSAGE value="4.6 spring boot&#10;Mybatis axios" />
@@ -905,7 +901,8 @@
     <MESSAGE value="5.5.3 coolShark mybatis-plus&#10;管理员-addNew/角色-addNew-list-enable" />
     <MESSAGE value="5.5.4 coolShark mybatis-plus&#10;管理员-changeEnable/品牌-changeEnable" />
     <MESSAGE value="5.5.5 coolShark mybatis-plus&#10;属性-addNew/管理员-login校验" />
-    <option name="LAST_COMMIT_MESSAGE" value="5.5.5 coolShark mybatis-plus&#10;属性-addNew/管理员-login校验" />
+    <MESSAGE value="5.6.5 coolShark mybatis-plus&#10;登录校验 jwt/属性添加,删除" />
+    <option name="LAST_COMMIT_MESSAGE" value="5.6.5 coolShark mybatis-plus&#10;登录校验 jwt/属性添加,删除" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

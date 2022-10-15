@@ -26,3 +26,5 @@ select departmentid,max(TIMESTAMPDIFF(YEAR ,birthdate,CURDATE())) as '最大年�
 # SELECT  TIMESTAMPDIFF(YEAR, @birthday, CURDATE())
 
 select departmentid,count(sex='男' or null) as '男',count(sex='女' or null) as '女' from employee group by departmentid;
+
+select count(sex='男' or null) as '男' ,count(sex='女' or null) as '女' from employee ;

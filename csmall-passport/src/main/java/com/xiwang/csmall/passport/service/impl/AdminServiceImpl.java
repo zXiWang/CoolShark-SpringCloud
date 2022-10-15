@@ -1,5 +1,6 @@
 package com.xiwang.csmall.passport.service.impl;
 
+import com.alibaba.fastjson2.JSON;
 import com.xiwang.csmall.passport.ex.ServiceException;
 import com.xiwang.csmall.passport.mapper.AdminMapper;
 import com.xiwang.csmall.passport.mapper.AdminRoleMapper;
@@ -17,13 +18,13 @@ import io.jsonwebtoken.SignatureAlgorithm;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -36,7 +37,7 @@ import java.util.*;
 @Slf4j
 @Service("adminService")
 public class AdminServiceImpl implements AdminService {
-    @Resource
+    @Autowired
     private AdminMapper adminMapper;
     @Autowired
     AdminRoleMapper adminRoleMapper;
@@ -44,6 +45,10 @@ public class AdminServiceImpl implements AdminService {
     PasswordEncoder passwordEncoder;
     @Autowired
     AuthenticationManager authenticationManager;
+    @Value("${csmall.jwt.secret-key}")
+    String secretKey;
+    @Value("${csmall.jwt.duration-in-minute}")
+    long durationInMinute;
 
     @Override
     public List<AdminListItemVO> list() {
@@ -220,11 +225,12 @@ public class AdminServiceImpl implements AdminService {
         Map<String, Object> claims = new HashMap<>();
         claims.put("id", adminDetails.getId()); // 向JWT中封装id
         claims.put("username", adminDetails.getUsername()); // 向JWT中封装username
-        Date expirationDate = new Date(System.currentTimeMillis() + 10 * 24 * 60 * 60 * 1000);
+        claims.put("authorities", JSON.toJSONString(adminDetails.getAuthorities())); // 向JWT中封装权限
+
+        Date expirationDate = new Date(System.currentTimeMillis() + durationInMinute * 60 * 1000);
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         sdf.setTimeZone(TimeZone.getTimeZone("GMT+8:00"));
         System.out.println("过期时间：" + sdf.format(expirationDate));
-        String secretKey = "kns439a}fdLK34jsmfd{MF5-8DJSsLKhJNFDSjn";
         String jwt = Jwts.builder()
                 // Header
                 .setHeaderParam("alg", "HS256")

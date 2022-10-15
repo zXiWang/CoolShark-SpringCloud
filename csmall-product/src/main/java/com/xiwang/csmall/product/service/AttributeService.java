@@ -16,6 +16,7 @@ import java.util.List;
  */
 public interface AttributeService {
 
+
     /**
      * 新增数据
      *
@@ -46,4 +47,7 @@ public interface AttributeService {
     void addNew(AttributeAddNewDTO attributeAddNewDTO);
 
     List<AttributeListItemVO> list();
+
+    List<AttributeListItemVO> listByTemplateId(Long templateId);
+
 }

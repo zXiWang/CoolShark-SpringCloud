@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.List;
 
 @Data
 @TableName("ams_admin")
@@ -31,4 +32,8 @@ public class AdminLoginInfoVO implements Serializable {
      * 是否启用，1=启用，0=未启用
      */
     private Integer enable;
+    /**
+     * 权限
+     */
+    private List<String> permissions;
 }

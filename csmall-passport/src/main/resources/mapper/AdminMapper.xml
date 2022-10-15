@@ -200,11 +200,29 @@
         ORDER BY
         enable DESC, id
     </select>
-    <select id="getLoginInfoByUsername" resultType="com.xiwang.csmall.passport.pojo.vo.AdminLoginInfoVO">
-        select id, username, password,enable
-        from ams_admin
-        where username = #{username}
+
+    <select id="getLoginInfoByUsername" resultMap="LoginResultMap">
+        select admin.id, admin.username, admin.password, admin.enable, perminssion.value
+        from ams_admin as admin
+                 left join ams_admin_role as adminRole on admin.id = adminRole.admin_id
+                 left join ams_role_permission as rolePermission on adminRole.role_id = rolePermission.role_id
+                 left join ams_permission as perminssion on rolePermission.permission_id = perminssion.id
+        where admin.username = #{username}
     </select>
+
+    <resultMap id="LoginResultMap" type="com.xiwang.csmall.passport.pojo.vo.AdminLoginInfoVO">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="password" property="password"/>
+        <result column="phone" property="phone"/>
+        <result column="email" property="email"/>
+        <result column="enable" property="enable"/>
+        <collection property="permissions" ofType="String">
+            <constructor>
+                <arg column="value"/>
+            </constructor>
+        </collection>
+    </resultMap>
 
 
     <sql id="ListQueryFields">
