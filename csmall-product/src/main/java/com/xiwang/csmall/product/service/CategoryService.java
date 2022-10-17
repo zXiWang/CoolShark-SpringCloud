@@ -1,6 +1,9 @@
 package com.xiwang.csmall.product.service;
 
 import com.xiwang.csmall.product.pojo.dto.CategoryAddNewDTO;
+import com.xiwang.csmall.product.pojo.vo.CategoryListItemVO;
+
+import java.util.List;
 
 /**
  * 类别(Category)表服务接口
@@ -20,4 +23,7 @@ public interface CategoryService {
      */
     void delete(Long id);
 
+    List<CategoryListItemVO> list();
+
+    List<CategoryListItemVO> listByParentId(Long id);
 }

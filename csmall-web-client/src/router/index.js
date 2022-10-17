@@ -52,6 +52,11 @@ const routes = [
                 component: () => import('../views/sys-admin/temp/CategoryAddNewView.vue')
             },
             {
+                //类别列表
+                path: '/sys-admin/temp/category/list',
+                component: () => import('../views/sys-admin/temp/CategoryListView.vue')
+            },
+            {
                 path: '/sys-admin/temp/attributeTemplate/add-new',
                 component: () => import('../views/sys-admin/temp/AttributeTemplateAddNewView.vue')
             },

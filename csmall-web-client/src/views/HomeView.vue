@@ -54,7 +54,7 @@
                 <i class="el-icon-circle-plus-outline"></i>
                 添加品牌
               </el-menu-item>
-              <el-menu-item index="2-3">
+              <el-menu-item index="/sys-admin/temp/category/list">
                 <i class="el-icon-s-operation"></i>
                 类别列表
               </el-menu-item>

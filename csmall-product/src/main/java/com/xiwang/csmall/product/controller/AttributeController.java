@@ -41,6 +41,14 @@ public class AttributeController {
         return JsonResult.ok(list);
     }
 
+    @ApiOperation("查询属性模板的属性列表")
+    @ApiOperationSupport(order = 401)
+    @GetMapping(value = "/{id:[0-9]+}/list")
+    public JsonResult<List<AttributeListItemVO>> listByTemplateId(@PathVariable Long id) {
+        List<AttributeListItemVO> list = attributeService.listByTemplateId(id);
+        return JsonResult.ok(list);
+    }
+
     @ApiOperation("添加属性")
     @ApiOperationSupport(order = 1)
     @PostMapping(value = "/addNew")

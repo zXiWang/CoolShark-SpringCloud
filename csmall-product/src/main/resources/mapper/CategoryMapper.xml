@@ -101,7 +101,16 @@
         FROM
         pms_category
         ORDER BY
-        sort DESC, id DESC
+        sort DESC, id
+    </select>
+    <select id="listByParentId" resultMap="ListResultMap">
+        select
+        <include refid="ListQueryFields"/>
+        FROM
+        pms_category
+        where parent_id= #{parent_id}
+        ORDER BY
+        sort DESC, id
     </select>
 
     <sql id="NormalQueryFields">

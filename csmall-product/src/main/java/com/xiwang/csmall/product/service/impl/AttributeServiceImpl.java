@@ -1,6 +1,5 @@
 package com.xiwang.csmall.product.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.xiwang.csmall.product.ex.ServiceException;
 import com.xiwang.csmall.product.mapper.AttributeMapper;
 import com.xiwang.csmall.product.mapper.AttributeTemplateMapper;

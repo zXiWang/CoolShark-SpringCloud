@@ -1,6 +1,8 @@
 package com.xiwang.csmall.product.mapper;
 
 import com.xiwang.csmall.product.pojo.entity.Category;
+import com.xiwang.csmall.product.pojo.vo.AttributeListItemVO;
+import com.xiwang.csmall.product.pojo.vo.CategoryListItemVO;
 import com.xiwang.csmall.product.pojo.vo.CategoryNormalVO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.data.domain.Pageable;
@@ -26,11 +28,11 @@ public interface CategoryMapper {
     /**
      * 查询指定行数据
      *
-     * @param Category 查询条件
-     * @param pageable 分页对象
      * @return 对象列表
      */
-    List<Category> list(Category Category, @Param("pageable") Pageable pageable);
+    List<CategoryListItemVO> list();
+
+    List<CategoryListItemVO> listByParentId(Long parentId);
 
     /**
      * 统计总行数

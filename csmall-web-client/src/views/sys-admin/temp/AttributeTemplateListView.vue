@@ -9,12 +9,42 @@
 
     <el-divider></el-divider>
 
-    <el-table :data="tableData" border style="width: 100%">
+    <el-table v-show="switchShow==1" :data="tableData" border style="width: 100%">
       <el-table-column prop="id" label="序号" align="center" width="180">
       </el-table-column>
       <el-table-column prop="name" label="属性模板名称" align="center" width="180">
       </el-table-column>
-      <el-table-column prop="pinyin" align="center" label="属性模板拼音" >
+      <el-table-column prop="pinyin" align="center" label="属性模板拼音">
+      </el-table-column>
+      <el-table-column prop="sort" align="center" label="排序序号" width="100">
+      </el-table-column>
+      <el-table-column align="center" label="操作" width="150">
+        <template slot-scope="scope">
+          <el-button @click="handleShowAttributeList(scope.row)" type="primary" icon="el-icon-view" size="mini"
+                     circle></el-button>
+          <el-button @click="handleEdit(scope.row)" type="primary" icon="el-icon-edit" size="mini" circle></el-button>
+          <el-button @click="openDeleteConfirm(scope.row)" type="danger" icon="el-icon-delete" size="mini"
+                     circle></el-button>
+        </template>
+      </el-table-column>
+
+    </el-table>
+    <el-table v-show="switchShow==0" :data="attributeData" border style="width: 100%">
+      <el-table-column prop="id" label="序号" align="center" width="80">
+      </el-table-column>
+      <el-table-column prop="name" label="名称" align="center" width="100">
+      </el-table-column>
+      <el-table-column prop="description" label="简介" align="center">
+      </el-table-column>
+      <el-table-column prop="templateId" label="所属属性模板id" align="center" width="80">
+      </el-table-column>
+      <el-table-column prop="type" label="属性类型" align="center" width="80">
+      </el-table-column>
+      <el-table-column prop="inputType" label="输入类型" align="center" width="80">
+      </el-table-column>
+      <el-table-column prop="unit" label="计量单位" align="center" width="80">
+      </el-table-column>
+      <el-table-column prop="isAllowCustomize" label="是否允许自定义" align="center" width="80">
       </el-table-column>
       <el-table-column prop="sort" align="center" label="排序序号" width="100">
       </el-table-column>
@@ -36,6 +66,8 @@ export default {
   data() {
     return {
       tableData: [],
+      attributeData: [],
+      switchShow: 1,
     }
   },
   methods: {
@@ -54,9 +86,9 @@ export default {
         this.loadAlbumList();
       })
     },
-    openDeleteConfirm(attributeTemplate){
+    openDeleteConfirm(attributeTemplate) {
       let title = "提示";
-      let message = "此操作将永久删除"+attributeTemplate.name+"属性模板,是否继续?";
+      let message = "此操作将永久删除" + attributeTemplate.name + "属性模板,是否继续?";
       this.$confirm(message, title, {
         confirmButtonText: '确定',
         cancelButtonText: '取消',
@@ -66,7 +98,7 @@ export default {
       }).catch(() => {
       });
     },
-    loadAlbumList() {
+    loadAttributeTemplateList() {
       let url = "http://localhost:8080/attributeTemplate/list";
       console.log("url:" + url);
       this.axios.get(url).then(response => {
@@ -74,10 +106,20 @@ export default {
         console.log(responseBody);
         this.tableData = responseBody.data;
       })
-    }
+    },
+    handleShowAttributeList(attributeTemplate) {
+      this.switchShow = 0;
+      let url = "http://localhost:8080/attribute/" + attributeTemplate.id + "/list";
+      console.log("url:" + url);
+      this.axios.get(url).then(response => {
+        let responseBody = response.data;
+        console.log(responseBody);
+        this.attributeData = responseBody.data;
+      })
+    },
   },
   mounted() {
-    this.loadAlbumList();
+    this.loadAttributeTemplateList();
 
   },
   created() {

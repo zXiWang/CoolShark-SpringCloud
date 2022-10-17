@@ -11,6 +11,5 @@ public class test3 {
         map.put(3, "Andy");
         map.put(4, "John");
 //        System.out.println(map);
-        map.f;
     }
 }

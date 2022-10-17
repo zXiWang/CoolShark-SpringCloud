@@ -4,12 +4,14 @@ import com.xiwang.csmall.product.ex.ServiceException;
 import com.xiwang.csmall.product.mapper.CategoryMapper;
 import com.xiwang.csmall.product.pojo.dto.CategoryAddNewDTO;
 import com.xiwang.csmall.product.pojo.entity.Category;
+import com.xiwang.csmall.product.pojo.vo.CategoryListItemVO;
 import com.xiwang.csmall.product.service.CategoryService;
 import com.xiwang.csmall.product.web.ServiceCode;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * 类别(Category)表服务实现类
@@ -41,5 +43,15 @@ public class CategoryServiceImpl implements CategoryService {
             throw new ServiceException(ServiceCode.ERR_NOT_FOUND, message);
         }
         categoryMapper.deleteById(id);
+    }
+
+    @Override
+    public List<CategoryListItemVO> list() {
+        return categoryMapper.list();
+    }
+
+    @Override
+    public List<CategoryListItemVO> listByParentId(Long templateId) {
+        return categoryMapper.listByParentId(templateId);
     }
 }

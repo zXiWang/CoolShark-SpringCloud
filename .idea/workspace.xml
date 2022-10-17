@@ -17,7 +17,12 @@
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="5.6.5 coolShark mybatis-plus&#10;登录校验 jwt/属性添加,删除">
+    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="5.6.5 coolShark mybatis-plus&#10;登录校验 jwt-管理员权限标识">
+      <change afterPath="$PROJECT_DIR$/csmall-passport/src/main/resources/META-INF/additional-spring-configuration-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csmall-passport/src/test/java/com/xiwang/csmall/passport/Demo03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csmall-passport/src/test/java/com/xiwang/csmall/passport/test11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csmall-passport/src/test/java/com/xiwang/csmall/passport/test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csmall-passport/src/test/java/com/xiwang/csmall/passport/test3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/config/SecurityConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/controller/AdminController.java" afterDir="false" />
@@ -448,13 +453,7 @@
       <workItem from="1665621439293" duration="1257000" />
       <workItem from="1665663785220" duration="138000" />
       <workItem from="1665750506542" duration="813000" />
-    </task>
-    <task id="LOCAL-00023" summary="2.1 springboot&#10;request and response">
-      <created>1660651217753</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1660651217753</updated>
+      <workItem from="1665797359762" duration="133000" />
     </task>
     <task id="LOCAL-00024" summary="2.2 springboot&#10;sendRedirect">
       <created>1660782773607</created>
@@ -792,7 +791,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665663890921</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="5.6.5 coolShark mybatis-plus&#10;登录校验 jwt-管理员权限标识">
+      <created>1665797475190</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1665797475191</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -877,7 +883,6 @@
       <path value="$PROJECT_DIR$/csmall-web-client" />
       <path value="$PROJECT_DIR$/jsd220603/jsd220603 teacher" />
     </ignored-roots>
-    <MESSAGE value="4.4 spring boot&#10;Mybatis axios" />
     <MESSAGE value="4.5 spring boot&#10;Mybatis axios" />
     <MESSAGE value="4.6 spring boot&#10;Mybatis axios" />
     <MESSAGE value="4.7 spring boot&#10;Mybatis axios" />
@@ -902,7 +907,8 @@
     <MESSAGE value="5.5.4 coolShark mybatis-plus&#10;管理员-changeEnable/品牌-changeEnable" />
     <MESSAGE value="5.5.5 coolShark mybatis-plus&#10;属性-addNew/管理员-login校验" />
     <MESSAGE value="5.6.5 coolShark mybatis-plus&#10;登录校验 jwt/属性添加,删除" />
-    <option name="LAST_COMMIT_MESSAGE" value="5.6.5 coolShark mybatis-plus&#10;登录校验 jwt/属性添加,删除" />
+    <MESSAGE value="5.6.5 coolShark mybatis-plus&#10;登录校验 jwt-管理员权限标识" />
+    <option name="LAST_COMMIT_MESSAGE" value="5.6.5 coolShark mybatis-plus&#10;登录校验 jwt-管理员权限标识" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
