@@ -22,6 +22,12 @@ import java.util.List;
 @RestController
 @RequestMapping("/category")
 public class CategoryController {
+
+    public CategoryController() {
+        log.info("创建控制器对象：CategoryController");
+    }
+
+
     /**
      * 服务对象
      */

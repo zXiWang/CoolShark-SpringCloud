@@ -2,6 +2,7 @@ package com.xiwang.csmall.product.service;
 
 import com.xiwang.csmall.product.pojo.dto.BrandAddNewDTO;
 import com.xiwang.csmall.product.pojo.vo.BrandListItemVO;
+import com.xiwang.csmall.product.pojo.vo.BrandNormalVO;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
@@ -20,12 +21,21 @@ public interface BrandService {
     @Transactional
     void delete(Long id);
 
-    List<BrandListItemVO> list();
-
 
     @Transactional
     void setEnabled(Long id);
 
     @Transactional
     void setDisabled(Long id);
+
+    List<BrandListItemVO> list();
+
+    BrandNormalVO getNormalById(Long id);
+
+
+    /**
+     * 重建品牌数据缓存
+     */
+    void rebuildCache();
+
 }

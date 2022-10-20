@@ -54,7 +54,7 @@ BCrypt算法被设计为是一种慢速运算的算法，可以一定程度上�
 # 43. 关于Spring Security的基本配置
 
 ```java
-package cn.tedu.csmall.passport.config;
+package cn.tedu.csmall.product.config;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Configuration;
@@ -110,7 +110,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 例如，在根包下创建`security.UserDetailsServiceImpl`类：
 
 ```java
-package cn.tedu.csmall.passport.security;
+package cn.tedu.csmall.product.security;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.userdetails.User;

@@ -113,6 +113,12 @@
         sort DESC, id
     </select>
 
+    <select id="countByParentId" resultType="java.lang.Integer">
+        select count(*)
+        from pms_category
+        where parent_id = #{parent_id}
+    </select>
+
     <sql id="NormalQueryFields">
         <if test="true">
             id,

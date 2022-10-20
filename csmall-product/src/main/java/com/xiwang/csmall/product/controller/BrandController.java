@@ -3,6 +3,7 @@ package com.xiwang.csmall.product.controller;
 import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
 import com.xiwang.csmall.product.pojo.dto.BrandAddNewDTO;
 import com.xiwang.csmall.product.pojo.vo.BrandListItemVO;
+import com.xiwang.csmall.product.pojo.vo.BrandNormalVO;
 import com.xiwang.csmall.product.service.BrandService;
 import com.xiwang.csmall.product.web.JsonResult;
 import io.swagger.annotations.Api;
@@ -24,6 +25,12 @@ import java.util.List;
 @RestController
 @RequestMapping("/brand")
 public class BrandController {
+
+
+    public BrandController() {
+        log.info("创建控制器对象：BrandController");
+    }
+
     /**
      * 服务对象
      */
@@ -84,6 +91,15 @@ public class BrandController {
     public JsonResult<List<BrandListItemVO>> list() {
         List<BrandListItemVO> list = brandService.list();
         return JsonResult.ok(list);
+    }
+
+    @ApiOperation("根据id查询品牌详情")
+    @ApiOperationSupport(order = 401)
+    @GetMapping("/{id:[0-9]+}")
+    public JsonResult<BrandNormalVO> getNormalById(@PathVariable Long id) {
+        log.debug("开始处理【根据id查询品牌详情】的请求，参数：{}", id);
+        BrandNormalVO brand = brandService.getNormalById(id);
+        return JsonResult.ok(brand);
     }
 }
 

@@ -126,7 +126,8 @@ export default {
     loadCategoryList() {
       let url = "http://localhost:8080/category/list";
       console.log("url:" + url);
-      this.axios.get(url).then(response => {
+      this.axios
+          .create({'headers': {'Authorization': localJwt}}).get(url).then(response => {
         let responseBody = response.data;
         console.log(responseBody);
         // console.log(localStorage.getItem("jwt"));
@@ -140,7 +141,8 @@ export default {
       this.switchShow = 0;
       let url = "http://localhost:8080/category/" + category.id + "/list";
       console.log("url:" + url);
-      this.axios.get(url).then(response => {
+      this.axios
+          .create({'headers': {'Authorization': localJwt}}).get(url).then(response => {
         let responseBody = response.data;
         console.log(responseBody);
         this.tableData = responseBody.data;
@@ -154,7 +156,8 @@ export default {
       }
       let url = "http://localhost:8080/category/" + id + "/list";
       console.log("url:" + url);
-      this.axios.get(url).then(response => {
+      this.axios
+          .create({'headers': {'Authorization': localJwt}}).get(url).then(response => {
         let responseBody = response.data;
         console.log(responseBody);
         this.tableData = responseBody.data;

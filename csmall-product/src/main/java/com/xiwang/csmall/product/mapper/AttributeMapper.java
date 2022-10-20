@@ -101,5 +101,7 @@ public interface AttributeMapper extends BaseMapper<Attribute> {
     int countByNameAndTemplateId(AttributeAddNewDTO attributeAddNewDTO);
 
     List<AttributeListItemVO> listByTemplateId(Long templateId);
+
+    int countByTemplateId(Long id);
 }
 

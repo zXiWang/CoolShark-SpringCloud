@@ -29,6 +29,7 @@
 </template>
 
 <script>
+let localJwt = localStorage.getItem("jwt");
 
 export default {
   data() {
@@ -43,7 +44,9 @@ export default {
     },
     handleDetails(role) {
       let url = "http://localhost:8081/role/details?id="+role.id;
-      this.axios.get(url).then(response=>{
+      this.axios
+          .create({'headers': {'Authorization': localJwt}})
+          .get(url).then(response=>{
         let responseBody = response.data;
         console.log(responseBody);
         alert(responseBody.data);
@@ -54,7 +57,9 @@ export default {
     },
     handleDelete(role) {
       let url = "http://localhost:8081/role/" + role.id + "/delete";
-      this.axios.post(url).then(response => {
+      this.axios
+          .create({'headers': {'Authorization': localJwt}})
+          .post(url).then(response => {
         let responseBody = response.data;
         if (responseBody.state == 200) {
           this.$message.success("删除成功!");
@@ -79,7 +84,9 @@ export default {
     loadAlbumList() {
       let url = "http://localhost:8081/role/list";
       console.log("url:" + url);
-      this.axios.get(url).then(response => {
+      this.axios
+          .create({'headers': {'Authorization': localJwt}})
+          .get(url).then(response => {
         let responseBody = response.data;
         console.log(responseBody);
         this.tableData = responseBody.data;

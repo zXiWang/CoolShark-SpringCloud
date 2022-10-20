@@ -12,3 +12,9 @@ spring:
 logging:
   level:
     com.xiwang.csmall: trace
+
+# 自定义配置
+csmall:
+  jwt:
+    secret-key: kns439a}fdLK34jsmfd{MF5-8DJSsLKhJNFDSjn
+    duration-in-minute: 14400

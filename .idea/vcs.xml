@@ -5,6 +5,7 @@
     <mapping directory="$PROJECT_DIR$/csmall-passport/jsd2206-csmall-passport-teacher" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/csmall-product/jsd2206-csmall-product-teacher" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/csmall-web-client/jsd2206-csmall-web-client-teacher" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/demo-vant/vant2206-teacher" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/线下/jsd2206-se-teacher" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/项目/jsd220603/jsd220603 teacher" vcs="Git" />
   </component>

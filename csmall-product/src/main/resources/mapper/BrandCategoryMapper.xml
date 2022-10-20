@@ -5,43 +5,42 @@
 
     <!-- int insert(BrandCategory brandCategory); -->
     <insert id="insert" useGeneratedKeys="true" keyProperty="id">
-        INSERT INTO pms_brand_category (
-            brand_id, category_id
-        ) VALUES (
-            #{brandId}, #{categoryId}
-        )
+        INSERT INTO pms_brand_category (brand_id, category_id)
+        VALUES (#{brandId}, #{categoryId})
     </insert>
 
     <!-- int insertBatch(List<BrandCategory> brandCategoryList); -->
     <insert id="insertBatch" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO pms_brand_category (
-            brand_id, category_id
+        brand_id, category_id
         ) VALUES
         <foreach collection="list" item="brandCategory" separator=",">
             (
-                #{brandCategory.brandId}, #{brandCategory.categoryId}
+            #{brandCategory.brandId}, #{brandCategory.categoryId}
             )
         </foreach>
     </insert>
 
     <!-- int deleteById(Long id); -->
     <delete id="deleteById">
-        DELETE FROM pms_brand_category WHERE id=#{id}
+        DELETE
+        FROM pms_brand_category
+        WHERE id = #{id}
     </delete>
 
     <!-- int deleteByIds(List<Long> ids); -->
     <delete id="deleteByIds">
         DELETE FROM pms_brand_category WHERE id IN (
-            <foreach collection="array" item="id" separator=",">
-                #{id}
-            </foreach>
+        <foreach collection="array" item="id" separator=",">
+            #{id}
+        </foreach>
         )
     </delete>
 
     <!-- int updateById(BrandCategory brandCategory); -->
     <update id="updateById">
         UPDATE
-            pms_brand_category
+        pms_brand_category
         <set>
             <if test="brandId != null">
                 brand_id=#{brandId},
@@ -55,27 +54,40 @@
 
     <!-- int count(); -->
     <select id="count" resultType="int">
-        SELECT count(*) FROM pms_brand_category
+        SELECT count(*)
+        FROM pms_brand_category
     </select>
 
     <!-- BrandCategoryNormalVO getNormalById(Long id); -->
     <select id="getNormalById" resultMap="NormalResultMap">
         SELECT
-            <include refid="NormalQueryFields"/>
+        <include refid="NormalQueryFields"/>
         FROM
-            pms_brand_category
+        pms_brand_category
         WHERE
-            id=#{id}
+        id=#{id}
     </select>
 
     <!-- List<BrandCategoryListItemVO> list(); -->
     <select id="list" resultMap="ListResultMap">
         SELECT
-            <include refid="ListQueryFields"/>
+        <include refid="ListQueryFields"/>
         FROM
-            pms_brand_category
+        pms_brand_category
         ORDER BY
-            id DESC
+        id DESC
+    </select>
+
+    <select id="countByBrand" resultType="java.lang.Integer">
+        select count(*)
+        from pms_brand_category
+        where brand_id = #{brandId}
+    </select>
+
+    <select id="countByCategory" resultType="java.lang.Integer">
+        select count(*)
+        from pms_brand_category
+        where category_id = #{categoryId}
     </select>
 
     <sql id="NormalQueryFields">

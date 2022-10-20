@@ -4,12 +4,13 @@ package com.xiwang.csmall.product.pojo.entity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 
 @Data
 @TableName("pms_brand")
-public class Brand {
+public class Brand implements Serializable {
 
     private long id;
     private String name;

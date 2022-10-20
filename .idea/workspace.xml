@@ -17,32 +17,56 @@
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="5.6.5 coolShark mybatis-plus&#10;登录校验 jwt-管理员权限标识">
-      <change afterPath="$PROJECT_DIR$/csmall-passport/src/main/resources/META-INF/additional-spring-configuration-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/csmall-passport/src/test/java/com/xiwang/csmall/passport/Demo03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/csmall-passport/src/test/java/com/xiwang/csmall/passport/test11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/csmall-passport/src/test/java/com/xiwang/csmall/passport/test2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/csmall-passport/src/test/java/com/xiwang/csmall/passport/test3.java" afterDir="false" />
+    <list default="true" id="a3c2c6a0-56ff-49a7-9263-62099e7cface" name="默认变更列表" comment="5.6.6 coolShark mybatis-plus&#10;类别-addNew/Listview">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-passport/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/config/SecurityConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/filter/JwtAuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/filter/JwtAuthorizationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/pojo/vo/AdminLoginInfoVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/pojo/vo/AdminLoginInfoVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/secrity/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/secrity/UserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/service/impl/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/ex/handler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/ex/handler/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/web/ServiceCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/java/com/xiwang/csmall/passport/web/ServiceCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-passport/src/main/resources/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/main/resources/mapper/AdminMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-passport/src/test/java/com/xiwang/csmall/passport/mapper/AdminMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/test/java/com/xiwang/csmall/passport/mapper/AdminMapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-passport/src/test/java/com/xiwang/csmall/passport/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-passport/src/test/java/com/xiwang/csmall/passport/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/AdminMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/DAY13.md" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/DAY13.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/config/MybatisPlusConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/config/MybatisPlusConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/controller/BrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/controller/BrandController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/ex/ServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/ex/ServiceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/ex/handler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/ex/handler/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/AttributeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/AttributeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/pojo/entity/Admin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/AttributeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/AttributeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/AttributeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/AttributeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/BrandCategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/BrandCategoryMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/CategoryAttributeTemplateMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/CategoryAttributeTemplateMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/CategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/CategoryMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/PictureMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/PictureMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/SpuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/mapper/SpuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/pojo/entity/Brand.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/pojo/entity/Brand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/pojo/vo/BrandListItemVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/pojo/vo/BrandListItemVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/pojo/vo/BrandNormalVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/pojo/vo/BrandNormalVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/BrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/BrandService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/AlbumServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/AlbumServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/AttributeTemplateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/AttributeTemplateServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/BrandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/BrandServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/web/ServiceCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/java/com/xiwang/csmall/product/web/ServiceCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/resources/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/AttributeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/AttributeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csmall-product/src/test/java/com/xiwang/csmall/product/CsmallProductApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/test/java/com/xiwang/csmall/product/CsmallProductApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/课外/作业/10.1/gm.sql" beforeDir="false" afterPath="$PROJECT_DIR$/课外/作业/10.1/gm.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/BrandCategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/BrandCategoryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/CategoryAttributeTemplateMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/CategoryAttributeTemplateMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/CategoryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/PictureMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/PictureMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/SpuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-product/src/main/resources/mapper/SpuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/jsd2206-csmall-web-client-teacher" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/jsd2206-csmall-web-client-teacher" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/views/LoginView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/views/LoginView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/AdminListView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/AdminListView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/AlbumListView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/AlbumListView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/AttributeListView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/AttributeListView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/AttributeTemplateListView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/AttributeTemplateListView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/BrandListView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/BrandListView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/CategoryListView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/CategoryListView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/RoleListView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/csmall-web-client/src/views/sys-admin/temp/RoleListView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/达内.iml" beforeDir="false" afterPath="$PROJECT_DIR$/达内.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +155,7 @@
     <property name="database.data.extractors.current.id" value="SQL 插入" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/线下/src" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/csmall-product" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/demo-vant" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
@@ -197,6 +221,19 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.CsmallPassportApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="mall_ams_jsd2206.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/csmall-passport/src/main/resources/mall_ams_jsd2206.sql" />
       <script-mode>FILE</script-mode>
@@ -454,13 +491,9 @@
       <workItem from="1665663785220" duration="138000" />
       <workItem from="1665750506542" duration="813000" />
       <workItem from="1665797359762" duration="133000" />
-    </task>
-    <task id="LOCAL-00024" summary="2.2 springboot&#10;sendRedirect">
-      <created>1660782773607</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1660782773607</updated>
+      <workItem from="1665968412492" duration="93000" />
+      <workItem from="1666230551860" duration="1688000" />
+      <workItem from="1666249138671" duration="566000" />
     </task>
     <task id="LOCAL-00025" summary="2.3 Relfect">
       <created>1660821435414</created>
@@ -798,7 +831,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665797475191</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="5.6.6 coolShark mybatis-plus&#10;类别-addNew/Listview">
+      <created>1665968493387</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1665968493387</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -883,7 +923,6 @@
       <path value="$PROJECT_DIR$/csmall-web-client" />
       <path value="$PROJECT_DIR$/jsd220603/jsd220603 teacher" />
     </ignored-roots>
-    <MESSAGE value="4.5 spring boot&#10;Mybatis axios" />
     <MESSAGE value="4.6 spring boot&#10;Mybatis axios" />
     <MESSAGE value="4.7 spring boot&#10;Mybatis axios" />
     <MESSAGE value="4.8 spring boot&#10;Mybatis axios&#10;文件上传,发帖回帖" />
@@ -908,7 +947,8 @@
     <MESSAGE value="5.5.5 coolShark mybatis-plus&#10;属性-addNew/管理员-login校验" />
     <MESSAGE value="5.6.5 coolShark mybatis-plus&#10;登录校验 jwt/属性添加,删除" />
     <MESSAGE value="5.6.5 coolShark mybatis-plus&#10;登录校验 jwt-管理员权限标识" />
-    <option name="LAST_COMMIT_MESSAGE" value="5.6.5 coolShark mybatis-plus&#10;登录校验 jwt-管理员权限标识" />
+    <MESSAGE value="5.6.6 coolShark mybatis-plus&#10;类别-addNew/Listview" />
+    <option name="LAST_COMMIT_MESSAGE" value="5.6.6 coolShark mybatis-plus&#10;类别-addNew/Listview" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -3,7 +3,7 @@ package com.xiwang.csmall.product.ex;
 import com.xiwang.csmall.product.web.ServiceCode;
 
 public class ServiceException extends RuntimeException {
-    private final ServiceCode serviceCode;
+    private ServiceCode serviceCode;
 
     public ServiceException(ServiceCode serviceCode, String message) {
         super(message);
@@ -12,5 +12,4 @@ public class ServiceException extends RuntimeException {
 
     public ServiceCode getServiceCode() {
         return serviceCode;
-    }
-}
+    }}

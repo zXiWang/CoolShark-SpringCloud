@@ -1,4 +1,4 @@
-<template >
+<template>
   <div style="width: 600px;margin: 150px auto;background: white;padding-top: 30px;text-align: center;">
     <h1>管理员登录</h1>
     <el-form style="padding: 30px 50px;margin: 0 auto;" :model="ruleForm" :rules="rules" ref="ruleForm"
@@ -46,7 +46,7 @@ export default {
         if (valid) {
           let formData = this.qs.stringify(this.ruleForm);
           let url = 'http://localhost:8081/admin/login';
-          this.axios.post(url,formData).then((response) => {
+          this.axios.post(url, formData).then((response) => {
             let responseBody = response.data;
             console.log(responseBody);
             switch (responseBody.state) {
@@ -61,8 +61,8 @@ export default {
                 break;
               case 200:
                 this.$message.success("登录成功!");
-                console.log("JWT="+responseBody);
-                localStorage.setItem("jwt",responseBody.data);
+                console.log("JWT=" + responseBody);
+                localStorage.setItem("jwt", responseBody.data);
                 const username = this.ruleForm.username;
                 const password = this.ruleForm.password;
                 if (this.ruleForm.rem) {
@@ -70,7 +70,7 @@ export default {
                   this.$cookie.set('password', password);
                 }
                 setTimeout(function () {
-                  location.href = "http://localhost:8087/";
+                  this.$router.push('/sys-admin/index');
                 }, 1000)
 
                 break;
