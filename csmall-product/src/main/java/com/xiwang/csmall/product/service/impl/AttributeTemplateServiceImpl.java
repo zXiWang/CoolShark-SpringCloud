@@ -3,6 +3,7 @@ package com.xiwang.csmall.product.service.impl;
 import com.xiwang.csmall.product.ex.ServiceException;
 import com.xiwang.csmall.product.mapper.AttributeMapper;
 import com.xiwang.csmall.product.mapper.AttributeTemplateMapper;
+import com.xiwang.csmall.product.mapper.CategoryAttributeTemplateMapper;
 import com.xiwang.csmall.product.pojo.dto.AttributeTemplateAddNewDTO;
 import com.xiwang.csmall.product.pojo.entity.AttributeTemplate;
 import com.xiwang.csmall.product.pojo.vo.AttributeTemplateListItemVO;
@@ -30,6 +31,8 @@ public class AttributeTemplateServiceImpl implements AttributeTemplateService {
     @Autowired
     private AttributeMapper attributeMapper;
 
+    @Autowired
+    CategoryAttributeTemplateMapper categoryAttributeTemplateMapper;
     /**
      * 添加属性模板
      *
@@ -63,6 +66,26 @@ public class AttributeTemplateServiceImpl implements AttributeTemplateService {
             String message = "删除属性模板失败，服务器忙，请稍后再次尝试！";
             log.warn(message);
             throw new ServiceException(ServiceCode.ERR_DELETE, message);
+        }
+
+        // 如果有属性关联到了此属性模板，不允许删除
+        {
+            int count = attributeMapper.countByTemplateId(id);
+            if (count > 0) {
+                String message = "删除属性模板失败！当前属性模板仍存在关联的属性！";
+                log.warn(message);
+                throw new ServiceException(ServiceCode.ERR_CONFLICT, message);
+            }
+        }
+
+        // 如果有类别关联到了此属性模板，不允许删除
+        {
+            int count = categoryAttributeTemplateMapper.countByAttributeTemplate(id);
+            if (count > 0) {
+                String message = "删除属性模板失败！当前属性模板仍存在关联的类别！";
+                log.warn(message);
+                throw new ServiceException(ServiceCode.ERR_CONFLICT, message);
+            }
         }
     }
 

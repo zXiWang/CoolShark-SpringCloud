@@ -2,6 +2,8 @@ package com.xiwang.csmall.product.service.impl;
 
 import com.xiwang.csmall.product.ex.ServiceException;
 import com.xiwang.csmall.product.mapper.AlbumMapper;
+import com.xiwang.csmall.product.mapper.PictureMapper;
+import com.xiwang.csmall.product.mapper.SpuMapper;
 import com.xiwang.csmall.product.pojo.dto.AlbumAddNewDTO;
 import com.xiwang.csmall.product.pojo.entity.Album;
 import com.xiwang.csmall.product.pojo.vo.AlbumListItemVO;
@@ -10,6 +12,7 @@ import com.xiwang.csmall.product.service.AlbumService;
 import com.xiwang.csmall.product.web.ServiceCode;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -26,6 +29,12 @@ import java.util.List;
 public class AlbumServiceImpl implements AlbumService {
     @Resource
     private AlbumMapper albumMapper;
+
+    @Autowired
+    PictureMapper pictureMapper;
+
+    @Autowired
+    SpuMapper spuMapper;
 
     @Override
     public List<AlbumListItemVO> list() {
@@ -95,6 +104,31 @@ public class AlbumServiceImpl implements AlbumService {
             log.warn(message);
             throw new ServiceException(ServiceCode.ERR_NOT_FOUND, message);
         }
-        albumMapper.deleteById(id);
+        int rows = albumMapper.deleteById(id);
+        if (rows != 1) {
+            String message = "删除相册失败,服务器未响应!";
+            log.debug(message);
+            throw new ServiceException(ServiceCode.ERR_DELETE, message);
+        }
+
+        // 检查此相册是否关联了图片
+        {
+            int count = pictureMapper.countByAlbum(id);
+            if (count > 0) {
+                String message = "删除相册失败！当前相册中仍有图片！";
+                log.warn(message);
+                throw new ServiceException(ServiceCode.ERR_CONFLICT, message);
+            }
+        }
+
+        // 检查此相册是否关联了SPU
+        {
+            int count = spuMapper.countByAlbum(id);
+            if (count > 0) {
+                String message = "删除相册失败！当前相册仍关联了商品！";
+                log.warn(message);
+                throw new ServiceException(ServiceCode.ERR_CONFLICT, message);
+            }
+        }
     }
 }

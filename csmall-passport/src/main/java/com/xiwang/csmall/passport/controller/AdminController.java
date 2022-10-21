@@ -43,6 +43,7 @@ public class AdminController {
     @ApiOperation("删除管理员")
     @ApiOperationSupport(order = 200)
     @PostMapping("/{id:[0-9]+}/delete")
+    @PreAuthorize("hasAuthority('/ams/admin/delete')")
     public JsonResult<Void> delete(@PathVariable Long id,
                                    @ApiIgnore @AuthenticationPrincipal LoginPrincipal loginPrincipal) {
         log.debug("开始处理【删除管理员】的请求，参数：{}", id);
@@ -54,6 +55,7 @@ public class AdminController {
     @ApiOperation("启用管理员")
     @ApiOperationSupport(order = 301)
     @PostMapping("/{id:[0-9]+}/enable")
+    @PreAuthorize("hasAuthority('/ams/admin/update')")
     public JsonResult enable(@PathVariable Long id) {
         log.debug("开始处理修改管理员: id={}", id);
         adminService.setEnabled(id);
@@ -63,6 +65,7 @@ public class AdminController {
     @ApiOperation("禁用管理员")
     @ApiOperationSupport(order = 302)
     @PostMapping("/{id:[0-9]+}/disable")
+    @PreAuthorize("hasAuthority('/ams/admin/update')")
     public JsonResult disable(@PathVariable Long id) {
         log.debug("开始处理修改管理员: id={}", id);
         adminService.setDisabled(id);
@@ -81,6 +84,7 @@ public class AdminController {
     @ApiOperation("查询管理员详情")
     @ApiOperationSupport(order = 401)
     @GetMapping(value = "/details")
+    @PreAuthorize("hasAuthority('/ams/admin/read')")
     public JsonResult<AdminNormalVO> details(Long id) {
         log.debug("输入了id=" + id);
         AdminNormalVO object = adminService.getNormalById(id);

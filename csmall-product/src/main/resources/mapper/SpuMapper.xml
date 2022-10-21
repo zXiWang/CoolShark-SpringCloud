@@ -5,63 +5,62 @@
 
     <!-- int insert(Spu spu); -->
     <insert id="insert" useGeneratedKeys="true" keyProperty="id">
-        INSERT INTO pms_spu (
-            id, name, type_number, title, description,
-            list_price, stock, stock_threshold, unit, brand_id,
-            brand_name, category_id, category_name, attribute_template_id, album_id,
-            pictures, keywords, tags, sales, comment_count,
-            positive_comment_count, sort, is_deleted, is_published, is_new_arrival,
-            is_recommend, is_checked, gmt_check
-        ) VALUES (
-            #{id}, #{name}, #{typeNumber}, #{title}, #{description},
-            #{listPrice}, #{stock}, #{stockThreshold}, #{unit}, #{brandId},
-            #{brandName}, #{categoryId}, #{categoryName}, #{attributeTemplateId}, #{albumId},
-            #{pictures}, #{keywords}, #{tags}, #{sales}, #{commentCount},
-            #{positiveCommentCount}, #{sort}, #{isDeleted}, #{isPublished}, #{isNewArrival},
-            #{isRecommend}, #{isChecked}, #{gmtCheck}
-        )
+        INSERT INTO pms_spu (id, name, type_number, title, description,
+                             list_price, stock, stock_threshold, unit, brand_id,
+                             brand_name, category_id, category_name, attribute_template_id, album_id,
+                             pictures, keywords, tags, sales, comment_count,
+                             positive_comment_count, sort, is_deleted, is_published, is_new_arrival,
+                             is_recommend, is_checked, gmt_check)
+        VALUES (#{id}, #{name}, #{typeNumber}, #{title}, #{description},
+                #{listPrice}, #{stock}, #{stockThreshold}, #{unit}, #{brandId},
+                #{brandName}, #{categoryId}, #{categoryName}, #{attributeTemplateId}, #{albumId},
+                #{pictures}, #{keywords}, #{tags}, #{sales}, #{commentCount},
+                #{positiveCommentCount}, #{sort}, #{isDeleted}, #{isPublished}, #{isNewArrival},
+                #{isRecommend}, #{isChecked}, #{gmtCheck})
     </insert>
 
     <!-- int insertBatch(List<Spu> spuList); -->
     <insert id="insertBatch" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO pms_spu (
-            id, name, type_number, title, description,
-            list_price, stock, stock_threshold, unit, brand_id,
-            brand_name, category_id, category_name, attribute_template_id, album_id,
-            pictures, keywords, tags, sales, comment_count,
-            positive_comment_count, sort, is_deleted, is_published, is_new_arrival,
-            is_recommend, is_checked, gmt_check
+        id, name, type_number, title, description,
+        list_price, stock, stock_threshold, unit, brand_id,
+        brand_name, category_id, category_name, attribute_template_id, album_id,
+        pictures, keywords, tags, sales, comment_count,
+        positive_comment_count, sort, is_deleted, is_published, is_new_arrival,
+        is_recommend, is_checked, gmt_check
         ) VALUES
         <foreach collection="list" item="spu" separator=",">
             (
-                #{spu.id}, #{spu.name}, #{spu.typeNumber}, #{spu.title}, #{spu.description},
-                #{spu.listPrice}, #{spu.stock}, #{spu.stockThreshold}, #{spu.unit}, #{spu.brandId},
-                #{spu.brandName}, #{spu.categoryId}, #{spu.categoryName}, #{spu.attributeTemplateId}, #{spu.albumId},
-                #{spu.pictures}, #{spu.keywords}, #{spu.tags}, #{spu.sales}, #{spu.commentCount},
-                #{spu.positiveCommentCount}, #{spu.sort}, #{spu.isDeleted}, #{spu.isPublished}, #{spu.isNewArrival},
-                #{spu.isRecommend}, #{spu.isChecked}, #{spu.gmtCheck}
+            #{spu.id}, #{spu.name}, #{spu.typeNumber}, #{spu.title}, #{spu.description},
+            #{spu.listPrice}, #{spu.stock}, #{spu.stockThreshold}, #{spu.unit}, #{spu.brandId},
+            #{spu.brandName}, #{spu.categoryId}, #{spu.categoryName}, #{spu.attributeTemplateId}, #{spu.albumId},
+            #{spu.pictures}, #{spu.keywords}, #{spu.tags}, #{spu.sales}, #{spu.commentCount},
+            #{spu.positiveCommentCount}, #{spu.sort}, #{spu.isDeleted}, #{spu.isPublished}, #{spu.isNewArrival},
+            #{spu.isRecommend}, #{spu.isChecked}, #{spu.gmtCheck}
             )
         </foreach>
     </insert>
 
     <!-- int deleteById(Long id); -->
     <delete id="deleteById">
-        DELETE FROM pms_spu WHERE id=#{id}
+        DELETE
+        FROM pms_spu
+        WHERE id = #{id}
     </delete>
 
     <!-- int deleteByIds(List<Long> ids); -->
     <delete id="deleteByIds">
         DELETE FROM pms_spu WHERE id IN (
-            <foreach collection="array" item="id" separator=",">
-                #{id}
-            </foreach>
+        <foreach collection="array" item="id" separator=",">
+            #{id}
+        </foreach>
         )
     </delete>
 
     <!-- int updateById(Spu spu); -->
     <update id="updateById">
         UPDATE
-            pms_spu
+        pms_spu
         <set>
             <if test="name != null">
                 name=#{name},
@@ -150,27 +149,46 @@
 
     <!-- int count(); -->
     <select id="count" resultType="int">
-        SELECT count(*) FROM pms_spu
+        SELECT count(*)
+        FROM pms_spu
     </select>
 
     <!-- SpuNormalVO getNormalById(Long id); -->
     <select id="getNormalById" resultMap="NormalResultMap">
         SELECT
-            <include refid="NormalQueryFields"/>
+        <include refid="NormalQueryFields"/>
         FROM
-            pms_spu
+        pms_spu
         WHERE
-            id=#{id}
+        id=#{id}
     </select>
 
     <!-- List<SpuListItemVO> list(); -->
     <select id="list" resultMap="ListResultMap">
         SELECT
-            <include refid="ListQueryFields"/>
+        <include refid="ListQueryFields"/>
         FROM
-            pms_spu
+        pms_spu
         ORDER BY
-            sort DESC, id DESC
+        sort DESC, id DESC
+    </select>
+
+    <select id="countByBrand" resultType="java.lang.Integer">
+        select count(*)
+        from pms_spu
+        where brand_id = #{brandId}
+    </select>
+
+    <select id="countByAlbum" resultType="java.lang.Integer">
+        select count(*)
+        from pms_spu
+        where brand_id = #{brandId}
+    </select>
+
+    <select id="countByCategory" resultType="java.lang.Integer">
+        select count(*)
+        from pms_spu
+        where category_id = #{categoryId}
     </select>
 
     <sql id="NormalQueryFields">

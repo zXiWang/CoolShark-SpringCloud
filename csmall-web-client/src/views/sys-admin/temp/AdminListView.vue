@@ -66,7 +66,7 @@ export default {
       }).post(url).then(response => {
         let responseBody = response.data;
         if (responseBody.state == 200) {
-          this.$message.success("修改成功!");
+          this.$message.success("修改成功!");$
         } else {
           // this.$message.error(responseBody.message);
           let title = '操作失败';
@@ -81,9 +81,9 @@ export default {
     },
     handleDetails(admin) {
       let url = "http://localhost:8081/admin/details?id=" + admin.id;
-      this.axios.create({
-        'headers': {'Authorization': localJwt}
-      }).get(url).then(response => {
+      this.axios
+          .create({headers: {'Authorization': localJwt}})
+          .get(url).then(response => {
         let responseBody = response.data;
         console.log(responseBody);
         alert(responseBody.data);
@@ -94,9 +94,9 @@ export default {
     },
     handleDelete(admin) {
       let url = "http://localhost:8081/admin/" + admin.id + "/delete";
-      this.axios.create({
-        'headers': {'Authorization': localJwt}
-      }).post(url).then(response => {
+      this.axios
+          .create({'headers': {'Authorization': localJwt}})
+          .post(url).then(response => {
         let responseBody = response.data;
         if (responseBody.state == 200) {
           this.$message.success("删除成功!");
@@ -122,9 +122,8 @@ export default {
       let url = "http://localhost:8081/admin/list";
       console.log("url:" + url);
       this.axios
-          .create({
-            'headers': {'Authorization': localJwt}
-          }).get(url).then(response => {
+          .create({'headers': {'Authorization': localJwt}})
+          .get(url).then(response => {
         let responseBody = response.data;
         console.log(responseBody);
         console.log(localStorage.getItem("jwt"));

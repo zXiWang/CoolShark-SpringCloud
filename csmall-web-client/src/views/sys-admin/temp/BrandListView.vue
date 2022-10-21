@@ -58,6 +58,7 @@
 </template>
 
 <script>
+let localJwt = localStorage.getItem("jwt");
 
 export default {
   data() {
@@ -73,7 +74,9 @@ export default {
       // let params = new URLSearchParams();
       // params.append("id",brand.id);
       // params.append("enable",brand.enable);
-      this.axios.post(url).then(response => {
+      this.axios
+          .create({'headers': {'Authorization': localJwt}})
+          .post(url).then(response => {
         let responseBody = response.data;
         if (responseBody.state == 200) {
           this.$message.success("修改成功!");
@@ -87,7 +90,9 @@ export default {
     },
     handleDelete(brand) {
       let url = "http://localhost:8080/brand/" + brand.id + "/delete";
-      this.axios.post(url).then(response => {
+      this.axios
+          .create({'headers': {'Authorization': localJwt}})
+          .post(url).then(response => {
         let responseBody = response.data;
         if (responseBody.state == 200) {
           this.$message.success("删除成功!");
@@ -112,7 +117,9 @@ export default {
     loadAlbumList() {
       let url = "http://localhost:8080/brand/list";
       console.log("url:" + url);
-      this.axios.get(url).then(response => {
+      this.axios
+          .create({'headers': {'Authorization': localJwt}})
+          .get(url).then(response => {
         let responseBody = response.data;
         console.log(responseBody);
         this.tableData = responseBody.data;

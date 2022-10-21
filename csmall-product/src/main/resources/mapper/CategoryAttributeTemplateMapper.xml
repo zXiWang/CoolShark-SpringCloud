@@ -5,43 +5,42 @@
 
     <!-- int insert(CategoryAttributeTemplate categoryAttributeTemplate); -->
     <insert id="insert" useGeneratedKeys="true" keyProperty="id">
-        INSERT INTO pms_category_attribute_template (
-            category_id, attribute_template_id
-        ) VALUES (
-            #{categoryId}, #{attributeTemplateId}
-        )
+        INSERT INTO pms_category_attribute_template (category_id, attribute_template_id)
+        VALUES (#{categoryId}, #{attributeTemplateId})
     </insert>
 
     <!-- int insertBatch(List<CategoryAttributeTemplate> categoryAttributeTemplateList); -->
     <insert id="insertBatch" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO pms_category_attribute_template (
-            category_id, attribute_template_id
+        category_id, attribute_template_id
         ) VALUES
         <foreach collection="list" item="categoryAttributeTemplate" separator=",">
             (
-                #{categoryAttributeTemplate.categoryId}, #{categoryAttributeTemplate.attributeTemplateId}
+            #{categoryAttributeTemplate.categoryId}, #{categoryAttributeTemplate.attributeTemplateId}
             )
         </foreach>
     </insert>
 
     <!-- int deleteById(Long id); -->
     <delete id="deleteById">
-        DELETE FROM pms_category_attribute_template WHERE id=#{id}
+        DELETE
+        FROM pms_category_attribute_template
+        WHERE id = #{id}
     </delete>
 
     <!-- int deleteByIds(List<Long> ids); -->
     <delete id="deleteByIds">
         DELETE FROM pms_category_attribute_template WHERE id IN (
-            <foreach collection="array" item="id" separator=",">
-                #{id}
-            </foreach>
+        <foreach collection="array" item="id" separator=",">
+            #{id}
+        </foreach>
         )
     </delete>
 
     <!-- int updateById(CategoryAttributeTemplate categoryAttributeTemplate); -->
     <update id="updateById">
         UPDATE
-            pms_category_attribute_template
+        pms_category_attribute_template
         <set>
             <if test="categoryId != null">
                 category_id=#{categoryId},
@@ -55,27 +54,39 @@
 
     <!-- int count(); -->
     <select id="count" resultType="int">
-        SELECT count(*) FROM pms_category_attribute_template
+        SELECT count(*)
+        FROM pms_category_attribute_template
     </select>
 
     <!-- CategoryAttributeTemplateNormalVO getNormalById(Long id); -->
     <select id="getNormalById" resultMap="NormalResultMap">
         SELECT
-            <include refid="NormalQueryFields"/>
+        <include refid="NormalQueryFields"/>
         FROM
-            pms_category_attribute_template
+        pms_category_attribute_template
         WHERE
-            id=#{id}
+        id=#{id}
     </select>
 
     <!-- List<CategoryAttributeTemplateListItemVO> list(); -->
     <select id="list" resultMap="ListResultMap">
         SELECT
-            <include refid="ListQueryFields"/>
+        <include refid="ListQueryFields"/>
         FROM
-            pms_category_attribute_template
+        pms_category_attribute_template
         ORDER BY
-            id DESC
+        id DESC
+    </select>
+
+    <select id="countByAttributeTemplate" resultType="java.lang.Integer">
+        select count(*)
+        from pms_category_attribute_template
+        where attribute_template_id = #{attributeTemplateId}
+    </select>
+    <select id="countByCategory" resultType="java.lang.Integer">
+        select count(*)
+        from pms_category_attribute_template
+        where category_id = #{categoryId}
     </select>
 
     <sql id="NormalQueryFields">

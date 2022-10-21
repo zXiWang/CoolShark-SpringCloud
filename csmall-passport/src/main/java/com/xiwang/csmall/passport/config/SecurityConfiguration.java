@@ -51,6 +51,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
         http.authorizeRequests()// 对请求执行认证与授权
                 .antMatchers(urls)// 匹配某些请求路径
+//                .mvcMatchers(urls)//前后端不分离
                 .permitAll()// （对此前匹配的请求路径）不需要通过认证即允许访问
                 .anyRequest()// 除以上配置过的请求路径以外的所有请求路径
                 .authenticated();// 要求是已经通过认证的

@@ -61,6 +61,7 @@
 </template>
 
 <script>
+let localJwt = localStorage.getItem("jwt");
 
 export default {
   data() {
@@ -76,7 +77,9 @@ export default {
     },
     handleDelete(attributeTemplate) {
       let url = "http://localhost:8080/attributeTemplate/" + attributeTemplate.id + "/delete";
-      this.axios.post(url).then(response => {
+      this.axios
+          .create({'headers': {'Authorization': localJwt}})
+          .post(url).then(response => {
         let responseBody = response.data;
         if (responseBody.state == 200) {
           this.$message.success("删除成功!");
@@ -101,7 +104,9 @@ export default {
     loadAttributeTemplateList() {
       let url = "http://localhost:8080/attributeTemplate/list";
       console.log("url:" + url);
-      this.axios.get(url).then(response => {
+      this.axios
+          .create({'headers': {'Authorization': localJwt}})
+          .get(url).then(response => {
         let responseBody = response.data;
         console.log(responseBody);
         this.tableData = responseBody.data;
@@ -111,7 +116,9 @@ export default {
       this.switchShow = 0;
       let url = "http://localhost:8080/attribute/" + attributeTemplate.id + "/list";
       console.log("url:" + url);
-      this.axios.get(url).then(response => {
+      this.axios
+          .create({'headers': {'Authorization': localJwt}})
+          .get(url).then(response => {
         let responseBody = response.data;
         console.log(responseBody);
         this.attributeData = responseBody.data;

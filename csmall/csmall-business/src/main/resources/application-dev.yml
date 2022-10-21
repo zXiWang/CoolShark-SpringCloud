@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: nacos-business # 定义当前服务名称
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 # 指定正在运行的Nacos服务器的位置
+    sentinel:
+      transport:
+        dashboard: localhost:8080  # Sentinel仪表台的ip:端口
+        port: 8722  # 是localhost的8722 这个端口真正参与当前项目的限流措施
+dubbo:
+  protocol:
+    port: -1  # 设置dubbo服务调用的端口 设置-1表示自动生成,生成规则是从20880开始递增
+    name: dubbo  # 端口名称固定dubbo即可
+  registry:
+    address: nacos://localhost:8848  # 表示当前Dubbo的注册中心类型是Nacos,地址是后面的内容
+  consumer:
+    check: false # 设置false表示服务启动时,不检查标定的可调用的远程服务是否存在,避免报错
+seata:
+  tx-service-group: csmall_group # 分组
+  service:
+    vgroup-mapping:
+      csmall_group: default # 默认at模式
+    grouplist:
+      default: localhost:8091
+
+

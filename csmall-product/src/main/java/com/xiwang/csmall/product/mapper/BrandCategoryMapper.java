@@ -4,6 +4,7 @@ import com.xiwang.csmall.product.pojo.entity.BrandCategory;
 import com.xiwang.csmall.product.pojo.vo.BrandCategoryNormalVO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -13,6 +14,7 @@ import java.util.List;
  * @author 夕妄
  * @since 2022-09-26 09:20:51
  */
+@Repository
 public interface BrandCategoryMapper {
 
     /**
@@ -72,5 +74,8 @@ public interface BrandCategoryMapper {
      */
     int deleteById(Long id);
 
+    int countByBrand(Long id);
+
+    int countByCategory(Long id);
 }
 

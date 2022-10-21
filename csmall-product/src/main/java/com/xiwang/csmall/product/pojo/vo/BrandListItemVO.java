@@ -4,10 +4,12 @@ package com.xiwang.csmall.product.pojo.vo;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
+import java.io.Serializable;
+
 
 @Data
 @TableName("pms_brand")
-public class BrandListItemVO {
+public class BrandListItemVO implements Serializable {
 
     private long id;
     private String name;

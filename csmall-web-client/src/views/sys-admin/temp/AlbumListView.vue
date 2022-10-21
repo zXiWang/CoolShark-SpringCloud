@@ -31,6 +31,7 @@
 </template>
 
 <script>
+let localJwt = localStorage.getItem("jwt");
 
 export default {
   data() {
@@ -44,7 +45,9 @@ export default {
     },
     handleDelete(album) {
       let url = "http://localhost:8080/album/" + album.id + "/delete";
-      this.axios.post(url).then(response => {
+      this.axios
+          .create({headers: {'Authorization': localJwt}})
+          .post(url).then(response => {
         let responseBody = response.data;
         if (responseBody.state == 200) {
           this.$message.success("删除成功!");
@@ -69,7 +72,9 @@ export default {
     loadAlbumList() {
       let url = "http://localhost:8080/album/list";
       console.log("url:" + url);
-      this.axios.get(url).then(response => {
+      this.axios
+          .create({headers: {'Authorization': localJwt}})
+          .get(url).then(response => {
         let responseBody = response.data;
         console.log(responseBody);
         this.tableData = responseBody.data;
