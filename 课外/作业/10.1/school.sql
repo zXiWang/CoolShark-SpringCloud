@@ -28,23 +28,56 @@ create table sc
 );
 
 use school;
-insert into student(Sno,Sname,Ssex,Sage,Sdept) values ('4001','赵茵','男',20,'SX'),('4002','杨华','女',21,'JSJ');
+insert into student(Sno, Sname, Ssex, Sage, Sdept)
+values ('4001', '赵茵', '男', 20, 'SX'),
+       ('4002', '杨华', '女', 21, 'JSJ');
 
-update student set Sdept='JSJ' where Sno='4001';
+update student
+set Sdept='JSJ'
+where Sno = '4001';
 
-update student set Ssex='女' ,Sage=Sage+1 where Sname='赵茵';
+update student
+set Ssex='女',
+    Sage=Sage + 1
+where Sname = '赵茵';
 
-delete from student where Sdept='JSJ' and Ssex='男';
+delete
+from student
+where Sdept = 'JSJ'
+  and Ssex = '男';
 
 use school;
-create table cust(studentno int primary key ,name varchar(10),address varchar(50),telno varchar(50));
-create table mark(studnntno int primary key ,english double,math double,computer double);
+create table cust
+(
+    studentno int primary key,
+    name      varchar(10),
+    address   varchar(50),
+    telno     varchar(50)
+);
+create table mark
+(
+    studnntno int primary key,
+    english   double,
+    math      double,
+    computer  double
+);
 
 
-select avg(english) from mark;
+select avg(english)
+from mark;
 
-select math,name,address,telno from cust,mark where studentno in(11,22,33,44,55);
+select math, name, address, telno
+from cust,
+     mark
+where studentno in (11, 22, 33, 44, 55);
 
-select name,computer from cust,mark order by computer desc ;
+select name, computer
+from cust,
+     mark
+order by computer desc;
 
-select english+math+computer as score,studentno,name from  mark join cust on mark.studnntno=cust.studentno where english+math+computer>240 order by score desc;
+select english + math + computer as score, studentno, name
+from mark
+         join cust on mark.studnntno = cust.studentno
+where english + math + computer > 240
+order by score desc;

@@ -1,6 +1,8 @@
 package com.xiwang.csmall.business.config;
 
+
 import com.github.xiaoymin.knife4j.spring.extension.OpenApiExtensionResolver;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,8 +16,12 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
 
 /**
- * Knife4j（Swagger2）的配置
+ * Knife4j配置类
+ *
+ * @author 夕妄
+ * @version 0.0.1
  */
+@Slf4j
 @Configuration
 @EnableSwagger2WebMvc
 public class Knife4jConfiguration {
@@ -23,15 +29,15 @@ public class Knife4jConfiguration {
     /**
      * 【重要】指定Controller包路径
      */
-    private String basePackage = "com.xiwang.csmall.business.controller";
+    private final String basePackage = "com.xiwang.csmall.business.controller";
     /**
      * 分组名称
      */
-    private String groupName = "base-business";
+    private final String groupName = "base-business";
     /**
      * 主机名
      */
-    private String host = "http://java.xiwang.com";
+    private final String host = "https://java.xiwang.com";
     /**
      * 标题
      */
@@ -43,26 +49,30 @@ public class Knife4jConfiguration {
     /**
      * 服务条款URL
      */
-    private String termsOfServiceUrl = "http://www.apache.org/licenses/LICENSE-2.0";
+    private final String termsOfServiceUrl = "http://www.apache.org/licenses/LICENSE-2.0";
     /**
      * 联系人
      */
-    private String contactName = "项目研发部";
+    private final String contactName = "Java教学研发部";
     /**
      * 联系网址
      */
-    private String contactUrl = "http://java.xiwang.com";
+    private final String contactUrl = "https://java.xiwang.com";
     /**
      * 联系邮箱
      */
-    private String contactEmail = "java@xiwang.com";
+    private final String contactEmail = "java@xiwang.com";
     /**
      * 版本号
      */
-    private String version = "1.0-SNAPSHOT";
+    private final String version = "1.0.0";
 
     @Autowired
     private OpenApiExtensionResolver openApiExtensionResolver;
+
+    public Knife4jConfiguration() {
+        log.debug("加载配置类：Knife4jConfiguration");
+    }
 
     @Bean
     public Docket docket() {

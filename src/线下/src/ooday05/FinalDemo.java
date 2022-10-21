@@ -1,7 +1,7 @@
 package 线下.src.ooday05;
 //final的演示
 public class FinalDemo {
-    private  abc="123";
+    private String abc="123";
     public static void main(String[] args) {
         System.out.println(abc);
     }

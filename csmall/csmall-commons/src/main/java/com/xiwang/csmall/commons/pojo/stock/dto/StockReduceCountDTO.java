@@ -10,9 +10,9 @@ import java.io.Serializable;
 @Data
 public class StockReduceCountDTO implements Serializable {
 
-    @ApiModelProperty(value = "商品编号",name="commodityCode",example = "PC100")
+    @ApiModelProperty(value = "商品编号", name = "commodityCode", example = "PC100")
     private String commodityCode;
-    @ApiModelProperty(value = "减库存数",name="reduceCount",example = "5")
+    @ApiModelProperty(value = "减库存数", name = "reduceCount", example = "5")
     private Integer reduceCount;
 }
 
