@@ -39,14 +39,6 @@ public class Knife4jConfiguration {
      */
     private final String host = "https://java.xiwang.com";
     /**
-     * 标题
-     */
-    private String title = "酷鲨商城项目案例在线API文档--基础businessr-web实例";
-    /**
-     * 简介
-     */
-    private String description = "构建基础business-web项目,实现购买";
-    /**
      * 服务条款URL
      */
     private final String termsOfServiceUrl = "http://www.apache.org/licenses/LICENSE-2.0";
@@ -66,7 +58,14 @@ public class Knife4jConfiguration {
      * 版本号
      */
     private final String version = "1.0.0";
-
+    /**
+     * 标题
+     */
+    private final String title = "酷鲨商城项目案例在线API文档--基础businessr-web实例";
+    /**
+     * 简介
+     */
+    private final String description = "构建基础business-web项目,实现购买";
     @Autowired
     private OpenApiExtensionResolver openApiExtensionResolver;
 

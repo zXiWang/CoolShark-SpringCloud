@@ -1,0 +1,24 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: gateway
+  cloud:
+    nacos:
+      discovery:
+        # 网关也是微服务项目的一部分,所以也要注册到Nacos
+        server-addr: localhost:8848
+    gateway:
+      routes:
+        #        id表示当前路由名称,与之前任何出现的id无关,唯一的要求就是不要和之后的id冲突
+        - id: gateway-beijing
+          #          下面的配置是路由的目标,也就是目标的服务器名称
+          #          lb是loadBalance的缩写,beijing是服务器名称
+          uri: lb://beijing
+          #          predicates是断言的意思,就是满足某个条件时,去执行某些操作的设置
+          predicates:
+            #            predicates也是一个数组,配置断言的内容
+            #            这个断言的意思就是如果访问的路径是/bj/开头(**表示任何路径)
+            #            就去访问上面定好的beijing服务器
+            #            P必须大写
+            - Path=/bj/**
