@@ -13,7 +13,7 @@ public class ShanghaiController {
     @GetMapping("/show")
     public String show(String username,Integer age){
         System.out.println(ZonedDateTime.now());
-        return "这里是上海！";
+        return "这里是上海！"+username+","+age;
     }
 
 

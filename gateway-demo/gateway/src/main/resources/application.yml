@@ -9,16 +9,40 @@ spring:
         # 网关也是微服务项目的一部分,所以也要注册到Nacos
         server-addr: localhost:8848
     gateway:
+      #      discovery:
+      #        locator:
+      #          # 开启网关动态路由配置
+      #          # 默认的路由规则:在网关端口号后先编写要路由到的目标服务器注册在Nacos的名称
+      #          # 再编写具体路径
+      #          # 例如 localhost:9001/bj/show -> localhost:9000/beijing/bj/show
+      #          enabled: true
+      # routes就是路由的意思,这是属性是一个数组类型,其中的值都是数组元素
       routes:
-        #        id表示当前路由名称,与之前任何出现的id无关,唯一的要求就是不要和之后的id冲突
-        - id: gateway-beijing
-          #          下面的配置是路由的目标,也就是目标的服务器名称
-          #          lb是loadBalance的缩写,beijing是服务器名称
-          uri: lb://beijing
-          #          predicates是断言的意思,就是满足某个条件时,去执行某些操作的设置
+        - id: gateway-shanghai
+          uri: lb://shanghai
+          filters:
+            - AddRequestParameter=age,18
           predicates:
-            #            predicates也是一个数组,配置断言的内容
-            #            这个断言的意思就是如果访问的路径是/bj/开头(**表示任何路径)
-            #            就去访问上面定好的beijing服务器
-            #            P必须大写
+            - Path=/sh/**
+            # Query断言判断请求中是否包含指定参数名称(username)的参数,如果不包含就不能访问
+            - Query=username
+            #- Between=2022-10-27T10:31:40.712+08:00[Asia/Shanghai],2022-10-27T10:32:10.712+08:00[Asia/Shanghai]
+            #- Before=2022-10-27T10:29:20.712+08:00[Asia/Shanghai]
+            # After时间断言,判断当前时间是否晚于after指定的时间
+            # 如果不晚于,则不允许访问,如果晚于才允许访问,它和上面的Path是"与"的关系
+            #- After=2022-10-27T10:26:20.712+08:00[Asia/Shanghai]
+          # 数组元素配置中,-开头表示一个数组元素的开始,后面所有内容都是这个元素的内容
+          # id表示当前路由的名称,和任何之前出现过的名字没有任何关联,唯一的要求就是不要后之后的id重复
+        - id: gateway-beijing
+          # 下面的配置是路由的目标,也就是目标的服务器名称
+          # lb是LoadBalance的缩写,beijing是服务器名称
+          uri: lb://beijing
+          # predicates是断言的意思,就是满足某个条件时,去执行某些操作的设置
+          predicates:
+            # predicates也是一个数组,配置断言的内容
+            # 这个断言的意思就是如果访问的路径是/bj/开头(**表示任何路径),
+            # 就去访问上面定好的beijing服务器
+            # ↓   P一定要大写!!!!!!!
             - Path=/bj/**
+    # spring.cloud.gateway.routes[0].uri
+    # spring.cloud.gateway.routes[0].predicates[0]
