@@ -2,7 +2,7 @@ HELP.md
 target/
 **/第五阶段软件和项目/
 **/out/
-**/logs/*.log
+**/logs/
 
 ### STS ###
 .apt_generated
