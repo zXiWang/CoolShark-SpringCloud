@@ -6,7 +6,7 @@ POST http://localhost:9200/_analyze
 Content-Type: application/json
 
 {
-  "text": "北京举行了哈哈哈",
+  "text": "马桶盖",
   "analyzer": "ik_max_word"
 }
 
@@ -82,4 +82,40 @@ Content-Type: application/json
   "id": 4,
   "title": "线程的run方法和start方法有啥区别",
   "content": "run方法可以执行线程的计算过程， start也可以执行线程的计算过程，用途一样么？"
+}
+
+### 更新questions索引中的文档
+POST http://localhost:9200/questions/_doc/4/_update
+Content-Type: application/json
+
+{
+  "doc": {
+    "title": "Java线程的run方法和start方法有啥区别"
+  }
+}
+
+### 查询数据
+GET http://localhost:9200/questions/_doc/2
+
+### 收索 ES
+POST http://localhost:9200/questions/_search
+Content-Type: application/json
+
+{
+  "query": { "match": {"title": "类型" } }
+}
+
+### 多字段搜索
+POST http://localhost:9200/questions/_search
+Content-Type: application/json
+
+{
+  "query": {
+    "bool": {
+      "should": [
+        { "match": { "title":  "java类型" }},
+        { "match": { "content": "java类型"}}
+      ]
+    }
+  }
 }
