@@ -1,6 +1,8 @@
 package com.xiwang.search.repository;
 
 import com.xiwang.search.entity.Item;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 import org.springframework.stereotype.Repository;
 
@@ -11,4 +13,12 @@ public interface ItemRepository extends ElasticsearchRepository<Item, Long> {
     // 继承了父接口后,SpringData会根据泛型中编写的Item找到对应的索引
     // 会对这个索引自动生成基本的增删改查方法,我们自己无需再编写
     // ElasticsearchRepository<[要操作的\关联的实体类名称],[实体类主键的类型]>
+
+    Iterable<Item> queryItemsByTitleMatches(String title);
+
+    Iterable<Item> queryItemsByTitleMatchesAndBrandMatches(String title, String brand);
+
+    Iterable<Item> queryItemsByTitleMatchesOrBrandMatchesOrderByPriceDesc(String title, String brand);
+
+    Page<Item> queryItemsByTitleMatchesOrBrandMatchesOrderByPriceDesc(String title, String brand, Pageable pageable);
 }
