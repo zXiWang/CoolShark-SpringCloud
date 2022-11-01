@@ -21,6 +21,11 @@
             <groupId>com.github.xiaoymin</groupId>
             <artifactId>knife4j-spring-boot-starter</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>5.2.0</version>
+        </dependency>
         <!-- Spring Boot Web：WEB应用 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

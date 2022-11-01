@@ -1,5 +1,7 @@
 package com.xiwang.csmall.order.webapi.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.xiwang.csmall.cart.service.ICartService;
 import com.xiwang.csmall.commons.exception.CoolSharkServiceException;
 import com.xiwang.csmall.commons.pojo.order.dto.OrderAddDTO;
@@ -15,6 +17,8 @@ import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 //order模块的方法会被business模块调用,所以也是生产者要加@DubboService注解
 @DubboService
@@ -53,6 +57,15 @@ public class OrderServiceImpl implements IOrderService {
             throw new CoolSharkServiceException(ResponseCode.INTERNAL_SERVER_ERROR, message);
         }
         log.info("新增订单信息为:{}", order);
+    }
+
+    public PageInfo<Order> getAllOrderByPage(Integer page, Integer pageSize) {
+        PageHelper.startPage(page, pageSize);
+        // 上面设置好分页查询条件,下面进行的查询在执行时sql语句都会自动被追加limit关键字
+        List<Order> list = orderMapper.findAllOrder();
+
+        // list变量并不是全查结果,只是包含指定页码的数据
+        return new PageInfo<>(list);
     }
 }
 
