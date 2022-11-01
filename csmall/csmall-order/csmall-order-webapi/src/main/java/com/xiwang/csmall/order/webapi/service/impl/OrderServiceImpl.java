@@ -7,6 +7,7 @@ import com.xiwang.csmall.commons.exception.CoolSharkServiceException;
 import com.xiwang.csmall.commons.pojo.order.dto.OrderAddDTO;
 import com.xiwang.csmall.commons.pojo.order.model.Order;
 import com.xiwang.csmall.commons.pojo.stock.dto.StockReduceCountDTO;
+import com.xiwang.csmall.commons.restful.JsonPage;
 import com.xiwang.csmall.commons.restful.ResponseCode;
 import com.xiwang.csmall.order.service.IOrderService;
 import com.xiwang.csmall.order.webapi.mapper.OrderMapper;
@@ -59,13 +60,14 @@ public class OrderServiceImpl implements IOrderService {
         log.info("新增订单信息为:{}", order);
     }
 
-    public PageInfo<Order> getAllOrderByPage(Integer page, Integer pageSize) {
+    @Override
+    public JsonPage<Order> getAllOrdersByPage(Integer page, Integer pageSize) {
         PageHelper.startPage(page, pageSize);
         // 上面设置好分页查询条件,下面进行的查询在执行时sql语句都会自动被追加limit关键字
         List<Order> list = orderMapper.findAllOrder();
 
         // list变量并不是全查结果,只是包含指定页码的数据
-        return new PageInfo<>(list);
+        return JsonPage.restPage(new PageInfo<>(list));
     }
 }
 

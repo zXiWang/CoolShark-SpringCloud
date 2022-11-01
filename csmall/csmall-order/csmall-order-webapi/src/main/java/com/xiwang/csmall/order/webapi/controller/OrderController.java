@@ -1,11 +1,10 @@
 package com.xiwang.csmall.order.webapi.controller;
 
-import com.github.pagehelper.PageInfo;
 import com.xiwang.csmall.commons.pojo.order.dto.OrderAddDTO;
 import com.xiwang.csmall.commons.pojo.order.model.Order;
+import com.xiwang.csmall.commons.restful.JsonPage;
 import com.xiwang.csmall.commons.restful.JsonResult;
 import com.xiwang.csmall.order.service.IOrderService;
-import com.xiwang.csmall.order.webapi.service.impl.OrderServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -25,9 +24,6 @@ public class OrderController {
     @Autowired
     IOrderService iOrderService;
 
-    @Autowired
-    OrderServiceImpl orderService;
-
     @PostMapping("/add")
     @ApiOperation("新增订单功能")
     public JsonResult orderAdd(OrderAddDTO orderAddDTO) {
@@ -41,9 +37,9 @@ public class OrderController {
             @ApiImplicitParam(value = "页码", name = "page", example = "1"),
             @ApiImplicitParam(value = "每页页数", name = "pageSize", example = "10"),
     })
-    public JsonResult<PageInfo<Order>> pageOrders(
+    public JsonResult<JsonPage<Order>> pageOrders(
             Integer page, Integer pageSize) {
-        PageInfo<Order> orders = orderService.getAllOrderByPage(page, pageSize);
-        return JsonResult.ok("查询完成!",orders);
+        JsonPage<Order> orders = iOrderService.getAllOrdersByPage(page, pageSize);
+        return JsonResult.ok("查询完成!", orders);
     }
 }
