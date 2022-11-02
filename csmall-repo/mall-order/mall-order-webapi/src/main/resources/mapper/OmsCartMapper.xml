@@ -30,6 +30,7 @@
             gmt_modified
         </if>
     </sql>
+
     <insert id="saveCart" keyProperty="id" useGeneratedKeys="true">
         insert into oms_cart(user_id,
                              sku_id,
@@ -38,12 +39,13 @@
                              price,
                              quantity)
         values (#{userId},
-                #{sku_id},
+                #{skuId},
                 #{title},
-                #{main_picture},
+                #{mainPicture},
                 #{price},
                 #{quantity})
     </insert>
+
     <update id="updateQuantityById">
         update oms_cart
         set quantity = #{quantity}
@@ -55,7 +57,7 @@
         <include refid="SimpleQueryFields"></include>
         from
         oms_cart
-        where user_id=#{user_id} and sku_id=#{sku_id}
+        where user_id=#{userId} and sku_id=#{skuId}
     </select>
 
 
