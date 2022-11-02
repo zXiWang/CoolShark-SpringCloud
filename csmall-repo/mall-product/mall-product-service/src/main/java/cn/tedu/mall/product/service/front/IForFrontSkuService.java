@@ -9,7 +9,7 @@ public interface IForFrontSkuService {
     /**
      * 利用spuId 获取sku列表集合
      * @param spuId
-     * @return
+     * @return Sku列表
      */
     List<SkuStandardVO> getSkusBySpuId(Long spuId);
 }
