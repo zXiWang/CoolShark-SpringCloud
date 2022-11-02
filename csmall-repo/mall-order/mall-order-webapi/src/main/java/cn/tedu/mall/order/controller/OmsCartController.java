@@ -6,6 +6,7 @@ import cn.tedu.mall.common.restful.JsonResult;
 import cn.tedu.mall.order.service.IOmsCartService;
 import cn.tedu.mall.order.utils.WebConsts;
 import cn.tedu.mall.pojo.order.dto.CartAddDTO;
+import cn.tedu.mall.pojo.order.dto.CartUpdateDTO;
 import cn.tedu.mall.pojo.order.vo.CartStandardVO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
@@ -30,6 +31,33 @@ public class OmsCartController {
     public JsonResult addCart(@Validated CartAddDTO cartAddDTO) {
         omsCartService.addCart(cartAddDTO);
         return JsonResult.ok("新增sku到购物车完成!");
+    }
+
+    @PostMapping("/delete")
+    @ApiOperation("根据id数组删除购物车中的sku信息")
+    @ApiImplicitParam(value = "包含要删除的id的数组", name = "ids", required = true, dataType = "array")
+//    @PreAuthorize("hasAuthority('ROLE_user')")
+    @PreAuthorize("hasRole('user')")
+    public JsonResult delete(Long[] ids) {
+
+        omsCartService.removeCart(ids);
+        return JsonResult.ok("删除购物车信息完成!");
+    }
+
+    @PostMapping("/delete/all")
+    @ApiOperation("删除购物车中所有的sku信息")
+    @PreAuthorize("hasRole('user')")
+    public JsonResult deleteAll() {
+        omsCartService.removeAllCarts();
+        return JsonResult.ok("删除所有购物车信息完成!");
+    }
+
+    @PostMapping("/update/quantity")
+    @ApiOperation("修改购物车中的sku数据")
+    @PreAuthorize("hasRole('user')")
+    public JsonResult updateQuantity(@Validated CartUpdateDTO cartUpdateDTO) {
+        omsCartService.updateQuantity(cartUpdateDTO);
+        return JsonResult.ok("修改完成!");
     }
 
     @GetMapping("/list")

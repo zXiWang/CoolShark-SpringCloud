@@ -70,22 +70,35 @@ public class OmsCartServiceImpl implements IOmsCartService {
 
     @Override
     public void removeCart(Long[] ids) {
-
+        int rows = omsCartMapper.deleteCartsByIds(ids);
+        if (rows == 0) {
+            throw new CoolSharkServiceException(ResponseCode.NOT_FOUND, "未找到删除的id数组");
+        }
     }
 
     @Override
     public void removeAllCarts() {
-
+        int rows = omsCartMapper.deleteCartsByUserId(getUserId());
+        if (rows == 0) {
+            throw new CoolSharkServiceException(ResponseCode.NOT_FOUND, "未找到要删除的数据");
+        }
     }
 
     @Override
     public void removeUserCarts(OmsCart omsCart) {
+        // 直接调用删除购物车的方法即可
+        // 即使删除失败也不抛出异常,因为用户在直接购买商品时不会加入到购物车
+        omsCartMapper.deleteCartByUserIdAndSkuId(omsCart);
 
     }
 
     @Override
     public void updateQuantity(CartUpdateDTO cartUpdateDTO) {
 
+        OmsCart omsCart = new OmsCart();
+        BeanUtils.copyProperties(cartUpdateDTO, omsCart);
+        // OmsCart被赋必要值之后,直接调用mapper方法
+        omsCartMapper.updateQuantityById(omsCart);
     }
 
     // 业务逻辑层中有获得当前用户登录信息的需求

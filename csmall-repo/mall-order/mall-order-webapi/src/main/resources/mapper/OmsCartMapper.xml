@@ -46,11 +46,93 @@
                 #{quantity})
     </insert>
 
+    <!--  新增订单的mapper   -->
+    <insert id="insertOrder">
+        insert into oms_order(id,
+                              sn,
+                              user_id,
+                              contact_name,
+                              mobile_phone,
+                              telephone,
+                              province_code,
+                              province_name,
+                              city_code,
+                              city_name,
+                              district_code,
+                              district_name,
+                              street_code,
+                              street_name,
+                              detailed_address,
+                              tag,
+                              payment_type,
+                              state,
+                              reward_point,
+                              amount_of_original_price,
+                              amount_of_freight,
+                              amount_of_discount,
+                              amount_of_actual_pay,
+                              gmt_pay,
+                              gmt_order,
+                              gmt_create,
+                              gmt_modified)
+        values (#{id},
+                #{sn},
+                #{userId},
+                #{contactName},
+                #{mobilePhone},
+                #{telephone},
+                #{provinceCode},
+                #{provinceName},
+                #{cityCode},
+                #{cityName},
+                #{districtCode},
+                #{districtName},
+                #{streetCode},
+                #{streetName},
+                #{detailedAddress},
+                #{tag},
+                #{paymentType},
+                #{state},
+                #{rewardPoint},
+                #{amountOfOriginalPrice},
+                #{amountOfFreight},
+                #{amountOfDiscount},
+                #{amountOfActualPay},
+                #{gmtPay},
+                #{gmtOrder},
+                #{gmtCreate},
+                #{gmtModified})
+    </insert>
+
     <update id="updateQuantityById">
         update oms_cart
         set quantity = #{quantity}
         where id = #{id}
     </update>
+
+    <delete id="deleteCartsByIds">
+        delete from oms_cart
+        where id in
+        <foreach collection="array" item="id" separator="," open="(" close=")">
+            #{id}
+        </foreach>
+
+    </delete>
+
+    <delete id="deleteCartsByUserId">
+        delete
+        from oms_cart
+        where user_id = #{userId}
+    </delete>
+
+
+    <!--根据用户id和SkuId删除商品    -->
+    <delete id="deleteCartByUserIdAndSkuId">
+        delete
+        from oms_cart
+        where user_id = #{userId}
+          and sku_id = #{skuId}
+    </delete>
 
     <select id="selectExistsCart" resultMap="BaseResultMap">
         select
@@ -67,6 +149,7 @@
         from oms_cart
         where user_id=#{userId}
     </select>
+
 
 </mapper>
 
