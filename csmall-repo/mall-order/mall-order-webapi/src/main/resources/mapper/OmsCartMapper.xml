@@ -54,12 +54,19 @@
 
     <select id="selectExistsCart" resultMap="BaseResultMap">
         select
-        <include refid="SimpleQueryFields"></include>
+        <include refid="SimpleQueryFields"/>
         from
         oms_cart
         where user_id=#{userId} and sku_id=#{skuId}
     </select>
 
+
+    <select id="selectCartsByUserId" resultType="cn.tedu.mall.pojo.order.vo.CartStandardVO">
+        select
+        <include refid="SimpleQueryFields"/>
+        from oms_cart
+        where user_id=#{userId}
+    </select>
 
 </mapper>
 

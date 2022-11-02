@@ -10,12 +10,16 @@ import cn.tedu.mall.pojo.order.dto.CartAddDTO;
 import cn.tedu.mall.pojo.order.dto.CartUpdateDTO;
 import cn.tedu.mall.pojo.order.model.OmsCart;
 import cn.tedu.mall.pojo.order.vo.CartStandardVO;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 @Slf4j
@@ -29,7 +33,7 @@ public class OmsCartServiceImpl implements IOmsCartService {
 
         // 要查询购物车中是否有指定商品之前,必须确定用户的Id
         Long userId = getUserId();
-        log.debug("得到userId="+userId);
+        log.debug("得到userId=" + userId);
         // 根据用户Id和商品skuId,查询商品信息
         OmsCart omsCart = omsCartMapper.selectExistsCart(
                 userId, cartDTO.getSkuId());
@@ -57,7 +61,11 @@ public class OmsCartServiceImpl implements IOmsCartService {
 
     @Override
     public JsonPage<CartStandardVO> listCarts(Integer page, Integer pageSize) {
-        return null;
+        Long userId = getUserId();
+        PageHelper.startPage(page, pageSize);
+        List<CartStandardVO> list = omsCartMapper.selectCartsByUserId(userId);
+
+        return JsonPage.restPage(new PageInfo<>(list));
     }
 
     @Override
