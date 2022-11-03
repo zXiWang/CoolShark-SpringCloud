@@ -1,6 +1,8 @@
 package cn.tedu.mall.product.service.order;
 
 import cn.tedu.mall.pojo.product.vo.SkuStandardVO;
+import org.springframework.stereotype.Component;
+
 
 public interface IForOrderSkuService {
 
