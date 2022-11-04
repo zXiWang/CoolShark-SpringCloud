@@ -19,6 +19,8 @@ import cn.tedu.mall.pojo.order.vo.OrderAddVO;
 import cn.tedu.mall.pojo.order.vo.OrderDetailVO;
 import cn.tedu.mall.pojo.order.vo.OrderListVO;
 import cn.tedu.mall.product.service.order.IForOrderSkuService;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import io.seata.spring.annotation.GlobalTransactional;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.config.annotation.DubboReference;
@@ -31,6 +33,7 @@ import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.time.ZoneOffset;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -144,12 +147,42 @@ public class OmsOrderServiceImpl implements IOmsOrderService {
 
     @Override
     public void updateOrderState(OrderStateUpdateDTO orderStateUpdateDTO) {
-
+        OmsOrder order = new OmsOrder();
+        BeanUtils.copyProperties(orderStateUpdateDTO, order);
+        omsOrderMapper.updateOrderById(order);
     }
 
     @Override
     public JsonPage<OrderListVO> listOrdersBetweenTimes(OrderListTimeDTO orderListTimeDTO) {
-        return null;
+        validateTimeAndLoadTime(orderListTimeDTO);
+        // 赋值UserId
+        orderListTimeDTO.setUserId(getUserId());
+        // 分页查询设置分页条件
+        PageHelper.startPage(orderListTimeDTO.getPage(), orderListTimeDTO.getPageSize());
+
+        List<OrderListVO> list = omsOrderMapper.selectOrdersBetweenTimes(orderListTimeDTO);
+
+        return JsonPage.restPage(new PageInfo<>(list));
+
+    }
+
+    private void validateTimeAndLoadTime(OrderListTimeDTO orderListTimeDTO) {
+        LocalDateTime startTime = orderListTimeDTO.getStartTime();
+        LocalDateTime endTime = orderListTimeDTO.getEndTime();
+        // 为了方便,设置两个时间任意一个为空时,就查询最近一个月的订单
+        if (startTime == null || endTime == null) {
+            startTime = LocalDateTime.now().minusMonths(1);
+            endTime = LocalDateTime.now();
+            orderListTimeDTO.setStartTime(startTime);
+            orderListTimeDTO.setEndTime(endTime);
+
+        } else {
+            if (endTime.toInstant(ZoneOffset.of("+8")).toEpochMilli() <
+                    startTime.toInstant(ZoneOffset.of("+8")).toEpochMilli()) {
+                throw new CoolSharkServiceException(ResponseCode.BAD_REQUEST,
+                        "结束时间大于开始时间!");
+            }
+        }
     }
 
     @Override

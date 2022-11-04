@@ -1,5 +1,7 @@
 package cn.tedu.mall.product.service;
 
+import cn.tedu.mall.common.restful.JsonPage;
+import cn.tedu.mall.pojo.product.model.Spu;
 import cn.tedu.mall.pojo.product.vo.SkuStandardVO;
 import cn.tedu.mall.product.service.front.IForFrontSkuService;
 import cn.tedu.mall.product.mapper.SkuMapper;
@@ -19,4 +21,5 @@ public class ForFrontSkuServiceImpl implements IForFrontSkuService {
         List<SkuStandardVO> skus=skuMapper.listBySpuId(spuId);
         return skus;
     }
+
 }
