@@ -12,4 +12,7 @@ public interface StockMapper {
     int updateStockCount(@Param("commodityCode") String commodityCode,
                          @Param("reduceCount") Integer reduceCount);
 
+    @Update("update stock_tbl set count=count+10 " +
+            "where commodity_code='PC100'")
+    int addCount();
 }
