@@ -28,7 +28,7 @@ public class QuartzConfig {
     public JobDetail addCount() {
         log.info(Thread.currentThread().getStackTrace()[1].getMethodName() + "running......");
         return JobBuilder.newJob(AddCountJob.class)
-                // 需要为当前任务起个名字,方便Quartz调用
+                // 需要为当前任务起个名字,方便Quartz调用1
                 .withIdentity("addCount")
                 // 默认情况下,JobDetail对象生成后,如果没有触发器绑定会被立即移除
                 // 设置storeDurably方法后,当前JobDetail对象生成后,不会被移除了
