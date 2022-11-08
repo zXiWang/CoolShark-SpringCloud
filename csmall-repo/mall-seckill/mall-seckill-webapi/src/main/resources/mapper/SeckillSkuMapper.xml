@@ -26,6 +26,7 @@
             seckill_limit
         </if>
     </sql>
+
     <select id="findSeckillSkusBySpuId" resultMap="BaseResultMap">
         select
             <include refid="SimpleField" />
