@@ -48,7 +48,6 @@ public class Test03 {
     }
 
     public static class User implements Serializable {
-        @Serial
         private static final long serialVersionUID = 42L;
         private String name;
         private String pwd;

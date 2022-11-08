@@ -112,7 +112,6 @@ public class OmsOrderServiceImpl implements IOmsOrderService {
         // 给id赋值,使用Leaf分布式序列生成系统
         Long id = IdGeneratorUtils.getDistributeId("order");
         order.setId(id);
-
         // 生成订单号,直接使用UUID
         order.setSn(UUID.randomUUID().toString());
 

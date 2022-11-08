@@ -1,7 +1,6 @@
 package cn.tedu.mall.pojo.order.model;
 
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
