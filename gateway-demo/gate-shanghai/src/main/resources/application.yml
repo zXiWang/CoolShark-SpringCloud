@@ -1,9 +1,0 @@
-server:
-  port: 9002
-spring:
-  application:
-    name: shanghai # 定义当前服务名称
-  cloud:
-    nacos:
-      discovery:
-        server-addr: localhost:8848 # 指定正在运行的Nacos服务器的位置
