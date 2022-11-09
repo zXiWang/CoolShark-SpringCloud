@@ -1,8 +1,0 @@
-{
-  "properties": [
-    {
-      "name": "csmall.jwt.secret-key",
-      "type": "java.lang.String",
-      "description": "Description for csmall.jwt.secret-key."
-  }
-] }
