@@ -1,4 +1,13 @@
 spring:
+  kafka:
+    # 定义kafka的位置
+    bootstrap-servers: localhost:9092
+    # consumer.group-id是kafka框架要求必须配置的内容,不配置启动会报错
+    # 意思是话题分组,目的是区分kafka服务器上不通项目消息的
+    # 本质上,这个分组名称会在消息发送时,自动前缀在话题名称前
+    # 例如当前项目发送了名为一个message的话题,真正发送到kafka的名称可能是csmall.message
+    consumer:
+      group-id: csmall
   application:
     name: nacos-cart # 定义当前服务名称
   cloud:
