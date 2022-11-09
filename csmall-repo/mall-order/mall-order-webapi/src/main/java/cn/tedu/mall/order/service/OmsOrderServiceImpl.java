@@ -40,6 +40,10 @@ import java.util.UUID;
 
 
 // 后面的秒杀业务需要调用这个生成订单的方法,需要支持dubbo调用
+
+/**
+ * Author 夕妄
+ */
 @DubboService
 @Service
 @Slf4j

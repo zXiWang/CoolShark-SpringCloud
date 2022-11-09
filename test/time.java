@@ -10,7 +10,7 @@ public class time {
         SimpleDateFormat time = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date date = time.parse(birth);
         //调用Date类的getTime()方法获取指定时间的毫秒值
-        System.out.println(date.getTime());  //789321600000
+        System.out.println(date.getTime());  //1667750400000
 
 
     }
